@@ -15,8 +15,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_core_defence_factor = 0.05
-				army_speed_factor = -0.10
+             army_speed_factor = 0.15
+			 army_morale_factor = -0.05
 			}
 		}
 		general_winter_idea = {
@@ -814,9 +814,9 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.10
 				conscription = 0.02
-				army_morale_factor = 0.25
+				army_morale_factor = 0.2
 				army_org_factor = 0.10
-				army_core_defence_factor = 0.05
+				training_time_factor = -0.50
 
 			}
 		}
