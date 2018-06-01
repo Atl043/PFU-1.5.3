@@ -445,7 +445,7 @@ SOV_industry_relocation = {
 	}
 }
 
-#Category only allowed for SOV
+#Category only allowed for SOV - Order 227 has been disabled by KLS
 SOV_great_patriotic_war = {
 
 	SOV_order_227 = {
@@ -465,6 +465,7 @@ SOV_great_patriotic_war = {
 		fire_only_once = yes
 		visible = {
 			has_war = yes
+			surrender_progress > 0.9
 			any_enemy_country = {
 				is_major = yes
 			}
