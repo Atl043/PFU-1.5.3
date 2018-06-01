@@ -31,13 +31,7 @@ state={
 				bunker = 1
 
 			}
-			1055 = {
-				naval_base = 1
-				coastal_bunker = 1
-				bunker = 1
-
-			}
-
+			
 		}
 		1938.10.25 = {
 			JAP = {
