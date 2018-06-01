@@ -302,7 +302,6 @@ ideas = {
 
 			modifier = {
 				conscription = 0.01
-				war_support_factor = 0.05
 			}
 		}
 
@@ -341,7 +340,6 @@ ideas = {
 
 			modifier = {
 				subversive_activites_upkeep = -0.5
-				war_support_factor = 0.05
 			}
 		}
 
@@ -544,17 +542,14 @@ ideas = {
 				
 			}
 
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory"}
-					has_completed_focus = SAF_support_the_policy_of_appeasement
-				}
-			}
-			
 			picture = generic_democratic_reformer_western_european_2d
 			
 			traits = { democratic_reformer }
-
+		
+			on_add = {
+				country_event = political.13
+			}
+		
 			do_effect = {
 				NOT = {
 					has_government = democratic
@@ -567,63 +562,6 @@ ideas = {
 		}
 
 
-		SAF_abram_fischer = {
-
-			allowed = {
-				original_tag = SAF
-			}
-
-			available = {
-			if = {
-					limit = { has_dlc = "Together for Victory"}
-					has_completed_focus = SAF_empower_the_workers
-				}
-			}
-
-			picture = generic_communist_revolutionary_western_european_2d
-			
-			traits = { communist_revolutionary }
-
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-
-		}
-
-		SAF_j_f_van_rensburg_fascist = {
-			
-			allowed = {
-				original_tag = SAF
-				
-			}
-
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory"}
-					has_completed_focus = SAF_support_the_afrikaner_broederbond
-				}
-			}
-
-			picture = generic_political_advisor_europe_4
-			
-			traits = { fascist_demagogue }
-		
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-		
-			ai_will_do = {
-				factor = 0
-			}
-		}
 
 		SAF_nicolaas_havenga = {
 

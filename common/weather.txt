@@ -16,13 +16,17 @@ terrain_modifiers = {
   }
   snow = {
   	terrain = { type = "mountain" value = 0.8 }
+   	terrain = { type = "forest" value = 0.8 }
+   	terrain = { type = "plains" value = 0.8 }
   	terrain = { type = "desert" value = -1.0 }
-    terrain = { type = "urban" value = -0.4 }
+    terrain = { type = "urban" value = 0.7 }
   }
   blizzard = {
   	terrain = { type = "mountain" value = 0.8 }
+	terrain = { type = "forest" value = 0.8 }
+   	terrain = { type = "plains" value = 0.8 }
   	terrain = { type = "desert" value = -1.0 }
-    terrain = { type = "urban" value = -0.4 }
+    terrain = { type = "urban" value = 0.5 }
   }
   sandstorm = {
   	terrain = { type = "desert" value = 0.8 }
@@ -39,8 +43,8 @@ settings = {
     variable = 0.25 # factor how much can vary between updates
 
     # Temperature range when should apply static modifiers
-    weather_extreme_cold = { -100.0 -25.0 }
-    weather_very_cold = { -25.0 -15.0 }
+    weather_extreme_cold = { -100.0 -20.0 }
+    weather_very_cold = { -20.0 -7.0 }
     weather_very_hot = { 27.0 32.0 }
     weather_extreme_hot = { 32.0 100.0 }
   }
@@ -59,7 +63,7 @@ settings = {
     water_dryout_multiplier = { 0.0005 0.3 }
 
     # When temperature goes below, the mud disappears (it gets frozen).
-    min_temperature = -1.0
+    min_temperature = 4.0
   }
 
   snowing = {

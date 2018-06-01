@@ -11,7 +11,7 @@ state={
 			1440 1 
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
 			industrial_complex = 1
 			air_base = 4
 			1440 = {
@@ -19,6 +19,7 @@ state={
 
 			}
 		}
+		add_core_of = USA
 	}
 
 	provinces={

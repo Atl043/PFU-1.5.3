@@ -3,8 +3,6 @@
 equipments = {
 
 	infantry_equipment = {
-		year = 1936
-	
 		is_archetype = yes
 		picture = archetype_infantry_equipment		
 		is_buildable = no
@@ -17,7 +15,7 @@ equipments = {
 		
 		#Misc Abilities
 		reliability = 0.9
-		maximum_speed = 4
+		maximum_speed = 3.0
 
 		#Defensive Abilities
 		defense = 20
@@ -32,7 +30,7 @@ equipments = {
 		air_attack = 0
 
 		#Space taken in convoy
-		lend_lease_cost = 1
+		lend_lease_cost = 0.10
 		
 		build_cost_ic = 0.4
 		resources = {
@@ -42,8 +40,6 @@ equipments = {
 	}
 
 	infantry_equipment_0 = {
-		year = 1918
-	
 		archetype = infantry_equipment
 		active = yes
 		priority = 05
@@ -54,8 +50,6 @@ equipments = {
 
 	# Regular infantry  1936
 	infantry_equipment_1 = {
-		year = 1936
-	
 		archetype = infantry_equipment
 		parent = infantry_equipment_0
 		priority = 10
@@ -76,8 +70,6 @@ equipments = {
 
 	# Improved weapons  ~1939
 	infantry_equipment_2 = {
-		year = 1939
-	
 		archetype = infantry_equipment
 		parent = infantry_equipment_1
 		priority = 10
@@ -101,8 +93,6 @@ equipments = {
 	
 	# Advanced weapons  ~1942
 	infantry_equipment_3 = {
-		year = 1942
-	
 		archetype = infantry_equipment
 		parent = infantry_equipment_2
 		priority = 10

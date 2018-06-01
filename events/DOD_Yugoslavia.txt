@@ -30,10 +30,6 @@ country_event = {
 		name = DOD_yugoslavia.1.a
 		ai_chance = {
 			factor = 70
-			modifier = {
-				has_war_with = ENG
-				factor = 0
-			}
 		}	
 		retire_country_leader = yes
 		create_country_leader = {
@@ -51,19 +47,7 @@ country_event = {
 			limit = {
 				is_in_faction_with = GER
 			}
-			GER = { remove_from_faction = YUG }
-		}
-		if = {
-			limit = {
-				is_puppet_of = GER
-			}
-			set_autonomy = {
-				target = YUG
-				autonomy_state = autonomy_free
-			}
-			set_politics = { ruling_party = neutrality elections_allowed = yes }
-			add_popularity = { ideology = neutrality popularity = 0.5 }
-			set_party_name = { ideology = neutrality long_name = YUG_neutrality_party_2 name = YUG_neutrality_party_2 }
+			remove_from_faction = YUG
 		}
 	}
 	option = { #resistance to the coup, call on Germans for support
@@ -164,101 +148,13 @@ country_event = {
 	}
 }
 
-#Yugoslavian independence war(s)
-country_event = {
-	id = DOD_yugoslavia.10
-	title = DOD_yugoslavia.10.t
-	desc = DOD_yugoslavia.10.desc
-	picture = GFX_report_event_yugoslavia_partisans
-	
-	trigger = {
-		tag = YUG
-		has_idea = YUG_idea_croatian_opposition
-		has_war_with = GER
-		GER = {
-			has_government = fascism
-		}
-		OR = {
-			AND = {
-				CRO = { exists = yes }
-				CRO = { is_subject_of = YUG }
-			}
-			109 = { is_owned_and_controlled_by = YUG }
-		}
-	}
-	mean_time_to_happen = {
-		days = 4
-	}
-	
-	fire_only_once = yes #would be funny though
-
-	option = { 
-		name = DOD_yugoslavia.10.a
-		ai_chance = {
-			factor = 70
-		}	
-		if = {
-			limit = {
-				CRO = {
-					exists = yes
-					is_subject_of = YUG
-				}
-			}
-			set_autonomy = { target = CRO autonomy_state = autonomy_free }
-			CRO = {
-				declare_war_on = {
-					target = YUG
-					type = annex_everything
-
-				}
-			}
-		}
-		if = { #if Montenegro exists, they also join
-			limit = {
-				MNT = {
-					exists = yes
-					is_subject_of = YUG
-				}
-			}
-			set_autonomy = { target = MNT autonomy_state = autonomy_free }
-			MNT = {
-				declare_war_on = {
-					target = YUG
-					type = annex_everything
-				}
-			}
-		}
-		if = {
-			limit = {
-				CRO = {
-					exists = no
-				}
-				109 = { is_owned_and_controlled_by = YUG }
-			}
-			CRO = { transfer_state = 109 }
-			if = {
-				limit = {
-					103 = { is_owned_and_controlled_by = YUG }
-				}
-				CRO = { transfer_state = 103 }
-			}
-			CRO = {
-				declare_war_on = {
-					target = YUG
-					type = annex_everything
-				}
-				load_oob = "CRO_YUG_independence"
-			}
-		}
-	}
-}
 
 #Yugoslavia wants to buy planes - event for GER,FRA,ENG,ITA
 country_event = {
 	id = DOD_yugoslavia.20
 	title = DOD_yugoslavia.20.t
 	desc = DOD_yugoslavia.20.desc
-	picture = GFX_report_event_fighters
+	picture = GFX_report_event_generic_fighters
 	
 	is_triggered_only = yes
 	
@@ -367,7 +263,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { # cool
-		name = DOD_yugoslavia.21.a
+		name = DOD_yugoslavia.22.a
 		ai_chance = {
 			factor = 30
 		}
@@ -755,396 +651,8 @@ country_event = {
 		
 	
 }
-#Yugoslavia pressured by Germany - Anschluss
-country_event = {
-	id = DOD_yugoslavia.30
-	title = DOD_yugoslavia.30.t
-	desc = DOD_yugoslavia.30.desc
-	picture = GFX_report_event_german_speech
-	
-	is_triggered_only = yes
-	
-	option = { # put the squeeze on them
-		name = DOD_yugoslavia.30.a
-		ai_chance = {
-			factor = 70
-		}
-		YUG = { 
-			country_event = DOD_yugoslavia.31 
-			set_country_flag = YUG_GER_pressure_1 #for ai_weights in focus tree
-		}
-		
-	}	
-	option = { # not interested
-		name = DOD_yugoslavia.30.b
-		ai_chance = {
-			factor = 30
-		}
-		
-	}
-		
-	
-}
 
-#Yugoslavia pressured by Germany - First event
-country_event = {
-	id = DOD_yugoslavia.31
-	title = DOD_yugoslavia.31.t
-	desc = DOD_yugoslavia.31.desc
-	picture = GFX_report_event_german_speech
-	
-	is_triggered_only = yes
-		
-	option = { # not that bad yet
-		name = DOD_yugoslavia.31.a
-		ai_chance = {
-			factor = 30
-		}
-		
-	}
-		
-	
-}
 
-#Yugoslavia pressured by Germany - Fate of CZE
-country_event = {
-	id = DOD_yugoslavia.32
-	title = DOD_yugoslavia.30.t
-	desc = DOD_yugoslavia.32.desc
-	picture = GFX_report_event_german_troops
-	
-	is_triggered_only = yes
-	
-	option = { # put the squeeze on them
-		name = DOD_yugoslavia.32.a
-		ai_chance = {
-			factor = 80
-		}
-		YUG = { 
-			country_event = DOD_yugoslavia.33 
-			set_country_flag = YUG_GER_pressure_2 #for ai_weights
-		}
-		
-	}	
-	option = { # not interested
-		name = DOD_yugoslavia.32.b
-		ai_chance = {
-			factor = 20
-		}
-		
-	}
-		
-	
-}
-
-#Yugoslavia pressured by Germany - Second event
-country_event = {
-	id = DOD_yugoslavia.33
-	title = DOD_yugoslavia.31.t
-	desc = DOD_yugoslavia.33.desc
-	picture = GFX_report_event_german_troops
-	
-	is_triggered_only = yes
-		
-	option = { # not that bad
-		name = DOD_yugoslavia.33.a
-		
-	}
-}
-
-#Yugoslavia pressured by Germany - Last Warning - after Fall of France
-country_event = {
-	id = DOD_yugoslavia.34
-	title = DOD_yugoslavia.30.t
-	desc = DOD_yugoslavia.34.desc
-	picture = GFX_report_event_german_troops_paris
-	
-	mean_time_to_happen = {
-		days = 5
-	}
-	fire_only_once = yes
-	trigger = {
-		tag = GER
-		NOT = {
-			has_war_with = YUG
-		}
-		YUG = {
-			is_in_faction = no
-		}
-		FRA = {
-			OR = {
-				has_capitulated = yes
-				is_subject_of = GER
-			}
-		}
-	}
-	
-	option = { # put the squeeze on them
-		name = DOD_yugoslavia.34.a
-		ai_chance = {
-			factor = 90
-		}
-		YUG = { country_event = DOD_yugoslavia.35 }
-		hidden_effect = {
-			country_event = { id = DOD_yugoslavia.36 days = 90 random = 168 }
-		}
-		
-	}	
-	option = { # not interested
-		name = DOD_yugoslavia.34.b
-		ai_chance = {
-			factor = 10
-		}
-		
-	}
-		
-	
-}
-
-#Yugoslavia pressured by Germany - third event
-country_event = {
-	id = DOD_yugoslavia.35
-	title = DOD_yugoslavia.31.t
-	desc = DOD_yugoslavia.35.desc
-	picture = GFX_report_event_german_troops_paris
-	
-	is_triggered_only = yes
-		
-	option = { # not that bad
-		name = DOD_yugoslavia.35.a
-		ai_chance = {
-			factor = 30
-		}
-		
-	}
-		
-	
-}
-
-#Yugoslavia pressured by Germany - War!
-country_event = {
-	id = DOD_yugoslavia.36
-	title = DOD_yugoslavia.36.t
-	desc = DOD_yugoslavia.36.desc
-	picture = GFX_report_event_military_planning
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	trigger = {
-		tag = GER
-		YUG = {
-			is_in_faction = no 
-			exists = yes
-			NOT = {
-				focus_progress = { focus = YUG_join_axis progress > 0 } #that would just be mean
-			}
-		}
-	}
-	
-	option = { # put the squeeze on them
-		name = DOD_yugoslavia.36.a
-		ai_chance = {
-			factor = 90
-		}
-		declare_war_on = {
-			target = YUG
-			type = puppet_wargoal_focus
-		}
-		
-	}	
-	option = { # not interested
-		name = DOD_yugoslavia.36.b
-		ai_chance = {
-			factor = 10
-		}
-		
-	}
-		
-	
-}
-
-#Yugoslavia pressured by Britain - Balkan Strategy
-country_event = {
-	id = DOD_yugoslavia.40
-	title = DOD_yugoslavia.30.t
-	desc = DOD_yugoslavia.40.desc
-	picture = GFX_report_event_chamberlain_announce
-	
-	is_triggered_only = yes
-	
-	option = { # put the squeeze on them
-		name = DOD_yugoslavia.40.a
-		ai_chance = {
-			factor = 70
-		}
-		YUG = { country_event = DOD_yugoslavia.41 }
-		
-	}	
-	option = { # not interested
-		name = DOD_yugoslavia.40.b
-		ai_chance = {
-			factor = 30
-		}
-		
-	}
-		
-	
-}
-
-#Yugoslavia pressured by Britain - First event
-country_event = {
-	id = DOD_yugoslavia.41
-	title = DOD_yugoslavia.41.t
-	desc = DOD_yugoslavia.41.desc
-	picture = GFX_report_event_french_british_officers
-	
-	is_triggered_only = yes
-		
-	option = { # not that bad yet
-		name = DOD_yugoslavia.41.a
-		ai_chance = {
-			factor = 30
-		}
-		
-	}	
-}
-
-#Yugoslavia pressured by Britain - Munich
-country_event = {
-	id = DOD_yugoslavia.42
-	title = DOD_yugoslavia.30.t
-	desc = DOD_yugoslavia.42.desc
-	picture = GFX_report_event_french_british_officers
-	
-	is_triggered_only = yes
-	
-	option = { # put the squeeze on them
-		name = DOD_yugoslavia.42.a
-		ai_chance = {
-			factor = 70
-		}
-		YUG = { country_event = DOD_yugoslavia.43 }
-		
-	}	
-	option = { # not interested
-		name = DOD_yugoslavia.42.b
-		ai_chance = {
-			factor = 30
-		}
-		
-	}
-		
-	
-}
-
-#Yugoslavia pressured by Britain - Second event
-country_event = {
-	id = DOD_yugoslavia.43
-	title = DOD_yugoslavia.41.t
-	desc = DOD_yugoslavia.43.desc
-	picture = GFX_report_event_canadian_soldiers
-	
-	is_triggered_only = yes
-		
-	option = { # not that bad yet
-		name = DOD_yugoslavia.43.a
-		ai_chance = {
-			factor = 30
-		}
-		
-	}	
-}
-
-#Yugoslavia pressured by Britain - late 1940, last warning
-country_event = {
-	id = DOD_yugoslavia.44
-	title = DOD_yugoslavia.30.t
-	desc = DOD_yugoslavia.44.desc
-	picture = GFX_report_event_french_british_officers
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = ENG
-		has_war_with = GER
-		NOT = { has_war_with = YUG }
-		NOT = { is_in_faction_with = YUG }
-		YUG = { is_in_faction = no }
-		YUG = { NOT = { has_war_with = GER } }
-		YUG = { exists = yes }
-		is_historical_focus_on = no
-	}
-
-	mean_time_to_happen = { days = 4 }
-	
-	option = { # put the squeeze on them
-		name = DOD_yugoslavia.44.a
-		ai_chance = {
-			factor = 90
-		}
-		YUG = { country_event = DOD_yugoslavia.45 }
-		hidden_effect = { country_event = { id = DOD_yugoslavia.46 days = 180 random = 672 } }
-		
-	}	
-	option = { # not interested
-		name = DOD_yugoslavia.44.b
-		ai_chance = {
-			factor = 10
-		}	
-	}
-}
-
-#Yugoslavia pressured by Britain - Third event
-country_event = {
-	id = DOD_yugoslavia.45
-	title = DOD_yugoslavia.41.t
-	desc = DOD_yugoslavia.45.desc
-	picture = GFX_report_event_british_inspect_troops
-	
-	is_triggered_only = yes
-		
-	option = { # not that bad yet
-		name = DOD_yugoslavia.45.a
-		ai_chance = {
-			factor = 30
-		}
-		
-	}	
-}
-
-#Yugoslavia pressured by Britain - war
-country_event = {
-	id = DOD_yugoslavia.46
-	title = DOD_yugoslavia.30.t
-	desc = DOD_yugoslavia.46.desc
-	picture = GFX_report_event_ast_army
-	
-	is_triggered_only = yes
-	fire_only_once = yes 
-	trigger = {
-		YUG = { is_in_faction = no }
-		YUG = { exists = yes }
-		has_war_with = GER
-	}
-	
-	option = { # put the squeeze on them
-		name = DOD_yugoslavia.46.a
-		ai_chance = {
-			factor = 90
-		}
-		declare_war_on = {
-			target = YUG
-			type = puppet_wargoal_focus
-		}
-		
-	}	
-	option = { # not interested
-		name = DOD_yugoslavia.46.b
-		ai_chance = {
-			factor = 10
-		}	
-	}
-}
 
 
 
@@ -1900,7 +1408,10 @@ country_event = {
 			}
 		}
 		YUG = { country_event = DOD_yugoslavia.155 }
-		air_experience = 20
+		add_relation_modifier = {
+			target = YUG
+			modifier = free_license # name is from static_modifiers.txt
+		}
 		if = {
 			limit = {
 				has_tech = fighter1
@@ -1995,7 +1506,6 @@ country_event = {
 			}
 		}
 		YUG = { country_event = DOD_yugoslavia.155 }
-		air_experience = 20
 		if = {
 			limit = {
 				has_tech = heavy_fighter1
@@ -2006,7 +1516,7 @@ country_event = {
 				equipment = {
 					type = heavy_fighter_equipment_1
 				}
-				cost_factor = 0
+				cost_factor = 1
 			}
 		}
 		if = {
@@ -2835,7 +2345,6 @@ country_event = {
 			}
 		}
 		YUG = { country_event = DOD_yugoslavia.165 }
-		air_experience = 20
 		if = {
 			limit = {
 				has_tech = CAS1
@@ -2929,7 +2438,6 @@ country_event = {
 			}
 		}
 		YUG = { country_event = DOD_yugoslavia.165 }
-		air_experience = 20
 		if = {
 			limit = {
 				has_tech = tactical_bomber1

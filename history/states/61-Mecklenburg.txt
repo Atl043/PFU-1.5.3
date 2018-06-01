@@ -1,10 +1,10 @@
 state={
 	id=61
 	name="STATE_61"
-	manpower = 836353
+	manpower = 1406221
 
 
-	state_category = town
+	state_category = city
 
 	history={
 		owner = GER
@@ -24,6 +24,6 @@ state={
 	}
 
 	provinces={
-		268 293 321 9294 11276 11305 
+		268 293 321 3258 9294 11276 11305 9388 3340 349 3312
 	}
 }

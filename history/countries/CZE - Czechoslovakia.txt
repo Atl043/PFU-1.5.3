@@ -27,12 +27,8 @@ set_politics = {
 			popularity = 65
 		}
 
-		neutrality = { 
-			popularity = 20
-		}
-
 		fascism = {
-			popularity = 5
+			popularity = 25
 		}
 		
 		communism = {
@@ -84,10 +80,6 @@ create_field_marshal = {
 	gfx = "GFX_Portrait_czechoslovakia_vojtech_luza"
 	traits = { fast_planner offensive_doctrine }
 	skill = 3
-    attack_skill = 4
-    defense_skill = 2
-    planning_skill = 3
-    logistics_skill = 1
 }
 
 create_field_marshal = {
@@ -95,21 +87,13 @@ create_field_marshal = {
 	gfx = "GFX_Portrait_czechoslovakia_josef_snejdarek"
 	traits = { thorough_planner defensive_doctrine }
 	skill = 3
-    attack_skill = 3
-    defense_skill = 4
-    planning_skill = 2
-    logistics_skill = 1
 }
 
 create_corps_commander = {
 	name = "Richard Tesařík"
 	gfx = "GFX_Portrait_czechoslovakia_richard_tesarik"
-	traits = { armor_officer }
+	traits = { panzer_leader }
 	skill = 2
-    attack_skill = 4
-    defense_skill = 1
-    planning_skill = 1
-    logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -117,10 +101,6 @@ create_corps_commander = {
 	gfx = "GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
 	traits = { winter_specialist }
 	skill = 3
-    attack_skill = 4
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 1
 }
 
 if = {
@@ -130,9 +110,8 @@ if = {
 	add_ideas = {
 		CZE_skoda_works
 		CZE_divided_nation
+	    extensive_conscription
 }
-	give_guarantee = YUG
-	give_guarantee = ROM
 }
 
 if = {

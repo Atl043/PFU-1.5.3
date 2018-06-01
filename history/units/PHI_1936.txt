@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Infantry Division"			# Represents both Philippines divisions and U.S. Division as expeditionary force
-	division_names_group = PHI_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -22,28 +21,43 @@
 units = {
 	######## LAND OOB ########
 	##### Philippine High Command #####
-	division = { # "1st Philippines Division"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
+	division = {
+		name = "1st Philippines Division"
 		location = 10265
-		division_template = "Infantry Division"		
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division = {
+		name = "2nd Philippines Division"
+		location = 4241
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division = {
+		name = "3rd Philippines Division"
+		location = 12118
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division = {
+		name = "4th Philippines Division"
+		location = 4288
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division = {
+		name = "5th Philippines Division"
+		location = 12213
+		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 	}
 
-	######## No Naval OOB ########
-}
-
-air_wings = {
-	### Philippine Army Air Corps ###
-	327 = {
-		# Fighter Squadron -- Curtis P-26A's
-		fighter_equipment_0 =  {
-			owner = "PHI" 
-			amount = 12
-			create_if_missing = yes
-		}
+	######## Naval OOB ########
+	navy = {
+		name = "OSP 'Mosquito' Fleet"
+		location = 10265 # Manila
+		ship = { name = "PT Q-111 Luzon" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = "PHI" } } }
+		ship = { name = "PT Q-112 Manila" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = "PHI" } } }
 	}
 }
 

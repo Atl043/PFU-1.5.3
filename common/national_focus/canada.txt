@@ -1,9 +1,9 @@
 focus_tree = {
 	id = canadian_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = CAN
@@ -16,7 +16,7 @@ focus_tree = {
 		#	has_dlc = "Together for Victory"
 		#}
 	}
-	
+
 	default = no
 
 
@@ -28,7 +28,7 @@ focus_tree = {
 #		mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
-#		relative_position_id = 
+#		relative_position_id =
 #
 #		cost = 10
 #
@@ -39,7 +39,7 @@ focus_tree = {
 #		available = {
 #
 #		}
-#		
+#
 #		bypass = {
 #
 #		}
@@ -64,49 +64,13 @@ focus_tree = {
 	##### INDUSTRY SECTION #####
 	############################
 
-	focus = {
-		id = CAN_rowell_sirois_commission
-		icon = GFX_goal_generic_consumer_goods
-		x = 0
-		y = 0
 
-		cost = 10
-
-		ai_will_do = {
-			factor = 24
-			modifier = {
-				factor = 3
-				has_completed_focus = CAN_crown_corporations
-			}
-		}
-
-		available = {
-		
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_political_power = 120
-		}
-	}
 
 	focus = {
 		id = CAN_crown_corporations
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 3
+		x = 0
 		y = 0
-		relative_position_id = CAN_rowell_sirois_commission
 
 		cost = 10
 
@@ -121,7 +85,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -135,6 +99,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 120
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = CAN_c_d_howe
 		}
@@ -144,11 +109,10 @@ focus_tree = {
 	focus = {
 		id = CAN_national_housing_act
 		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = CAN_rowell_sirois_commission }
 		prerequisite = { focus = CAN_crown_corporations }
-		x = 2
+		x = 0
 		y = 1
-		relative_position_id = CAN_rowell_sirois_commission
+		relative_position_id = CAN_crown_corporations
 
 		cost = 10
 
@@ -158,14 +122,14 @@ focus_tree = {
 
 		available = {
 		}
-		
+
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
 				all_owned_state = {
 					free_building_slots = {
 						building = industrial_complex
-						size < 1
+						size < 2
 						include_locked = yes
 					}
 				}
@@ -181,10 +145,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = CAN_national_housing_act_IC
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -199,10 +163,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_national_housing_act_IC
@@ -210,309 +174,6 @@ focus_tree = {
 		}
 	}
 
-
-	focus = {
-		id = CAN_dollar_a_year_men
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = CAN_national_housing_act}
-		x = 2
-		y = 2
-		relative_position_id = CAN_rowell_sirois_commission
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 75
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = CAN_dollar_a_year_men
-				bonus = 0.5
-				uses = 1
-				category = industry
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_canada_pacific_railway
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = CAN_rowell_sirois_commission }
-		x = 0
-		y = 2
-		relative_position_id = CAN_rowell_sirois_commission
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 75
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = CAN_canada_pacific_railway_Inf
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 473 471 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = CAN_canada_pacific_railway_Inf
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_maritime_colonial_railway
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = CAN_canada_pacific_railway }
-		x = 0
-		y = 3
-		relative_position_id = CAN_rowell_sirois_commission
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 75
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = CAN_maritime_colonial_railway_Inf
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = CAN_maritime_colonial_railway_Inf
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_retool_angus_shops
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = CAN_canada_pacific_railway }
-		prerequisite = { focus = CAN_bits_and_pieces_program }
-		x = 2
-		y = 3
-		relative_position_id = CAN_rowell_sirois_commission
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 75
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}					
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = CAN_retool_angus_shops_AF
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 285 517 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = CAN_retool_angus_shops_AF
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_imperial_oil
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = CAN_retool_angus_shops }
-		x = 2
-		y = 4
-		relative_position_id = CAN_rowell_sirois_commission
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 75
-		}
-
-		available = {
-			controls_state = 470
-			controls_state = 471
-			controls_state = 472
-			controls_state = 683
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			470 = {
-				add_resource = {
-					type = oil
-					amount = 2
-				}
-			}
-			471 = {
-				add_resource = {
-					type = oil
-					amount = 4
-				}
-			}
-			472 = {
-				add_resource = {
-					type = oil
-					amount = 4
-				}
-			}
-			683 = {
-				add_resource = {
-					type = oil
-					amount = 4
-				}
-			}
-		}
-	}
 
 
 	############################
@@ -522,7 +183,7 @@ focus_tree = {
 	focus = {
 		id = CAN_defence_of_canada_regulations
 		icon = GFX_goal_generic_construct_military
-		x = 8
+		x = 5
 		y = 0
 
 		cost = 10
@@ -532,15 +193,16 @@ focus_tree = {
 		}
 
 		available = {
-			threat > 0.2
+			threat > 0.1
+			date > 1936.8.1
 		}
-		
+
 		bypass = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		complete_tooltip = {
@@ -566,7 +228,7 @@ focus_tree = {
 	focus = {
 		id = CAN_war_bonds
 		icon = GFX_goal_generic_consumer_goods
-		x = -2
+		x = 3
 		y = 0
 		relative_position_id = CAN_defence_of_canada_regulations
 
@@ -579,7 +241,7 @@ focus_tree = {
 		available = {
 			has_war = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -616,7 +278,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -625,7 +287,7 @@ focus_tree = {
 						building = arms_factory
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
@@ -639,10 +301,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = CAN_department_of_munitions_and_supply_AF1
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -709,14 +371,6 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -734,7 +388,7 @@ focus_tree = {
 		id = CAN_wartime_prices_and_trade_board
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = CAN_defence_of_canada_regulations }
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
 
@@ -742,14 +396,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 50
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -779,21 +425,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = CAN_bits_and_pieces_program
@@ -814,21 +448,9 @@ focus_tree = {
 			factor = 75
 		}
 
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_research_slot = 1
@@ -853,10 +475,6 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-		
 		bypass = {
 			NOT = {
 				any_owned_state = {
@@ -868,10 +486,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -925,14 +539,6 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -944,7 +550,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = CAN_great_depression_1
-				add_idea = CAN_great_depression_2		
+				add_idea = CAN_great_depression_2
 			}
 		}
 	}
@@ -967,19 +573,15 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-		
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
 				all_owned_state = {
 					free_building_slots = {
 						building = arms_factory
-						size < 1
+						size < 2
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
@@ -993,7 +595,7 @@ focus_tree = {
 				limit = {
 					has_state_flag = CAN_victory_aircraft_limited_AF1
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -1019,7 +621,7 @@ focus_tree = {
 				limit = {
 					free_building_slots = {
 						building = arms_factory
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}
@@ -1055,8 +657,8 @@ focus_tree = {
 		id = CAN_alberta_coal_towns
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = CAN_mine_the_shield }
-		prerequisite = { focus = CAN_canada_wheat_board }		
-		x = 2
+		prerequisite = { focus = CAN_canada_wheat_board }
+		x = 1
 		y = 3
 		relative_position_id = CAN_defence_of_canada_regulations
 
@@ -1066,10 +668,6 @@ focus_tree = {
 			factor = 50
 		}
 
-		available = {
-
-		}
-		
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -1078,7 +676,7 @@ focus_tree = {
 						building = industrial_complex
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
@@ -1092,10 +690,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = CAN_alberta_coal_towns_IC
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1111,10 +709,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_alberta_coal_towns_IC
@@ -1126,7 +724,7 @@ focus_tree = {
 		id = CAN_commit_to_the_war
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = CAN_canada_wheat_board }
-		x = 4
+		x = 3
 		y = 3
 		relative_position_id = CAN_defence_of_canada_regulations
 
@@ -1139,18 +737,10 @@ focus_tree = {
 		available = {
 			has_war = yes
 		}
-		
-		bypass = {
-
-		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = CAN_commit_to_the_war
@@ -1162,7 +752,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = CAN_bits_and_pieces_program }
 		x = -4
-		y = 4
+		y = 3
 		relative_position_id = CAN_defence_of_canada_regulations
 
 		cost = 10
@@ -1175,10 +765,6 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-		
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -1201,7 +787,7 @@ focus_tree = {
 				limit = {
 					has_state_flag = CAN_john_inglis_and_company_AF1
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -1227,7 +813,7 @@ focus_tree = {
 				limit = {
 					free_building_slots = {
 						building = arms_factory
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}
@@ -1267,16 +853,12 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 12.9
 
 		ai_will_do = {
 			factor = 50
 		}
 
-		available = {
-
-		}
-		
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = synth_oil_effort_tt
@@ -1299,7 +881,7 @@ focus_tree = {
 			if = {
 				limit = { has_country_flag = CAN_polymer_corporation_unlock }
 				set_technology = { synth_oil_experiments = 1 }
-				else = {					
+				else = {
 					add_tech_bonus = {
 						name = CAN_polymer_corporation
 						ahead_reduction = 1
@@ -1307,7 +889,7 @@ focus_tree = {
 						uses = 1
 						category = synth_resources
 					}
-				}				
+				}
 			}
 			random_state = {
 				limit = {
@@ -1415,12 +997,11 @@ focus_tree = {
 		id = CAN_national_steel_car
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = CAN_alberta_coal_towns }
-		mutually_exclusive = { focus = CAN_send_in_the_zombies }
 		x = 1
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 12.9
 
 		ai_will_do = {
 			factor = 25
@@ -1430,10 +1011,6 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-		
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -1467,16 +1044,17 @@ focus_tree = {
 				limit = {
 					has_state_flag = CAN_national_steel_car_IC2
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 		}
 
 		completion_reward = {
+			remove_ideas = CAN_great_depression_2
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1501,10 +1079,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = CAN_national_steel_car_IC2
@@ -1516,7 +1094,6 @@ focus_tree = {
 		id = CAN_send_in_the_zombies
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = CAN_commit_to_the_war }
-		mutually_exclusive = { focus = CAN_national_steel_car }
 		x = 3
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -1527,21 +1104,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = CAN_send_in_the_zombies
@@ -1553,11 +1118,10 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = CAN_john_inglis_and_company }
 		prerequisite = { focus = CAN_victory_aircraft_limited }
-		x = -2
-		y = 5
-		relative_position_id = CAN_defence_of_canada_regulations
+		x = 2
+		y = 4
 
-		cost = 10
+		cost = 12.9
 
 		ai_will_do = {
 			factor = 25
@@ -1567,21 +1131,9 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			swap_ideas = {
@@ -1594,10 +1146,10 @@ focus_tree = {
 	focus = {
 		id = CAN_defense_research_grants
 		icon = GFX_focus_research
-		prerequisite = { focus = CAN_john_inglis_and_company }
+		prerequisite = { focus = CAN_polymer_corporation focus = CAN_national_steel_car }
 		prerequisite = { focus = CAN_if_day }
-		x = -3
-		y = 6
+		x = -1
+		y = 5
 		relative_position_id = CAN_defence_of_canada_regulations
 
 		cost = 10
@@ -1610,18 +1162,10 @@ focus_tree = {
 			num_of_factories > 50
 			is_subject = no
 		}
-		
-		bypass = {
-
-		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_research_slot = 1
@@ -1631,10 +1175,9 @@ focus_tree = {
 	focus = {
 		id = CAN_uranium_mining
 		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = CAN_polymer_corporation focus = CAN_national_steel_car }
-		x = 0
-		y = 5
-		relative_position_id = CAN_defence_of_canada_regulations
+		prerequisite = { focus = CAN_defense_research_grants }
+		x = 4
+		y = 6
 
 		cost = 10
 
@@ -1642,21 +1185,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1664,7 +1195,7 @@ focus_tree = {
 				bonus = 0.5
 				uses = 2
 				category = nuclear
-			}	
+			}
 		}
 	}
 
@@ -1682,21 +1213,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1727,7 +1246,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1753,7 +1272,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_forced_quebec_conscription
-		icon = GFX_goal_tfv_can_forced_quebec_conscription 
+		icon = GFX_goal_tfv_can_forced_quebec_conscription
 		prerequisite = { focus = CAN_long_branch_arsenal focus = CAN_independent_command }
 		mutually_exclusive = { focus =  CAN_compromise_with_quebec }
 		x = 2
@@ -1769,7 +1288,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1785,7 +1304,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = CAN_conscription_crisis
 			custom_effect_tooltip = "CAN_ANGERED_WORKERS"
-			
+
 			# Opens up the MTTH events tfv_canada.50 - tfv_canada.53
 		}
 	}
@@ -1808,7 +1327,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1829,126 +1348,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = CAN_war_fueled_economy
-		icon = GFX_goal_generic_trade
-		prerequisite = { focus = CAN_national_steel_car }
-		prerequisite = { focus = CAN_if_day }
-		x = 1
-		y = 7
-		relative_position_id = CAN_defence_of_canada_regulations
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-			remove_ideas = CAN_great_depression_2
-			random_state = {
-				limit = {
-					has_state_flag = CAN_war_fueled_economy_AF1
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_war_fueled_economy_AF2
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_war_fueled_economy_AF3
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			remove_ideas = CAN_great_depression_2
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = CAN_war_fueled_economy_AF1
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = CAN_war_fueled_economy_AF2
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = CAN_war_fueled_economy_AF3
-			}
-		}
-	}
-
 
 	############################
 	####### ARMY SECTION #######
@@ -1957,7 +1356,7 @@ focus_tree = {
 	focus = {
 		id = CAN_army_modernization
 		icon = GFX_goal_generic_army_doctrines
-		x = 15
+		x = 12
 		y = 0
 
 		cost = 10
@@ -1969,7 +1368,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1983,7 +1382,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 5 
+			army_experience = 5
 			add_tech_bonus = {
 				name = CAN_army_modernization
 				bonus = 0.5
@@ -2010,7 +1409,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2051,7 +1450,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2068,7 +1467,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = CAN_cmp_truck
 				ahead_reduction = 1
-				bonus = 0.75
+				bonus = 0.50
 				uses = 1
 				category = motorized_equipment
 			}
@@ -2081,7 +1480,7 @@ focus_tree = {
 		prerequisite = { focus = CAN_canadian_infantry_corps focus = CAN_cmp_truck }
 		x = 0
 		y = 2
-		relative_position_id = CAN_army_modernization 
+		relative_position_id = CAN_army_modernization
 
 		cost = 10
 
@@ -2092,7 +1491,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2141,7 +1540,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2170,7 +1569,7 @@ focus_tree = {
 		prerequisite = { focus = CAN_cmp_truck }
 		x = 1
 		y = 3
-		relative_position_id = CAN_army_modernization 
+		relative_position_id = CAN_army_modernization
 
 		cost = 10
 
@@ -2181,7 +1580,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2199,7 +1598,6 @@ focus_tree = {
 				name = CAN_a_motorized_army
 				bonus = 0.5
 				uses = 1
-				category = motorized_equipment
 				technology = tech_field_hospital
 				technology = tech_field_hospital2
 				technology = tech_field_hospital3
@@ -2222,7 +1620,7 @@ focus_tree = {
 		prerequisite = { focus = CAN_royal_regiment_of_canadian_artillery focus = CAN_a_motorized_army }
 		x = -2
 		y = 4
-		relative_position_id = CAN_army_modernization 
+		relative_position_id = CAN_army_modernization
 
 		cost = 10
 
@@ -2233,7 +1631,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2259,13 +1657,13 @@ focus_tree = {
 
 	focus = {
 		id = CAN_1st_canadian_parachute_battalion
-		icon = GFX_goal_generic_special_forces 
+		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = CAN_the_plan focus = CAN_a_motorized_army }
 		x = 2
 		y = 4
-		relative_position_id = CAN_army_modernization 
+		relative_position_id = CAN_army_modernization
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 25
@@ -2274,7 +1672,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2303,7 +1701,7 @@ focus_tree = {
 		prerequisite = { focus = CAN_red_deer_training_camp }
 		x = -1
 		y = 5
-		relative_position_id = CAN_army_modernization 
+		relative_position_id = CAN_army_modernization
 
 		cost = 10
 
@@ -2314,7 +1712,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2344,7 +1742,7 @@ focus_tree = {
 		prerequisite = { focus = CAN_red_deer_training_camp }
 		x = 1
 		y = 5
-		relative_position_id = CAN_army_modernization 
+		relative_position_id = CAN_army_modernization
 
 		cost = 10
 
@@ -2355,7 +1753,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2384,36 +1782,25 @@ focus_tree = {
 		prerequisite = { focus = CAN_red_deer_training_camp }
 		x = 0
 		y = 6
-		relative_position_id = CAN_army_modernization 
+		relative_position_id = CAN_army_modernization
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_the_valentine_tank
 				bonus = 0.5
 				uses = 1
-				category = armor
+				category = cat_heavy_armor
+				category = cat_medium_armor
 			}
 			add_tech_bonus = {
 				name = CAN_the_valentine_tank
@@ -2432,9 +1819,8 @@ focus_tree = {
 
 	focus = {
 		id = CAN_strengthen_the_commonwealth_ties
-		mutually_exclusive = { focus = CAN_patriation }
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 21
+		x = 17
 		y = 0
 
 		cost = 10
@@ -2451,7 +1837,7 @@ focus_tree = {
 			ENG = { has_government = ROOT }
 			is_in_tech_sharing_group = commonwealth_research
 		}
-		
+
 		bypass = {
 
 		}
@@ -2495,7 +1881,7 @@ focus_tree = {
 		available = {
 			threat > 0.05
 		}
-		
+
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -2509,8 +1895,8 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		complete_tooltip = {
@@ -2619,7 +2005,7 @@ focus_tree = {
 			is_in_faction_with = ENG
 			is_in_tech_sharing_group = commonwealth_research
 		}
-		
+
 		bypass = {
 
 		}
@@ -2636,7 +2022,7 @@ focus_tree = {
 			CAN = {
    				 modify_tech_sharing_bonus = {
         			id = commonwealth_research
-        			bonus = 0.05  
+        			bonus = 0.05
     			}
 			}
 		}
@@ -2663,7 +2049,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2683,8 +2069,8 @@ focus_tree = {
 
 	focus = {
 		id = CAN_camp_x
-		icon = GFX_goal_generic_intelligence_exchange 
-		prerequisite = { focus = CAN_montreal_laboratory_collaboration focus = CAN_permanent_joint_defense_board }
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = CAN_montreal_laboratory_collaboration }
 		x = 0
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
@@ -2700,9 +2086,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -2731,7 +2117,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = CAN_the_plan}
 		prerequisite = { focus = CAN_camp_x }
-		x = -1
+		x = 0
 		y = 3
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
@@ -2744,7 +2130,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2773,9 +2159,9 @@ focus_tree = {
 
 	focus = {
 		id = CAN_aluminium_company_of_canada
-		icon = GFX_goal_generic_positive_trade_relations 
+		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = CAN_supply_the_empire }
-		x = -2
+		x = -1
 		y = 4
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
@@ -2790,7 +2176,7 @@ focus_tree = {
 			controls_state = 466
 			controls_state = 468
 		}
-		
+
 		bypass = {
 
 		}
@@ -2813,13 +2199,13 @@ focus_tree = {
 			466 = {
 				add_resource = {
 					type = aluminium
-					amount = 4
+					amount = 64
 				}
 			}
 			468 = {
 				add_resource = {
 					type = aluminium
-					amount = 4
+					amount = 14
 				}
 			}
 		}
@@ -2829,7 +2215,7 @@ focus_tree = {
 		id = CAN_turner_valley_oilfield
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = CAN_supply_the_empire }
-		x = 0
+		x = 1
 		y = 4
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
@@ -2842,7 +2228,7 @@ focus_tree = {
 		available = {
 			controls_state = 470
 		}
-		
+
 		bypass = {
 
 		}
@@ -2864,987 +2250,6 @@ focus_tree = {
 			}
 		}
 	}
-
-
-	############################
-	#### LEAVE COMMONWEALTH ####
-	############################
-
-	focus = {
-		id = CAN_patriation
-		icon = GFX_goal_tfv_sever_ties_with_uk #GFX_goal_generic_demand_territory
-		mutually_exclusive = { focus = CAN_strengthen_the_commonwealth_ties }
-		x = 2
-		y = 0
-		relative_position_id = CAN_strengthen_the_commonwealth_ties
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				OR = {
-					communism > 0.15
-					fascism > 0.15
-					}
-				factor = 2.5
-			}
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {			
-			add_ideas = CAN_patriation
-			ENG = {
-				add_opinion_modifier = { target = CAN modifier = CAN_patriation_mod }
-			}
-
-			hidden_effect = {
-				news_event = { id = news.251 hours = 3 }
-			}
-		}
-	}
-
-
-	############################
-	#### GO WITH US SECTION ####
-	############################
-	focus = {
-		id = CAN_permanent_joint_defense_board
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = CAN_patriation }
-		mutually_exclusive = { focus = CAN_burn_the_royal_portraits }
-		mutually_exclusive = { focus = CAN_swastika_clubs }
-		x = 0
-		y = 1
-		relative_position_id = CAN_patriation
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				democratic > 0.6
-				factor = 2
-			}
-			modifier = {
-				democratic < 0.4
-				factor = 0.5
-			}
-		}
-
-		available = {
-			is_subject = no
-			NOT = {
-				has_war_with = USA
-				is_justifying_wargoal_against = USA
-				has_wargoal_against = USA
-				has_war_together_with = ENG
-			}
-			USA = { has_government = ROOT }			
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			ENG = { remove_from_faction = ROOT }
-			USA = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = CAN_permanent_joint_defense_board
-				}
-			}
-			add_opinion_modifier = {
-				target = USA
-				modifier = CAN_permanent_joint_defense_board
-			}
-			give_guarantee = USA
-		}
-	}
-
-	focus = {
-		id = CAN_north_american_alliance
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = CAN_permanent_joint_defense_board }
-		x = 0
-		y = 1
-		relative_position_id = CAN_permanent_joint_defense_board
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			set_rule = { can_create_factions = yes }
-			USA = {
-				country_event = { id = tfv_canada.1 }
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_habakkuk_carrier
-		icon = GFX_goal_generic_navy_carrier
-		prerequisite = { focus = CAN_north_american_alliance }
-		x = -1
-		y = 2
-		relative_position_id = CAN_permanent_joint_defense_board
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = CAN_habakkuk_carrier
-				bonus = 0.5
-				uses = 2
-				category = cv_tech
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_refuge_for_scientists
-		icon = GFX_goal_tfv_generic_tech_sharing
-		prerequisite = { focus = CAN_north_american_alliance }
-		x = 1
-		y = 2
-		relative_position_id = CAN_permanent_joint_defense_board
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 35
-		}
-
-		available = {
-			is_in_faction_with = USA
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		USA = {
-			add_to_tech_sharing_group = us_research
-		}
-		add_to_tech_sharing_group = us_research
-		}
-	}
-
-
-	############################
-	#### GO FASCIST SECTION ####
-	############################
-
-	focus = {
-		id = CAN_swastika_clubs
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = CAN_patriation }
-		mutually_exclusive = { focus = CAN_burn_the_royal_portraits }
-		mutually_exclusive = { focus = CAN_permanent_joint_defense_board }
-		x = 4
-		y = 1
-		relative_position_id = CAN_patriation
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				fascism > 0.25
-				factor = 2
-			}
-			modifier = {
-				fascism > 0.35
-				factor = 4
-			}
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_autonomy_ratio = {
-				value = 0.1
-				localization = CAN_swastika_clubs
-			}
-			add_ideas = CAN_swastika_clubs
-		}
-	}
-
-	focus = {
-		id = CAN_support_the_blue_shirts
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = CAN_swastika_clubs }
-		x = 0
-		y = 1
-		relative_position_id = CAN_swastika_clubs
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-			is_subject = no
-			has_government = fascism
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = CAN_swastika_clubs
-				add_idea = CAN_swastika_clubs_2
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_join_germany
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = CAN_support_the_blue_shirts }
-		mutually_exclusive = { focus = CAN_support_a_synarchist_baja }
-		x = -1
-		y = 2
-		relative_position_id = CAN_swastika_clubs
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				GER = { surrender_progress > 0.5 }
-				factor = 0 #nopenopenopenope
-			}
-		}
-
-		available = {
-			has_government = fascism
-			GER = { has_government = fascism }
-
-			NOT = {
-				has_war_with = GER
-				is_justifying_wargoal_against = GER
-				has_wargoal_against = GER
-			}
-		}
-		
-		bypass = {
-			is_in_faction_with = GER
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			GER = { 
-				country_event = { id = tfv_canada.20 }
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_support_a_synarchist_baja
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = CAN_support_the_blue_shirts }
-		mutually_exclusive = { focus = CAN_join_germany }
-		x = 1
-		y = 2
-		relative_position_id = CAN_swastika_clubs
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				add_idea = CAN_swastika_clubs_skewer
-				remove_idea = CAN_swastika_clubs_2
-			}
-			MEX = {
-				add_ideas = synarchist_support_surge
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_pinion_the_eagle
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = CAN_join_germany }
-		x = -1
-		y = 3
-		relative_position_id = CAN_swastika_clubs
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
-						controller = { NOT = { is_in_faction_with = CAN } }
-					}
-				}
-				add_building_construction = {
-					type = bunker
-					province = {
-						all_provinces = yes
-						limit_to_border = yes
-					}
-					level = 3
-					instant_build = yes
-				}
-			}
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					is_coastal = yes
-					is_in_home_area = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					province = {
-						all_provinces = yes
-						limit_to_coastal = yes
-					}
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_skewer_the_eagle
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = CAN_support_a_synarchist_baja }
-		x = 1
-		y = 3
-		relative_position_id = CAN_swastika_clubs
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-			has_government = fascism
-			any_country = {
-				original_tag = MEX
-				has_government = fascism
-				NOT = { has_war_with = ROOT }
-			}
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			set_rule = { can_create_factions = yes }
-			random_country = {
-				limit = {
-					original_tag = MEX
-					has_government = fascism
-				}
-				country_event = { id = tfv_canada.40 }
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_defence_scheme_no_1
-		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = { focus = CAN_skewer_the_eagle focus = CAN_pinion_the_eagle }
-		x = -1
-		y = 4
-		relative_position_id = CAN_swastika_clubs
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-			is_subject = no
-			USA = {
-				NOT = { is_subject_of = CAN }
-			}
-			NOT = { is_in_faction_with = USA }
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			set_rule = { can_create_factions = yes }
-			create_wargoal = {
-				type = annex_everything
-				target = USA
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_demand_labrador_and_newfoundland
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = CAN_skewer_the_eagle focus = CAN_pinion_the_eagle }
-		x = 1
-		y = 4
-		relative_position_id = CAN_swastika_clubs
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			ENG = {
-				country_event = { id = tfv_canada.60 }
-			}
-		}
-	}
-
-
-	############################
-	### GO COMMUNIST SECTION ###
-	############################
-
-	focus = {
-		id = CAN_burn_the_royal_portraits
-		icon = GFX_goal_tfv_burn_the_royal_portraits #GFX_goal_support_communism
-		prerequisite = { focus = CAN_patriation }
-		mutually_exclusive = { focus = CAN_swastika_clubs }
-		mutually_exclusive = { focus = CAN_permanent_joint_defense_board }
-		x = 8
-		y = 1
-		relative_position_id = CAN_patriation
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				communism > 0.2
-				factor = 2
-			}
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_autonomy_ratio = {
-				value = 0.1
-				localization = CAN_burn_the_royal_portraits
-			}
-			add_ideas = CAN_communist_ideals
-		}
-	}
-
-	focus = {
-		id = CAN_communist_labor_total_war_committee
-		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = CAN_burn_the_royal_portraits }
-		x = 0
-		y = 1
-		relative_position_id = CAN_burn_the_royal_portraits
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {			
-			is_subject = no
-			has_government = communism
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = CAN_communist_ideals
-				add_idea = CAN_communist_ideals_2
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_defence_scheme_no_2
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = CAN_communist_labor_total_war_committee }
-		mutually_exclusive = { focus = CAN_supply_the_red_army }
-		x = -1
-		y = 2
-		relative_position_id = CAN_burn_the_royal_portraits
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-			OR = {
-				USA = { has_war_with = JAP }
-				USA = { has_wargoal_against = JAP }
-				JAP = { has_wargoal_against = USA }
-				USA = { is_justifying_wargoal_against = JAP }
-				JAP = { is_justifying_wargoal_against = USA }
-			}
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
-						controller = { NOT = { is_in_faction_with = CAN } }
-					}
-				}
-				add_building_construction = {
-					type = bunker
-					province = {
-						all_provinces = yes
-						limit_to_border = yes
-					}
-					level = 3
-					instant_build = yes
-				}
-			}
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					is_coastal = yes
-					is_in_home_area = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					province = {
-						all_provinces = yes
-						limit_to_coastal = yes
-					}
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_supply_the_red_army
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = CAN_communist_labor_total_war_committee }
-		mutually_exclusive = { focus = CAN_defence_scheme_no_2 }
-		x = 1
-		y = 2
-		relative_position_id = CAN_burn_the_royal_portraits
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				SOV = { 
-					has_war = yes 
-					has_government = communism
-				}
-				factor = 3
-			}
-			modifier = {
-				SOV = { 
-					has_government = communism
-					surrender_progress > 0.3
-					 }
-				factor = 10
-			}
-		}
-
-		available = {
-			NOT = {
-				has_war_with = SOV
-				is_justifying_wargoal_against = SOV
-				has_wargoal_against = SOV
-			}
-			country_exists = SOV
-			has_equipment = {
-				infantry_equipment > 499
-			}
-		}
-
-		bypass = {
-
-		}
-
-		select_effect = {
-			send_equipment = {
-				target = SOV
-				type = infantry_equipment
-				amount = 500
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			SOV = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = CAN_supply_the_red_army
-				}
-			}
-			add_opinion_modifier = {
-				target = SOV
-				modifier = CAN_supply_the_red_army
-			}
-			every_country = {
-				limit = {
-					NOT = { has_government = communism }
-				}
-				add_opinion_modifier = {
-					target = PREV
-					modifier = CAN_supply_the_red_army_trade
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_canada_united
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = CAN_defence_scheme_no_2 }
-		x = -1
-		y = 3
-		relative_position_id = CAN_burn_the_royal_portraits
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			set_rule = { can_create_factions = yes }
-		}
-	}
-
-	focus = {
-		id = CAN_join_comintern
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = CAN_supply_the_red_army }
-		x = 1
-		y = 3
-		relative_position_id = CAN_burn_the_royal_portraits
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {			
-			has_government = communism
-			SOV = { has_government = communism }
-
-			NOT = {
-				has_war_with = SOV
-				is_justifying_wargoal_against = SOV
-				has_wargoal_against = SOV
-			}
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			SOV = { 
-				country_event = { id = tfv_canada.10 }
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_support_the_world_revolution
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = CAN_canada_united focus = CAN_join_comintern }
-		x = 0
-		y = 4
-		relative_position_id = CAN_burn_the_royal_portraits
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = CAN_communist_ideals_2
-				add_idea = CAN_communist_ideals_3
-			}
-		}
-	}
-
-
 	############################
 	####### AIR SECTION ########
 	############################
@@ -3852,7 +2257,7 @@ focus_tree = {
 	focus = {
 		id = CAN_rcaf_station_borden
 		icon = GFX_goal_generic_build_airforce
-		x = 35
+		x = 20
 		y = 0
 
 		cost = 10
@@ -3864,7 +2269,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3876,7 +2281,7 @@ focus_tree = {
 
 		complete_tooltip = {
 			air_experience = 25
-			random_state = {				
+			random_state = {
 				limit = {
 					has_state_flag = CAN_rcaf_station_borden_AB
 				}
@@ -3923,9 +2328,9 @@ focus_tree = {
 		id = CAN_we_have_the_hurricane
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = CAN_rcaf_station_borden }
-		x = -1
+		x = 19
 		y = 1
-		relative_position_id = CAN_rcaf_station_borden
+
 
 		cost = 10
 
@@ -3936,7 +2341,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3957,7 +2362,6 @@ focus_tree = {
 				technology = early_fighter
 				technology = fighter1
 				technology = fighter2
-				technology = fighter3
 			}
 		}
 	}
@@ -3966,9 +2370,9 @@ focus_tree = {
 		id = CAN_the_pacific_coast_air_defence_radar_system
 		icon = GFX_goal_generic_radar
 		prerequisite = { focus = CAN_rcaf_station_borden }
-		x = 1
+		x = 21
 		y = 1
-		relative_position_id = CAN_rcaf_station_borden
+
 
 		cost = 10
 
@@ -3979,7 +2383,7 @@ focus_tree = {
 		available = {
 			has_tech = radio
 		}
-		
+
 		bypass = {
 
 		}
@@ -4160,9 +2564,9 @@ focus_tree = {
 		id = CAN_commonwealth_air_training_plan
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = CAN_the_pacific_coast_air_defence_radar_system focus = CAN_we_have_the_hurricane }
-		x = 0
+		x = 20
 		y = 2
-		relative_position_id = CAN_rcaf_station_borden
+
 
 		cost = 10
 
@@ -4173,7 +2577,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -4231,9 +2635,9 @@ focus_tree = {
 		id = CAN_fund_fairchilds_development
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = CAN_commonwealth_air_training_plan }
-		x = -1
+		x = 19
 		y = 3
-		relative_position_id = CAN_rcaf_station_borden
+
 
 		cost = 10
 
@@ -4248,7 +2652,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -4266,8 +2670,10 @@ focus_tree = {
 				name = CAN_fund_fairchilds_development
 				bonus = 0.5
 				uses = 1
-				category = tactical_bomber
-				category = cas_bomber
+				technology = tactical_bomber1
+				technology = tactical_bomber2
+				technology = CAS1
+				technology = CAS2
 			}
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = CAN_fairchild_aircraft_ltd
@@ -4278,9 +2684,9 @@ focus_tree = {
 		id = CAN_cookie_carriers
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = CAN_commonwealth_air_training_plan }
-		x = 1
+		x = 21
 		y = 3
-		relative_position_id = CAN_rcaf_station_borden
+
 
 		cost = 10
 
@@ -4295,7 +2701,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -4325,9 +2731,9 @@ focus_tree = {
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = CAN_cookie_carriers }
 		prerequisite = { focus = CAN_fund_fairchilds_development }
-		x = 0
+		x = 20
 		y = 4
-		relative_position_id = CAN_rcaf_station_borden
+
 
 		cost = 10
 
@@ -4338,7 +2744,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -4370,10 +2776,10 @@ focus_tree = {
 	focus = {
 		id = CAN_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 39
+		x = 24
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -4382,7 +2788,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -4433,11 +2839,11 @@ focus_tree = {
 		id = CAN_destroyer_effort
 		icon = GFX_goal_generic_navy_anti_submarine
 		prerequisite = { focus = CAN_halifax_shipyards }
-		x = 0
+		x = 24
 		y = 1
-		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -4446,7 +2852,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -4474,11 +2880,11 @@ focus_tree = {
 		id = CAN_light_cruiser_effort
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = CAN_destroyer_effort }
-		x = -1
+		x = 23
 		y = 2
-		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -4487,7 +2893,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -4515,11 +2921,11 @@ focus_tree = {
 		id = CAN_heavy_cruiser_effort
 		icon = GFX_goal_generic_occupy_states_coastal
 		prerequisite = { focus = CAN_destroyer_effort }
-		x = 1
+		x = 25
 		y = 2
-		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -4528,7 +2934,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -4552,16 +2958,16 @@ focus_tree = {
 		}
 	}
 
-	focus = {	
+	focus = {
 		id = CAN_escort_fleet
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = CAN_light_cruiser_effort }
 		mutually_exclusive = { focus = CAN_fleet_in_being }
-		x = -1
+		x = 23
 		y = 3
-		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -4574,7 +2980,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -4603,11 +3009,10 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = CAN_light_cruiser_effort }
 		mutually_exclusive = { focus = CAN_escort_fleet }
-		x = 1
+		x = 25
 		y = 3
-		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -4616,7 +3021,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -4636,7 +3041,7 @@ focus_tree = {
 				bonus = 0.5
 				uses = 2
 				category = cat_fleet_in_being
-			}			
+			}
 		}
 	}
 
@@ -4644,11 +3049,11 @@ focus_tree = {
 		id = CAN_degauss_ship_hulls
 		icon = GFX_goal_generic_navy_anti_submarine
 		prerequisite = { focus = CAN_escort_fleet focus = CAN_fleet_in_being }
-		x = -1
+		x = 23
 		y = 4
-		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -4657,7 +3062,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -4679,11 +3084,11 @@ focus_tree = {
 		id = CAN_trade_fleet
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = CAN_escort_fleet focus = CAN_fleet_in_being }
-		x = 1
+		x = 25
 		y = 4
-		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -4692,7 +3097,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -4706,7 +3111,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = CAN_trade_fleet			
+			add_ideas = CAN_trade_fleet
 		}
 	}
 
@@ -4714,11 +3119,9 @@ focus_tree = {
 		id = CAN_united_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = CAN_trade_fleet focus = CAN_degauss_ship_hulls }
-		x = 0
+		x = 24
 		y = 5
-		relative_position_id = CAN_halifax_shipyards
-
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -4727,7 +3130,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -4773,4 +3176,4 @@ focus_tree = {
 		}
 	}
 
-}		
+}

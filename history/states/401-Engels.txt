@@ -7,14 +7,15 @@ state={
 	state_category = rural
 	
 	resources={
-		steel=24 # was: 40
-		tungsten=16 # was: 34
+		steel=40
+		tungsten=34
 	}
 
 	history={
 		owner = SOV
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 1
 		}
 		add_core_of = SOV
 	}

@@ -21,8 +21,7 @@ ai_historical_focus_list_ITA = {
 		ITA_escort_effort 
 		ITA_submarine_effort 
 		ITA_italian_highways 
-		ITA_carrier_effort 
-		ITA_romania_friend  
+		ITA_carrier_effort  
 		ITA_bomber_effort 
 		ITA_greece_war_goal  
 		ITA_german_rd_treaty 
@@ -31,8 +30,7 @@ ai_historical_focus_list_ITA = {
 		ITA_atlantic_fleet 
 		ITA_marines_and_landing_craft 
 		ITA_air_innovation_2 
-		ITA_armored_effort 
-		ITA_claims_on_france 
+		ITA_armored_effort  
 		ITA_sea_wolves 
 		ITA_secret_weapons 
 		ITA_jet_engine_effort 
@@ -138,6 +136,7 @@ ai_focus_aviation_ITA = {
 		medium_air = 4.0
 		tactical_bomber = 5.0
 		heavy_air = 1.5
+		strategic_bomber = 1.0
 		air_equipment = 5.0
 		para_tech = 10.0
 	}

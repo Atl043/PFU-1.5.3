@@ -5,12 +5,13 @@ state={
 	manpower = 579100
 	
 	state_category = pastoral
+				resources={
+		rubber=8
+	}
 
 	history={
-		owner = INS
-		add_core_of = INS
+		owner = HOL
 		buildings = {
-			infrastructure = 3
 			1574 = {
 				naval_base = 1
 			}

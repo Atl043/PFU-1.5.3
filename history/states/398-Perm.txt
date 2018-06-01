@@ -3,16 +3,17 @@ state={
 	id=398
 	name="STATE_398"
 	manpower = 2135879
-	state_category = rural
+	state_category = city
 	resources={
-		aluminium=6 # was: 10
+		aluminium=10
 	}
 
 	history={
 		owner = SOV
 		buildings = {
 			infrastructure = 6
-			arms_factory = 1
+			arms_factory = 5
+			industrial_complex = 1
 
 		}
 		victory_points = {

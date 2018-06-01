@@ -200,7 +200,7 @@ FRA_area_priority = {
 	ai_strategy = {
 		type = area_priority
 		id = asia
-		value = 75
+		value = 20
 	}
 	
 	ai_strategy = {

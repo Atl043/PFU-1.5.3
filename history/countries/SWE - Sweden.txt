@@ -6,10 +6,12 @@ set_research_slots = 3
 
 add_ideas = {
 	en_svensk_tiger
-	neutrality_idea
+	#neutrality_idea
+	neutrality_idea_sweden
+	kungen_gustaf_v
+	
 }
-set_stability = 0.9
-set_war_support = 0.1
+
 
 set_technology = {
 	infantry_weapons = 1
@@ -31,6 +33,7 @@ set_technology = {
 	early_light_cruiser = 1
 	early_heavy_cruiser = 1
 	transport = 1
+	motorised_infantry = 1
 }
 
 1939.1.1 = {
@@ -38,15 +41,16 @@ set_technology = {
 	add_political_power = 1198
 	
 	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
+	
+	complete_national_focus = SWE_planned_expansion
+	complete_national_focus = SWE_support_the_industry
+	complete_national_focus = SWE_construction_effort_I
+	complete_national_focus = SWE_southern_infrastructure
+	complete_national_focus = SWE_naval_effort
+	complete_national_focus = SWE_saltsjobad
+	complete_national_focus = SWE_forsvarsbeslutet
+	complete_national_focus = SWE_production_effort_I
+	
 	
 	oob = "SWE_1939"
 	set_technology = {
@@ -60,9 +64,9 @@ set_technology = {
 		infantry_weapons2 = 1
 		support_weapons = 1
 		basic_submarine = 1
+		support_weapons2 = 1
 
 		#doctrines
-		air_superiority = 1
 		grand_battle_plan = 1
 		trench_warfare = 1
 		fleet_in_being = 1
@@ -82,7 +86,7 @@ set_technology = {
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
 		oil_processing = 1
-		improved_oil_processing = 1
+		rubber_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -146,8 +150,8 @@ set_politics = {
 	}
 }
 
-set_convoys = 25
-set_stability = 0.9
+set_convoys = 50
+set_stability = 0.75
 
 
 
@@ -202,22 +206,22 @@ create_corps_commander = {
 	traits = { commando }
 	skill = 3
 
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Erik af Edholm"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	traits = {  hill_fighter }
+	skill = 2
+
+}
+
+create_field_marshal = {
+	name = "Ernst Linder"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = { defensive_doctrine old_guard }
 	skill = 4
 
-	attack_skill = 4
-	defense_skill = 1
-	planning_skill = 4
-	logistics_skill = 4
 }
 
 create_navy_leader = {
@@ -226,6 +230,22 @@ create_navy_leader = {
 	traits = { blockade_runner }
 	skill = 4
 }
+
+create_navy_leader = {
+	name = "Karl Peyron"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+	traits = { superior_tactician }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Gustaf Eriksson"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+	traits = { ironside }
+	skill = 3
+}
+
+
 
 ### Ship Variants ###
 

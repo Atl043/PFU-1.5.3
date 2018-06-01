@@ -31,15 +31,15 @@ equipments = {
 		armor_value = 145
 
 		#Offensive Abilities
-		soft_attack = 38
+		soft_attack = 30
 		hard_attack = 45
 		ap_attack = 146
 		air_attack = 0
 
 		#Space taken in convoy
-		lend_lease_cost = 15
+		lend_lease_cost = 8
 		
-		build_cost_ic = 100
+		build_cost_ic = 120
 		resources = {
 			oil = 2
 			steel = 3
@@ -90,12 +90,12 @@ equipments = {
 		armor_value = 100
 
 		#Offensive Abilities
-		soft_attack = 85
+		soft_attack = 122
 		hard_attack = 3
 		ap_attack = 9
 		air_attack = 0
 		
-		build_cost_ic = 100
+		build_cost_ic = 120
 		resources = {
 			oil = 2
 			steel = 3
@@ -154,7 +154,7 @@ equipments = {
 		ap_attack = 170
 		air_attack = 0
 		
-		build_cost_ic = 100
+		build_cost_ic = 120
 		resources = {
 			oil = 2
 			steel = 3
@@ -213,7 +213,7 @@ equipments = {
 		ap_attack = 98
 		air_attack = 50
 		
-		build_cost_ic = 100
+		build_cost_ic = 120
 		resources = {
 			oil = 2
 			steel = 3

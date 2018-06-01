@@ -60,6 +60,10 @@ technologies = {
 		artillery_brigade = {
 			soft_attack = 0.1
 		}
+		### DD'S ADDITION
+		motorized_artillery_brigade = {
+			soft_attack = 0.1
+		}
 		
 		path = {
 			leads_to_tech = artillery1
@@ -80,7 +84,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 1
 
 			modifier = {
 				factor = 2
@@ -158,6 +162,10 @@ technologies = {
 		artillery_brigade = {
 			soft_attack = 0.1
 		}
+		### DD'S ADDITION
+		motorized_artillery_brigade = {
+			soft_attack = 0.1
+		}
 		
 		path = {
 			leads_to_tech = artillery3
@@ -208,6 +216,10 @@ technologies = {
 			soft_attack = 0.1
 		}
 		artillery_brigade = {
+			soft_attack = 0.1
+		}
+		### DD'S ADDITION
+		motorized_artillery_brigade = {
 			soft_attack = 0.1
 		}
 		
@@ -301,6 +313,10 @@ technologies = {
 			soft_attack = 0.1
 		}
 		artillery_brigade = {
+			soft_attack = 0.1
+		}
+		### DD'S ADDITION
+		motorized_artillery_brigade = {
 			soft_attack = 0.1
 		}
 		
@@ -544,19 +560,6 @@ technologies = {
 			factor = 1
 			
 			modifier = {
-				factor = 0.5
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
-			}
-			modifier = {
 				factor = 2
 				date > "1937.1.1"
 			}
@@ -585,8 +588,10 @@ technologies = {
 		anti_air_brigade = {
 			air_attack = 0.1
 		}
-
-		industry_air_damage_factor = -0.08
+		### DD'S ADDITION
+		motorized_anti_air_brigade = {
+			air_attack = 0.1
+		}
 		
 		path = {
 			leads_to_tech = antiair2
@@ -616,8 +621,6 @@ technologies = {
 		enable_equipments = {
 			anti_air_equipment_2
 		}
-
-		static_anti_air_damage_factor = 0.1
 
 		#anti_air = {
 		#	air_attack = 0.1
@@ -657,9 +660,11 @@ technologies = {
 		anti_air_brigade = {
 			air_attack = 0.1
 		}
+		### DD'S ADDITION
+		motorized_anti_air_brigade = {
+			air_attack = 0.1
+		}
 		
-		industry_air_damage_factor = -0.08
-
 		path = {
 			leads_to_tech = antiair4
 			research_cost_coeff = 1
@@ -691,8 +696,10 @@ technologies = {
 		anti_air_brigade = {
 			air_attack = 0.1
 		}
-
-		industry_air_damage_factor = -0.08
+		### DD'S ADDITION
+		motorized_anti_air_brigade = {
+			air_attack = 0.1
+		}
 		
 		path = {
 			leads_to_tech = antiair5
@@ -722,8 +729,6 @@ technologies = {
 		enable_equipments = {
 			anti_air_equipment_3
 		}
-
-		static_anti_air_damage_factor = 0.1
 		
 		#anti_air = {
 		#	air_attack = 0.1
@@ -774,19 +779,6 @@ technologies = {
 			factor = 1
 			
 			modifier = {
-				factor = 0.2
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
-			}
-			modifier = {
 				factor = 2
 				date > "1937.1.1"
 			}
@@ -799,17 +791,6 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "1939.1.1"
-			}
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 30
-						}
-					}
-				}
 			}
 		}
 		
@@ -826,6 +807,11 @@ technologies = {
 			ap_attack = 0.2
 		}
 		anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.2
+		}
+		### DD'S ADDITION
+		motorized_anti_tank_brigade = {
 			hard_attack = 0.1
 			ap_attack = 0.2
 		}
@@ -846,17 +832,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 30
-						}
-					}
-				}
-			}
+			
 			modifier = {
 				factor = 2
 				date > "1939.1.6"
@@ -920,17 +896,6 @@ technologies = {
 				factor = 5
 				date > "1940.1.6"
 			}
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 32
-						}
-					}
-				}
-			}
 		}
 		
 		categories = {
@@ -946,6 +911,11 @@ technologies = {
 			ap_attack = 0.1
 		}
 		anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		### DD'S ADDITION
+		motorized_anti_tank_brigade = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
@@ -981,17 +951,6 @@ technologies = {
 				factor = 5
 				date > "1943.1.1"
 			}
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 32
-						}
-					}
-				}
-			}
 		}
 		
 		categories = {
@@ -1007,6 +966,11 @@ technologies = {
 			ap_attack = 0.1
 		}
 		anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		### DD'S ADDITION
+		motorized_anti_tank_brigade = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
@@ -1036,17 +1000,6 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "1943.1.1"
-			}
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 35
-						}
-					}
-				}
 			}
 		}
 		
@@ -1096,17 +1049,6 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "1943.1.6"
-			}
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 35
-						}
-					}
-				}
 			}
 		}
 		

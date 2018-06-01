@@ -4,8 +4,10 @@ state={
 	name="STATE_44"
 	manpower = 1003000
 	resources={
-		aluminium=2 # was: 3
-		chromium=2 # was: 3
+		aluminium=4
+		chromium=8
+		steel=3
+		oil=2
 	}
 	
 	state_category = town
@@ -15,13 +17,18 @@ state={
 		victory_points = {
 			9914 5 
 		}
+
+		#VLORE/VALONA
+		victory_points = {
+			11767 1 
+		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 2 
 			air_base = 3
 			11767 = {
-				naval_base = 4
+				naval_base = 3
 			}
 		}
 		add_core_of = ALB
@@ -35,6 +42,6 @@ state={
 	}
 
 	provinces={
-		914 3448 3884 3896 6900 9780 9875 9914 11762 11767 
+		914 3448 3884 3896 6900 9780 9875 9914 11762 11767
 	}
 }

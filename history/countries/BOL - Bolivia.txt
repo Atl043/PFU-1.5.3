@@ -12,6 +12,10 @@ set_technology = {
 }
 set_country_flag = monroe_doctrine
 
+add_ideas = {
+latin_neutrality
+}
+
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -57,7 +61,7 @@ set_country_flag = monroe_doctrine
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
 		oil_processing = 1
-		improved_oil_processing = 1
+		rubber_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1

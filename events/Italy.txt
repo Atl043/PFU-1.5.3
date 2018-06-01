@@ -61,22 +61,12 @@ country_event = {
 			modifier = {
 				factor = 0				
 				any_other_country = {
-					OR = {
-						is_major = yes
-						tag = YUG
-					}
+					is_major = yes
 					NOT = { tag = ITA }
 					OR = {
 						has_guaranteed = ALB
 						is_in_faction_with = ALB
 					}
-				}
-			}
-			modifier = {
-				factor = 0.5
-				OR = {
-					has_government = communism
-					has_government = fascism #glorious Albania will never yield!
 				}
 			}
 		}
@@ -223,15 +213,9 @@ country_event = {
 		# REVISIT Balance research bonus
 		add_tech_bonus = {
 			name = synth_bonus
-			bonus = 0.5
+			bonus = 0.75
 			uses = 1
 			category = synth_resources
-		}
-		add_tech_bonus = {
-			name = armor_bonus
-			bonus = 0.5
-			uses = 2
-			category = armor
 		}
 		ITA = {
 			add_opinion_modifier = { target = GER modifier = ger_ita_tech_treaty }
@@ -279,13 +263,6 @@ country_event = {
 			add_ai_strategy = {
 				type = alliance
 				id = "FRA"
-				value = 200
-			}
-		}
-		FRA = {
-			add_ai_strategy = {
-				type = alliance
-				id = "ITA"
 				value = 200
 			}
 		}
@@ -419,7 +396,6 @@ country_event = {
 			}			
 		}
 		GER = { country_event = { id = germany.96 hours = 6 } }
-		YUG = { country_event = { id = yugoslavia.6 hours = 6 } }
 	}	
 	option = {
 		ai_chance = {

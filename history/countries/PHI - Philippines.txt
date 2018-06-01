@@ -2,15 +2,26 @@
 
 oob = "PHI_1936"
 
+set_research_slots = 3
+
+set_stability = 0.40
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	gw_artillery = 1
 	early_fighter = 1
 	early_bomber = 1
+        tech_recon = 1
+        gwtank = 1
+        transport = 1
+        early_destroyer = 1
+	early_light_cruiser = 1
+        early_battleship = 1
+	early_battlecruiser = 1
 }
 
 set_convoys = 5
@@ -18,7 +29,7 @@ set_convoys = 5
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -29,7 +40,7 @@ set_convoys = 5
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "PHI_1939"
 	set_technology = {
 		gwtank = 1
@@ -70,20 +81,20 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 82
 		}
 
 		fascism = {
 			popularity = 9
 		}
-		
+
 		communism = {
 			popularity = 9
 			#banned = no #default is no
 		}
 	}
-	
+
 	ruling_party = democratic
 	last_election = "1935.9.15"
 	election_frequency = 72
@@ -93,7 +104,7 @@ set_politics = {
 create_country_leader = {
 	name = "Manuel Luis Quezón"
 	desc = "POLITICS_MANUEL_LUIS_QUEZON_DESC"
-	picture = "gfx/leaders/PHI/Portrait_Philippines_Manuel_Luis_Quezon.dds"
+	picture = "Portrait_Philippines_Manuel_Quezon.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -116,23 +127,54 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			democratic = {
 				popularity = 82
 			}
 
 			fascism = {
 				popularity = 9
 			}
-			
+
 			communism = {
 				popularity = 9
 				#banned = no #default is no
 			}
 		}
-		
+
 		ruling_party = democratic
 		last_election = "1935.9.15"
 		election_frequency = 72
 		elections_allowed = yes
 	}
+}
+
+add_ideas = {
+	PHI_unstable_state
+	PHI_ideological_rebels
+}
+
+create_corps_commander = {
+	name = "Mateo Capinpin"
+	        picture = "Portrait_Philippines_Land_General_3.dds"
+	traits = { jungle_rat }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Emilio Aguinaldo"
+	        picture = "Portrait_Philippines_Land_General_2.dds"
+	traits = { trait_engineer }
+	skill = 1
+
+}
+
+create_navy_leader = {
+	name = "Enrique L. Jurado"
+		picture = "Portrait_Philippines_Navy_Admiral.dds"
+	traits = { blockade_runner }
+	skill = 1
 }

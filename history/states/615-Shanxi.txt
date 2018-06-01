@@ -21,8 +21,9 @@ state=
 			industrial_complex = 2
 		}
 
-		1938.10.25 = {
-			#remove_core_of = SHX
+		1938.10.25 = {		
+			remove_core_of = SHX
+			add_core_of = PRC
 			owner = PRC
 			controller = JAP
 			PRC = {

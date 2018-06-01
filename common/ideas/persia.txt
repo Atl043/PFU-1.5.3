@@ -2,6 +2,32 @@ ideas = {
 	# MILITARY
 
 
+		country = {
+			iran_neutrality = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+
+			modifier = {
+            enemy_justify_war_goal_time = 5.0
+			}
+		}
+		
+		
+	}
+	
+	
+	
+	
 	political_advisor = {
 
 		PER_ali_zohayli = {

@@ -1,9 +1,40 @@
+ai_historical_focus_list_FRA = {
+	ai_national_focuses = {
+		FRA_metropolitan_france
+		FRA_industrial_expansion
+		FRA_military_factories
+		FRA_initiate_government_reform
+		FRA_support_status_quo
+		FRA_go_with_britain
+		FRA_strengthen_government_support
+		FRA_defensive_strategems
+		FRA_algerie_france
+		FRA_colonial_industry
+		FRA_colonial_military_factories
+		FRA_extra_research_slot
+		FRA_defensive_focus
+		FRA_infantry_focus
+		FRA_fortification_focus
+		FRA_alpine_forts
+		FRA_extend_the_maginot_line	
+		FRA_artillery_focus
+		FRA_heavy_armor_focus
+		FRA_army_reform
+		FRA_france_libre
+		FRA_sway_west_africa
+		FRA_sway_syria
+		FRA_organize_the_resistance
+	}
+}
+
+##pfu 100% done
+
 ai_focus_defense_FRA = {
 	research = {
 		defensive = 5.0	
 		radar_tech = 1.0
 		construction_tech = 2.0
-		artillery = 2.0
+		artillery = 5.0
 	}
 }
 
@@ -29,14 +60,14 @@ ai_focus_military_equipment_FRA = {
 	research = {
 		infantry_weapons = 50.0
 		infantry_tech = 15.0
-		artillery = 8.0
-		support_tech = 6.5
+		artillery = 15.0
+		support_tech = 10.0
 	}
 }
 
 ai_focus_military_advancements_FRA = {
 	research = {
-		armor = 15.0
+		armor = 10.0
 		jet_technology = 5.0
 		land_doctrine = 100.0
 		rocketry = 7.5
@@ -93,6 +124,7 @@ ai_focus_aviation_FRA = {
 		medium_air = 4.0
 		tactical_bomber = 5.0
 		heavy_air = 1.5
+		strategic_bomber = 1.0
 		air_equipment = 5.0
 		para_tech = 10
 	}

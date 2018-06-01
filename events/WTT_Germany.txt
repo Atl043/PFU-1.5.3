@@ -8,7 +8,7 @@ country_event = {
 	picture = GFX_report_event_ger_civil_war
 
 	is_triggered_only = yes
-	
+
 	#civil war starts
 	option = {
 		name = wtt_germany.1.a
@@ -33,7 +33,7 @@ country_event = {
 				load_oob = "GER_German_Civil_War_fascist"
 			}
 			hidden_effect = { news_event = { id = wtt_news.1 hours = 6 } }
-			
+
 			set_politics = {
 				ruling_party = neutrality
 				elections_allowed = no
@@ -53,7 +53,7 @@ country_event = {
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.1
-			}	
+			}
 			set_stability = 0.9
 			set_war_support = 0.8
 		}
@@ -66,7 +66,6 @@ country_event = {
 				has_government = fascism
 			}
 			set_cosmetic_tag = GER_civil_war
-			hidden_effect = { activate_mission = GER_mefo_bills_mission }
 		}
 		create_country_leader = {
 			name = "August von Mackensen"
@@ -75,7 +74,6 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
-				great_war_hero
 			}
 		}
 		hidden_effect = {
@@ -114,7 +112,7 @@ country_event = {
 	picture = GFX_report_event_spain_civil_war_volunteers_02
 
 	is_triggered_only = yes
-	
+
 	#accept
 	option = {
 		name = excellent
@@ -143,7 +141,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
-	
+
 	#accept
 	option = {
 		name = wtt_germany.3.a
@@ -210,7 +208,7 @@ country_event = {
 	picture = GFX_report_event_royal_parade
 
 	is_triggered_only = yes
-	
+
 	#accept
 	option = {
 		name = wtt_germany.4.a
@@ -222,7 +220,6 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
-				anti_democrat imperial_connections
 			}
 		}
 		hidden_effect = { news_event = { id = wtt_news.3 hours = 6 } }
@@ -237,7 +234,7 @@ country_event = {
 	picture = GFX_report_event_german_troops
 
 	is_triggered_only = yes
-	
+
 	#War!
 	option = {
 		ai_chance = {
@@ -265,7 +262,6 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
-				popular_figurehead2
 			}
 		}
 		custom_effect_tooltip = wtt_germany.5_tt
@@ -293,7 +289,6 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
-				anti_democrat imperial_connections
 			}
 		}
 		hidden_effect = { news_event = { id = wtt_news.4 hours = 6 } }
@@ -313,13 +308,13 @@ country_event = {
 		name = wtt_germany.7.a
 		effect_tooltip = {
 			if = {
-				limit = { 
+				limit = {
 					tag = HUN
 				}
 				GER = { puppet = HUN }
 			}
 			if = {
-				limit = { 
+				limit = {
 					tag = ROM
 				}
 				GER = { puppet = ROM }
@@ -352,7 +347,6 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		add_ideas = GER_preparing_ITA_coup
 		GER = {
 			country_event = { id = wtt_germany.9 days = 1 random = 2 }
 		}
@@ -414,10 +408,6 @@ country_event = {
 		name = wtt_germany.11.a
 		set_politics = { ruling_party = neutrality elections_allowed = no }
 		add_popularity = { ideology = neutrality popularity = 0.1 }
-		swap_ideas = {
-			remove_idea = GER_preparing_ITA_coup
-			add_idea = GER_preparing_ITA_coup2
-		}
 		remove_ideas = victor_emmanuel
 		create_country_leader = {
 			name = "Victor Emmanuel III"
@@ -431,9 +421,9 @@ country_event = {
 		}
 		add_ai_strategy = {
 			type = alliance
-			id = "GER"			
+			id = "GER"
 			value = 200
-		}	
+		}
 		GER = {
 			add_to_faction = ITA
 			country_event = { id = wtt_germany.12 }
@@ -551,7 +541,7 @@ country_event = {
 		86 = { set_state_name = "Posen" }
 		set_province_name = { id = 6558 name = "Posen" }
 		add_ideas = anti_soviet_pact
-		POL = { 
+		POL = {
 			add_ideas = anti_soviet_pact
 			add_opinion_modifier = { target = GER modifier = danzig_for_guarantees }
 		}
@@ -619,9 +609,6 @@ country_event = {
 	# Oh dear
 	option = {
 		name = wtt_germany.17.a
-		effect_tooltip = {
-			add_ideas = GER_communist_refugees
-		}
 	}
 }
 
@@ -674,8 +661,6 @@ country_event = {
 		ai_chance = {
 			factor = 90
 		}
-		add_named_threat = { threat = 10 name = GER_soviet_military_exercises }
-		add_timed_idea = { idea = GER_soviet_military_exercises days = 365 }
 		army_experience = 50
 		add_political_power = 100
 		hidden_effect = { news_event = { id = wtt_news.9 hours = 6 } }
@@ -684,26 +669,6 @@ country_event = {
 	# Reduce tensions
 	option = {
 		name = wtt_germany.19.b
-		ai_chance = {
-			factor = 5
-		}
-		add_named_threat = { threat = -5 name = GER_soviet_smoothes_relationships }
-		add_political_power = -50
-		every_country = {
-			limit = {
-				has_idea = GER_the_great_red_menace
-			}
-			country_event = { id = wtt_germany.25 days = 1 random = 2 }
-			random_list = {
-				80 = {
-					# No effect
-				}
-				20 = {
-					remove_ideas = GER_the_great_red_menace
-				}
-			}
-		}
-		GER = { country_event = { id = wtt_germany.25 days = 1 random = 2 } }
 	}
 
 	# Do nothing
@@ -731,7 +696,6 @@ country_event = {
 			factor = 90
 		}
 		add_named_threat = { threat = 5 name = GER_soviet_reiterated_claims }
-		add_timed_idea = { idea = GER_soviet_protect_our_sphere days = 365 }
 		add_political_power = 100
 		add_state_claim = 722
 		add_state_claim = 147
@@ -912,7 +876,6 @@ country_event = {
 	# Oh dear
 	option = {
 		name = wtt_germany.24.a
-		effect_tooltip = { add_ideas = GER_the_great_red_menace }
 	}
 }
 
@@ -939,11 +902,10 @@ country_event = {
 	picture = GFX_report_event_generic_funeral
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = GER
 		has_government = neutrality
-		has_completed_focus = GER_revive_the_kaiserreich
 		date > 1939.1.1
 		has_country_leader = { ruling_only = yes name = "Wilhelm II" }
 	}
@@ -951,7 +913,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1460	# Died in 1941
 	}
-	
+
 	#ok I guess
 	option = {
 		name = wtt_germany.26.a
@@ -963,7 +925,6 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
-				popular_figurehead2
 			}
 		}
 	}
@@ -977,11 +938,10 @@ country_event = {
 	picture = GFX_report_event_generic_funeral
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = GER
 		has_government = neutrality
-		NOT = { has_completed_focus = GER_revive_the_kaiserreich }
 		date > 1940.1.1
 		has_country_leader = { ruling_only = yes name = "August von Mackensen" }
 	}
@@ -989,7 +949,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1825	# Died in 1945
 	}
-	
+
 	#nooooo sadface :(
 	option = {
 		name = wtt_germany.26.a
@@ -1002,7 +962,6 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
-				popular_figurehead2
 			}
 		}
 	}
@@ -1027,16 +986,16 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_german_troops
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # This means war!
 		name = germany.60.a
 		trigger = {
 			NOT = { GER = { has_country_flag = germany_war_return_kaiser } }
 		}
-		ai_chance = { 
-			factor = 1 
+		ai_chance = {
+			factor = 1
 			modifier = {
 				factor = 10
 				strength_ratio = {
@@ -1102,8 +1061,8 @@ country_event = {
 		trigger = {
 			GER = { has_country_flag = germany_war_return_kaiser }
 		}
-		ai_chance = { 
-			factor = 1 
+		ai_chance = {
+			factor = 1
 			modifier = {
 				factor = 10
 				strength_ratio = {
@@ -1170,8 +1129,8 @@ country_event = {
 
 	option = { # Diplomatic response
 		name = germany.60.b
-		ai_chance = { 
-			factor = 99 
+		ai_chance = {
+			factor = 99
 			modifier = {
 				has_global_flag = GER_has_started_war
 				factor = 0
@@ -1199,19 +1158,19 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_german_troops
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # War out of the question
 		name = germany.61.a
-		ai_chance = { 
-			factor = 90 
+		ai_chance = {
+			factor = 90
 			modifier = {
 				has_global_flag = GER_has_started_war
 				factor = 0
 			}
 		}
-		FRA = { 
+		FRA = {
 			country_event = { hours = 6 id = wtt_germany.31 }
 		}
 	}
@@ -1220,7 +1179,7 @@ country_event = {
 		trigger = {
 			NOT = { GER = { has_country_flag = germany_war_return_kaiser } }
 		}
-		ai_chance = { 
+		ai_chance = {
 			factor = 10
 			modifier = {
 				factor = 10
@@ -1228,7 +1187,7 @@ country_event = {
 					tag = GER
 					ratio > 0.7
 				}
-			} 
+			}
 			modifier = {
 				factor = 4
 				GER = { has_country_flag = germany_war_return_kaiser }
@@ -1265,7 +1224,7 @@ country_event = {
 				}
 			}
 		}
-		FRA = { 
+		FRA = {
 			country_event = { hours = 6 id = wtt_germany.32 }
 		}
 	}
@@ -1274,7 +1233,7 @@ country_event = {
 		trigger = {
 			GER = { has_country_flag = germany_war_return_kaiser }
 		}
-		ai_chance = { 
+		ai_chance = {
 			factor = 10
 			modifier = {
 				factor = 10
@@ -1282,7 +1241,7 @@ country_event = {
 					tag = GER
 					ratio > 0.7
 				}
-			} 
+			}
 			modifier = {
 				factor = 20
 				GER = { has_country_flag = germany_war_return_kaiser }
@@ -1319,7 +1278,7 @@ country_event = {
 				}
 			}
 		}
-		FRA = { 
+		FRA = {
 			country_event = { hours = 6 id = wtt_germany.32 }
 		}
 	}
@@ -1331,9 +1290,9 @@ country_event = {
 	title = wtt_germany.28.t
 	desc = wtt_germany.30.d
 	picture = GFX_report_event_german_troops
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = germany.62.a
 		add_opinion_modifier = { target = GER modifier = protest_action }
@@ -1349,13 +1308,13 @@ country_event = {
 	title = germany.63.t
 	desc = wtt_germany.31.d
 	picture = GFX_report_event_chamberlain_announce
-	
-	
+
+
 	is_triggered_only = yes
-	
+
 	option = { # Push Ahead
 		name = germany.63.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 60
 			modifier = {
 				factor = 3
@@ -1368,12 +1327,12 @@ country_event = {
 			modifier = {
 				factor = 0
 				has_idea = FRA_disjointed_government
-			}			
-		}		
+			}
+		}
 		GER = { country_event = wtt_germany.34 }
 		if = {
-			limit = { 
-				has_idea = FRA_disjointed_government 
+			limit = {
+				has_idea = FRA_disjointed_government
 				NOT = { has_government = communism }
 				}
 			custom_effect_tooltip = germany.60.a.tt
@@ -1385,8 +1344,8 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { 
-				has_idea = FRA_disjointed_government 
+			limit = {
+				has_idea = FRA_disjointed_government
 				has_government = communism
 				}
 			custom_effect_tooltip = germany.60.a.tt
@@ -1412,15 +1371,15 @@ country_event = {
 	title = germany.64.t
 	desc = wtt_germany.32.d
 	picture = GFX_report_event_british_inspect_troops
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = germany.64.a
 		GER = { country_event = wtt_germany.33 }
 		if = {
-			limit = { 
-				has_idea = FRA_disjointed_government 
+			limit = {
+				has_idea = FRA_disjointed_government
 				NOT = { has_government = communism }
 			}
 			custom_effect_tooltip = germany.60.a.tt
@@ -1432,8 +1391,8 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { 
-				has_idea = FRA_disjointed_government 
+			limit = {
+				has_idea = FRA_disjointed_government
 				has_government = communism
 			}
 			custom_effect_tooltip = germany.60.a.tt
@@ -1453,9 +1412,9 @@ country_event = {
 	title = germany.65.t
 	desc = wtt_germany.33.d
 	picture = GFX_report_event_british_artillery
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		ai_chance = {
 			factor = 1
@@ -1476,12 +1435,12 @@ country_event = {
 			declare_war_on = {
 				target = GER
 				type = take_state_focus
-				generator = { 42 51 } 
+				generator = { 42 51 }
 			}
 			country_event = wtt_germany.37
 			if = {
-				limit = { 
-					has_idea = FRA_disjointed_government 
+				limit = {
+					has_idea = FRA_disjointed_government
 					NOT = { has_government = communism }
 				}
 				start_civil_war = {
@@ -1490,8 +1449,8 @@ country_event = {
 				}
 			}
 			if = {
-				limit = { 
-					has_idea = FRA_disjointed_government 
+				limit = {
+					has_idea = FRA_disjointed_government
 					has_government = communism
 				}
 				start_civil_war = {
@@ -1535,15 +1494,11 @@ country_event = {
 				expire = "1965.1.1"
 				ideology = despotism
 				traits = {
-	
+
 				}
 			}
 		}
 		white_peace = HOL
-		add_timed_idea = {
-			idea = kaiser_challenge_met
-			days = 183
-		}
 	}
 }
 
@@ -1553,18 +1508,18 @@ country_event = {
 	title = germany.66.t
 	desc = wtt_germany.34.d
 	picture = GFX_report_event_degaulle_inspect_troops
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_germany.33.a
 		add_war_support = 0.1 #original German clay
-		ENG = { 
-			country_event = wtt_germany.36 
+		ENG = {
+			country_event = wtt_germany.36
 			if = {
 				limit = {
-					ENG = { 
-						is_in_faction_with = FRA 
+					ENG = {
+						is_in_faction_with = FRA
 						is_faction_leader = yes
 					}
 				}
@@ -1575,12 +1530,12 @@ country_event = {
 			declare_war_on = {
 				target = GER
 				type = take_state_focus
-				generator = { 42 51 } 
+				generator = { 42 51 }
 			}
 			country_event = wtt_germany.37
 			if = {
-				limit = { 
-					has_idea = FRA_disjointed_government 
+				limit = {
+					has_idea = FRA_disjointed_government
 					NOT = { has_government = communism }
 				}
 				start_civil_war = {
@@ -1589,8 +1544,8 @@ country_event = {
 				}
 			}
 			if = {
-				limit = { 
-					has_idea = FRA_disjointed_government 
+				limit = {
+					has_idea = FRA_disjointed_government
 					has_government = communism
 				}
 				start_civil_war = {
@@ -1622,7 +1577,7 @@ country_event = {
 				expire = "1965.1.1"
 				ideology = despotism
 				traits = {
-	
+
 				}
 			}
 		}
@@ -1639,9 +1594,9 @@ country_event = {
 	title = germany.67.t
 	desc = germany.67.d
 	picture = GFX_report_event_german_inspect_troops
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = germany.67.a
 		add_opinion_modifier = { target = GER modifier = protest_action }
@@ -1657,9 +1612,9 @@ country_event = {
 	title = germany.68.t
 	desc = germany.68.d
 	picture = GFX_report_event_french_liberation
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = germany.68.a
 	}
@@ -1671,9 +1626,9 @@ country_event = {
 	title = germany.92.t
 	desc = wtt_germany.35.d
 	picture = GFX_report_event_worried_french
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = germany.92.a
 	}
@@ -1689,9 +1644,9 @@ country_event = {
 	title = wtt_germany.38.t
 	desc = wtt_germany.38.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
-	
+
 	# Demand continued support of Von Falkenhausen in return
 	option = {
 		name = wtt_germany.38.a
@@ -1701,7 +1656,7 @@ country_event = {
 		trigger = {
 			event_target:WTT_current_china_leader = {
 				OR = {
-					has_idea = german_advisors 
+					has_idea = german_advisors
 					has_completed_focus = CHI_give_falkenhausen_citizenship
 				}
 			}
@@ -1748,9 +1703,9 @@ country_event = {
 	title = wtt_germany.39.t
 	desc = wtt_germany.39.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
-	
+
 	# Accept
 	option = {
 		name = wtt_germany.39.a
@@ -1774,9 +1729,9 @@ country_event = {
 	title = wtt_germany.40.t
 	desc = wtt_germany.40.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
-	
+
 	# Too bad
 	option = {
 		name = wtt_germany.40.a
@@ -1790,9 +1745,9 @@ country_event = {
 	title = wtt_germany.41.t
 	desc = wtt_germany.41.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
-	
+
 	# excellent
 	option = {
 		name = excellent
@@ -1806,16 +1761,16 @@ country_event = {
 	title = wtt_germany.42.t
 	desc = wtt_germany.42.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
-	
+
 	# Too bad
 	option = {
 		name = unfortunate
 	}
 }
 
-# Japan 
+# Japan
 
 # Germans demand return of Tsingtao
 country_event = {
@@ -1823,9 +1778,9 @@ country_event = {
 	title = wtt_germany.43.t
 	desc = wtt_germany.43.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
-	
+
 	# Demand Germans withdraw support of Von Falkenhausen to China in return
 	option = {
 		name = wtt_germany.43.a
@@ -1881,9 +1836,9 @@ country_event = {
 	title = wtt_germany.44.t
 	desc = wtt_germany.44.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
-	
+
 	# Accept
 	option = {
 		name = wtt_germany.39.a
@@ -1898,7 +1853,7 @@ country_event = {
 				show_ideas_tooltip = german_advisors
 			}
 		}
-		hidden_effect = { 
+		hidden_effect = {
 			every_country = {
 				limit = {
 					has_unit_leader = 602
@@ -1922,9 +1877,9 @@ country_event = {
 	title = wtt_germany.40.t
 	desc = wtt_germany.40.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
-	
+
 	# Too bad
 	option = {
 		name = wtt_germany.40.a
@@ -1938,9 +1893,9 @@ country_event = {
 	title = wtt_germany.41.t
 	desc = wtt_germany.46.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
-	
+
 	# excellent
 	option = {
 		name = excellent
@@ -1954,9 +1909,9 @@ country_event = {
 	title = wtt_germany.42.t
 	desc = wtt_germany.42.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
-	
+
 	# Too bad
 	option = {
 		name = unfortunate
@@ -1969,9 +1924,9 @@ country_event = {
 	title = wtt_germany.48.t
 	desc = wtt_germany.48.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
-	
+
 	# Too bad
 	option = {
 		name = excellent
@@ -1989,7 +1944,7 @@ state_event = {
 	title = wtt_germany.49.t
 	desc = wtt_germany.49.desc
 	picture = GFX_report_event_ger_civil_war
-	
+
 	is_triggered_only = yes
 
 	immediate = {
@@ -2047,7 +2002,7 @@ state_event = {
 			}
 		}
 	}
-	
+
 	# Hey! That's a Russian tactic, you bastards!
 	option = {
 		name = wtt_germany.49.a
@@ -2138,7 +2093,7 @@ country_event = {
 	picture = GFX_report_event_german_reichstag_bombed
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_germany.50.a
 		random_other_country = {
@@ -2167,7 +2122,6 @@ country_event = {
 							}
 						}
 						ARG = {
-							add_timed_idea = { idea = fascism_drift_ARG days = 1460 }
 							country_event = { id = wtt_germany.1004 days = 1095 random = 365 }
 						}
 					}
@@ -2226,7 +2180,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	# Yes, reinstate them.
 	option = {
 		name = wtt_germany.51.a
@@ -2329,7 +2283,7 @@ country_event = {
 	picture = GFX_report_event_german_troops
 
 	is_triggered_only = yes
-	
+
 	# Help them
 	option = {
 		name = wtt_germany.52.a
@@ -2342,7 +2296,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		
+
 	}
 }
 
@@ -2356,7 +2310,7 @@ country_event = {
 	trigger = {
 		original_tag = GER
 		OR = {
-			has_government = democratic 
+			has_government = democratic
 			has_government = neutrality
 		}
 		is_in_faction_with = AUS
@@ -2369,7 +2323,7 @@ country_event = {
 	mean_time_to_happen = { days = 60 }
 
 	fire_only_once = yes
-	
+
 	# Yes
 	option = {
 		name = wtt_germany.53.a
@@ -2385,7 +2339,7 @@ country_event = {
 		ai_chance = {
 			factor = 10
 		}
-		
+
 	}
 }
 
@@ -2397,7 +2351,7 @@ country_event = {
 	picture = GFX_report_event_generic_parliament
 
 	is_triggered_only = yes
-	
+
 	# Yes we will join them
 	option = {
 		name = wtt_germany.54.a
@@ -2410,7 +2364,7 @@ country_event = {
 
 	# No we will remain independent
 	option = {
-		name = wtt_germany.54.b	
+		name = wtt_germany.54.b
 	}
 }
 
@@ -2422,7 +2376,7 @@ country_event = {
 	picture = GFX_report_event_generic_peaceful_annexation
 
 	is_triggered_only = yes
-	
+
 	# Excellent
 	option = {
 		name = wtt_germany.55.a
@@ -2467,20 +2421,19 @@ country_event = {
 		has_full_control_of_state = 86
 		owns_state = 85
 		owns_state = 86
-		has_idea = GER_the_great_red_menace
 		surrender_progress > 0.3
 		has_defensive_war_with = SOV
 		NOT = { has_government = communism }
 		NOT = { has_government = fascism }
 		GER = { has_government = democratic }
 		NOT = { GER = { has_war_together_with = POL } }
-		NOT = { is_in_faction_with = GER }	
+		NOT = { is_in_faction_with = GER }
 	}
 
 	mean_time_to_happen = { days = 2 }
 
 	fire_only_once = yes
-	
+
 	# Yes
 	option = {
 		name = wtt_germany.56.a
@@ -2496,7 +2449,7 @@ country_event = {
 		ai_chance = {
 			factor = 10
 		}
-		
+
 	}
 }
 
@@ -2508,7 +2461,7 @@ country_event = {
 	picture = GFX_report_event_generic_parliament
 
 	is_triggered_only = yes
-	
+
 	# Yes we will accept that
 	option = {
 		name = wtt_germany.57.a
@@ -2542,7 +2495,7 @@ country_event = {
 	picture = GFX_report_event_gathering_protest
 
 	is_triggered_only = yes
-	
+
 	# Damn!
 	option = {
 		name = wtt_germany.58.a
@@ -2557,7 +2510,7 @@ country_event = {
 	picture = GFX_report_event_generic_peaceful_annexation
 
 	is_triggered_only = yes
-	
+
 	# Excellent
 	option = {
 		name = wtt_germany.59.a
@@ -2573,7 +2526,7 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	# When the Soviets have eaten all their friends and come for the Germans, who will be left to help them?
 	option = {
 		name = wtt_germany.60.a
@@ -2581,192 +2534,6 @@ country_event = {
 }
 
 #Removed event ID 61
-
-#Anti-smartass event to give penalty of mefo_bills_ended effect if MEFO bills have been removed through a (potentially insignificant) war.
-country_event = {
-	id = wtt_germany.62
-	title = wtt_germany.62.t
-	desc = wtt_germany.62.desc
-	picture = GFX_report_event_tank_factory
-
-	trigger = {
-		original_tag = GER
-		has_government = fascism
-		has_country_flag = mefo_bills_removed_through_war
-		has_war = no
-	}
-	
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-		name = wtt_germany.62.a
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 15 compare = less_than }
-			}
-			add_political_power = -20
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 60 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 15 compare = equals }
-			}
-			add_political_power = -30
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 70 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 20 compare = equals }
-			}
-			add_political_power = -40
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 80 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 25 compare = equals }
-			}
-			add_political_power = -50
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 90 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 30 compare = equals }
-			}
-			add_political_power = -60
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 100 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 35 compare = equals }
-			}
-			add_political_power = -70
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 110 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 40 compare = equals }
-			}
-			add_political_power = -80
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 120 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 45 compare = equals }
-			}
-			add_political_power = -90
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 130 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 50 compare = equals }
-			}
-			add_political_power = -100
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 140 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 55 compare = equals }
-			}
-			add_political_power = -110
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 150 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 60 compare = equals }
-			}
-			add_political_power = -120
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 160 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 65 compare = equals }
-			}
-			add_political_power = -130
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 170 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 70 compare = equals }
-			}
-			add_political_power = -140
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 180 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 75 compare = equals }
-			}
-			add_political_power = -150
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 190 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 80 compare = equals }
-			}
-			add_political_power = -160
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 200 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 85 compare = equals }
-			}
-			add_political_power = -170
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 210 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 90 compare = equals }
-			}
-			add_political_power = -180
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 220 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 95 compare = equals }
-			}
-			add_political_power = -190
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 230 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 100 compare = equals }
-			}
-			add_political_power = -200
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 240 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 105 compare = equals }
-			}
-			add_political_power = -210
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 250 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 110 compare = equals }
-			}
-			add_political_power = -220
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 260 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 115 compare = equals }
-			}
-			add_political_power = -230
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 270 }
-		}
-		if = {
-			limit = {
-				check_variable = { var = GER_mefo_bill_counter value = 115 compare = greater_than }
-			}
-			add_political_power = -240
-			add_timed_idea = { idea = GER_mefo_bills_ended days = 280 }
-		}
-		clr_country_flag = mefo_bills_removed_through_war
-	}
-}
-
 # Reintegration remove cores for Alsace and notification for France
 country_event = {
 	id = wtt_germany.63
@@ -2775,7 +2542,7 @@ country_event = {
 	picture = GFX_report_event_generic_peaceful_annexation
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_germany.63.a
 		effect_tooltip = {
@@ -2795,7 +2562,7 @@ country_event = {
 	picture = GFX_report_event_generic_peaceful_annexation
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_germany.64.a
 		effect_tooltip = {
@@ -2815,7 +2582,7 @@ country_event = {
 	picture = GFX_report_event_german_troops
 
 	is_triggered_only = yes
-	
+
 	# Accept
 	option = {
 		name = wtt_germany.65.a
@@ -2910,7 +2677,7 @@ country_event = {
 	picture = GFX_report_event_german_troops
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = excellent
 		effect_tooltip = {
@@ -2928,7 +2695,7 @@ country_event = {
 	picture = GFX_report_event_german_troops
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_germany.67.a
 		effect_tooltip = {
@@ -2948,7 +2715,7 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	# Accept
 	option = {
 		name = wtt_germany.68.a
@@ -2974,7 +2741,7 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = excellent
 		if = {
@@ -3000,7 +2767,7 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = unfortunate
 		hidden_effect = { clr_global_flag = GER_reformed_austro_hungarian_empire }
@@ -3015,7 +2782,7 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_germany.71.a
 		if = {
@@ -3031,7 +2798,7 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
-				
+
 			}
 		}
 		if = {
@@ -3106,7 +2873,7 @@ country_event = {
 		}
 		add_ai_strategy = {
 			type = alliance
-			id = "GER"			
+			id = "GER"
 			value = 200
 		}
 	}
@@ -3185,8 +2952,6 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
-				kaiserin_of_the_people
-				victoria_iii # Third Victoria counting from Queen Victoria hurr durr
 			}
 		}
 		hidden_effect = { set_global_flag = hindenburg_destroyed }
@@ -3242,7 +3007,6 @@ country_event = {
 			ideology = nazism
 			traits = {
 				dictator
-				incognito
 			}
 		}
 	}

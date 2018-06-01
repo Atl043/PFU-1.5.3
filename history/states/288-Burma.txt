@@ -7,16 +7,17 @@ state={
 	state_category = town
 	
 	resources={
-		rubber=3 # was: 4
+		rubber=4
+		tungsten=148
 	}
 
 	history={
 		owner = RAJ
 		victory_points = {
-			1330 5 
+			1330 3 
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			industrial_complex = 1
 			air_base = 1
 			1330 = {

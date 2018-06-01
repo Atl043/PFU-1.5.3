@@ -10,8 +10,12 @@ set_technology = {
 	early_bomber = 1
 }
 set_country_flag = monroe_doctrine
-set_war_support = 0.1
-set_convoys = 10
+
+
+
+add_ideas = {
+latin_neutrality
+}
 
 1939.1.1 = {
 
@@ -54,7 +58,7 @@ set_convoys = 10
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
 		oil_processing = 1
-		improved_oil_processing = 1
+		rubber_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -132,7 +136,7 @@ create_country_leader = {
 	create_country_leader = {
 		name = "Anastasio Somoza García"
 		desc = "POLITICS_ANASTASIO_SOMOZA_GARCIA_DESC"
-		picture = "GFX_portrait_nicaragua_portrait_anastasio_somoza_garcia"
+		picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
 		expire = "1965.1.1"
 		ideology = despotism
 		traits = {

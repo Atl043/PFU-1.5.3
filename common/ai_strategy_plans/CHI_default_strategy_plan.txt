@@ -10,7 +10,7 @@ CHI_default_plan = {
 	}
 
 	focus_factors = {
-	
+
 	}
 
 	research = {
@@ -49,7 +49,7 @@ CHI_industrial_buildup = {
 	}
 	focus_factors = {
 		CHI_unified_industrial_planning = 5
-		CHI_expand_the_academica_sinica = 10 
+		CHI_expand_the_academica_sinica = 10
 		CHI_rural_reconstruction_movement = 5
 		CHI_financial_policy = 5
 		CHI_mining_commission = 5
@@ -65,106 +65,6 @@ CHI_industrial_buildup = {
 	ideas = {
 		CHI_t_v_soong = 5
 		CHI_h_h_kung = 5
-	}
-
-	# Keep small, as it is used as a factor for some things (such as research needs)
-	# Recommended around 1.0. Useful for relation between plans
-	weight = {
-		factor = 1
-		modifier = {
-			factor = 1.0
-		}
-	}
-}
-
-CHI_inflation_handling = {
-	name = "Nationalist China Secret Plan to Fight Inflation"
-	desc = "Teaches the AI to handle the inflation mechanic for China"
-
-	enable = {
-		OR = {
-			original_tag = CHI
-			AND = {
-				is_chinese_warlord = yes
-				has_focus_tree = china_nationalist_focus
-			}
-		}
-		OR = {
-			has_idea = CHI_hyper_inflation_3
-			has_idea = CHI_hyper_inflation_4
-			has_idea = CHI_hyper_inflation_5
-		}
-	}
-	abort = {
-		OR = { #inflation under control
-			has_idea = CHI_hyper_inflation_2
-			has_idea = CHI_hyper_inflation_1
-		}
-	}
-	focus_factors = {
-		CHI_financial_policy = 50
-		CHI_price_controls = 50
-		CHI_reform_the_national_bank = 50
-		CHI_forced_loans = 50
-		CHI_land_tax_reform = 50
-		CHI_develop_the_hanyan_arsenal = 0.0
-		CHI_taiyuan_arsenal = 0.0
-		CHI_mining_commission = 0.0
-		CHI_welfare = 0.0
-		CHI_refugee_relief_agency = 0.0
-		CHI_unemployment_agency = 0.0
-		CHI_free_hospitals = 0.0
-		CHI_rural_schooling = 0.0
-	}
-
-	research = {
-	}
-
-	ideas = {
-		CHI_t_v_soong = 10
-	}
-
-	# Keep small, as it is used as a factor for some things (such as research needs)
-	# Recommended around 1.0. Useful for relation between plans
-	weight = {
-		factor = 1
-		modifier = {
-			factor = 1.0
-		}
-	}
-}
-
-CHI_army_reform = {
-	name = "Nationalist China Army Reform"
-	desc = "Teaches the AI to reform the Army if at war"
-
-	enable = {
-		original_tag = CHI
-		has_war = yes
-		OR = {
-			has_idea = CHI_army_corruption_1
-			has_idea = CHI_army_corruption_2
-			has_idea = CHI_army_corruption_3
-		}
-	}
-	abort = {
-		NOT = {
-			OR = { 
-				has_idea = CHI_army_corruption_1
-				has_idea = CHI_army_corruption_2
-				has_idea = CHI_army_corruption_3
-			}
-		}
-	}
-	focus_factors = {
-		CHI_army_reform = 50
-		CHI_military_affairs_commission = 50
-	}
-
-	research = {
-	}
-
-	ideas = {
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -248,7 +148,7 @@ CHI_befriend_britain = {
 	}
 	ai_strategy = {
 		type = befriend
-		id = "ENG"			
+		id = "ENG"
 		value = 200
 	}
 
@@ -285,7 +185,7 @@ CHI_befriend_america = {
 	}
 	ai_strategy = {
 		type = befriend
-		id = "USA"			
+		id = "USA"
 		value = 200
 	}
 
@@ -322,7 +222,7 @@ CHI_befriend_France = {
 	}
 	ai_strategy = {
 		type = befriend
-		id = "FRA"			
+		id = "FRA"
 		value = 200
 	}
 
@@ -362,7 +262,7 @@ CHI_befriend_Soviet = {
 	}
 	ai_strategy = {
 		type = befriend
-		id = "SOV"			
+		id = "SOV"
 		value = 200
 	}
 

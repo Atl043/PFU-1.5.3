@@ -32,7 +32,10 @@ sub_units = {
 		training_time = 180
 		weight = 1
 		supply_consumption = 0.2
-
+		
+		#TD are awesome
+		hard_attack = 0.25
+		
 		forest = {
 		    attack = -0.2
 			movement = -0.4
@@ -94,7 +97,10 @@ sub_units = {
 		training_time = 180
 		weight = 1.25
 		supply_consumption = 0.22
-
+		
+		#TD are awesome
+		hard_attack = 0.25
+		
 		forest = {
 		    attack = -0.3
 			movement = -0.4
@@ -146,7 +152,7 @@ sub_units = {
 			category_all_armor
 			category_army
 		}
-
+		
 
 		combat_width = 2
 
@@ -159,7 +165,10 @@ sub_units = {
 		max_strength = 0.6
 		weight = 1.5
 		supply_consumption = 0.3
-
+		
+		#TD are awesome
+		hard_attack = 0.25
+		
 		forest = {
 		    attack = -0.40
 			movement = -0.40
@@ -226,7 +235,10 @@ sub_units = {
 		training_time = 180
 		weight = 1.75
 		supply_consumption = 0.4
-
+		
+		#TD are awesome
+		hard_attack = 0.25
+		
 		forest = {
 		    attack = -0.5
 			movement = -0.4
@@ -294,7 +306,10 @@ sub_units = {
 		training_time = 180
 		weight = 1.5
 		supply_consumption = 0.25
-
+		
+		#TD are awesome
+		hard_attack = 0.25
+		
 		forest = {
 		    attack = -0.3
 			movement = -0.4

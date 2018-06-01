@@ -17,8 +17,8 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.20
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
 				stability_factor = -0.10
 			}
 		}
@@ -39,8 +39,8 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.15
-				industrial_capacity_factory = -0.10
-				industrial_capacity_dockyard = -0.10
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
 			}
 		}
 		
@@ -60,8 +60,8 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.05
-				industrial_capacity_factory = -0.05
-				industrial_capacity_dockyard = -0.05
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
 			}
 		}
 
@@ -249,7 +249,7 @@ ideas = {
 			modifier = {
 				drift_defence_factor = 0.25
 				foreign_subversive_activites = -0.25
-				stability_factor = -0.05
+				stability_factor = -0.03
 			}
 		}
 
@@ -553,93 +553,19 @@ ideas = {
 		}
 		
 
-		AST_frank_forde = {
-
-			picture = generic_political_advisor_europe_3
-			
-			allowed = {
-				original_tag = AST
-				has_dlc = "Together for Victory"
-			}
-			
-			traits = { compassionate_gentleman }
-		}
-
-		AST_generic_fascist_demagogue = {
-			
-			allowed = {
-				original_tag = AST
-				
-			}
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					has_completed_focus = AST_support_the_centre_party
-				}
-			}
-
-			picture = generic_political_advisor_europe_4
-			
-			traits = { fascist_demagogue }
-		
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-		
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-		AST_lance_sharkey = {
-			
-			allowed = {
-				original_tag = AST
-				
-			}
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					has_completed_focus = AST_empower_the_workers
-				}
-			}
-
-			picture = generic_communist_revolutionary_western_european_2d
-			
-			traits = { communist_revolutionary }
-		
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-		
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-
 		AST_arthur_calwell = {
 			
 			allowed = {
 				original_tag = AST
 			}
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					OR = {
-						has_completed_focus = AST_sever_ties_with_uk
-						has_completed_focus = AST_empower_the_workers
-					}
-				}
-			}
 			
 			picture = generic_democratic_reformer_western_european_2d
 			
 			traits = { democratic_reformer }
+		
+			on_add = {
+				country_event = political.13
+			}
 		
 			do_effect = {
 				NOT = {
@@ -686,7 +612,20 @@ theorist = {
 		traits = { air_warfare_theorist }
 	}
 
-	
+	AST_thomas_blamey = {
+				
+		picture = generic_political_advisor_europe_3
+			
+		allowed = {
+			original_tag = AST
+		}
+		
+		research_bonus = {
+			land_doctrine = 0.07
+		}
+		
+		traits = { military_theorist }
+	}
 }
 
 high_command = {

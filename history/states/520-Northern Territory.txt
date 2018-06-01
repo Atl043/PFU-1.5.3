@@ -9,13 +9,12 @@ state={
 	
 	
 	resources={
-		steel=22 # was: 28
+		steel=28
 	}
 
 	history={
 		owner = AST
 		buildings = {
-			infrastructure = 3
 			air_base = 1
 			7669 = {
 				naval_base = 1

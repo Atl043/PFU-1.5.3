@@ -5,11 +5,15 @@ state={
 	manpower = 3944600
 	
 	state_category = town
+	
+	resources={
+		tungsten=109
+	}
 
 	history={
 		owner = RAJ
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 			air_base = 1
 		}
 		victory_points = {

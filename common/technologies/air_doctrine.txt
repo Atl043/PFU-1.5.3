@@ -160,9 +160,6 @@ technologies = {
 		air_intercept_efficiency = 0.2
 		###########
 		
-		xor={
-			dogfighting_experience
-		}
 
 		path = {
 			leads_to_tech = multialtitude_flying
@@ -199,9 +196,6 @@ technologies = {
 		air_superiority_efficiency = 0.2
 		###########
 		
-		xor={
-			fighter_sweeps
-		}
 
 		path = {
 			leads_to_tech = multialtitude_flying
@@ -701,9 +695,6 @@ technologies = {
 		air_superiority_efficiency = 0.15
 		###########
 		
-		xor = {
-			fighter_ace_initiative
-		}
 
 		path = {
 			leads_to_tech = hunt_and_destroy
@@ -739,10 +730,6 @@ technologies = {
 		# EFFECT ########
 		air_ace_generation_chance_factor = 0.25
 		###########
-
-		xor = {
-			formation_fighting
-		}
 
 		path = {
 			leads_to_tech = hunt_and_destroy

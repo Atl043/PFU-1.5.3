@@ -32,15 +32,15 @@ equipments = {
 		armor_value = 60
 
 		#Offensive Abilities
-		soft_attack = 19
+		soft_attack = 15
 		hard_attack = 14
 		ap_attack = 61
 		air_attack = 0
 
 		#Space taken in convoy
-		lend_lease_cost = 12
+		lend_lease_cost = 5
 		
-		build_cost_ic = 12 
+		build_cost_ic = 16 
 		resources = {
 			oil = 1
 			tungsten = 2
@@ -69,7 +69,7 @@ equipments = {
 		is_convertable = yes
 						
 		#Misc Abilities
-		maximum_speed = 9
+		maximum_speed = 8
 
 		#Defensive Abilities
 		defense = 7
@@ -77,12 +77,12 @@ equipments = {
 		armor_value = 80
 
 		#Offensive Abilities
-		soft_attack = 25
+		soft_attack = 20
 		hard_attack = 19
 		ap_attack = 81
 		air_attack = 0
 
-		build_cost_ic = 13
+		build_cost_ic = 17
 		resources = {
 			oil = 1
 			tungsten = 2
@@ -101,7 +101,7 @@ equipments = {
 		is_convertable = yes
 		
 		#Misc Abilities
-		maximum_speed = 10
+		maximum_speed = 9
 
 		#Defensive Abilities
 		defense = 9
@@ -109,12 +109,12 @@ equipments = {
 		armor_value = 90
 
 		#Offensive Abilities
-		soft_attack = 32
+		soft_attack = 26
 		hard_attack = 24
 		ap_attack = 91
 		air_attack = 0
 		
-		build_cost_ic = 14
+		build_cost_ic = 18
 		resources = {
 			oil = 2
 			tungsten = 2
@@ -153,15 +153,15 @@ equipments = {
 		defense = 5
 		breakthrough = 3
 		hardness = 0.65
-		armor_value = 45
+		armor_value = 30
 
 		#Offensive Abilities
-		soft_attack = 42
+		soft_attack = 56
 		hard_attack = 1
 		ap_attack = 5
 		air_attack = 0
 
-		build_cost_ic = 12
+		build_cost_ic = 16
 		
 		resources = {
 			oil = 1
@@ -196,18 +196,18 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 9
+		maximum_speed = 8
 
 		#Defensive Abilities
 		defense = 6
 		breakthrough = 3
-		armor_value = 50
+		armor_value = 40
 
 		#Offensive Abilities
-		soft_attack = 50
+		soft_attack = 72
 		hard_attack = 1.5
 		
-		build_cost_ic = 13
+		build_cost_ic = 17
 		
 		resources = {
 			steel = 3
@@ -230,18 +230,18 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 10
+		maximum_speed = 9
 
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 4
-		armor_value = 58
+		armor_value = 45
 
 		#Offensive Abilities
-		soft_attack = 55
+		soft_attack = 84
 		hard_attack = 2
 		
-		build_cost_ic = 14
+		build_cost_ic = 18
 		
 		resources = {
 			steel = 4
@@ -289,7 +289,7 @@ equipments = {
 		ap_attack = 88
 		air_attack = 0
 		
-		build_cost_ic = 12
+		build_cost_ic = 16
 		
 		resources = {
 			oil = 1
@@ -326,7 +326,7 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 9
+		maximum_speed = 8
 
 		#Defensive Abilities
 		defense = 6
@@ -338,7 +338,7 @@ equipments = {
 		hard_attack = 26
 		ap_attack = 110
 		
-		build_cost_ic = 13
+		build_cost_ic = 17
 		
 		resources = {
 			oil = 1
@@ -362,7 +362,7 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 10
+		maximum_speed = 9
 
 		#Defensive Abilities
 		defense = 7
@@ -374,7 +374,7 @@ equipments = {
 		hard_attack = 32
 		ap_attack = 120
 		
-		build_cost_ic = 14
+		build_cost_ic = 18
 		
 		resources = {
 			oil = 2
@@ -415,19 +415,19 @@ equipments = {
 		defense = 2.5
 		breakthrough = 2.5
 		hardness = 0.65
-		armor_value = 45
+		armor_value = 30
 
 		#Offensive Abilities
 		soft_attack = 4.5
 		hard_attack = 3
 		ap_attack = 40
-		air_attack = 22
+		air_attack = 15
 
-		build_cost_ic = 12
+		build_cost_ic = 16
 		
 		resources = {
 			oil = 1
-			tungsten = 2
+			tungsten = 3
 			steel = 2
 		}
 	}
@@ -459,24 +459,24 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 9
+		maximum_speed = 8
 		
 		#Defensive Abilities
 		defense = 3
 		breakthrough = 3
-		armor_value = 50
+		armor_value = 40
 
 		#Offensive Abilities
 		soft_attack = 6
 		hard_attack = 4.5
 		ap_attack = 60
-		air_attack = 32
+		air_attack = 22
 		
-		build_cost_ic = 13
+		build_cost_ic = 17
 		
 		resources = {
 			oil = 1
-			tungsten = 2
+			tungsten = 3
 			steel = 3
 		}
 	}
@@ -495,24 +495,24 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 10
+		maximum_speed = 9
 		
 		#Defensive Abilities
 		defense = 3.5
 		breakthrough = 3.5
-		armor_value = 58
+		armor_value = 45
 
 		#Offensive Abilities
 		soft_attack = 7.5
 		hard_attack = 6
 		ap_attack = 70
-		air_attack = 43
+		air_attack = 30
 		
-		build_cost_ic = 14
+		build_cost_ic = 18
 		
 		resources = {
 			oil = 2
-			tungsten = 2
+			tungsten = 3
 			steel = 4
 		}		
 	}

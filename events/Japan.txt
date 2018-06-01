@@ -12,26 +12,12 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers_01
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = japan.1.a
-		add_war_support = 0.05
-		create_wargoal = {
-  			type = annex_everything
-  			target = CHI
-  		}
-  		create_wargoal = {
-  			type = annex_everything
-  			target = SHX
-  		}
+		add_stability = 0.05
 		hidden_effect = {
 			country_event = { days = 5 id = news.1 }
-		}
-		if = {
-			limit = {
-				has_country_leader = { id = 700 ruling_only = yes }
-			}
-			remove_country_leader_trait = imperial_sanction
 		}
 	}
 }
@@ -42,14 +28,11 @@ country_event = {
 	title = china.1.t
 	desc = japan.2.d
 	picture = GFX_report_event_chinese_soldiers_running
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = japan.2.a
-		effect_tooltip = {
-			set_truce = { target = FROM days = 180 }
-		}
 		hidden_effect = {
 			country_event = { days = 5 id = news.2 }
 		}
@@ -83,29 +66,7 @@ country_event = {
 				transfer_state = 614
 			}
 		}
-		if = {
-			limit = {
-				743 = {
-					is_controlled_by = FROM
-				}
-			}
-			JAP = {
-				transfer_state = 743
-			}
-		}
-		add_state_claim = 613
-		if = {
-			limit = {
-				has_country_leader = { id = 700 ruling_only = yes }
-			}
-			remove_country_leader_trait = imperial_sanction
-		}
-		
-		add_ai_strategy = {
-			type = antagonize
-			id = "CHI"
-			value = 500
-		}
+
 	}
 }
 
@@ -115,21 +76,21 @@ country_event = {
 	title = japan.3.t
 	desc = japan.3.d
 	picture = GFX_report_event_soviet_soldiers_tank
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		if = {
-			limit = { 
-			714 = { 
+			limit = {
+			714 = {
 				OR = {
 					is_owned_by = JAP
 					is_owned_by = MAN
-				} 
+				}
 				any_neighbor_state = { is_owned_by = SOV } }
-			} 
+			}
 			714 = { add_manpower = -30000 }
-		}		
+		}
 		if = {
 			limit = {
 				NOT = {
@@ -138,7 +99,7 @@ country_event = {
 							is_owned_by = JAP
 							is_owned_by = MAN
 						}
-						any_neighbor_state = { is_owned_by = SOV } 
+						any_neighbor_state = { is_owned_by = SOV }
 					}
 				}
 			}
@@ -167,31 +128,31 @@ country_event = {
 	title = japan.4.t
 	desc = japan.4.d
 	picture = GFX_report_event_japanese_soldiers_01
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = japan.4.a
 		if = {
-			limit = { 
-			714 = { 
+			limit = {
+			714 = {
 				OR = {
 					is_owned_by = JAP
-					is_owned_by = MAN						
+					is_owned_by = MAN
 				}
 				any_neighbor_state = { is_owned_by = SOV } }
-			} 
+			}
 			714 = { add_manpower = -20000 }
-		}		
+		}
 		if = {
 			limit = {
 				NOT = {
 					714 = {
 						OR = {
-							is_owned_by = JAP							
-							is_owned_by = MAN						
+							is_owned_by = JAP
+							is_owned_by = MAN
 						}
-						any_neighbor_state = { is_owned_by = SOV } 
+						any_neighbor_state = { is_owned_by = SOV }
 					}
 				}
 			}
@@ -206,7 +167,7 @@ country_event = {
 			bonus = 0.5
 			uses = 1
 			category = cat_grand_battle_plan
-		}		
+		}
 		SOV = {
 			country_event = { id = soviet.3 }
 		}
@@ -219,12 +180,12 @@ country_event = {
 	title = japan.5.t
 	desc = japan.5.d
 	picture = GFX_report_event_soviet_soldiers_tank
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = japan.5.a
-		add_war_support = 0.05
+		add_stability = 0.05
 		hidden_effect = {
 			country_event = { days = 5 id = news.9 }
 		}
@@ -237,14 +198,23 @@ country_event = {
 	title = japan.6.t
 	desc = japan.6.d
 	picture = GFX_report_event_japanese_soldiers_02
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = japan.6.a
 		hidden_effect = {
 			news_event = { days = 5 id = news.5 }
 		}
+
+		# Dirty changes to give Vichy French Indochina to Japan
+		JAP = {
+			transfer_state = 286
+			transfer_state = 670
+			transfer_state = 671
+			transfer_state = 741
+		}
+
 		JAP = {
 			if = {
 				limit = {
@@ -299,22 +269,6 @@ country_event = {
 	}
 }
 
-# French Reject Demands
-country_event = {
-	id = japan.7
-	title = japan.7.t
-	desc = japan.7.d
-	picture = GFX_report_event_japanese_soldiers_03
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = japan.7.a
-		hidden_effect = {
-			country_event = { days = 5 id = news.6 }
-		}
-	}
-}
 
 # Germany Agrees to Withdraw Falkenhausen
 country_event = {
@@ -322,9 +276,9 @@ country_event = {
 	title = japan.8.t
 	desc = japan.8.d
 	picture = GFX_report_event_german_detained_china
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = japan.8.a
 	}
@@ -336,9 +290,9 @@ country_event = {
 	title = japan.9.t
 	desc = japan.9.d
 	picture = GFX_report_event_german_advisors_remain
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = japan.9.a
 	}
@@ -347,18 +301,18 @@ country_event = {
 	#}
 }
 
-# USA condemns our war 
+# USA condemns our war
 country_event = {
 	id = japan.10
 	title = japan.10.t
 	desc = japan.10.d
 	picture = GFX_report_event_FDR_speech
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = japan.10.a
-		USA = { 
+		USA = {
 			add_opinion_modifier = { target = JAP modifier = condemn_aggression }
 		}
 	}
@@ -370,19 +324,14 @@ country_event = {
 	title = japan.11.t
 	desc = japan.11.d
 	picture = GFX_report_event_japanese_officers
-	
+
 	is_triggered_only = yes
-	
-	option = {
-		name = japan.11.a
-		SIA = { 
-			country_event = { id = japan.12 }
-		}
-	}
 
 	option = {
-		name = japan.11.b
-		ai_chance = { factor = 0 }
+		name = japan.11.a
+		SIA = {
+			country_event = { id = japan.12 }
+		}
 	}
 }
 
@@ -392,23 +341,13 @@ country_event = {
 	title = japan.12.t
 	desc = japan.12.d
 	picture = GFX_report_event_japanese_officers
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = japan.12.a
-		ai_chance = {
-			factor = 90 
-			modifier = {
-				#If they have a fighting chance, they should stand their ground
-				factor = 0
-				strength_ratio = {
-					tag = JAP
-					ratio > 0.75
-				}
-			}
-		}
-		JAP = { 
+		ai_chance = { factor = 100 }
+		JAP = {
 			country_event = { id = japan.13 }
 			effect_tooltip = { puppet = SIA }
 		}
@@ -416,15 +355,9 @@ country_event = {
 
 	option = {
 		name = japan.12.b
-		ai_chance = { factor = 10 }
-		JAP = { 
+		ai_chance = { factor = 0 }
+		JAP = {
 			country_event = { id = japan.14 }
-			effect_tooltip = {
-				declare_war_on = {
-					target = SIA
-					type = puppet_wargoal_focus
-				}
-			}
 		}
 	}
 }
@@ -435,42 +368,39 @@ country_event = {
 	title = japan.13.t
 	desc = japan.13.d
 	picture = GFX_report_event_japanese_siam_politicians
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = japan.13.a
 		puppet = SIA
 	}
 }
 
-# Siam refuses, nations go to war 
+# Siam refuses, nations join faction
 country_event = {
 	id = japan.14
 	title = japan.14.t
 	desc = japan.14.d
 	picture = GFX_report_event_japanese_chinese_surrender
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = japan.14.a
-		declare_war_on = {
-			target = SIA
-			type = puppet_wargoal_focus
-		}
+		add_to_faction = SIA
 	}
 }
 
-# Indian national army 
+# Indian national army
 country_event = {
 	id = japan.15
 	title = japan.15.t
 	desc = japan.15.d
 	picture = GFX_report_event_indian_soldiers
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = japan.15.a
 		hidden_effect = {
@@ -492,7 +422,7 @@ country_event = {
 					popularity = -0.05
 				}
 				else = {
-					add_ideas = RAJ_azad_hind 
+					add_ideas = RAJ_azad_hind
 					ENG = {
 						country_event = { id = britain.19 }
 					}
@@ -508,9 +438,9 @@ country_event = {
 	title = japan.16.t
 	desc = japan.16.d
 	picture = GFX_report_event_asian_politicians
-	
+
 	is_triggered_only = yes
-	
+
 	#Accept - become puppet
 	option = {
 		name = japan.16.a
@@ -525,7 +455,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
-		JAP = { 
+		JAP = {
 			country_event = { id = japan.17 }
 			effect_tooltip = { puppet = CHI }
 		}
@@ -534,7 +464,7 @@ country_event = {
 	option = {
 		name = japan.16.b
 		ai_chance = { factor = 40 }
-		JAP = { 
+		JAP = {
 			country_event = { id = japan.18 }
 			effect_tooltip = {
 				create_wargoal = {
@@ -553,9 +483,9 @@ country_event = {
 	title = japan.17.t
 	desc = japan.17.d
 	picture = GFX_report_event_chinese_japanese_handshake
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = japan.17.a
 		puppet = CHI
@@ -572,9 +502,9 @@ country_event = {
 	title = japan.18.t
 	desc = japan.18.d
 	picture = GFX_report_event_chinese_soldiers_02
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = japan.18.a
 		create_wargoal = {
@@ -582,5 +512,85 @@ country_event = {
 			target = CHI
 			generator = owned_states
 		}
+	}
+}
+
+# Japan peacedeal
+country_event = {
+	id = japan.19
+	title = japan.19.t
+	desc = japan.19.d
+	picture = GFX_report_event_chinese_soldiers_02
+
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		JAP = {
+			has_war_with = USA
+			surrender_progress > 0.80
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		JAP = {
+			white_peace = ENG
+			white_peace = USA
+			white_peace = CHI
+			white_peace = SIK
+			white_peace = PRC
+			white_peace = CHI
+		}
+
+		USA = {
+			transfer_state = 647
+			transfer_state = 684
+			transfer_state = 646
+			transfer_state = 638
+			transfer_state = 633
+			transfer_state = 743
+			transfer_state = 648
+			transfer_state = 645
+			transfer_state = 555
+			transfer_state = 526
+		}
+
+		FRA = {
+			transfer_state = 286
+			transfer_state = 741
+			transfer_state = 671
+			transfer_state = 670
+		}
+
+		PRC = {
+			transfer_state = 611
+			transfer_state = 753
+			transfer_state = 612
+			transfer_state = 610
+			transfer_state = 715
+			transfer_state = 716
+			transfer_state = 328
+			transfer_state = 714
+			transfer_state = 717
+		}
+
+		CHI = {
+			transfer_state = 609
+			transfer_state = 524
+		}
+		SIA = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			add_popularity = { ideology = democratic popularity = 1 }
+		}
+		ENG = {
+			add_to_faction = SIA
+		}
+	}
+
+	option = { #peacedeal
+		name = japan.19.a
 	}
 }

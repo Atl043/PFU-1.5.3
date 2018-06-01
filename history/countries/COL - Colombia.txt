@@ -14,7 +14,11 @@ set_technology = {
 }
 set_country_flag = monroe_doctrine
 
-set_convoys = 10
+
+
+add_ideas = {
+latin_neutrality
+}
 
 1939.1.1 = {
 
@@ -58,7 +62,7 @@ set_convoys = 10
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
 		oil_processing = 1
-		improved_oil_processing = 1
+		rubber_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -66,7 +70,6 @@ set_convoys = 10
 	}
 }
 
-set_convoys = 5
 set_politics = {
 
 	parties = {
@@ -154,8 +157,4 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
 	traits = {  trickster urban_assault_specialist }
 	skill = 3
-	attack_skill = 3
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 3
 }

@@ -7,7 +7,7 @@ state={
 	state_category = wasteland
 	
 	resources={
-		chromium=90 # was: 168
+		chromium=168
 	}
 
 	history={
@@ -15,7 +15,6 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = BOT
 
 	}
 

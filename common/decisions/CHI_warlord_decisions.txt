@@ -1,10 +1,10 @@
 #Category allowed for GXC YUN SHX XSM
 
- ###  ##  ###   ##  #  # ###  ## ###      ## #  # ###  ###   ##  ###  ### 
-   # #  # #  # #  # ## # #   #   #       #   #  # #  # #  # #  # #  #  #  
-   # #### ###  #### # ## ##   #  ##       #  #  # ###  ###  #  # ###   #  
-#  # #  # #    #  # #  # #     # #         # #  # #    #    #  # #  #  #  
- ##  #  # #    #  # #  # ### ##  ###     ##   ##  #    #     ##  #  #  #  
+ ###  ##  ###   ##  #  # ###  ## ###      ## #  # ###  ###   ##  ###  ###
+   # #  # #  # #  # ## # #   #   #       #   #  # #  # #  # #  # #  #  #
+   # #### ###  #### # ## ##   #  ##       #  #  # ###  ###  #  # ###   #
+#  # #  # #    #  # #  # #     # #         # #  # #    #    #  # #  #  #
+ ##  #  # #    #  # #  # ### ##  ###     ##   ##  #    #     ##  #  #  #
 
 CHI_seek_japanese_support = {
 
@@ -13,12 +13,13 @@ CHI_seek_japanese_support = {
 		icon = generic_political_discourse
 
 		available = {
-			is_subject = no
+            num_of_factories > 1000
 		}
 
 		visible = {
 			has_completed_focus = CHI_seek_japanese_support
 			JAP = { has_government = fascism }
+                num_of_factories > 1000
 		}
 
 		fire_only_once = no
@@ -45,11 +46,13 @@ CHI_seek_japanese_support = {
 		available = {
 			has_equipment = { infantry_equipment > 499 }
 			is_subject = no
+            num_of_factories > 1000
 		}
 
 		visible = {
 			has_completed_focus = CHI_seek_japanese_support
 			JAP = { has_government = fascism }
+            num_of_factories > 1000
 		}
 
 		fire_only_once = no
@@ -80,10 +83,12 @@ CHI_seek_japanese_support = {
 		icon = generic_political_discourse
 
 		available = {
+            num_of_factories > 1000
 			is_subject = no
 		}
 
 		visible = {
+            num_of_factories > 1000
 			has_completed_focus = CHI_seek_japanese_support
 			JAP = { has_government = communism }
 		}
@@ -110,11 +115,13 @@ CHI_seek_japanese_support = {
 		icon = generic_civil_support
 
 		available = {
+            num_of_factories > 1000
 			has_equipment = { infantry_equipment > 499 }
 			is_subject = no
 		}
 
 		visible = {
+            num_of_factories > 1000
 			has_completed_focus = CHI_seek_japanese_support
 			JAP = { has_government = communism }
 		}
@@ -147,10 +154,12 @@ CHI_seek_japanese_support = {
 		icon = generic_political_discourse
 
 		available = {
+            num_of_factories > 1000
 			is_subject = no
 		}
 
 		visible = {
+            num_of_factories > 1000
 			has_completed_focus = CHI_seek_japanese_support
 			JAP = { has_government = neutrality }
 		}
@@ -177,11 +186,13 @@ CHI_seek_japanese_support = {
 		icon = generic_civil_support
 
 		available = {
+            num_of_factories > 1000
 			has_equipment = { infantry_equipment > 499 }
 			is_subject = no
 		}
 
 		visible = {
+            num_of_factories > 1000
 			has_completed_focus = CHI_seek_japanese_support
 			JAP = { has_government = neutrality }
 		}

@@ -7,14 +7,14 @@ state={
 	state_category = rural
 	
 	resources={
-		chromium=70 # was: 116
-		aluminium=16 # was: 32
+		chromium=116
+		aluminium=32
 	}
 
 	history={
 		owner = YUG
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			industrial_complex = 1
 			air_base = 2
 		}
@@ -22,6 +22,7 @@ state={
 			3882 1 
 		}
 		add_core_of = YUG
+		add_core_of = BUL
 	}
 
 	provinces={

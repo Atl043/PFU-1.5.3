@@ -4,30 +4,36 @@ oob = "FIN_1936"
 
 set_research_slots = 3
 
-add_ideas = {
-	limited_conscription
-}
+set_stability = 0.6
+set_war_support = 0.7
 
 set_technology = {
+    transport = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	gw_artillery = 1			
-	tech_support = 1		
+	gw_artillery = 1
+	tech_support = 1
 	tech_recon = 1
 	tech_engineers = 1
 	early_submarine = 1
 	early_heavy_cruiser = 1
+    early_destroyer = 1
+	support_weapons = 1
+	motorised_infantry = 1
 }
 
-set_convoys = 5
+set_convoys = 20
 
 add_ideas = {
-	limited_conscription
+	sisu
+	FIN_communism_banned
+	extensive_conscription
+    no_finnish_justification
 }
 
 1939.1.1 = {
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -38,12 +44,12 @@ add_ideas = {
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "FIN_1939"
 	set_technology = {
 		early_fighter = 1
 		early_bomber = 1
-		CAS1 = 1		
+		CAS1 = 1
 		interwar_artillery = 1
 		interwar_antitank = 1
 		interwar_antiair = 1
@@ -75,7 +81,7 @@ add_ideas = {
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
 		oil_processing = 1
-		improved_oil_processing = 1
+		rubber_processing = 1
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
@@ -88,23 +94,23 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 10
+		democratic = {
+			popularity = 12
 		}
 
 		fascism = {
-			popularity = 10
+			popularity = 13
 		}
-		
+
 		communism = {
 			popularity = 1
 		}
 
 		neutrality = {
-			popularity = 79
+			popularity = 74
 		}
 	}
-	
+
 	ruling_party = neutrality
 	last_election = "1933.7.1"
 	election_frequency = 36
@@ -115,24 +121,24 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 10
+			democratic = {
+				popularity = 12
 			}
 
 			fascism = {
-				popularity = 10
+				popularity = 13
 			}
-			
+
 			communism = {
 				popularity = 1
 			}
 
 			neutrality = {
-				popularity = 79
+				popularity = 74
 			}
 		}
-		
-		ruling_party = neutrality
+
+		ruling_party = democratic
 		last_election = "1939.7.1"
 		election_frequency = 36
 		elections_allowed = yes
@@ -143,7 +149,7 @@ create_country_leader = {
 	desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
 	picture = "Portrait_Finland_Risto_Heikki_Ryti.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = conservatism
 	traits = {
 		#
 	}
@@ -183,29 +189,183 @@ create_country_leader = {
 }
 
 
+create_field_marshal = {
+	name = "Carl Gustaf Mannerheim"
+	picture = "Portrait_Finland_Carl_Gustaf_Mannerheim.tga"
+	traits = { defensive_doctrine logistics_wizard }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
 
-add_ideas = {
-	sisu
+create_field_marshal = {
+	name = "Aksel Airo"
+	picture = "Portrait_Finland_Aksel_Airo.tga"
+	traits = { thorough_planner }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Paavo Talvela"
+	picture = "Portrait_Finland_Paavo_Talvela.tga"
+	traits = { offensive_doctrine }
+	skill = 3
+
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Karl Lennart Oesch"
+	picture = "Portrait_Finland_Karl_Lennart_Oesch.tga"
+	traits = { trickster ranger }
+	skill = 5
+
+    attack_skill = 5
+    defense_skill = 6
+    planning_skill = 4
+    logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Ruben Lagus"
+	picture = "Portrait_Finland_Ruben_Lagus.tga"
+	traits = { trickster panzer_leader }
+	skill = 4
+
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Aaro Pajari"
+	picture = "Portrait_Finland_Aaro_Pajari.tga"
+	traits = { winter_specialist }
+	skill = 4
+
+    attack_skill = 4
+    defense_skill = 4
+    planning_skill = 4
+    logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Hjalmar Siilasvuo"
+	picture = "Portrait_Finland_Hjalmar_Siilasvuo.tga"
+	traits = { commando }
+	skill = 3
+
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Erik Heinrichs"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { winter_specialist ranger }
-	skill = 4
-    attack_skill = 4
-    defense_skill = 4
-    planning_skill = 3
-    logistics_skill = 2
+	picture = "Portrait_Finland_Erik_Heinrichs.tga"
+	traits = { trait_engineer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
-	name = "Vilho Petter Nenonen"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { winter_specialist commando }
+	name = "Harald Öhquist"
+	picture = "Portrait_Finland_Harald_Ohquist.tga"
+	traits = { hill_fighter }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Niilo Hersalo"
+	picture = "Portrait_Finland_Niilo_Hersalo.tga"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ernst Linder"
+	picture = "Portrait_Finland_Ernst_Linder.tga"
+	traits = { commando winter_specialist }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Harry Alfthan"
+	picture = "Portrait_Finland_Harry_Alfthan.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Hugo Österman"
+	picture = "Portrait_Finland_Hugo_Osterman.tga"
+	traits = { ranger }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Wiljo Tuompo"
+	picture = "Portrait_Finland_Wiljo_Tuompo.tga"
+	traits = { }
+	skill = 2
+
     attack_skill = 3
-    defense_skill = 1
-    planning_skill = 4
+    defense_skill = 2
+    planning_skill = 1
     logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Väinö Valve"
+	picture = "Portrait_Finland_Vaino_Valve.tga"
+	traits = { superior_tactician }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Eero Rahola"
+	picture = "Portrait_Finland_Eero_Rahola.tga"
+	traits = { spotter }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Svante Sundman"
+	picture = "Portrait_Finland_Svante_Sundman.tga"
+	traits = { seawolf }
+	skill = 2
 }

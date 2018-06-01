@@ -9,12 +9,17 @@ set_technology = {
 	gw_artillery = 1
 	early_fighter = 1
 	CAS1 = 1
+	tech_support = 1
+}
+add_ideas = {
+	iran_neutrality
+	neutrality_idea
 }
 
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -25,7 +30,7 @@ set_technology = {
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "PER_1939"
 	set_technology = {
 		tech_support = 1
@@ -69,23 +74,23 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 0
 		}
 
 		fascism = {
 			popularity = 0
 		}
-		
+
 		communism = {
 			popularity = 0
 		}
-		
-		neutrality = { 
+
+		neutrality = {
 			popularity = 100
 		}
 	}
-	
+
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -130,23 +135,23 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-		democratic = { 
+		democratic = {
 			popularity = 0
 		}
 
 		fascism = {
 			popularity = 0
 		}
-		
+
 		communism = {
 			popularity = 0
 		}
-		
-		neutrality = { 
+
+		neutrality = {
 			popularity = 100
 		}
 	}
-	
+
 		ruling_party = neutrality
 		last_election = "1936.1.1"
 		election_frequency = 48
@@ -161,6 +166,6 @@ create_corps_commander = {
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
-	planning_skill = 2
+	planning_skill = 3
 	logistics_skill = 2
 }

@@ -68,7 +68,6 @@ country_event = {
 			}
 		}
 		add_stability = -0.05
-		add_war_support = -0.05
 	}
 }
 
@@ -100,6 +99,7 @@ country_event = {
 				has_war = yes
 			}
 		}
+		NOT = { tag = FRA }
 		OR = {
 			has_idea = low_economic_mobilisation
 			has_idea = civilian_economy
@@ -136,7 +136,6 @@ country_event = {
 			limit = { has_idea = disarmed_nation }
 			add_ideas = volunteer_only
 		}
-		add_war_support = 0.05
 	}
 
 	option = {
@@ -668,7 +667,7 @@ country_event = {
 				can_lose_unity = yes
 			}
 		}
-		add_stability = -0.05
+		add_stability = 0.05
 	}
 
 	option = {
@@ -685,7 +684,7 @@ country_event = {
 		}
 		name = election.14.b
 		add_political_power = 20
-		add_stability = 0.05
+		add_stability = -0.05
 		add_popularity = {
 			ideology = communism
 			popularity = 0.05

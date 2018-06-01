@@ -8,7 +8,7 @@ set_war_support = 0.6
 
 # Starting tech
 set_technology = {
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
@@ -30,9 +30,6 @@ if = {
 	add_ideas = {
 		ROM_king_carol_ii_hedonist
 	}
-	give_guarantee = CZE
-	give_guarantee = GRE
-	give_guarantee = TUR
 }
 add_ideas = neutrality_idea
 
@@ -52,7 +49,7 @@ if = {
 
 set_convoys = 10
 1939.1.1 = {
-	
+
 	remove_ideas = neutrality_idea
 
 	add_political_power = 1198
@@ -90,7 +87,7 @@ set_convoys = 10
 		create_country_leader = {
 			name = "Carol II"
 			desc = "POLITICS_CAROL_II_DESC"
-			picture = GFX_Portrait_romania_Carol_II			
+			picture = GFX_Portrait_romania_Carol_II
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
@@ -106,7 +103,7 @@ set_convoys = 10
 		#	}
 		#}
 
-		else = {		
+		else = {
 			#generic focuses
 			complete_national_focus = army_effort
 			complete_national_focus = equipment_effort
@@ -119,7 +116,7 @@ set_convoys = 10
 			complete_national_focus = production_effort
 		}
 	}
-	
+
 	oob = "ROM_1939"
 	set_technology = {
 		fighter1 = 1
@@ -138,7 +135,7 @@ set_convoys = 10
 		#Air
 		force_rotation = 1
 		fighter_baiting = 1
-		
+
 		grand_battle_plan = 1
 		trench_warfare = 1
 		fleet_in_being = 1
@@ -158,7 +155,7 @@ set_convoys = 10
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
 		oil_processing = 1
-		improved_oil_processing = 1
+		rubber_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -166,26 +163,30 @@ set_convoys = 10
 	}
 }
 
+add_ideas = {
+	free_trade
+}
+
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 20
 		}
 
 		fascism = {
 			popularity = 18
 		}
-		
+
 		communism = {
 			popularity = 2
 		}
-		
-		neutrality = { 
+
+		neutrality = {
 			popularity = 60
 		}
 	}
-	
+
 	ruling_party = neutrality
 	last_election = "1933.12.20"
 	election_frequency = 48
@@ -196,23 +197,23 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			democratic = {
 				popularity = 20
 			}
 
 			fascism = {
 				popularity = 35
 			}
-			
+
 			communism = {
 				popularity = 2
 			}
-			
-			neutrality = { 
+
+			neutrality = {
 				popularity = 43
 			}
 		}
-		
+
 		ruling_party = neutrality
 		last_election = "1939.7.15"
 		election_frequency = 48
@@ -281,9 +282,9 @@ create_field_marshal = {
 	traits = { offensive_doctrine logistics_wizard }
 	skill = 4
 	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_field_marshal = {
@@ -292,9 +293,9 @@ create_field_marshal = {
 	traits = { offensive_doctrine }
 	skill = 4
 	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 5
 }
 
 create_corps_commander = {
@@ -302,27 +303,34 @@ create_corps_commander = {
 	gfx = GFX_Portrait_romania_ioan_mihail_racovita
 	traits = { hill_fighter }
 	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
 	logistics_skill = 2
 }
 
-create_corps_commander = {
-	name = "Gheorghe Avramescu"
-	gfx = GFX_Portrait_romania_gheorghe_avramescu
-	traits = { }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 3
-}
-create_navy_leader = {
-	name = "Horia Macellariu"
-	gfx = "GFX_Portrait_romania_horia_macellariu"
-	traits = { spotter }
-	skill = 2
+if = {
+	limit = {
+		has_dlc = "Death or Dishonor"
+	}
+
+	create_corps_commander = {
+		name = "Gheorghe Avramescu"
+		gfx = GFX_Portrait_romania_gheorghe_avramescu
+		traits = { }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_navy_leader = {
+		name = "Horia Macellariu"
+		gfx = "GFX_Portrait_romania_horia_macellariu"
+		traits = { spotter }
+		skill = 2
+	}
 }
 
 

@@ -366,27 +366,6 @@ ideas = {
 			traits = { silent_workhorse }
 		}
 
-		HUN_laszlo_rajk = {
-
-			picture = generic_communist_europe
-			
-			allowed = {
-				original_tag = HUN
-			}
-			
-			traits = { communist_revolutionary }
-		}
-
-		HUN_jozsef_szell = {
-
-			picture = generic_democratic_europe
-			
-			allowed = {
-				original_tag = HUN
-			}
-			
-			traits = { democratic_reformer }
-		}
 
 		HUN_gyula_gombos_de_jakfa = {
 

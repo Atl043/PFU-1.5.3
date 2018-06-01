@@ -95,16 +95,53 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = {
+	divided_nation_full
+}
+
 create_country_leader = {
 	name = "Phraya Phahon"
 	desc = "POLITICS_PHRAYA_PHAHON_DESC"
-	picture = "Portrait_Siam_Phraya_Phahon.dds"
+    picture = "Portrait_Siam_Phraya_Phahon.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Chin Peng"
+	desc = "POLITICS_CHIN_PENG_DESC"
+	picture = "Portrait_Siam_Chin_Peng.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+		name = "Pridi Banomyong"
+		desc = "POLITICS_Pridi_Banomyong_DESC"
+		picture = "Pridi_Banomyong.dds"
+		expire = "1965.1.1"
+		ideology = conservatism
+		traits = {
+			#
+		}
+	}
+
+	create_country_leader = {
+		name = "Phraya Phahon"
+		desc = "POLITICS_PLAEK_PHIBUNSONGKHRAM_DESC"
+		picture = "Portrait_Siam_Phraya_Phahon.dds"
+		expire = "1965.1.1"
+		ideology = fascism_ideology
+		traits = {
+			#
+		}
+	}
 
 1939.1.1 = {
 	set_politics = {

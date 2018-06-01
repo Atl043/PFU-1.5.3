@@ -4,11 +4,11 @@ state={
 	name="STATE_202"
 	manpower = 2495352
 	resources={
-		oil=8 # was: 14
-		aluminium=7 # was: 12
+		oil=14
+		aluminium=12
 	}
-	
-	state_category = city
+
+	state_category = large_city
 
 	history={
 		owner = SOV
@@ -18,11 +18,9 @@ state={
 		buildings = {
 			infrastructure = 7
 			arms_factory = 3
-			industrial_complex = 2
 			air_base = 8
 		}
 		add_core_of = SOV
-		add_core_of = UKR
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 4
@@ -32,6 +30,6 @@ state={
 	}
 
 	provinces={
-		489 504 525 582 3494 3543 6497 9465 9543 9568 11557 
+		489 504 525 582 3494 3543 6497 9465 9543 9568 11557
 	}
 }

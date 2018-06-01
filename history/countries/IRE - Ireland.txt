@@ -53,7 +53,7 @@ set_convoys = 10
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
 		oil_processing = 1
-		improved_oil_processing = 1
+		rubber_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -106,6 +106,10 @@ set_politics = {
 		elections_allowed = yes
 	}
 }
+add_ideas = {
+	IRE_ira
+}
+
 create_country_leader = {
 	name = "Éamon de Valera"
 	desc = "POLITICS_ÉAMON_DE_VALERA_DESC"
@@ -155,8 +159,4 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
 	traits = {  }
 	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
 }

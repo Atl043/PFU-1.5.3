@@ -12,17 +12,17 @@ country_event = {
 	picture = GFX_report_event_usa_amelia_earhart_airplane
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = USA
 		has_war = yes
 		NOT = { has_global_flag = earhart_disappeared }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	option = { # Let her join
 		name = usa.1.a
 		add_political_power = -10
@@ -49,8 +49,8 @@ country_event = {
 
 	is_triggered_only = yes
 
-	
-	option = { 
+
+	option = {
 		name = usa.2.a
 		every_other_country = {
 			limit = {
@@ -102,9 +102,6 @@ country_event = {
 
 	option = {
 		name = usa.3.a
-		USA = {
-			add_war_support = 0.5
-		}
 		create_wargoal = {
 			type = take_state
 			target = USA
@@ -121,79 +118,10 @@ country_event = {
 	picture = GFX_report_event_usa_british_sailors_destroyers
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = usa.4.a
 		custom_effect_tooltip = usa.4.a.tt
-		hidden_effect = {
-			ENG = {	load_oob = "ENG_destroyers_for_bases" }
-			ENG = {
-				if = { limit = { 696 = { is_controlled_by = ENG } }
-					remove_state_core = 696
-				}
-				if = { limit = { 331 = { is_controlled_by = ENG } }
-					remove_state_core = 331
-				}
-				if = { limit = { 308 = { is_controlled_by = ENG } } 
-					remove_state_core = 308
-				}
-				if = { limit = { 693 = { is_controlled_by = ENG } } 
-					remove_state_core = 693
-				}
-				if = { limit = { 689 = { is_controlled_by = ENG } } 
-					remove_state_core = 689
-				}
-				if = { limit = { 691 = { is_controlled_by = ENG } } 
-					remove_state_core = 691
-				}
-			}
-			CAN = { load_oob = "CAN_destroyers_for_bases" }
-		}
-		USA = {
-			if = { limit = { 696 = { is_controlled_by = ENG } }
-				transfer_state = 696
-			}
-			if = { limit = { 331 = { is_controlled_by = ENG } }
-				transfer_state = 331
-			}
-			if = { limit = { 308 = { is_controlled_by = ENG } } 
-				transfer_state = 308
-			}
-			if = { limit = { 693 = { is_controlled_by = ENG } } 
-				transfer_state = 693
-			}
-			if = { limit = { 689 = { is_controlled_by = ENG } } 
-				transfer_state = 689
-			}
-			if = { limit = { 691 = { is_controlled_by = ENG } } 
-				transfer_state = 691
-			}
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = destroyers_for_bases_opinion
-			}
-		}
-	}
-
-	option = {
-		name = usa.4.b
-		USA = { country_event = { id = usa.5 days = 1 } }
-		ai_chance = { factor = 0 }
-	}
-
-}
-
-# Britain refuses offer
-country_event = {
-	id = usa.5
-	title = usa.5.t
-	desc = usa.5.d
-	picture = GFX_report_event_usa_destroyers
-
-	is_triggered_only = yes
-	
-	option = { 
-		name = usa.5.a
 	}
 }
 
@@ -212,16 +140,16 @@ country_event = {
 		date > 1936.1.1
 		date < 1937.1.1
 	}
-	
-	option = { 	
+
+	option = {
 		name = usa.6.a
 		ai_chance = {
 			factor = 75
-		}		
+		}
 		add_ideas = new_deal
 	}
 
-	option = { 
+	option = {
 		name = usa.6.b
 		ai_chance = {
 			factor = 25
@@ -229,7 +157,7 @@ country_event = {
 				factor = 0
 				is_historical_focus_on = yes
 			}
-		}		
+		}
 		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
 		if = {
 			limit = {
@@ -272,13 +200,13 @@ country_event = {
 		date < 1941.1.1
 		has_idea = new_deal
 	}
-	
+
 	option = {
 		name = usa.7.a
 		ai_chance = {
 			factor = 75
 		}
-		add_political_power = 40
+		add_political_power = 150
 		remove_ideas = great_depression
 	}
 
@@ -290,7 +218,7 @@ country_event = {
 				factor = 0
 				is_historical_focus_on = yes
 			}
-		}	
+		}
 		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
 		remove_ideas = new_deal
 		add_ideas = wilkies_new_deal
@@ -301,7 +229,7 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = liberalism
 			traits = {
-				
+
 			}
 		}
 		remove_ideas = great_depression
@@ -324,14 +252,15 @@ country_event = {
 		date < 1941.1.1
 		NOT = { has_idea = new_deal }
 	}
-	
-	option = { 
+
+	option = {
 		name = usa.8.a
-		add_political_power = -40
+		add_political_power = -140
+		add_stability = 0.1
 		remove_ideas = great_depression
 	}
 
-	option = { 
+	option = {
 		name = usa.8.b
 		set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
 		add_ideas = new_deal
@@ -357,7 +286,7 @@ country_event = {
 		has_idea = new_deal
 		has_war = no
 	}
-	
+
 	option = {
 		name = usa.9.a
 		ai_chance = {
@@ -366,7 +295,7 @@ country_event = {
 		add_political_power = 10
 	}
 
-	option = { 
+	option = {
 		name = usa.9.b
 		ai_chance = {
 			factor = 25
@@ -374,7 +303,7 @@ country_event = {
 				factor = 0
 				is_historical_focus_on = yes
 			}
-		}		
+		}
 		remove_ideas = new_deal
 		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
 		create_country_leader = {
@@ -384,7 +313,7 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
-				
+
 			}
 		}
 	}
@@ -406,13 +335,13 @@ country_event = {
 		date < 1945.1.1
 		NOT = { has_idea = new_deal }
 	}
-	
-	option = { 
+
+	option = {
 		name = usa.10.a
 		add_political_power = 10
 	}
 
-	option = { 
+	option = {
 		name = usa.10.b
 		add_ideas = new_deal
 		set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
@@ -444,16 +373,16 @@ country_event = {
 			has_country_flag = macarthur_candidate
 		}
 	}
-	
+
 	option = {
 		name = usa.11.a
 		ai_chance = {
 			factor = 25
-		}	
+		}
 		add_political_power = 10
 	}
 
-	option = { 
+	option = {
 		name = usa.11.b
 		ai_chance = {
 			factor = 25
@@ -471,7 +400,7 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
-				
+
 			}
 		}
 		remove_unit_leader = 57
@@ -495,13 +424,13 @@ country_event = {
 		has_idea = new_deal
 		has_war = yes
 	}
-	
-	option = { 
+
+	option = {
 		name = usa.12.a
 		country_event = { id = usa.9 }
 	}
 
-	option = { 
+	option = {
 		name = usa.12.b
 		country_event = { id = usa.11 }
 	}
@@ -526,7 +455,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 365
 	}
-	
+
 	option = {
 		name = usa.13.a
 		add_political_power = -40
@@ -538,13 +467,13 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = liberalism
 			traits = {
-				
+
 			}
 		}
 	}
 }
 
-# Fascist US reacts to Commienazis 
+# Fascist US reacts to Commienazis
 country_event = {
 	id = usa.14
 	title = usa.14.t
@@ -558,8 +487,8 @@ country_event = {
 		has_government = fascism
 		is_puppet = no
 	}
-	
-	option = { 
+
+	option = {
 		name = usa.14.a
 		set_politics = {
 			ruling_party = democratic
@@ -570,7 +499,6 @@ country_event = {
 			popularity = 0.5
 		}
 		remove_ideas = great_depression
-		add_war_support = 0.2
 		add_timed_idea = { idea = fascism_defeated days = 730 }
 		if = {
 			limit = {
@@ -598,16 +526,16 @@ country_event = {
 }
 
 #DO NOT USE USA.15 AS EVENT ID
-#It will make the event text pop up as the name or requirement for two radar technologies for Finland if they are Fascist due to a hash conflict.
+#It will make the event text pop up as the name or requirement for two radar technologies for Finland if they are Fascist.
 
 
 # USA option to intervene in war
-# Hidden event to get scopes set up 
+# Hidden event to get scopes set up
 country_event = {
 	id = usa.16
 
 	is_triggered_only = yes
-	
+
 	hidden = yes
 
 	immediate = {
@@ -618,7 +546,7 @@ country_event = {
 	}
 }
 
-# USA option to intervene in war 
+# USA option to intervene in war
 country_event = {
 	id = usa.17
 	title = usa.17.t
@@ -626,14 +554,14 @@ country_event = {
 	picture = GFX_report_event_usa_macarthur_speech
 
 	is_triggered_only = yes
-	
+
 	#Intervene ultimatum war
-	option = { 
+	option = {
 		name = usa.17.a
-	
+
 		#Need to use FROM FROM scope since the one sending the event is the nation under attack
 		ai_chance = {
-			factor = 20			
+			factor = 20
 			modifier = {
 				factor = 0.2
 				FROM = {
@@ -644,7 +572,7 @@ country_event = {
 						}
 					}
 				}
-			}		
+			}
 		}
 
 		custom_effect_tooltip = usa.17.a_tt
@@ -680,9 +608,9 @@ country_event = {
 	picture = GFX_report_event_soldiers_marching
 
 	is_triggered_only = yes
-	
+
 	#Go to war with USA
-	option = { 
+	option = {
 		name = usa.18.a
 
 		ai_chance = {
@@ -709,7 +637,6 @@ country_event = {
 				add_to_war = {
 					targeted_alliance = PREV
 					enemy = ROOT
-					hostility_reason = guarantee
 				}
 			}
 		}
@@ -728,7 +655,7 @@ country_event = {
 	option = {
 		name = usa.18.b
 
-		ai_chance = { 
+		ai_chance = {
 			factor = 10
 			modifier = {
 				factor = 10
@@ -737,7 +664,7 @@ country_event = {
 					ratio < 0.7
 				}
 				is_in_faction = no
-			}			
+			}
 		}
 
 		custom_effect_tooltip = usa.18.b_tt
@@ -752,7 +679,7 @@ country_event = {
 	title = usa.19.t
 
 	is_triggered_only = yes
-	
+
 	hidden = yes
 
 	immediate = {
@@ -765,7 +692,7 @@ country_event = {
 	}
 }
 
-# US supports democracy 
+# US supports democracy
 country_event = {
 	id = usa.20
 	title = usa.20.t
@@ -779,7 +706,7 @@ country_event = {
 	}
 
 	option = {
-		name = usa.20.a		
+		name = usa.20.a
 		custom_effect_tooltip = usa.20.a_tt
 	}
 }
@@ -790,7 +717,7 @@ country_event = {
 	title = usa.20.t
 	desc = usa.21.d
 	picture = GFX_report_event_usa_election_generic
-	
+
 	is_triggered_only = yes
 
 	immediate = {
@@ -817,7 +744,7 @@ country_event = {
 	}
 
 	option = {
-		name = usa.20.a	
+		name = usa.20.a
 		custom_effect_tooltip = usa.20.a_tt
 	}
 
@@ -840,7 +767,7 @@ country_event = {
 }
 
 
-# Communist US reacts to Commienazis 
+# Communist US reacts to Commienazis
 country_event = {
 	id = usa.24
 	title = usa.24.t
@@ -851,11 +778,11 @@ country_event = {
 
 	trigger = {
 		tag = USA
-		has_government = communism 
+		has_government = communism
 		is_puppet = no
 	}
-	
-	option = { 
+
+	option = {
 		name = usa.24.a
 		set_politics = {
 			ruling_party = democratic
@@ -866,7 +793,6 @@ country_event = {
 			popularity = 0.5
 		}
 		remove_ideas = great_depression
-		add_war_support = 0.2
 		add_timed_idea = { idea = communism_defeated days = 730 }
 		if = {
 			limit = {
@@ -891,5 +817,78 @@ country_event = {
 	option = {
 		name = usa.24.b
 		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = usa.25
+	title = usa.25.t
+	desc = usa.25.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+
+	trigger = {
+		tag = USA
+		date > 1942.9.8
+		#1942.9.8
+		country_exists = EFR
+	}
+	fire_only_once = yes
+	option = {
+		name = usa.25.a
+		declare_war_on = {
+			target = EFR
+			type = puppet_wargoal_focus
+		}
+		hidden_effect = {
+			if = {
+				limit = { NOT = { USA = { has_tech = basic_medium_art } } }
+				USA = { set_technology = { basic_medium_art = 1 }	}
+			}
+			if = {
+				limit = { NOT = { USA = { has_tech = mechanised_infantry } } }
+				USA = { set_technology = { mechanised_infantry = 1 }	}
+			}
+			if = {
+				limit = { NOT = { USA = { has_tech = basic_medium_tank } } }
+				USA = { set_technology = { basic_medium_tank = 1 }	}
+			}
+			if = {
+				limit = { NOT = { ENG = { has_tech = basic_medium_tank } } }
+				ENG = { set_technology = { basic_medium_tank = 1 }	}
+			}
+			if = {
+				limit = { NOT = { ENG = { has_tech = basic_heavy_tank } } }
+				ENG = { set_technology = { basic_heavy_tank = 1 }	}
+			}
+			if = {
+				limit = { NOT = { ENG = { has_tech = basic_medium_art } } }
+				ENG = { set_technology = { basic_medium_art = 1 }	}
+			}
+		}
+
+		hidden_effect = {
+			load_oob = USA_Torch_historical
+			ENG = { load_oob = ENG_Torch_historical }
+		}
+
+		hidden_effect = {
+			GER = {
+				puppet = EFR
+			}
+		}
+		custom_effect_tooltip = USA_operation_torch_effect_2
+	}
+}
+
+country_event = {
+	id = usa.1001
+	title = usa.1001.t
+	desc = usa.1001.d
+	picture = GFX_ll_act
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.1001.a
 	}
 }

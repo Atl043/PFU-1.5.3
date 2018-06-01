@@ -8,10 +8,18 @@ state={
 
 	history={
 		owner = ITA
-		buildings = {
-			infrastructure = 3
+				victory_points = {
+			1198 3 
 		}
-		add_core_of = LBA
+		
+		buildings = {
+			infrastructure = 1
+					1198 ={
+			bunker = 5
+			}
+		
+		
+		}
 	}
 
 	provinces={
