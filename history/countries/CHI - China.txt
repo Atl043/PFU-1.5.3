@@ -1,7 +1,7 @@
 ﻿capital = 613 # Nanjing
 
 oob = "CHI_1936"
-set_stability = 0.2
+set_stability = 0.3
 set_war_support = 0.6
 
 # Starting tech
