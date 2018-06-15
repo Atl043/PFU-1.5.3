@@ -194,8 +194,6 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = SPR_Spain_infra }
 		available = {
-			controls_state = 166
-			controls_state = 170
 			controls_state = 41
 		}
 		x = 0
