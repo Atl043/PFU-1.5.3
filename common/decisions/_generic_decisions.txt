@@ -71,8 +71,8 @@ political_actions = {
 
 		modifier = {
 			stability_weekly = 0.005
-			consumer_goods_factor = 0.025
-			industrial_capacity_factory = -0.05
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.1
 		}
 
 		days_remove = 180
@@ -116,7 +116,7 @@ political_actions = {
 		modifier = {
 			stability_weekly = 0.010
 			war_support_weekly = -0.010
-			political_power_gain = -0.25
+			political_power_gain = -0.50
 		}
 
 		days_remove = 90
@@ -238,7 +238,7 @@ propaganda_efforts = {
 		days_remove = 90
 		days_re_enable = 180
 
-		cost = 150
+		cost = 100
 
 		modifier = {
 			war_support_weekly = 0.01
@@ -643,12 +643,12 @@ special_projects = {
 
 		fire_only_once = no
 
-		days_remove = 365
+		days_remove = 180
 
-		cost = 250
+		cost = 100
 
 		modifier = {
-			civilian_factory_use = 50
+			civilian_factory_use = 5
 		}
 
 		remove_effect = {
@@ -934,7 +934,7 @@ war_measures = {
                 }
                 AND = {
                     has_government = neutrality
-                    has_war_support > 0.84
+                    has_war_support > 0.89
                     has_stability > 0.7
                 }
             }
