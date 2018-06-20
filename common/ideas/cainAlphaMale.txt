@@ -41,7 +41,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			modifier = {
 				consumer_goods_factor = 0.05
-				stability_factor = -0.7
+				stability_factor = -0.07
 			}
 		}
 
@@ -91,7 +91,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			modifier = {
 				##consumer_goods_factor = 0.0
-				stability_factor = -0.1
+				stability_factor = -0.075
 			}
 		}
 	}
