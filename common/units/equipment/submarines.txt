@@ -22,15 +22,15 @@ equipments = {
 		fire_range = 14
 		torpedo_attack = 10
 
-		anti_air_attack = 0.5
+		anti_air_attack = 0
 
 		armor_value = 0
-		evasion = 75
+		evasion = 60
 
 		surface_detection = 30
 		sub_detection = 0
-		surface_visibility = 8
-		sub_visibility = 20
+		surface_visibility = 10
+		sub_visibility = 30
 		naval_speed = 20
 		reliability = 0.60
 
@@ -77,15 +77,15 @@ equipments = {
 		fire_range = 15
 		torpedo_attack = 16
 
-		anti_air_attack = 1
+		anti_air_attack = 0
 
 		armor_value = 0
-		evasion = 77.5
+		evasion = 65
 
 		surface_detection = 40
 		sub_detection = 0
-		surface_visibility = 8
-		sub_visibility = 15
+		surface_visibility = 10
+		sub_visibility = 25
 		naval_speed = 25
 		reliability = 0.70
 
@@ -124,8 +124,8 @@ equipments = {
 
 		surface_detection = 50
 		sub_detection = 0
-		surface_visibility = 8
-		sub_visibility = 12.5
+		surface_visibility = 10
+		sub_visibility = 15
 		naval_speed = 27
 		reliability = 0.75
 
@@ -157,10 +157,10 @@ equipments = {
 		fire_range = 16
 		torpedo_attack = 24
 
-		anti_air_attack = 1.5
+		anti_air_attack = 1
 
 		armor_value = 0
-		evasion = 82.5
+		evasion = 75
 
 		surface_detection = 70
 		sub_detection = 0

@@ -67,7 +67,8 @@ equipments = {
 
 		#Offensive Abilities
 		ap_attack = 16
-		
+		soft_attack = 3.5
+
 		build_cost_ic = 10
 		resources = {
 			steel = 3
@@ -95,6 +96,8 @@ equipments = {
 
 		#Offensive Abilities
 		ap_attack = 21
+		soft_attack = 4
+
 		
 		build_cost_ic = 11
 		resources = {
