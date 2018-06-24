@@ -127,7 +127,7 @@ units = {
 		location = 6489
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 	division= {
@@ -135,7 +135,7 @@ units = {
 		location = 9458
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 	#Northern Command
@@ -151,14 +151,14 @@ units = {
 		name = "5. Infantry Division"
 		location = 6103
 		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.6
 	}
 	division= {
-		name = "50th 'Northumbrian' Motorized Division"
+		name = "50th 'Northumbrian' Infantry Division"
 		location = 3422
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 		division= {
@@ -166,7 +166,7 @@ units = {
 		location = 540
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 	division= {
@@ -174,7 +174,7 @@ units = {
 		location = 11446
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 	#Eastern Command
@@ -189,7 +189,7 @@ units = {
 		location = 11374
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 
 	}
 	division= {
@@ -197,7 +197,7 @@ units = {
 		location = 3287
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 
 	}
 	#Western Command
@@ -206,7 +206,7 @@ units = {
 		location = 3369
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.1
 
 	}
 	division= {
@@ -214,7 +214,7 @@ units = {
 		location = 322
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 	division= {
@@ -222,7 +222,7 @@ units = {
 		location = 221
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 	division= {
