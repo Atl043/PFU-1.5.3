@@ -85,7 +85,7 @@ ideas = {
 			}
 
 			modifier = {
-				research_time_factor = 0.30
+				research_time_factor = 0.25
 			}
 
 			research_bonus = {
@@ -175,13 +175,16 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+			modifier = {
+				
+				industrial_capacity_factory = -0.15
+			
+			}
 
 			equipment_bonus = {
-				armor = {
-				build_cost_ic = 10 instant = yes
-				}
+
 				artillery_equipment = {
-				build_cost_ic = 10 instant = yes
+				build_cost_ic = 10.0 instant = yes
 				}
 				rocket_artillery_equipment  = {
 				build_cost_ic = 10
@@ -222,7 +225,7 @@ ideas = {
 				}
 				transport_plane_equipment = {
 				instant = yes
-				build_cost_ic = 10000
+				build_cost_ic = 0.5
 				}
 				guided_missile_equipment = {
 				instant = yes
@@ -262,7 +265,7 @@ ideas = {
 				out_of_supply_factor = -0.80
 				attrition = -0.70
 				supply_consumption_factor = -0.60
-				stability_factor = 0.2
+				stability_factor = 0.3
 			}
 		}
 		rear = {
