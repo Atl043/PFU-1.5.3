@@ -662,6 +662,7 @@ country_event = {
 	mean_time_to_happen = { days = 30 }
 }
 
+
 country_event = {
 	id = pfu.21
 	title = pfu.21.t
@@ -808,11 +809,10 @@ country_event = {
 		tag = JAP
 		date > 1940.10.1
 		CHI = {
-			controls_state = 603
+			controls_state = 383
 			controls_state = 325
 			controls_state = 605
-			controls_state = 763
-			controls_state = 765
+			controls_state = 601
 		}
 		NOT = { has_global_flag = jap_southern }
 	}
@@ -841,10 +841,10 @@ country_event = {
 	trigger = {
 		tag = JAP
 		OR = {
-			NOT = { CHI = { controls_state = 605 } }
-            NOT = { CHI = { controls_state = 601 } }
-			JAP = { controls_state = 325 }
-		    JAP = { controls_state = 283 }
+			NOT = { CHI = { controls_state = 605 } } # 20 steel
+            		NOT = { CHI = { controls_state = 601 } } # 2 oil province in china
+			JAP = { controls_state = 325 }  # yunan
+		    	JAP = { controls_state = 283 }  # china 
 		}
 		NOT = { has_global_flag = rebels }
 	}
@@ -1016,7 +1016,7 @@ country_event = {
 
 	trigger = {
 		tag = SOV
-		date > 1941.8.1
+		date > 1941.6.1
 		SOV = {
 			controls_state = 236
 		}

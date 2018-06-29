@@ -3,15 +3,15 @@ political_actions = {
 	annex_new_zealand = {
 		ai_will_do = { factor = 0 }
 		cost = 20
-
 		visible = {
-			tag = ENG
+			tag = AST
 			NZL = { is_ai = yes }
 			country_exists = NZL
+			date > 1939.1.1
 		}
 
 		complete_effect = {
-			ENG = {
+			AST = {
 				annex_country = { target = NZL transfer_troops = yes }
 				add_ideas = annex_new_zealand_idea
 			}

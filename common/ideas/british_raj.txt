@@ -14,7 +14,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = 0.02
+				conscription_factor = 0.03
 			}
 		}
 
@@ -31,7 +31,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = 0.02
+				conscription_factor = 0.03
 			}
 		}
 	}
@@ -74,7 +74,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = 0.10
+				consumer_goods_factor = 0.5
 			}
 		}
 
@@ -404,7 +404,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = -0.49
+				conscription_factor = -0.50
 			}
 		}
 

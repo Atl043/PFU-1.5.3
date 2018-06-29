@@ -23,10 +23,10 @@ JAP_or_friend_controls_big_part_of_CHI_or_peace = {
 				tag = JAP
 				is_puppet_of = JAP
 			}
-		    controls_state = 714
-		    controls_state = 717
-		    controls_state = 328
-		    controls_state = 715
+		    controls_state = 714 # Heilungkiang
+		    controls_state = 717 # chuho
+		    controls_state = 328 # Manchukuo
+		    controls_state = 715 #
 		    controls_state = 527
 		    controls_state = 525
 		    controls_state = 716

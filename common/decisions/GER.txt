@@ -111,11 +111,11 @@ political_actions = {
 	annex_bulgaria = {
 		ai_will_do = { factor = 0 }
 		cost = 20
-
 		visible = {
 			tag = GER
 			BUL = { is_ai = yes }
 			country_exists = BUL
+			date > 1941.4.1
 		}
 
 		complete_effect = {
@@ -129,11 +129,11 @@ political_actions = {
 	annex_hungary = {
 		ai_will_do = { factor = 0 }
 		cost = 30
-
 		visible = {
 			tag = GER
 			HUN = { is_ai = yes }
 			country_exists = HUN
+			date > 1941.4.1
 		}
 
 		complete_effect = {

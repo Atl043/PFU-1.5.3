@@ -19,7 +19,7 @@ ideas = {
 				consumer_goods_factor = 0.2
 				justify_war_goal_time = 5.00
 				join_faction_tension = 2
-				stability_factor = -0.4 
+				stability_factor = -0.35
 			}
 		}
 

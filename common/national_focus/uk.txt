@@ -1170,6 +1170,8 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 50
+			remove_ideas = london_naval_treaty
+			add_ideas = britannia_rules_the_waves
 			random_owned_controlled_state = {
 				limit = {
 					is_coastal = yes

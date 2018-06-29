@@ -7,6 +7,8 @@ ideas = {
 			modifier = { special_forces_cap = 0.25 }
 		}
 
+		
+
 		generic_neutral_country = {
 			allowed = { always = yes }
 			removal_cost = -1
@@ -94,5 +96,6 @@ ideas = {
 				stability_factor = -0.075
 			}
 		}
+
 	}
 }

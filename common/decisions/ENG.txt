@@ -241,12 +241,12 @@ political_actions = {
 
 	annex_canada = {
 		ai_will_do = { factor = 0 }
-		cost = 50
-
+		cost = 50	
 		visible = {
 			tag = ENG
 			CAN = { is_ai = yes }
 			country_exists = CAN
+			date > 1941.4.1
 		}
 
 		complete_effect = {
@@ -260,11 +260,11 @@ political_actions = {
 	annex_british_raj = {
 		ai_will_do = { factor = 0 }
 		cost = 50
-
 		visible = {
 			tag = ENG
 			RAJ = { is_ai = yes }
 			country_exists = RAJ
+			date > 1941.4.1
 		}
 
 		complete_effect = {
@@ -278,11 +278,11 @@ political_actions = {
 	annex_south_africa = {
 		ai_will_do = { factor = 0 }
 		cost = 30
-
 		visible = {
 			tag = ENG
 			SAF = { is_ai = yes }
 			country_exists = SAF
+			date > 1941.4.1
 		}
 
 		complete_effect = {
@@ -296,11 +296,14 @@ political_actions = {
 	annex_australia = {
 		ai_will_do = { factor = 0 }
 		cost = 30
-
+		available = {
+			date > 1941.4.1
+		}
 		visible = {
 			tag = ENG
 			AST = { is_ai = yes }
 			country_exists = AST
+			date > 1941.4.1
 		}
 
 		complete_effect = {
@@ -314,11 +317,11 @@ political_actions = {
 	annex_new_zealand = {
 		ai_will_do = { factor = 0 }
 		cost = 20
-
 		visible = {
 			tag = ENG
 			NZL = { is_ai = yes }
 			country_exists = NZL
+			date > 1941.4.1
 		}
 
 		complete_effect = {

@@ -44,12 +44,17 @@ set_technology = {
 	electronic_mechanical_engineering = 1
 	radio = 1
 	radio_detection = 1
+
+	basic_carrier = 1
+	basic_submarine = 1
+# early -> basic -> improved
 }
 
 add_ideas = {
 	stiff_upper_lip
 	ENG_the_war_to_end_all_wars
 	george_v
+	london_naval_treaty
 }
 
 	give_guarantee = HOL
@@ -857,6 +862,18 @@ create_equipment_variant = {
 		ship_engine_upgrade = 2
 		ship_armor_upgrade = 1
 	}
+}
+
+create_equipment_variant = {
+	name = "HMS Ark Royal (91)"
+	type = carrier_2
+	upgrades = {
+		ship_deckspace_upgrade = 1
+		carrier_armor_upgrade = 1
+		ship_engine_upgrade = 3
+		ship_reliability_upgrade = 1
+	}
+
 }
 
 1939.1.1 = {
