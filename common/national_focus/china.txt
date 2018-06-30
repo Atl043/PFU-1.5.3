@@ -949,7 +949,6 @@ focus_tree = {
 			add_political_power = 120
 			remove_ideas = incompetent_industry
 	    }
-		}
 	}
 
 	focus = {
@@ -963,4 +962,3 @@ focus_tree = {
 			add_ideas = deterrence
 		}
 	}
-}
