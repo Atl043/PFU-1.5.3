@@ -16,10 +16,10 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.05
 				justify_war_goal_time = 5.00
 				join_faction_tension = 2
-				stability_factor = -0.35
+				stability_factor = -0.10
 			}
 		}
 
@@ -55,7 +55,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.02
+				conscription = 0.03
 			}
 		}
 

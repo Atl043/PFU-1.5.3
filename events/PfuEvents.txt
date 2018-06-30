@@ -431,10 +431,9 @@ country_event = {
 	trigger = {
 		tag = SOV
 		OR = {
-		date > 1941.12.1
-		NOT = { SOV = { controls_state = 205 } }
-		NOT = { SOV = { controls_state = 246 } }
-		NOT = { SOV = { controls_state = 219 } }
+			NOT = { SOV = { controls_state = 205 } }
+			NOT = { SOV = { controls_state = 246 } }
+			NOT = { SOV = { controls_state = 219 } }
 		}
 		NOT = { has_global_flag = sov_moscow }
 	}
@@ -462,7 +461,6 @@ country_event = {
 
 	trigger = {
 		tag = SOV
-		date > 1941.8.1
 		SOV = {
 			controls_state = 260
 		}

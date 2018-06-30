@@ -986,7 +986,7 @@ focus_tree = {
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			add_political_power = 120
 			army_experience = 10
-			add_named_threat = { threat = 4 name = GER_rhineland }
+			add_named_threat = { threat = 5 name = GER_rhineland }
 			add_war_support = 0.1
 			if = {
 				limit = { FRA = { is_puppet = no } }
@@ -2097,9 +2097,9 @@ focus_tree = {
 				remove_ideas = SPA_recovering_from_civil_war
 				add_opinion_modifier = { target = GER modifier = ger_spa_alliance_focus }
 			}
-			GER = {
-				add_to_faction = SPR
-			}
+			#GER = {
+			#	add_to_faction = SPR
+			#}
 		}
 	}
 	focus = {
