@@ -226,7 +226,7 @@ ideas = {
 			modifier = {
                 industrial_capacity_factory = -0.3
 				army_morale_factor = -0.05
-				consumer_goods_factor = 25
+				consumer_goods_factor = 0.25
 			}
 		}
 		for_the_emperor_idea_sov = {
