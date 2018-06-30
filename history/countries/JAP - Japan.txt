@@ -556,7 +556,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "TommyKay Half Nippon"
-	picture = "half TommyKay.dds"
+	picture = "halfTommyKay.dds"
 	traits = { }
 	skill = 3
 	attack_skill = 3
