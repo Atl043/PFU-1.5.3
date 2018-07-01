@@ -323,7 +323,7 @@ country_event = {
 
 	trigger = {
 		tag = SOV
-		date > 1941.8.1
+		date > 1941.5.5
 		OR = {
 			NOT = { SOV = { controls_state = 209 } }
 			NOT = { SOV = { controls_state = 12 } }
@@ -1014,7 +1014,6 @@ country_event = {
 
 	trigger = {
 		tag = SOV
-		date > 1941.6.1
 		SOV = {
 			controls_state = 236
 		}
