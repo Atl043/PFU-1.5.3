@@ -264,7 +264,7 @@ political_actions = {
 			tag = ENG
 			RAJ = { is_ai = yes }
 			country_exists = RAJ
-			date > 1941.4.1
+			date > 1940.1.1
 		}
 
 		complete_effect = {
@@ -282,7 +282,7 @@ political_actions = {
 			tag = ENG
 			SAF = { is_ai = yes }
 			country_exists = SAF
-			date > 1941.4.1
+			date > 1940.1.1
 		}
 
 		complete_effect = {
@@ -297,7 +297,7 @@ political_actions = {
 		ai_will_do = { factor = 0 }
 		cost = 30
 		available = {
-			date > 1941.4.1
+			date > 1940.1.1
 		}
 		visible = {
 			tag = ENG
@@ -321,7 +321,7 @@ political_actions = {
 			tag = ENG
 			NZL = { is_ai = yes }
 			country_exists = NZL
-			date > 1941.4.1
+			date > 1939.2.1
 		}
 
 		complete_effect = {

@@ -115,7 +115,7 @@ political_actions = {
 			tag = GER
 			BUL = { is_ai = yes }
 			country_exists = BUL
-			date > 1941.4.1
+			date > 1940.1.1
 		}
 
 		complete_effect = {
@@ -133,7 +133,7 @@ political_actions = {
 			tag = GER
 			HUN = { is_ai = yes }
 			country_exists = HUN
-			date > 1941.4.1
+			date > 1940.1.1
 		}
 
 		complete_effect = {
@@ -143,6 +143,38 @@ political_actions = {
 			}
 		}
 	}
+
+	puppet_ROM = {
+		ai_will_do = { factor = 0 }
+		cost = 25
+
+		visible = {
+			tag = GER
+			ROM = { is_ai = yes }
+			country_exists = ROM
+			date > 1936.1.1
+		}
+
+		complete_effect = {
+			GER = { puppet = ROM }
+		}
+	}
+	puppet_HUN = {
+		ai_will_do = { factor = 0 }
+		cost = 25
+
+		visible = {
+			tag = GER
+			HUN = { is_ai = yes }
+			country_exists = HUN
+			date > 1936.1.1
+		}
+
+		complete_effect = {
+			GER = { puppet = HUN }
+		}
+	}
+
 
 	puppet_vichy_france = {
 		ai_will_do = { factor = 0 }
