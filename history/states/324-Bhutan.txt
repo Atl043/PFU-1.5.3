@@ -12,11 +12,11 @@ state={
 		tungsten=2
 
 	}
-
 	history={
 		owner = RAJ
 		buildings = {
 			infrastructure = 1 
+			industrial_complex = 3
 		}
 		victory_points = {
 			8010 1 

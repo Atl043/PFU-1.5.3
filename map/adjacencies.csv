@@ -163,6 +163,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1898;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 3989;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 1129;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
+5042;4973;impassable;-1;-1;-1;-1;-1;;Himalayas
 4558;10826;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4558;12653;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4558;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains
@@ -195,7 +196,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4391;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4318;12789;impassable;-1;-1;-1;-1;-1;;burma
 4996;12789;impassable;-1;-1;-1;-1;-1;;burma
-4996;10863;impassable;-1;-1;-1;-1;-1;;burma
+4425;10863;impassable;-1;-1;-1;-1;-1;;burma
 4996;12898;impassable;-1;-1;-1;-1;-1;;burma
 4996;10863;impassable;-1;-1;-1;-1;-1;;burma
 10920;10863;impassable;-1;-1;-1;-1;-1;;burma
