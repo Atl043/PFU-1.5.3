@@ -533,3 +533,17 @@ country_event = {
 	}
 }
 
+# Italy attacks France
+country_event = {
+	id = italy.17
+	title = italy.17.t
+	desc = italy.17.d
+completion_reward = {
+			add_timed_idea = { idea = GER_blitzkrieg days = 100 }
+			ROM = { add_timed_idea = { idea = GER_blitzkrieg_romania days = 100 } }
+			ITA = {
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
+			}

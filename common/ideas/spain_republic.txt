@@ -376,7 +376,7 @@ ideas = {
 		
 		designer = yes
 		
-		secn = {
+		secna = {
 			
 			picture = generic_naval_manufacturer_3
 

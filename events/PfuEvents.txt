@@ -1043,3 +1043,33 @@ country_event = {
 	}
 	mean_time_to_happen = { days = 5 }
 }
+country_event = {
+	id = pfu.35
+	title = pfu.35.t
+	desc = pfu.35.d
+	picture = GFX_report_event_plan_vert
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ITA
+		FRA = {
+			has_capitulated = yes
+		}
+	}
+
+	option = {
+		name = pfu.35.a
+		ITA = {
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = ENG
+					type = annex_everything
+				}
+		}
+	}
+	mean_time_to_happen = { days = 30 }
+}
