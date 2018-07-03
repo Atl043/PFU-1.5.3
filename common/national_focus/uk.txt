@@ -1744,14 +1744,8 @@ focus_tree = {
 		completion_reward = {
 			118 = {
 				add_building_construction = {
-					type = bunker
-					level = 4
-					province = 4135
-					instant_build = yes
-				}
-				add_building_construction = {
 					type = coastal_bunker
-					level = 2
+					level = 4
 					province = 4135
 					instant_build = yes
 				}
