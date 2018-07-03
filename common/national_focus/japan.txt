@@ -15,7 +15,7 @@ focus_tree = {
 	############################
 
 	focus = {
-		id = JAP_puppet_siam
+		id = JAP_annex_siam
 		icon = GFX_goal_generic_military_deal
 		x = 15
 		y = 6
@@ -35,7 +35,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			puppet = SIA
+			annex_country = { target = SIA transfer_troops = yes }
 		}
 	}
 
@@ -1835,6 +1835,23 @@ focus_tree = {
 			country_exists = SIA
 			date > 1940.1.1
 		}
+		bypass = {
+			OR = {
+				has_war_with = SIA
+				is_in_faction_with = SIA
+				NOT = {
+					289 = {
+						controller = {
+							original_tag = SIA
+						}
+						owner = {
+							original_tag = SIA
+						}
+					}
+				}
+			}
+		}
+		cancel_if_invalid = no
 		x = 4
 		y = 1
 		cost = 5
