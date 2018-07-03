@@ -126,7 +126,7 @@ political_actions = {
 		}
 	}
 
-	annex_hungary = {
+	Operation_Panzerfaust = {
 		ai_will_do = { factor = 0 }
 		cost = 30
 		visible = {
@@ -144,7 +144,7 @@ political_actions = {
 		}
 	}
 
-	puppet_ROM = {
+	Puppet_ROM = {
 		ai_will_do = { factor = 0 }
 		cost = 25
 
@@ -159,7 +159,7 @@ political_actions = {
 			GER = { puppet = ROM }
 		}
 	}
-	puppet_HUN = {
+	Operation_Margarethe = {
 		ai_will_do = { factor = 0 }
 		cost = 25
 
