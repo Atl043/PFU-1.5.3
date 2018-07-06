@@ -97,7 +97,7 @@ focus_tree = {
 					NOT = { CHI = { has_defensive_war_with = JAP } }
 					608 = { is_owned_by = JAP }
 				}
-				CHI = { surrender_progress > 0.85 }
+				CHI = { surrender_progress > 0.50 }
 			}
 		}
 		prerequisite = { focus = chinese_war_focus }
@@ -1578,10 +1578,15 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = synth_bonus
-				bonus = 0.5
+				bonus = 0.75
 				uses = 2
 				category = synth_resources
 			}
+			modify_building_resources = {
+        	   building = synthetic_refinery
+        	   resource = oil
+        	   amount = 2
+        	}
 			custom_effect_tooltip = JAP_synth_oil_focus_tt
 		}
 	}
