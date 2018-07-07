@@ -103,7 +103,7 @@ political_actions = {
 		}
 
 		visible = {
-			always = yes
+		  NOT { tag = GER }
 		}
 
 		remove_trigger = {
