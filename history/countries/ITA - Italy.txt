@@ -276,7 +276,7 @@ create_navy_leader = {
 	name = "Alberto Da Zara"
 		picture = "Portrait_Italy_Alberto_Da_Zara.dds"
 	traits = { superior_tactician }
-	skill = 3
+	skill = 4
 }
 
 create_navy_leader = {
@@ -322,6 +322,28 @@ create_equipment_variant = {
 		sub_engine_upgrade = 2
 		sub_stealth_upgrade = 2
 		sub_torpedo_upgrade = 2
+	}
+}
+
+create_equipment_variant = {
+	name = "Bandiera Class"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "Big Bob Battle StarShip"
+	type = battleship_2
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 2
+		ship_armor_upgrade = 2
+		ship_gun_upgrade = 2
 	}
 }
 
