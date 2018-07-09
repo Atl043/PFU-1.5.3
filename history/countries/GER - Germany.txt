@@ -61,7 +61,7 @@ set_war_support = 0.30
 create_import = {
 		resource = tungsten
 		factories = 2
-		exporter = SWE
+		exporter = SPR
 }
 create_import = {
 		resource = rubber
