@@ -18,9 +18,10 @@ state={
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
+			industrial_complex = 5
 				1055 = {
-				naval_base = 1
+				naval_base = 4
 				coastal_bunker = 1
 				bunker = 1
 
