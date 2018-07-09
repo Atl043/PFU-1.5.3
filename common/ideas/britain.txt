@@ -9,7 +9,7 @@ ideas = {
 				industrial_capacity_dockyard = -0.05
 			}
 			research_bonus = {
-				naval_doctrine = -0.03
+				naval_doctrine = -0.05
 			}
 
 		}
