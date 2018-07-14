@@ -1582,11 +1582,6 @@ focus_tree = {
 				uses = 2
 				category = synth_resources
 			}
-			modify_building_resources = {
-        	   building = synthetic_refinery
-        	   resource = oil
-        	   amount = 2
-        	}
 			custom_effect_tooltip = JAP_synth_oil_focus_tt
 		}
 	}
