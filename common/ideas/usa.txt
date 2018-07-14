@@ -1,5 +1,69 @@
 ideas = {
 	country = {
+		the_big_blue_blanket = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = { 
+				has_government = democratic
+			}
+			removal_cost = -1
+			
+			picture = generic_navy_bonus
+			
+			modifier = {
+				navy_anti_air_attack_factor = 0.10
+				navy_capital_ship_attack_factor = -0.05
+			}
+		}
+		
+		inexperienced_army = {
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+				army_core_defence_factor = 0.25
+				army_core_attack_factor = 0.25
+				army_defence_factor = -0.2
+				army_attack_factor = -0.2
+			}
+		}
+		
+		advanced_mahanian_doctrine = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = { 
+				has_government = democratic
+			}
+			removal_cost = -1
+			
+			picture = generic_navy_bonus
+			
+			modifier = {
+				navy_capital_ship_attack_factor = 0.05
+			}
+		}
+		discriminatory_draft = {
+		
+		
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+		
+			picture = HUN_treaty_of_triannon
+		
+			modifier = {
+				conscription_factor = -0.10
+			}
+		}
+
 		great_depression = {
 			allowed = {
 				always = no
@@ -240,12 +304,12 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.10
 			}
 		}
 
 		liberty_ships_focus = {
-
+			
 			allowed = {
 				always = no
 			}
@@ -253,11 +317,15 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
+			
 			removal_cost = -1
-
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.50 instant = yes
+				}
+			}
 			modifier = {
-				amphibious_invasion = 0.10
+				amphibious_invasion = 0.25
 			}
 		}
 
@@ -1102,6 +1170,24 @@ ideas = {
 			}
 
 			traits = { coastal_defence_naval_manufacturer }
+
+			modifier = {
+			}
+		}
+		new_port_ship = {
+
+
+			allowed = {
+				original_tag = USA
+			}
+
+
+
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+
+			traits = { new_port_ship }
 
 			modifier = {
 			}
