@@ -229,9 +229,9 @@ ideas = {
 			picture = tfv_can_conscription_crisis
 
 			modifier = {
-                industrial_capacity_factory = -0.3
-				army_morale_factor = -0.05
-				consumer_goods_factor = 0.25
+                industrial_capacity_factory = -0.30
+				army_morale_factor = -0.1
+				consumer_goods_factor = 0.1
 			}
 		}
 		for_the_emperor_idea_sov = {
