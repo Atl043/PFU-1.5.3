@@ -12,7 +12,6 @@ buildings = {
 		infrastructure = yes
 		max_level = 10
 		value = 1
-		local_building_slots = 0.5
 	}
 
 	arms_factory = {
