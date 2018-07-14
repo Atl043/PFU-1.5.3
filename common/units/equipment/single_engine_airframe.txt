@@ -453,7 +453,7 @@ equipments = {
 		air_attack = 9
 		air_defence = 8
 
-		build_cost_ic =	52.8 # cv_version costs 20% more of base archetype
+		build_cost_ic =	44 # cv_version costs 20% more of base archetype
 
 		naval_strike_attack = 6
 		naval_strike_targetting = 10
@@ -473,7 +473,7 @@ equipments = {
 		air_attack = 18
 		air_defence = 11
 
-		build_cost_ic = 56.8 # cv_version costs 20% more of base archetype
+		build_cost_ic = 50 # cv_version costs 20% more of base archetype
 		resources = {
 			oil = 1
 			aluminium = 3
@@ -498,7 +498,7 @@ equipments = {
 		air_attack = 27
 		air_defence = 13
 
-		build_cost_ic = 60.8 # cv_version costs 20% more of base archetype
+		build_cost_ic =  54# cv_version costs 20% more of base archetype
 		resources = {
 			oil = 2
 			aluminium = 2
@@ -522,7 +522,7 @@ equipments = {
 		air_attack = 32
 		air_defence = 15
 
-		build_cost_ic = 64.8 # cv_version costs 20% more of base archetype
+		build_cost_ic = 58 # cv_version costs 20% more of base archetype
 		resources = {
 			oil = 2
 			aluminium = 3
