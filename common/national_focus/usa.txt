@@ -163,7 +163,7 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = rubber
-				amount = 120
+				amount = 75
 				state = 369 #Kentucky
 			}
 		}
@@ -1257,7 +1257,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = 22
 		y = 0
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1277,7 +1277,7 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_cruiser_primacy }
 		x = 18
 		y = 1
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1299,7 +1299,7 @@ focus_tree = {
 		prerequisite = { focus = USA_battleship_primacy }
 		x = 18
 		y = 2
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1322,7 +1322,7 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_battleship_primacy }
 		x = 20
 		y = 1
-		cost = 10
+		cost = 5
 		
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1346,7 +1346,7 @@ focus_tree = {
 		prerequisite = { focus = USA_cruiser_primacy }
 		x = 20
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = the_big_blue_blanket
@@ -1359,7 +1359,7 @@ focus_tree = {
 		prerequisite = { focus = USA_bureau_of_ships }
 		x = 26
 		y = 1
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1381,7 +1381,7 @@ focus_tree = {
 		prerequisite = { focus = USA_carrier_primacy }
 		x = 26
 		y = 2
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1416,7 +1416,7 @@ focus_tree = {
 		prerequisite = { focus = USA_bureau_of_ships }
 		x = 22
 		y = 1
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1434,7 +1434,7 @@ focus_tree = {
 		prerequisite = { focus = USA_escort_effort }
 		x = 22
 		y = 2
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1456,7 +1456,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 24
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = USA_bureau_of_ships }
 		ai_will_do = {
 			factor = 1
@@ -1480,7 +1480,7 @@ focus_tree = {
 		prerequisite = { focus = USA_fund_the_navy }
 		x = 24
 		y = 2
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1503,7 +1503,7 @@ focus_tree = {
 		prerequisite = { focus = USA_expand_the_USMC }
 		x = 24
 		y = 3
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1524,7 +1524,7 @@ focus_tree = {
 		icon = GFX_goal_generic_positive_trade_relations
 		x = 11
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 2
 		}
