@@ -204,10 +204,15 @@ ideas = {
 			picture = generic_morale_bonus
 
 			modifier = {
-				army_attack_factor = 0.2
+				amphibious_invasion = 0.8
+				invasion_preparation = -0.8
+				supply_consumption_factor = -0.25
+				army_attack_factor = 0.4
 				army_org_Factor = 0.20
 				army_morale_factor = 0.2
-				air_nav_efficiency = 0.20
+				attrition = -0.20
+				naval_strike = 1.00 
+				navy_carrier_air_targetting_factor = 0.25
 			}
 		}
 				JAP_rebels = {
