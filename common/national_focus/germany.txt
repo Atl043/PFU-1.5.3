@@ -986,7 +986,7 @@ focus_tree = {
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			add_political_power = 120
 			army_experience = 10
-			add_named_threat = { threat = 4.5 name = GER_rhineland }
+			add_named_threat = { threat = 5 name = GER_rhineland }
 			add_war_support = 0.1
 			if = {
 				limit = { FRA = { is_puppet = no } }

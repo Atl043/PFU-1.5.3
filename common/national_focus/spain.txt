@@ -287,7 +287,6 @@ focus_tree = {
 	 		focus = SPR_Mines
 	 	}
 		available = {
-			has_war = yes
 		}
 		continue_if_invalid = yes
 		x = 0
@@ -496,192 +495,115 @@ focus_tree = {
 
 
 	focus = {
-		id = SPR_Naval
-		icon = GFX_goal_generic_build_navy
-		x = 15
+		id = SPR_OIL_1
+		icon = GFX_goal_generic_oil_refinery
+		x = 14
 		y = 0
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 5
 		}
-		available = {
-		any_state = {
-			is_coastal = yes
-			is_controlled_by = ROOT
-			}
-		}
-
+	
 			completion_reward = {
-				171 = {
-				add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-					}
+				set_technology = { synth_oil_experiments = 1 }
+				add_resource = {
+				type = rubber
+				amount = 6
+				state = 41
 				}
-				168 = {
-				add_extra_state_shared_building_slots = 1
+				41 = {
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
 					}
 				}
 			}
 		}
 
 	focus = {
-		id = SPR_Naval_2
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = SPR_Naval }
-		x = 15
+		id = SPR_OIL_2
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = SPR_OIL_1 }
+		x = 14
 		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		available = {
-		any_state = {
-			is_coastal = yes
-			is_controlled_by = ROOT
-			}
-		}
-
-		completion_reward = {
-		navy_experience = 10
-				add_tech_bonus = {
-				name = SPR_Nav_Doc
-				bonus = 0.5
-				uses = 2
-				category = naval_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = SPR_Subs
-		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = SPR_Naval_2 }
-		x = 13
-		y = 2
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 5
 		}
 
 		completion_reward = {
-		navy_experience = 25
 			add_tech_bonus = {
-				name = SRP_Sub_bonus
-				bonus = 0.5
-				ahead_reduction = 1
+				name = synth_bonus
+				bonus = 0.50
 				uses = 1
-				technology = basic_submarine
-				technology = improved_submarine
-				technology = advanced_submarine
-			}
-		}
-	}
-
-	focus  = {
-		id = SPR_Screens
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = SPR_Naval_2 }
-		x = 15
-		y = 2
-		cost = 5
-		ai_will_do = {
-			factor = 8
-		}
-
-		completion_reward = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = SRP_Ship_Bonus
-				bonus = 0.5
-				ahead_reduction = 1
-				uses = 1
-				technology = improved_destroyer
-				technology = advanced_destroyer
+				category = synth_resources
 			}
 		}
 	}
 
 	focus = {
-		id = SPR_Capitals
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = SPR_Naval_2 }
-		x = 17
+		id = SPR_OIL_3
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = SPR_OIL_2 }
+		x = 14
 		y = 2
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 5
 		}
 
 		completion_reward = {
-			navy_experience = 25
 			add_tech_bonus = {
-				name = SRP_Ship_Bonus
-				bonus = 0.5
-				ahead_reduction = 1
+				name = synth_bonus
+				bonus = 0.50
 				uses = 1
-				technology = basic_battleship
-				technology = improved_battleship
-				technology = advanced_battleship
+				category = synth_resources
 			}
 		}
 	}
-
 	focus = {
-		id = SPR_Carriers
-		icon = GFX_goal_generic_navy_carrier
-		prerequisite = { focus = SPR_Capitals focus = SPR_Subs focus = SPR_Screens }
-		x = 15
+		id = SPR_OIL_4
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = SPR_OIL_3 }
+		x = 14
 		y = 3
-		cost = 5
+		cost = 10
 		ai_will_do = {
-			factor = 4
+			factor = 5
 		}
 
 		completion_reward = {
-		navy_experience = 10
-			add_tech_bonus = {
-				name = SRP_Carrier_Bonus
-				bonus = 0.5
-				ahead_reduction = 1
-				uses = 1
-				technology = early_carrier
-				technology = basic_carrier
-				technology = improved_carrier
-				technology = advanced_carrier
+			177 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
 			}
 		}
 	}
 	focus = {
-		id = SPR_Nav_Air
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = SPR_Carriers }
-		x = 15
+		id = SPR_OIL_5
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = SPR_OIL_4 }
+		x = 14
 		y = 4
-		cost = 5
+		cost = 15
 		ai_will_do = {
-			factor = 4
+			factor = 5
 		}
 
 		completion_reward = {
-		air_experience = 10
-			add_tech_bonus = {
-				name = SPR_Nav_Air_Bonus
-				bonus = 0.5
-				uses = 1
-				category = naval_bomber
-			}
-			add_tech_bonus = {
-				name = SPR_Nav_Doc
-				bonus = 0.5
-				uses = 1
-				category = naval_doctrine
+			177 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 2
+						instant_build = yes
+					}
 			}
 		}
 	}
@@ -689,7 +611,7 @@ focus_tree = {
 	focus = {
 		id = SPR_Air_Officers
 		icon = GFX_goal_generic_air_doctrine
-		x = 20
+		x = 19
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -711,7 +633,7 @@ focus_tree = {
 		id = SPR_Air_Factories
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = SPR_Air_Officers }
-		x = 20
+		x = 19
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -739,7 +661,7 @@ focus_tree = {
 		id = SPR_Fighters
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = SPR_Air_Factories }
-		x = 20
+		x = 19
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -762,7 +684,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Fighters }
 		mutually_exclusive = { focus = SPR_Tac_Bomber }
 		mutually_exclusive = { focus = SPR_Strat }
-		x = 18
+		x = 17
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -786,7 +708,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Fighters }
 		mutually_exclusive = { focus = SPR_CAS }
 		mutually_exclusive = { focus = SPR_Strat }
-		x = 20
+		x = 19
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -810,7 +732,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Fighters }
 		mutually_exclusive = { focus = SPR_CAS }
 		mutually_exclusive = { focus = SPR_Tac_Bomber }
-		x = 22
+		x = 21
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -832,7 +754,7 @@ focus_tree = {
 		id = SPR_Air_Doctrine
 		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = SPR_CAS }
-		x = 18
+		x = 17
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -854,7 +776,7 @@ focus_tree = {
 		id = SPR_Air_Doctrine_2
 		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = SPR_Tac_Bomber }
-		x = 20
+		x = 19
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -876,7 +798,7 @@ focus_tree = {
 		id = SPR_Air_Doctrine_3
 		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = SPR_Strat }
-		x = 22
+		x = 21
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -899,7 +821,7 @@ focus_tree = {
 	focus = {
 		id = SPR_Political_Effort
 		icon = GFX_goal_generic_demand_territory
-		x = 26
+		x = 25
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -916,7 +838,7 @@ focus_tree = {
 		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = SPR_Political_Effort }
 		mutually_exclusive = { focus = SPR_Communism }
-		x = 24
+		x = 23
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -936,7 +858,7 @@ focus_tree = {
 		id = SPR_Fascist_Rec
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = SPR_Fascism }
-		x = 24
+		x = 23
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -959,7 +881,7 @@ focus_tree = {
 		available = {
 			has_government = communism
 		}
-		x = 26
+		x = 25
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -1033,7 +955,7 @@ focus_tree = {
 		id = SPR_Communist_Propaganda
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = SPR_Communism }
-		x = 26
+		x = 25
 		y = 2
 		cost = 10
 		available = {
@@ -1185,7 +1107,6 @@ focus_tree = {
 		id = SPR_Domestic_Tanks
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = SPR_Mech }
-		mutually_exclusive = { focus = SPR_Foreign_Tanks }
 		x = 6
 		y = 4
 		cost = 5
@@ -1196,49 +1117,18 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPR_Tanks
-				bonus = 0.35
-				uses = 1
+				bonus = 0.50
+				uses = 2
 				category = armor
 				}
 			}
 		}
 
 	focus = {
-		id = SPR_Foreign_Tanks
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = SPR_Mech }
-		mutually_exclusive = { focus = SPR_Domestic_Tanks }
-		x = 8
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-			OR = {
-				is_in_faction_with = SOV
-				is_in_faction_with = GER
-				is_in_faction_with = USA
-				is_in_faction_with = ENG
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = SPR_Tanks
-				bonus = 0.5
-				uses = 1
-				category = armor
-			}
-		}
-	}
-
-	focus = {
 		id = SPR_Exercises
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = SPR_Domestic_Tanks focus = SPR_Foreign_Tanks }
-		x = 7
+		x = 6
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 5 }
