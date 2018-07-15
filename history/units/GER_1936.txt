@@ -712,6 +712,7 @@ instant_effect = {
 		equipment = {
 			type = fighter_equipment_1
 			creator = "GER" 
+			version_name = "Bf 109 E"
 		}
 		requested_factories = 15
 		progress = 0.15

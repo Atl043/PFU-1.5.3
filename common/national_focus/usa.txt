@@ -813,7 +813,6 @@ focus_tree = {
 			JAP = {
 				add_opinion_modifier = { target = USA modifier = war_plan_orange }
 			}
-			add_ideas = war_plans
 		}
 	}
 

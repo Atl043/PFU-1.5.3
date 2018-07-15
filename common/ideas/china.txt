@@ -176,8 +176,6 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				
-				industrial_capacity_factory = -0.15
 			
 			}
 

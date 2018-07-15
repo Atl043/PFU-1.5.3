@@ -753,7 +753,7 @@ create_equipment_variant = {
 	upgrades = {
 		plane_gun_upgrade = 2
 		plane_range_upgrade = 1
-		plane_engine_upgrade = 2
+		plane_engine_upgrade = 4
 		plane_reliability_upgrade = 4
 	}
 }
