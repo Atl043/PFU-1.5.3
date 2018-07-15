@@ -94,11 +94,11 @@ focus_tree = {
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = CHI_peking_university }
 		available = {
-			num_of_factories > 60
+			num_of_factories > 50
 		}
 		x = 1
 		y = 3
-		cost = 40
+		cost = 20
         completion_reward = {
 			remove_ideas = public_iliteracy
 	    }
@@ -929,6 +929,16 @@ focus_tree = {
 			}
 			add_political_power = 120
 			remove_ideas = incompetent_industry
+			load_focus_tree = china_communist_focus
+			add_popularity = {
+				popularity = 100
+				ideology = communism
+			}
+			set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+			}
+
 		}
 	}
 
