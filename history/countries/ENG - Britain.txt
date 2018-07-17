@@ -868,8 +868,8 @@ create_equipment_variant = {
 	name = "HMS Ark Royal (91)"
 	type = carrier_2
 	upgrades = {
-		ship_deckspace_upgrade = 2
-		ship_engine_upgrade = 3
+		ship_deckspace_upgrade = 1
+		
 	}
 
 }

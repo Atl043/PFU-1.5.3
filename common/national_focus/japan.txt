@@ -1354,6 +1354,7 @@ focus_tree = {
 		prerequisite = { focus = southern_expansion_focus }
 		available = {
 			date > 1941.1.1
+			date < 1941.2.1
 		}
 		will_lead_to_war_with = USA
 		x = 6
@@ -1368,7 +1369,7 @@ focus_tree = {
 			factor = 10
 			modifier = {
 				factor = 0
-				date < 1941.10.1
+				date < 1941.2.1
 			}
 
 			modifier = {
