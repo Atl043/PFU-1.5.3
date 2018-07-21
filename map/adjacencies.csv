@@ -263,7 +263,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1319;12841;impassable;-1;-1;-1;-1;-1;;China Protection
 7294;12841;impassable;-1;-1;-1;-1;-1;;China Protection
 2067;5072;impassable;-1;-1;-1;-1;-1;;China Protection
-1281;5072;impassable;-1;-1;-1;-1;-1;;China Protection
 5072;12819;impassable;-1;-1;-1;-1;-1;;China Protection
 531;7256;impassable;-1;-1;-1;-1;-1;;China Protection
 531;4295;impassable;-1;-1;-1;-1;-1;;China Protection
