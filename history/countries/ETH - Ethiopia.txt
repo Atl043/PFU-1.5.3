@@ -4,6 +4,7 @@ oob = "ETH_1936"
 
 add_ideas = {
 	eth_failing_state
+	eth_kangz
 }
 
 # Starting tech

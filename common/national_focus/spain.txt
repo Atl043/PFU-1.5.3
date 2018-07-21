@@ -270,12 +270,6 @@ focus_tree = {
 				amount = 10
 				state = 699
 			}
-			add_tech_bonus = {
-				name = HUN_synthetic_industry
-				bonus = 0.75
-				uses = 1
-				category = synth_resources
-			}
 		}
 	}
 
@@ -1118,7 +1112,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SPR_Tanks
 				bonus = 0.50
-				uses = 2
+				uses = 1
 				category = armor
 				}
 			}
