@@ -55,7 +55,7 @@ set_technology = {
 set_research_slots = 4
 set_convoys = 200
 set_stability = 0.75
-set_war_support = 0.30
+set_war_support = 0.40
 
 #Trade
 create_import = {
@@ -218,11 +218,11 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 65
+			popularity = 60
 		}
 
 		communism = {
-			popularity = 15
+			popularity = 20
 			banned = yes #default is no
 		}
 	}

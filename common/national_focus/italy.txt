@@ -629,6 +629,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		set_technology = { synth_oil_experiments = 1 }
 			add_resource = {
 				type = rubber
 				amount = 24

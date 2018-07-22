@@ -1782,10 +1782,10 @@ focus_tree = {
 				}
 			}
 			add_tech_bonus = {
-				name = JAP_Tanks_Light_Bonus
+				name = JAP_Tanks_Bonus
 				uses = 1
 				bonus = 0.5
-				category = cat_light_armor
+				category = armor
 			}
 		}
 	}

@@ -187,6 +187,12 @@ country_event = {
 			uses = 2
 			category = naval_doctrine
 		}
+		add_tech_bonus = {
+			name = synth_bonus
+			bonus = 0.75
+			uses = 1
+			category = synth_resources
+		}
 	}
 	
 	option = {

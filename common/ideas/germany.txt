@@ -970,7 +970,7 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-				date > 1941.6.1
+				date > 1941.1.1
 			}
 			research_bonus = {
 				armor = 0.10
@@ -1039,7 +1039,7 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-				date > 1941.6.1
+				date > 1941.1.1
 			}
 
 			research_bonus = {

@@ -2110,7 +2110,7 @@ technologies = {
 		supply_consumption_factor = -0.10
 
 		infantry = {
-			combat_width = -0.6
+			combat_width = -0.4
 		}
 
 
@@ -2388,7 +2388,7 @@ technologies = {
 		conscription = 0.03
 
 		infantry = {
-			combat_width = -0.6
+			combat_width = -0.4
 		}
 
 
