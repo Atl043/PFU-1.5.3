@@ -116,12 +116,10 @@ focus_tree = {
 			}
 			219 = {
 				is_owned_and_controlled_by = SOV
-				arms_factory > 5
 				industrial_complex > 1
 			}
 			195 = {
 				is_owned_and_controlled_by = SOV
-				arms_factory > 4
 				industrial_complex > 0
 			}
 			573 = {
