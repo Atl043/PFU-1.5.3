@@ -49,7 +49,7 @@ set_politics = {
 
 set_convoys = 150
 set_stability = 0.5
-set_war_support = 0.6
+set_war_support = 0.8
 
 1939.1.1 = {
 
