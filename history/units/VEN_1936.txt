@@ -24,6 +24,6 @@
 
 	}
 	support = {
-		artillery = { x = 0 y = 2 }   # Pioneer Bn
+		artillery = { x = 0 y = 0 }   # Pioneer Bn
 	}
 }
