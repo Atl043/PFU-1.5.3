@@ -982,16 +982,16 @@ focus_tree = {
 			OR = {
 				AND = {
 					has_government = democratic
-					has_war = yes
+					#has_war = yes
 					threat > 0.95
 				}
 				AND = {
 					has_government = communism
-					has_war = yes
+					#has_war = yes
 				}
 				AND = {
 					has_government = fascism
-					has_war = yes
+					#has_war = yes
 				}
 			}
 		}
