@@ -31,7 +31,7 @@ ideas = {
 			picture = generic_volunteer_expedition_bonus
 			
 			modifier = {
-				conscription = 0.05
+				conscription = 0.09
 		
 		}
 		}
@@ -74,7 +74,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.1
 			}
 		}
 		
