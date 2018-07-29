@@ -12,7 +12,7 @@ state={
 			infrastructure = 1
 			air_base = 4
 		}
-		add_core_of = PAK
+		add_core_of = RAJ
 	}
 
 	provinces={

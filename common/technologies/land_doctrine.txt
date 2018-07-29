@@ -1662,7 +1662,7 @@ technologies = {
 		}
 		category_light_infantry = {
 			max_organisation = 5
-			breakthrough = 0.1
+			breakthrough = 0.2
 		}
 
 		enable_tactic = tactic_infantry_charge
