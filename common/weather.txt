@@ -43,8 +43,8 @@ settings = {
     variable = 0.25 # factor how much can vary between updates
 
     # Temperature range when should apply static modifiers
-    weather_extreme_cold = { -100.0 -10.0 }
-    weather_very_cold = { -10.0 -2.0 }
+    weather_extreme_cold = { -100.0 -20.0 }
+    weather_very_cold = { -10.0 -5.0 }
     weather_very_hot = { 27.0 32.0 }
     weather_extreme_hot = { 32.0 100.0 }
   }
@@ -85,7 +85,7 @@ settings = {
     # Max temperature allowed for snowing / min temperature for highest chance of snowing.
     temperature = { 1.0 -10.0 }
 
-    weather_ground_snow_medium = { 10.0 40.0 }
+    weather_ground_snow_medium = { 15.0 40.0 }
     weather_ground_snow_high = { 40.0 1000.0 }
   }
 
