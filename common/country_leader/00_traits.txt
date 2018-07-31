@@ -729,6 +729,11 @@ leader_traits = {
 	tank_manufacturer = {
 		random = no
 		#generic
+		equipment_bonus = {
+			armor = {
+				reliability = 0.08
+			}
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -2211,16 +2216,16 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			carrier = {
-				carrier_size = -0.2 armor_value = 0.2 naval_speed = 0.1 naval_range = -0.5
+				carrier_size = 0.10 armor_value = 0.2 naval_speed = 0.1 naval_range = -0.35
 			}
 			capital_ship = {
-				armor_value = 0.2 attack = 0.1 naval_speed = 0.1 naval_range = -0.5
+				armor_value = 0.2 attack = 0.1 naval_speed = 0.1 naval_range = -0.35
 			}
 			screen_ship = {
-				attack = 0.1 naval_speed = 0.1 naval_range = -0.5
+				attack = 0.1 naval_speed = 0.2 naval_range = -0.25
 			}
 			submarine = {
-				attack = 0.1 naval_speed = 0.1 naval_range = -0.5
+				attack = 0.1 naval_speed = 0.1 naval_range = -0.25
 			}
 		}
 
