@@ -668,7 +668,7 @@ country_event = {
 	picture = GFX_report_event_totalwar
 
 	trigger = {
-		date > 1942.6.1
+		date > 1943.1.1
 		tag = GER
 		NOT = { has_global_flag = total_war }
 	}
