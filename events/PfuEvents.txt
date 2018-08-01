@@ -821,7 +821,7 @@ country_event = {
 		custom_effect_tooltip = pfu.26.a.tt
 		hidden_effect = {
 			set_technology = { interwar_antiair = 1 }
-			add_manpower = -50000
+			add_manpower = -100000
 			load_oob = JAP_southern
 		}
 	}
