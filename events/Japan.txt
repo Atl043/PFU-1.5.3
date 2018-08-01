@@ -410,7 +410,7 @@ country_event = {
 		add_manpower = 10000
 		set_global_flag = indian_national_army_setup
 		RAJ = {
-			add_stability = -0.2
+			add_stability = -0.4
 			if = {
 				limit = { has_dlc = "Together for Victory" }
 				add_popularity = {

@@ -805,12 +805,9 @@ country_event = {
 
 	trigger = {
 		tag = JAP
-		date > 1940.10.1
+		date > 1940.5S.1
 		CHI = {
-			controls_state = 383
-			controls_state = 325
 			controls_state = 605
-			controls_state = 601
 		}
 		NOT = { has_global_flag = jap_southern }
 	}
@@ -824,6 +821,7 @@ country_event = {
 		custom_effect_tooltip = pfu.26.a.tt
 		hidden_effect = {
 			set_technology = { interwar_antiair = 1 }
+			add_manpower = -50000
 			load_oob = JAP_southern
 		}
 	}
