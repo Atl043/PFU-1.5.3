@@ -14,6 +14,7 @@ set_technology = {
 add_ideas = {
 	iran_neutrality
 	neutrality_idea
+	free_trade
 }
 
 1939.1.1 = {

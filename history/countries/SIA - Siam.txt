@@ -96,6 +96,8 @@ set_politics = {
 }
 
 add_ideas = {
+	disarmed_nation
+	free_trade
 	divided_nation_full
 }
 

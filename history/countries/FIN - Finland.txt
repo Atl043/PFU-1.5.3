@@ -5,7 +5,7 @@ oob = "FIN_1936"
 set_research_slots = 3
 
 set_stability = 0.6
-set_war_support = 0.7
+set_war_support = 0.71
 
 set_technology = {
     transport = 1
@@ -29,6 +29,7 @@ add_ideas = {
 	FIN_communism_banned
 	extensive_conscription
     no_finnish_justification
+    free_trade
 }
 
 1939.1.1 = {

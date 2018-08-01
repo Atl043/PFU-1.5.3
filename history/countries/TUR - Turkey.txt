@@ -5,9 +5,9 @@ oob = "TUR_1936"
 set_research_slots = 3
 
 add_ideas = {
-	limited_conscription
 	turkish_neutrality
 	neutrality_idea
+	free_trade
 }
 
 set_technology = {
