@@ -385,7 +385,7 @@ focus_tree = {
 	focus = {
 		id = IRE_armytwo
 		icon = GFX_goal_generic_army_artillery
-		cost = 15
+		cost = 10
 		prerequisite = {
 			focus = IRE_armyone
 		}
@@ -416,7 +416,7 @@ focus_tree = {
 	focus = {
 		id = IRE_armythree
 		icon = GFX_goal_generic_army_artillery2
-		cost = 20
+		cost = 10
 		prerequisite = {
 			focus = IRE_armytwo
 		}
@@ -571,7 +571,7 @@ focus_tree = {
 	focus = {
 		id = IRE_air2
 		icon = GFX_goal_generic_air_doctrine
-		cost = 15
+		cost = 10
 		prerequisite = {
 			focus = IRE_air1
 		}
@@ -608,7 +608,7 @@ focus_tree = {
 	focus = {
 		id = IRE_air3
 		icon = GFX_goal_generic_CAS
-		cost = 20
+		cost = 10
 		prerequisite = {
 			focus = IRE_air2
 		}
@@ -707,7 +707,7 @@ focus_tree = {
 	focus = {
 		id = IRE_navy2
 		icon = GFX_goal_generic_navy_cruiser
-		cost = 15
+		cost = 10
 		prerequisite = {
 			focus = IRE_navy1
 		}
@@ -751,7 +751,7 @@ focus_tree = {
 	focus = {
 		id = IRE_navy3
 		icon = GFX_goal_generic_navy_submarine
-		cost = 20
+		cost = 10
 		prerequisite = {
 			focus = IRE_navy2
 		}

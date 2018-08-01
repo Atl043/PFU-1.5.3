@@ -641,11 +641,11 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = PHI_create_main_battle_tanks
-				bonus = 0.25
+				bonus = 0.50
 				uses = 1
-				technology = basic_medium_tank
+				technology = armor
 			}
-			#1x 25% reduction on research for medium tanks
+			#1x 50% reduction on research for medium tanks
 		}
 	}
 
