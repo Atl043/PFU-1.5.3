@@ -4,26 +4,26 @@ state={
 	name="STATE_289"
 	manpower = 12422400
 	
-	state_category = city
+	state_category = metropolis
 	
 	resources={
 		rubber=10
-		tungsten=2
+		tungsten=8
 	}
 
 	history={
 		owner = SIA
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 5
 			air_base = 5
 			7408 = {
-				naval_base = 3
+				naval_base = 4
 			}
 		}
 		victory_points = {
-			7408 10 
+			7408 15 
 		}
 		victory_points = {
 			1488 1 
