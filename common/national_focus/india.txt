@@ -195,7 +195,6 @@ focus_tree = {
 			is_subject = yes
 			threat > 0.99
 			320 = { is_controlled_by = FRA }
-			321 = { is_controlled_by = POR }
 		}
 
 		cancel_if_invalid = yes
@@ -204,7 +203,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = RAJ_request_ports_tt
-			RAJ = { add_timed_idea = { idea = RAJ_french_india_cost days = 80 } }
+			RAJ = { add_timed_idea = { idea = RAJ_french_india_cost days = 160 } }
 			FRA = { add_timed_idea = { idea = ENG_colonial_trade days = 80 } }
 
 			hidden_effect = {
@@ -243,8 +242,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			RAJ = { add_timed_idea = { idea = RAJ_cost_of_ceylon days = 120 } }
-			RAJ = { add_timed_idea = { idea = RAJ_protect_ceylon days = 120 } }
+			RAJ = { add_timed_idea = { idea = RAJ_cost_of_ceylon days =  180} }
+			RAJ = { add_timed_idea = { idea = RAJ_protect_ceylon days = 30 } }
 			ENG = { add_timed_idea = { idea = ENG_colonial_trade days = 80 } }
 
 			custom_effect_tooltip = RAJ_protect_ceylon_tt

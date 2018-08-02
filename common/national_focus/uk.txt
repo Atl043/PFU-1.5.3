@@ -1336,9 +1336,15 @@ focus = {
 			add_tech_bonus = {
 				name = uk_carrier_focus
 				bonus = 0.5
-				uses = 2
-				technology = basic_carrier
+				uses = 1
 				technology = improved_carrier
+			}
+
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.50
+				uses = 1
+				technology = cv_fighter2
 			}
 
 		}

@@ -1081,7 +1081,7 @@ focus_tree = {
 			factor = 2
 		}
 		completion_reward = {
-		air_experience = 25
+		air_experience = 50
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 0.5
@@ -1090,7 +1090,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.5
+				bonus = 0.75
 				uses = 1
 				technology = cv_fighter2
 			}
