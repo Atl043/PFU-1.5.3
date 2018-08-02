@@ -1626,6 +1626,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = student_mobilization_idea
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
