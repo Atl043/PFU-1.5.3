@@ -29,12 +29,6 @@ units = {
 		division_template = "Dokuritsu Konsei Ryodan"
 		start_experience_factor = 0.5
 	}
-	division = {
-		name = "Tanks Baby 2"
-		location = 12068 #Yokosuka
-		division_template = "Dokuritsu Konsei Ryodan"
-		start_experience_factor = 0.5
-	}
 
 	division = {
 		name = "Yokosuka Tokubetsu Rikusentai"
