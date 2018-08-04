@@ -1149,17 +1149,32 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			597 = { add_core_of = ROOT }
-			608 = { add_core_of = ROOT }
-			609 = { add_core_of = ROOT }
-			611 = { add_core_of = ROOT }
-			612 = { add_core_of = ROOT }
 			614 = { add_core_of = ROOT }
 			615 = { add_core_of = ROOT }
+			620 = { add_core_of = ROOT }
 			621 = { add_core_of = ROOT }
+			613 = { add_core_of = ROOT }
+			608 = { add_core_of = ROOT }
+			606 = { add_core_of = ROOT }
+			603 = { add_core_of = ROOT }
+			602 = { add_core_of = ROOT }
+			600 = { add_core_of = ROOT }
+			598 = { add_core_of = ROOT }
+			597 = { add_core_of = ROOT }
+			596 = { add_core_of = ROOT }
+			595 = { add_core_of = ROOT }
+			760 = { add_core_of = ROOT }
+			758 = { add_core_of = ROOT }
+			759 = { add_core_of = ROOT }
+			594 = { add_core_of = ROOT }
+			593 = { add_core_of = ROOT }
+			592 = { add_core_of = ROOT }
 			622 = { add_core_of = ROOT }
-			743 = { add_core_of = ROOT }
-			746 = { add_core_of = ROOT }
+			764 = { add_core_of = ROOT }
+			765 = { add_core_of = ROOT }
+			763 = { add_core_of = ROOT }
+			762 = { add_core_of = ROOT }
+			761 = { add_core_of = ROOT }
 		}
 	}
 

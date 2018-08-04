@@ -33,6 +33,9 @@ focus = {
 			add_timed_idea = { idea = ENG_OPERATION_HUSKY days = 30 }
 			USA = { add_timed_idea = { idea = USA_OPERATION_HUSKY days = 30 } }
 			CAN = { add_timed_idea = { idea = CAN_OPERATION_HUSKY days = 30 } }
+			SAF = { add_timed_idea = { idea = CAN_OPERATION_HUSKY days = 30 } }
+			FRA = { add_timed_idea = { idea = CAN_OPERATION_HUSKY days = 30 } }
+			AST = { add_timed_idea = { idea = CAN_OPERATION_HUSKY days = 30 } }
 			custom_effect_tooltip = ENG_Operation_Husky_tt
 		}
 	}
