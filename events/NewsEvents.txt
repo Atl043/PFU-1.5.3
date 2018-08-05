@@ -2238,6 +2238,7 @@ news_event = {
 	option = {
 		name = news.64.b
 		trigger = { original_tag = SPR }
+		delete_unit_template_and_units = { division_template = "Brigada Legionario" }
 	}
 }
 
