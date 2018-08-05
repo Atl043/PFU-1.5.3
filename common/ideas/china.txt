@@ -91,6 +91,9 @@ ideas = {
 			research_bonus = {
 				electronics = -0.50
 				nuclear = -0.80
+
+				artillery = -100
+
 			}
 		}
 
@@ -167,7 +170,6 @@ ideas = {
 		incompetent_industry = {
 			removal_cost = -1
 			picture = FRA_factory_strikes
-
 			allowed = {
 				original_tag = CHI
 			}
