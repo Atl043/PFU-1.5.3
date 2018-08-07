@@ -3,7 +3,7 @@ state={
 	id=605
 	name="STATE_605"
 	resources={
-		steel=20.000
+		steel=24.000
 	}
 
 	history={
@@ -11,7 +11,7 @@ state={
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			industrial_complex = 1
 			arms_factory = 1
 			air_base = 2
@@ -21,7 +21,7 @@ state={
 			4925 5 
 		}
 		victory_points = {
-			6999 20 
+			6999 50 
 		}
 		1939.1.1 = {
 			buildings = {
@@ -41,5 +41,5 @@ state={
 	}
 	manpower=52963300
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_city
 }

@@ -126,7 +126,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_attack_factor = -0.25 ##slight nerf from new units
+				army_attack_factor = -0.30 ##slight nerf from new units
 				army_org_Factor = -0.20
 			}
 		}
@@ -144,7 +144,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_attack_factor = -0.20 ##slight nerf from new units
+				army_attack_factor = -0.25 ##slight nerf from new units
 				army_org_Factor = -0.15
 			}
 		}
@@ -162,7 +162,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_attack_factor = -0.10 ##slight nerf from new units
+				army_attack_factor = -0.15 ##slight nerf from new units
 				army_org_Factor = -0.10
 			}
 		}
@@ -178,7 +178,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-			
+				industrial_capacity_factory = -0.15
 			}
 
 			equipment_bonus = {

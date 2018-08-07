@@ -1544,29 +1544,47 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			
         OR = {
-			has_defensive_war_with = GER
-			NOT = {
-			126 = {
-		    is_owned_and_controlled_by = ENG
-			}
-			}
-			NOT = {
-			127 = {
-		    is_owned_and_controlled_by = ENG
-			}
-			}
+				has_defensive_war_with = GER
+				
+				NOT = {
+					126 = {
+				    is_owned_and_controlled_by = ENG
+					}
+				}
+				NOT = {
+					127 = {
+				    is_owned_and_controlled_by = ENG
+					}
+				}
 			}
 		}
 		completion_reward = {
-        SOV = {
-			transfer_state = 420
-			transfer_state = 419
-			transfer_state = 418
-			transfer_state = 266
-			transfer_state = 416
-		}
-		ENG = { puppet = PER }
+	       if = {
+			limit = {
+				291 = {
+			    	is_owned_and_controlled_by = IRQ
+				}
+			}
+			SOV = {
+				transfer_state = 420
+				transfer_state = 419
+				transfer_state = 418
+				transfer_state = 266
+				transfer_state = 416
+			}
+			ENG = { puppet = PER }
+				else = {
+						SOV = {
+							transfer_state = 420
+							transfer_state = 419
+							transfer_state = 418
+							transfer_state = 266
+							transfer_state = 416
+						}
+					}
+				}
 	    }
 
 	}
