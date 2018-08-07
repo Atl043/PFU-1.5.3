@@ -729,7 +729,7 @@ ATTACHE_LIST:0 "We received military attachés from $LIST$. And they give us the
  for_the_emperor_idea:0 "For the Emperor!"
  ENG_OPERATION_HUSKY:0 "Operation Husky UK"
  USA_OPERATION_HUSKY:0 "Operation Husky USA"
- CAN_OPERATION_HUSKY:0 "Operation Husky CAN"
+ COM_OPERATION_HUSKY:0 "Operation Husky Commonwealth"
  indian_independence_promised_idea:0 "Indian independence promised"
  war_bonds_focus:0 "War Bonds"
  liberty_ships_focus:0 "Liberty Ships"

@@ -20,11 +20,11 @@ ideas = {
 			targeted_modifier = {
 				tag = ITA
 				# counter war support
-				attack_bonus_against = 0.3
+				attack_bonus_against = 0.5
 			}
 
 			modifier = {
-				army_org_Factor = 0.05
+				army_org_Factor = 0.1
 				army_morale_factor = 0.05
 				army_speed_factor = 0.05
 				amphibious_invasion = 0.8
@@ -49,7 +49,7 @@ ideas = {
 			targeted_modifier = {
 				tag = ITA
 				# counter war support
-				attack_bonus_against = 0.3
+				attack_bonus_against = 0.5
 			}
 
 			modifier = {
@@ -64,7 +64,7 @@ ideas = {
 
 		}
 
-		CAN_OPERATION_HUSKY = {
+		COM_OPERATION_HUSKY = {
 			removal_cost = -1
 			allowed = {
 				always = no # Unlocked via focus
@@ -78,7 +78,7 @@ ideas = {
 			targeted_modifier = {
 				tag = ITA
 				# counter war support
-				attack_bonus_against = 0.15
+				attack_bonus_against = 0.35
 			}
 
 			modifier = {
