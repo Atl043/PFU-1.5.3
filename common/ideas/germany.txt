@@ -246,7 +246,7 @@ ideas = {
 				air_air_superiority_attack_factor = 0.20
 				air_close_air_support_attack_factor = 0.20
 				air_mission_efficiency = 0.2
-				supply_consumption_factor = -0.15
+				#supply_consumption_factor = -0.15
 				#attrition = -0.10
 			}
 		}
@@ -278,7 +278,7 @@ ideas = {
 				air_air_superiority_attack_factor = 0.10
 				air_close_air_support_attack_factor = 0.10
 				air_mission_efficiency = 0.1
-				supply_consumption_factor = -0.15
+				#supply_consumption_factor = -0.15
 				#attrition = -0.10
 			}
 		}
