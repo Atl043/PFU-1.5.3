@@ -1575,20 +1575,20 @@ country_event = {
 	}
 }
 # Purge - Special event to remove patriotic war if it has been added
-country_event = {
-	id = soviet.47
-
-	hidden = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		if = {
-			limit = { has_idea = great_patriotic_war }
-			remove_ideas = great_patriotic_war
-		}
-	}
-}
+#country_event = {
+#	id = soviet.47
+#
+#	hidden = no
+#
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		if = {
+#			limit = { has_idea = great_patriotic_war }
+#			remove_ideas = great_patriotic_war
+#		}
+#	}
+#}
 
 #No purges completed - decide what to do
 country_event = {

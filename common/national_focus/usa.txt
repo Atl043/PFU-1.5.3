@@ -2574,22 +2574,22 @@ focus_tree = {
 			load_oob = USA_torch
 		}
 		
-		GER = { 
-		transfer_state = 32
-		transfer_state = 21
-		transfer_state = 20
-		transfer_state = 26
-		transfer_state = 22
-		transfer_state = 31
-		transfer_state = 25
-		transfer_state = 33
+	#	GER = { 
+	#	transfer_state = 32
+	#	transfer_state = 21
+	#	transfer_state = 20
+	#	transfer_state = 26
+	#	transfer_state = 22
+	#	transfer_state = 31
+	#	transfer_state = 25
+	#	transfer_state = 33
+	#	
+	#	}
 		
-		}
-		
-				ITA = { 
-		transfer_state = 735
-	
-		}
+	#			ITA = { 
+	#	transfer_state = 735
+	#
+	#	}
 		
 		FRA = { 
 		transfer_state = 556
