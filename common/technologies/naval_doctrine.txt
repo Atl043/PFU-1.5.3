@@ -113,7 +113,7 @@ technologies = {
 			max_organisation = 10			
 		}
 		modifier = {
-			naval_strike_targetting_factor = 0.15
+			naval_strike_targetting_factor = 0.10
 		}
 		########
 
@@ -242,9 +242,9 @@ technologies = {
 		carrier = {
 			max_organisation = 20
 		}
-		navy_carrier_air_agility_factor = 0.10
+		navy_carrier_air_agility_factor = 0.05
 		modifier = {
-			naval_strike_targetting_factor = 0.15
+			naval_strike_targetting_factor = 0.10
 		}
 		########
 
@@ -426,7 +426,7 @@ technologies = {
 			leads_to_tech = integrated_convoy_defence
 			research_cost_coeff = 1
 		}
-		navy_carrier_air_agility_factor = 0.10
+		navy_carrier_air_agility_factor = 0.05
 		doctrine = yes	
 		research_cost = 1
 		
@@ -1376,7 +1376,8 @@ technologies = {
 		carrier = {
 			max_organisation = 20
 		}
-		port_strike = 0.5
+		navy_carrier_air_agility_factor = 0.20
+		port_strike = 0.3
 		#####
 		
 		xor = { fleet_in_being trade_interdiction } 
@@ -1635,7 +1636,7 @@ technologies = {
 		battleship = {
 			max_organisation = 20
 		}
-		navy_capital_ship_defence_factor = 0.025
+		navy_capital_ship_defence_factor = 0.10
 		########
 
 		path = {
@@ -1916,16 +1917,15 @@ technologies = {
 	}
 	
 	escort_patrols = {
-		# Lesser version of hunter-killer groups
 		
 		# EFFECT ##############
 		destroyer = {
-			max_organisation = 10
-			sub_detection = 0.1
+			max_organisation = 20
+			sub_detection = 0.2
 		}
 		light_cruiser = {
-			max_organisation = 10
-			sub_detection = 0.1
+			max_organisation = 20
+			sub_detection = 0.2
 		}
 		
 		convoy_escort_efficiency = 0.10

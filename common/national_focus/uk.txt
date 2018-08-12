@@ -1684,6 +1684,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
+			add_political_power = 150
 			remove_ideas = ENG_the_war_to_end_all_wars
 			set_rule = { can_send_volunteers = yes }
 		}

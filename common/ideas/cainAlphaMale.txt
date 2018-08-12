@@ -137,8 +137,8 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_factor = 0.03
-				stability_factor = -0.05
+				consumer_goods_factor = 0.01
+				stability_factor = -0.03
 			}
 		}
 
@@ -148,7 +148,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			modifier = {
 				consumer_goods_factor = 0.02
-				stability_factor = -0.05
+				stability_factor = -0.03
 			}
 		}
 
@@ -158,7 +158,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			modifier = {
 				##consumer_goods_factor = 0.00
-				stability_factor = -0.02
+				stability_factor = -0.01
 			}
 		}
 
@@ -168,7 +168,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			modifier = {
 				##consumer_goods_factor = 0.03
-				stability_factor = -0.02
+				stability_factor = -0.01
 			}
 		}
 
