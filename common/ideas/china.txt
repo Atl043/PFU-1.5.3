@@ -94,7 +94,7 @@ ideas = {
 
 				artillery = -100
 				light_tank = -100
-				tank = -100
+				armor = -100
 			}
 		}
 
