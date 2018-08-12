@@ -29,7 +29,7 @@ ideas = {
 				army_speed_factor = 0.05
 				amphibious_invasion = 0.8
 				invasion_preparation = -0.8
-				supply_consumption_factor = -0.15
+				supply_consumption_factor = -0.20
 				attrition = -0.10
 			}
 
@@ -58,7 +58,7 @@ ideas = {
 				army_speed_factor = 0.05
 				amphibious_invasion = 0.8
 				invasion_preparation = -0.8
-				supply_consumption_factor = -0.15
+				supply_consumption_factor = -0.20
 				attrition = -0.10
 			}
 
@@ -78,7 +78,7 @@ ideas = {
 			targeted_modifier = {
 				tag = ITA
 				# counter war support
-				attack_bonus_against = 0.25
+				attack_bonus_against = 0.40
 			}
 
 			modifier = {
@@ -87,7 +87,7 @@ ideas = {
 				army_speed_factor = 0.05
 				amphibious_invasion = 0.4
 				invasion_preparation = -0.4
-				supply_consumption_factor = -0.10
+				supply_consumption_factor = -0.20
 				attrition = -0.10
 			}
 
