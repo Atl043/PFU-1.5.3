@@ -93,7 +93,8 @@ ideas = {
 				nuclear = -0.80
 
 				artillery = -100
-
+				light_tank = -100
+				tank = -100
 			}
 		}
 
