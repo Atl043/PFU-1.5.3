@@ -126,9 +126,26 @@ political_actions = {
 		}
 	}
 
+	annex_vichy = {
+		ai_will_do = { factor = 0 }
+		cost = 20
+		visible = {
+			tag = GER
+			EFR = { is_ai = yes }
+			country_exists = EFR
+			date > 1941.4.1
+		}
+
+		complete_effect = {
+			GER = {
+				annex_country = { target = EFR transfer_troops = yes }
+			}
+		}
+	}
+
 	Operation_Panzerfaust = {
 		ai_will_do = { factor = 0 }
-		cost = 30
+		cost = 25
 		visible = {
 			tag = GER
 			HUN = { is_ai = yes }
@@ -146,7 +163,7 @@ political_actions = {
 
 	Puppet_ROM = {
 		ai_will_do = { factor = 0 }
-		cost = 25
+		cost = 0
 
 		visible = {
 			tag = GER
@@ -159,9 +176,26 @@ political_actions = {
 			GER = { puppet = ROM }
 		}
 	}
+
+	Puppet_Finland = {
+		ai_will_do = { factor = 0 }
+		cost = 0
+
+		visible = {
+			tag = GER
+			fin = { is_ai = yes }
+			country_exists = FIN
+			date > 1940.1.1
+		}
+
+		complete_effect = {
+			GER = { puppet = FIN }
+		}
+	}
+
 	Operation_Margarethe = {
 		ai_will_do = { factor = 0 }
-		cost = 25
+		cost = 0
 
 		visible = {
 			tag = GER
@@ -183,7 +217,7 @@ political_actions = {
 		visible = {
 			tag = GER
 			country_exists = EFR
-			date > 1941.1.1
+			date > 1941.4.1
 		}
 
 		complete_effect = {
