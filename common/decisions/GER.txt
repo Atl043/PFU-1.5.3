@@ -126,6 +126,28 @@ political_actions = {
 		}
 	}
 
+	annex_vichy = {
+		ai_will_do = { factor = 0 }
+		cost = 20
+		visible = {
+			tag = GER
+			EFR = { is_ai = yes }
+			country_exists = EFR
+			date > 1942.1.1
+		}
+
+		complete_effect = {
+			GER = {
+				annex_country = { target = EFR transfer_troops = yes }
+			}
+			USA = {
+				remove_ideas = inexperienced_army
+				remove_ideas = discriminatory_draft
+			}
+		}
+	}
+
+
 	Operation_Panzerfaust = {
 		ai_will_do = { factor = 0 }
 		cost = 25
