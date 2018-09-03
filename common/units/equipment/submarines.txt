@@ -117,7 +117,7 @@ equipments = {
 		fire_range = 16
 		torpedo_attack = 20
 
-		anti_air_attack = 1.5
+		anti_air_attack = 0.5
 
 		armor_value = 0
 		evasion = 80

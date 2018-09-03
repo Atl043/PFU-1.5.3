@@ -317,32 +317,32 @@ units = {
 		name = "4. Infanterie-Division"
 		location = 6462
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
 	}
 	division= {	
 		name = "14. Infanterie-Division"
 		location = 6462
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
 	}
 	division= {	
 		name = "24. Infanterie-Division"
 		location = 6462
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
 	}
 	# VIII. Armeekorps
 	division= {	
 		name = "8. Infanterie-Division"
 		location = 11467
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
 	}
 	division= {	
 		name = "18. Infanterie-Division"
 		location = 11467
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
 	}
 
 	# I. Armeekorps
@@ -538,22 +538,27 @@ air_wings = {
 		fighter_equipment_1 =  {		# Ar 68
 			owner = "GER" 
 			amount = 100
+			version_name = "Bf 109 E"
 		}
 		fighter_equipment_1 =  {		# Ar 68
 			owner = "GER" 
 			amount = 100
+			version_name = "Bf 109 E"
 		}
 		fighter_equipment_1 =  {		# Ar 68
 			owner = "GER" 
 			amount = 100
+			version_name = "Bf 109 E"
 		}
 		fighter_equipment_1 =  {			# Hs 123
 			owner = "GER" 
 			amount = 100
+			version_name = "Bf 109 E"
 		}
 		fighter_equipment_1 =  {			# Hs 123
 			owner = "GER" 
 			amount = 100
+			version_name = "Bf 109 E"
 		}
 		# Kampfgeschwader 153		
 	}
@@ -564,26 +569,32 @@ air_wings = {
 		fighter_equipment_1 =  {		# bf109s
 			owner = "GER" 
 			amount = 100
+			version_name = "Bf 109 E"
 		}
 		fighter_equipment_1 =  {		# bf109s
 			owner = "GER" 
 			amount = 100
+			version_name = "Bf 109 E"
 		}
 				fighter_equipment_1 =  {		# bf109s
 			owner = "GER" 
 			amount = 100
+			version_name = "Bf 109 E"
 		}
 				fighter_equipment_1 =  {		# bf109s
 			owner = "GER" 
 			amount = 100
+			version_name = "Bf 109 E"
 		}
 				fighter_equipment_1 =  {		# bf109s
 			owner = "GER" 
-			amount = 100
+			amount = 500
+			version_name = "Bf 109 E"
 		}
 				fighter_equipment_1 =  {		# bf109s
 			owner = "GER" 
-			amount = 100
+			amount = 800
+			version_name = "Bf 109 E"
 		}
 
 	}
@@ -591,7 +602,7 @@ air_wings = {
 		# Jagdgeschwader 136		
 		CAS_equipment_1 =  {			# Hs 123
 			owner = "GER" 
-			amount = 100
+			amount = 400
 		}
 		CAS_equipment_1 =  {			# Hs 123
 			owner = "GER" 

@@ -710,27 +710,27 @@ air_wings = {
 		### No. 11 Fighter Command, Middlesex area -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
 			owner = "ENG"
-			amount = 100
+			amount = 400
 		}
 				fighter_equipment_0 = {
 			owner = "ENG"
-			amount = 100
+			amount = 400
 		}
 				fighter_equipment_0 = {
 			owner = "ENG"
-			amount = 100
+			amount = 200
 		}
 				fighter_equipment_0 = {
 			owner = "ENG"
-			amount = 100
+			amount = 200
 		}
 				fighter_equipment_0 = {
 			owner = "ENG"
-			amount = 100
+			amount = 200
 		}
 				fighter_equipment_0 = {
 			owner = "ENG"
-			amount = 100
+			amount = 200
 		}
 
 		CAS_equipment_1 = {

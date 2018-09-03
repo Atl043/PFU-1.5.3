@@ -567,8 +567,8 @@ ideas = {
 			picture = FRA_army_of_aggression_focus
 
 			modifier = {
-			navy_submarine_attack_factor = 0.3
-		    navy_submarine_defence_factor = 0.3
+			navy_submarine_attack_factor = 0.1
+		    navy_submarine_defence_factor = 0.1
 			}
 
 			equipment_bonus = {

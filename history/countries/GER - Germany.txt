@@ -61,7 +61,7 @@ set_war_support = 0.40
 create_import = {
 		resource = tungsten
 		factories = 2
-		exporter = SWE
+		exporter = SPR
 }
 create_import = {
 		resource = rubber
@@ -751,10 +751,10 @@ create_equipment_variant = {
 	name = "Bf 109 E"
 	type = fighter_equipment_1
 	upgrades = {
-		plane_gun_upgrade = 2
-		plane_range_upgrade = 1
+		plane_gun_upgrade = 1
+		plane_range_upgrade = 5
 		plane_engine_upgrade = 4
-		plane_reliability_upgrade = 4
+		plane_reliability_upgrade = 1
 	}
 }
 
@@ -799,10 +799,10 @@ create_equipment_variant = {
 		name = "Bf 109 E"
 		type = fighter_equipment_1
 		upgrades = {
-			plane_gun_upgrade = 2
-			plane_range_upgrade = 1
-			plane_engine_upgrade = 2
-			plane_reliability_upgrade = 4
+			plane_gun_upgrade = 1
+			plane_range_upgrade = 5
+			plane_engine_upgrade = 4
+			plane_reliability_upgrade = 1
 		}
 	}
 }

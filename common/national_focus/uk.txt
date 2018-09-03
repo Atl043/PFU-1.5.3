@@ -2518,7 +2518,7 @@ focus = {
 		available = {
 			if = {
 				limit = { has_dlc = "Together for Victory" }
-				date > 1943.10.01
+				date > 1942.1.01
 				RAJ = {
 					is_subject_of = ENG
 					has_war = no
