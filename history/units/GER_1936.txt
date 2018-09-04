@@ -527,6 +527,7 @@ air_wings = {
 		fighter_equipment_1 =  {		# Ar 68
 			owner = "GER" 
 			amount = 100
+			version_name = "Bf 109 E"
 		}
 		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
 			modifier="fighter_genius"
@@ -588,7 +589,7 @@ air_wings = {
 		}
 				fighter_equipment_1 =  {		# bf109s
 			owner = "GER" 
-			amount = 500
+			amount = 100
 			version_name = "Bf 109 E"
 		}
 				fighter_equipment_1 =  {		# bf109s
