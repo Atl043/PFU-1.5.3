@@ -162,9 +162,14 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			set_technology = { synth_oil_experiments = 1 }
+			modify_building_resources = {
+        	   building = synthetic_refinery
+        	   resource = rubber
+        	   amount = 2
+        	}
 			add_resource = {
 				type = rubber
-				amount = 7
+				amount = 5
 				state = 369 #Kentucky
 			}
 			add_tech_bonus = {
