@@ -161,11 +161,19 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = {
+			set_technology = { synth_oil_experiments = 1 }
 			add_resource = {
 				type = rubber
-				amount = 75
+				amount = 7
 				state = 369 #Kentucky
 			}
+			add_tech_bonus = {
+				name = synth_bonus
+				bonus = 0.50
+				uses = 2
+				category = synth_resources
+			}
+
 		}
 	}
 

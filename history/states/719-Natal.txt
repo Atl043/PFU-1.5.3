@@ -3,7 +3,7 @@ state={
 	name="STATE_719" # Natal
 	manpower = 3962157
 	resources={
-		tungsten=116
+		tungsten=58
 	}
 	
 	state_category = city
