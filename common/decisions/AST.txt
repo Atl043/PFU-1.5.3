@@ -13,6 +13,8 @@ political_actions = {
 		complete_effect = {
 			AST = {
 				annex_country = { target = NZL transfer_troops = yes }
+				add_state_core = 723
+				add_state_core = 284
 				add_ideas = annex_new_zealand_idea
 			}
 		}

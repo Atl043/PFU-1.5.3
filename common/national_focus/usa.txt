@@ -165,11 +165,11 @@ focus_tree = {
 			modify_building_resources = {
         	   building = synthetic_refinery
         	   resource = rubber
-        	   amount = 2
+        	   amount = 1
         	}
 			add_resource = {
 				type = rubber
-				amount = 5
+				amount = 8
 				state = 369 #Kentucky
 			}
 			add_tech_bonus = {
