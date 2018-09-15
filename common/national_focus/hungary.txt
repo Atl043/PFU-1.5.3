@@ -1126,6 +1126,21 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = HUN_invite_foreign_investors
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1163,12 +1178,12 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				add_resource = {
 					type = steel
-					amount = 8
+					amount = 20
 				}
 			}
 		}
@@ -1187,13 +1202,13 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = HUN_expand_the_manfred_weiss_steel_works_IC
 				add_resource = {
 					type = steel
-					amount = 12
+					amount = 20
 				}
 			}
 		}
@@ -1232,7 +1247,7 @@ focus_tree = {
 		completion_reward = {
 			43 = {
 				add_resource = {
-					type = aluminium
+					type = steel
 					amount = 36
 				}
 			}
