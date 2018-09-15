@@ -218,20 +218,6 @@ ideas = {
 			}
 		}
 
-		SIA_phraya_preechacholayudha = {
-
-			picture = generic_navy_asia_1
-			
-			allowed = {
-				original_tag = SIA
-			}
-			
-			traits = { navy_submarine_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	}
 	
 

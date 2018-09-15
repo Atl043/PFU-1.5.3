@@ -61,10 +61,10 @@ focus_tree = {
 
 		completion_reward = {
 			289 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -150,20 +150,14 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
 		}
 
 		completion_reward = {
 			724 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -198,20 +192,14 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
 		}
 
 		completion_reward = {
 			289 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -222,7 +210,6 @@ focus_tree = {
 		id = SIA_infrastructure_effort_1
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = SIA_production_effort_2}
-		prerequisite = {focus = SIA_military_effort_2}
 		x = 2
 		y = 3
 		cost = 10
@@ -244,11 +231,6 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_building_construction = {
-				type = infrastructure
-				level = 2
-				instant_build = yes
-		   }
         }
 		completion_reward = {
 			289 = {
@@ -516,7 +498,6 @@ focus_tree = {
 			factor = 5
 		}
 		prerequisite = { focus = SIA_elite_schools }
-		prerequisite = { focus = SIA_newspapers }
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -551,35 +532,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-        prerequisite = { focus = SIA_new_siamese_man }
+        prerequisite = { focus = SIA_heal_the_divide_1 }
 		available_if_capitulated = yes
 		completion_reward = {
 	        remove_ideas = divided_nation_half
-			add_political_power = 150
 		}
 	}
 
-
-  focus = {
-   id = SIA_new_siamese_man
-   icon = GFX_goal_generic_demand_territory
-   x=6
-   y=4
-   cost = 10
-   ai_will_do = {
-    factor = 5
-   }
-   prerequisite = { focus = SIA_heal_the_divide_1 }
-    completion_reward = {
-	  hidden_effect = {
-	  set_rule = {
-	  can_use_kamikaze_pilots = yes
-				}
-			}
-	 custom_effect_tooltip = kamikaze_focus_tooltip
-
-	}
-  }
 
   focus = {
 		id = SIA_radar

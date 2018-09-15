@@ -25,8 +25,9 @@ set_technology = {
 	motorised_infantry = 1
 }
 
-set_convoys = 150
-
+set_convoys = 200
+set_stability = 0.30
+set_war_support = 0.71
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -87,7 +88,7 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 20
+			popularity = 40
 		}
 		
 		communism = {
@@ -96,7 +97,7 @@ set_politics = {
 		}
 		
 		neutrality = {
-			popularity = 80
+			popularity = 60
 		}
 	}
 	
