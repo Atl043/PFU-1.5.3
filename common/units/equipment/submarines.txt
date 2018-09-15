@@ -74,7 +74,7 @@ equipments = {
 
 		ap_attack = 0
 		attack = 0
-		fire_range = 15
+		fire_range = 14.5
 		torpedo_attack = 16
 
 		anti_air_attack = 0
@@ -114,7 +114,7 @@ equipments = {
 
 		ap_attack = 0
 		attack = 0
-		fire_range = 16
+		fire_range = 15
 		torpedo_attack = 20
 
 		anti_air_attack = 0.5
