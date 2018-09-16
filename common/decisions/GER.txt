@@ -131,7 +131,6 @@ political_actions = {
 		cost = 20
 		visible = {
 			tag = GER
-			EFR = { is_ai = yes }
 			country_exists = EFR
 			date > 1942.1.1
 		}

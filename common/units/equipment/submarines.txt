@@ -40,7 +40,7 @@ equipments = {
 
 		port_capacity_usage = 0.5
 
-		build_cost_ic = 450
+		build_cost_ic = 500
 		resources = {
 			oil = 1
 			steel = 1
@@ -95,7 +95,7 @@ equipments = {
 
 		port_capacity_usage = 0.5
 
-		build_cost_ic = 500
+		build_cost_ic = 550
 		resources = {
 			oil = 1
 			steel = 2
@@ -135,7 +135,7 @@ equipments = {
 
 		port_capacity_usage = 0.5
 
-		build_cost_ic = 550
+		build_cost_ic = 600
 		resources = {
 			oil = 2
 			steel = 2
@@ -175,7 +175,7 @@ equipments = {
 
 		port_capacity_usage = 0.5
 
-		build_cost_ic = 600
+		build_cost_ic = 650
 		resources = {
 			oil = 2
 			steel = 3

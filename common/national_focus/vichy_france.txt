@@ -1356,7 +1356,6 @@ focus_tree = {
 
 		available = {
 			country_exists = GER
-			is_ai = no
 		}
 
 		completion_reward = {
