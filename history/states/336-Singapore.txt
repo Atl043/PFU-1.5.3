@@ -15,6 +15,7 @@ state={
 
 	history={
 		owner = ENG
+		add_core_of = MAL
 		victory_points = {
 			12299 10
 		}
