@@ -805,7 +805,7 @@ country_event = {
 
 	trigger = {
 		tag = JAP
-		date > 1940.5S.1
+		date > 1940.5.1
 		CHI = {
 			controls_state = 605
 		}

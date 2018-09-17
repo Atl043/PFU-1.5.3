@@ -504,7 +504,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { focus = GER_tactical_air_effort }
 		x = 2
-		y = 3
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -831,10 +831,9 @@ focus_tree = {
 	focus = {
 		id = GER_rocketry_focus
 		icon = GFX_focus_rocketry
-		prerequisite = { focus = GER_industrial_effort_2 }
-		prerequisite = { focus = GER_air_innovation_2 }
-		x = 2
-		y = 4
+		prerequisite = { focus = GER_extra_tech_slot }
+		x = 3
+		y = 5
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -850,7 +849,7 @@ focus_tree = {
 	focus = {
 		id = GER_wunderwaffe
 		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = GER_rocketry_focus }
+		prerequisite = { focus = GER_extra_tech_slot }
 		x = 1
 		y = 5
 		cost = 10
@@ -876,9 +875,9 @@ focus_tree = {
 		id = GER_extra_tech_slot
 		icon = GFX_focus_research
 		text = extra_tech_slot
-		prerequisite = { focus = GER_rocketry_focus }
-		x = 3
-		y = 5
+		prerequisite = { focus = GER_air_innovation_2  focus = GER_industrial_effort_2}
+		x = 2
+		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -895,6 +894,7 @@ focus_tree = {
 		id = GER_me262
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = GER_wunderwaffe }
+		prerequisite = { focus = GER_rocketry_focus }
 		prerequisite = { focus = GER_extra_tech_slot }
 		x = 2
 		y = 6
@@ -1052,13 +1052,13 @@ focus_tree = {
 		icon = GFX_goal_generic_war_with_comintern
 		prerequisite = { focus = GER_anti_comitern_pact }
 	    available = {
-			date > 1941.5.21
+			date > 1941.4.21
 			date < 1941.9.21
 		}
 
 		x = 9
 		y = 2
-		cost = 0.2
+		cost = 4.3
 
 		bypass = {
 			date > 1941.9.21
@@ -2149,7 +2149,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = 19
 		y = 0
-		cost = 4.3
+		cost = 5  # 4.3 for 30 days
 		ai_will_do = {
 			factor = 1
 		}
@@ -2212,7 +2212,7 @@ focus_tree = {
 		prerequisite = { focus = GER_naval_rearmament }
 		x = 19
 		y = 1
-		cost = 4.3
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2306,7 +2306,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_u_boat_effort }
 		x = 18
 		y = 3
-		cost = 4.3
+		cost = 5
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -2372,7 +2372,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_plan_z }
 		x = 20
 		y = 3
-		cost = 4.3
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2454,7 +2454,7 @@ focus_tree = {
 		prerequisite = { focus = GER_u_boat_effort focus = GER_plan_z }
 		x = 19
 		y = 4
-		cost = 4.3
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
