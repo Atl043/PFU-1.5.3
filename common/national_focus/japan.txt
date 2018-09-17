@@ -1484,6 +1484,8 @@ focus_tree = {
 			EFR = { exists = yes }
 			is_puppet = no
 		}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 
 		x = 4
 		y = 2

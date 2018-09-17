@@ -380,52 +380,6 @@ focus_tree = {
 		}
 	}
 
-   focus = {
-		id = SIA_oil_industry
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = SIA_synth_oil_focus }
-		x = 0
-		y = 6
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-			controls_state = 289
-			controls_state = 724
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			289 = {
-				add_resource = {
-					type = oil
-					amount = 10
-				}
-			}
-			724 = {
-			 add_resource = {
-			  type = oil
-			  amount = 4
-			 }
-			}
-		}
-	}
-
 	focus = {
 	 id = SIA_adressing_social_issues
 	 icon = GFX_goal_generic_demand_territory
@@ -445,7 +399,7 @@ focus_tree = {
    focus = {
     id= SIA_newspapers
 	icon = GFX_goal_generic_production2
-	x = 6
+	x = 5
 	y = 1
 	cost = 10
 		ai_will_do = {
@@ -470,7 +424,7 @@ focus_tree = {
    focus = {
 		id = SIA_elite_schools
 		icon = GFX_goal_generic_scientific_exchange
-		x = 8
+		x = 7
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -588,29 +542,6 @@ focus_tree = {
 			modifier = {
 				factor = 0.25
 				always = yes
-			}
-		}
-	}
-
-	focus = {
-		id = SIA_synth_oil_focus
-		prerequisite = { focus = SIA_infrastructure_effort_2 }
-		x = 0
-		y = 5
-		cost = 10
-		icon = GFX_goal_generic_oil_refinery
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = synth_bonus
-				bonus = 0.5
-				uses = 1
-				category = synth_resources
 			}
 		}
 	}
@@ -827,6 +758,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = imperial_austerity_idea
+			671 = { add_core_of = ROOT }
+			670 = { add_core_of = ROOT }
+			741 = { add_core_of = ROOT }
+			286 = { add_core_of = ROOT }
 		}
 	}
 
