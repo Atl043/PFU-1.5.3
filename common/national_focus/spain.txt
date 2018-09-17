@@ -414,9 +414,10 @@ focus_tree = {
 	focus = {
 		id = SPR_Research
 		icon = GFX_focus_research
-		prerequisite = { focus = SPR_Colonial_Forts }
+		prerequisite = { focus = SPR_Colonial_Industry focus = SPR_Industry_focus_3}
+		prerequisite = { focus = SPR_Instalaza }
 		x = 4
-		y = 5
+		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -429,70 +430,9 @@ focus_tree = {
 
 
 	focus = {
-		id = SPR_Colonial_Forts
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = SPR_Colonial_Industry focus = SPR_Industry_focus_3}
-		prerequisite = { focus = SPR_Instalaza }
-		x = 4
-		y = 4
-		cost = 5
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			290 = {
-				custom_effect_tooltip = SPR_Col_Forts
-				hidden_effect = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 12100
-						instant_build = yes
-				    }
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 7215
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 12087
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 10113
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 9945
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 4199
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-
-
-
-
-
-	focus = {
 		id = SPR_OIL_1
 		icon = GFX_goal_generic_oil_refinery
-		x = 14
+		x = 10
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -521,7 +461,7 @@ focus_tree = {
 		id = SPR_OIL_2
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = SPR_OIL_1 }
-		x = 14
+		x = 10
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -542,7 +482,7 @@ focus_tree = {
 		id = SPR_OIL_3
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = SPR_OIL_2 }
-		x = 14
+		x = 10
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -564,7 +504,7 @@ focus_tree = {
 		id = SPR_OIL_4
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = SPR_OIL_3 }
-		x = 14
+		x = 10
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -586,7 +526,7 @@ focus_tree = {
 		id = SPR_OIL_5
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = SPR_OIL_4 }
-		x = 14
+		x = 10
 		y = 4
 		cost = 15
 		ai_will_do = {
@@ -608,7 +548,7 @@ focus_tree = {
 	focus = {
 		id = SPR_Air_Officers
 		icon = GFX_goal_generic_air_doctrine
-		x = 19
+		x = 15
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -630,7 +570,7 @@ focus_tree = {
 		id = SPR_Air_Factories
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = SPR_Air_Officers }
-		x = 19
+		x = 15
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -658,7 +598,7 @@ focus_tree = {
 		id = SPR_Fighters
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = SPR_Air_Factories }
-		x = 19
+		x = 15
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -681,7 +621,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Fighters }
 		mutually_exclusive = { focus = SPR_Tac_Bomber }
 		mutually_exclusive = { focus = SPR_Strat }
-		x = 17
+		x = 13
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -705,7 +645,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Fighters }
 		mutually_exclusive = { focus = SPR_CAS }
 		mutually_exclusive = { focus = SPR_Strat }
-		x = 19
+		x = 15
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -729,7 +669,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Fighters }
 		mutually_exclusive = { focus = SPR_CAS }
 		mutually_exclusive = { focus = SPR_Tac_Bomber }
-		x = 21
+		x = 17
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -751,7 +691,7 @@ focus_tree = {
 		id = SPR_Air_Doctrine
 		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = SPR_CAS }
-		x = 17
+		x = 13
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -773,7 +713,7 @@ focus_tree = {
 		id = SPR_Air_Doctrine_2
 		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = SPR_Tac_Bomber }
-		x = 19
+		x = 15
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -795,7 +735,7 @@ focus_tree = {
 		id = SPR_Air_Doctrine_3
 		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = SPR_Strat }
-		x = 21
+		x = 17
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -818,7 +758,7 @@ focus_tree = {
 	focus = {
 		id = SPR_Political_Effort
 		icon = GFX_goal_generic_demand_territory
-		x = 25
+		x = 20
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -835,7 +775,7 @@ focus_tree = {
 		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = SPR_Political_Effort }
 		mutually_exclusive = { focus = SPR_Communism }
-		x = 23
+		x = 19
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -855,7 +795,7 @@ focus_tree = {
 		id = SPR_Fascist_Rec
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = SPR_Fascism }
-		x = 23
+		x = 19
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -878,7 +818,7 @@ focus_tree = {
 		available = {
 			has_government = communism
 		}
-		x = 25
+		x = 21
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -952,7 +892,7 @@ focus_tree = {
 		id = SPR_Communist_Propaganda
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = SPR_Communism }
-		x = 25
+		x = 21
 		y = 2
 		cost = 10
 		available = {
@@ -973,7 +913,7 @@ focus_tree = {
 		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = SPR_Research }
 		x = 4
-		y = 6
+		y = 5
 		cost = 10
 		ai_will_do = {
 			factor = 6
@@ -1015,7 +955,7 @@ focus_tree = {
 		focus = {
 		id = SPR_Mil
 		icon = GFX_goal_generic_build_tank
-		x = 8
+		x = 7
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -1145,7 +1085,7 @@ focus_tree = {
 		id = SPR_Expand
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = SPR_Mil }
-		x = 10
+		x = 8
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -1164,150 +1104,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SPR_Fortify_Islands
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = SPR_Expand }
-		x = 9
-		y = 2
-		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		available = {
-			controls_state = 177
-			controls_state = 178
-			controls_state = 297
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = SPR_Island_Forts
-				hidden_effect = {
-				177 = {
-					add_building_construction = {
-						type = coastal_bunker
-						level = 2
-						province = 7114
-						instant_build = yes
-				    }
-					add_building_construction = {
-						type = coastal_bunker
-						level = 2
-						province = 9793
-						instant_build = yes
-				    }
-				}
-				178 = {
-					add_building_construction = {
-						type = coastal_bunker
-						level = 2
-						province = 13071
-						instant_build = yes
-					}
-				}
-				297 = {
-					add_building_construction = {
-						type = coastal_bunker
-						level = 2
-						province = 1903
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 8244
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SPR_Fortify_Fra
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = SPR_Expand }
-		available = {
-			controls_state = 172
-			controls_state = 166
-			controls_state = 165
-		}
-		x = 11
-		y = 2
-		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-
-		completion_reward {
-		172 = {
-				custom_effect_tooltip = SPR_Fra_Forts
-				hidden_effect = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 3737
-						instant_build = yes
-				    }
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 3931
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 11838
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 915
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 899
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 3899
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 3898
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 11779
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 9824
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = SPR_Doctrine
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = SPR_Expand }
-		prerequisite = { focus = SPR_Fortify_Islands }
-		prerequisite = { focus = SPR_Fortify_Fra }
-		x = 10
+		x = 8
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -1329,7 +1129,7 @@ focus_tree = {
 		id = SPR_Doc_Bonus_2
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = SPR_Doctrine }
-		x = 10
+		x = 8
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -1351,7 +1151,7 @@ focus_tree = {
 		id = SPR_Doc_Wep
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = SPR_Doc_Bonus_2 }
-		x = 10
+		x = 8
 		y = 5
 		cost = 10
 		ai_will_do = {
