@@ -1150,6 +1150,9 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			date > 1942.8.1
+		}
 
 		available_if_capitulated = yes
 
@@ -1159,9 +1162,11 @@ focus = {
 				bonus = 0.5
 				uses = 4
 				category = jet_technology
+				category = rocketry
 			}
 		}
 	}
+
 	focus = {
 		id = naval_rearmament_focus
 		prerequisite = { focus = general_rearmament_focus }
@@ -1799,7 +1804,7 @@ focus = {
 		prerequisite = { focus = uk_mediterranean_focus }
 		icon = GFX_goal_generic_defence
 		x = 25
-		y = 4
+		y = 3
 		cost = 4.3
 		ai_will_do = {
 			factor = 1
@@ -1856,7 +1861,7 @@ focus = {
 		}
 		icon = GFX_goal_generic_construct_military
 		x = 27
-		y = 4
+		y = 3
 		cost = 4.3
 
 		available_if_capitulated = yes
@@ -2408,7 +2413,7 @@ focus = {
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 20
 		y = 5
-		cost = 7
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2872,7 +2877,7 @@ focus = {
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 21
 		y = 4
-		cost = 6
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3021,7 +3026,7 @@ focus = {
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 23
 		y = 4
-		cost = 4
+		cost = 5
 
 		available_if_capitulated = yes
 
