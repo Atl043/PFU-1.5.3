@@ -1151,7 +1151,7 @@ focus = {
 			factor = 1
 		}
 		available = {
-			date > 1942.8.1
+			date > 1943.2.1
 		}
 
 		available_if_capitulated = yes
