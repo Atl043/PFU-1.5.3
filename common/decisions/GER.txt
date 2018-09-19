@@ -187,7 +187,7 @@ political_actions = {
 
 		visible = {
 			tag = GER
-			fin = { is_ai = yes }
+			FIN = { is_ai = yes }
 			country_exists = FIN
 			date > 1940.1.1
 		}

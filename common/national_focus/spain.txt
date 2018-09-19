@@ -1064,7 +1064,7 @@ focus_tree = {
 	focus = {
 		id = SPR_Exercises
 		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = SPR_Domestic_Tanks focus = SPR_Foreign_Tanks }
+		prerequisite = { focus = SPR_Domestic_Tanks}
 		x = 6
 		y = 5
 		cost = 10
