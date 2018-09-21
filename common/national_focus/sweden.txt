@@ -1095,10 +1095,7 @@ focus_tree = {
 
 			
 			custom_effect_tooltip = SWE_polistrupper
-			hidden_effect = {
-				SWE = { country_event = { id = exileunits.2 days = 1 } 
-				}
-			}
+			
 		}
 	}
 	

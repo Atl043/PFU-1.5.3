@@ -94,10 +94,8 @@ ideas = {
 
 			research_bonus = {
 				}
-			modifier = {
-				air_ace_generation_chance_factor = 0.25
-			}
-				equipment_bonus = {
+			
+			equipment_bonus = {
 				fighter_equipment = {
 					air_agility = 0.10
 					air_attack = 0.10
@@ -114,6 +112,9 @@ ideas = {
 					air_ground_attack = 0.10
 					instant = yes
 				}
+			}
+			modifier = {
+				air_ace_generation_chance_factor = 0.25
 			}
 		}
 
@@ -983,7 +984,7 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-				date > 1941.1.1
+				date > 1940.1.1
 			}
 			research_bonus = {
 				armor = 0.10
@@ -1052,7 +1053,7 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-				date > 1941.1.1
+				date > 1940.1.1
 			}
 
 			research_bonus = {

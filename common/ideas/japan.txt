@@ -215,6 +215,7 @@ ideas = {
 				attrition = -0.20
 				naval_strike = 1.00 
 				navy_carrier_air_targetting_factor = 0.25
+				terrain_penalty_reduction = 0.20
 			}
 		}
 				JAP_rebels = {

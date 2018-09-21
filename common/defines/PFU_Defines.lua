@@ -115,7 +115,7 @@ NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.01
 NDefines.NNavy.CARRIER_STACK_PENALTY = 4
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 99.999
 NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_DAMAGE_MULT = 3.0
-NDefines.NNavy.ANTI_AIR_TARGETING = 2.7				-- Vanilla: 0.9 how good ships are at hitting aircraft
+NDefines.NNavy.ANTI_AIR_TARGETING = 1.8			-- Vanilla: 0.9 how good ships are at hitting aircraft
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 15
 
 
