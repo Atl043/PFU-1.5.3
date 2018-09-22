@@ -544,6 +544,10 @@ technologies = {
 				defence = 0.10
 				attack = 0.10
 			}
+			jungle = {
+				attack = 0.1
+				movement = 0.1
+			}
 		}
 		
 		
@@ -575,6 +579,10 @@ technologies = {
 			urban = {
 				attack = 0.1	
 				defence = 0.10
+			}
+			jungle = {
+				attack = 0.1
+				movement = 0.1
 			}
 		}
 		path = {

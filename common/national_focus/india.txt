@@ -2610,7 +2610,6 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = RAJ_risk_of_famine
-			add_ideas = CAN_war_bonds_1
 		}
 	}
 
