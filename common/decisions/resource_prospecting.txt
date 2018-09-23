@@ -3864,7 +3864,7 @@ prospect_for_resources = {
 		}
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 7
 			owns_state = 291
 			controls_state = 291
 		}
@@ -3914,7 +3914,7 @@ prospect_for_resources = {
 		}
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 7
 			owns_state = 291
 			controls_state = 291
 		}
