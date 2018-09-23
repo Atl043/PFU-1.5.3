@@ -3865,12 +3865,10 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 7
-			owns_state = 291
 			controls_state = 291
 		}
 
 		visible = {
-			owns_state = 291
 			controls_state = 291
 			291 = {
 				NOT = {
@@ -3915,12 +3913,10 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 7
-			owns_state = 291
 			controls_state = 291
 		}
 
 		visible = {
-			owns_state = 291
 			controls_state = 291
 			291 = {
 				has_state_flag = iraq_oil_developed_1
