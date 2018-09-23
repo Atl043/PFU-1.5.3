@@ -95,8 +95,13 @@ if = {
 	}
 	set_autonomy = {
 		target = IRQ
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_colony
+		freedom_level = 0.5
 	}
+	#set_autonomy = {
+	#	target = IRQ
+	#	autonomous_state = autonomy_puppet
+	#}
 	else = {
 		puppet = RAJ
 	}
