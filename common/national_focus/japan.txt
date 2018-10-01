@@ -877,10 +877,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			if = {
-				limit = { date < 1937.1.1 }
+			#if = {
+			#	limit = { date < 1937.1.1 }
 				add_timed_idea = { idea = Zaibatsu_Idea days = 900 }
-			}
+			#}
 	    }
 	}
 

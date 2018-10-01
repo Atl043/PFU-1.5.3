@@ -236,7 +236,7 @@ focus = {
 		icon = GFX_goal_generic_army_motorized
 		x = 9
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -282,7 +282,7 @@ focus = {
 		icon = GFX_goal_generic_army_tanks
 		x = 9
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1440,7 +1440,7 @@ focus = {
 		icon = GFX_goal_generic_national_unity
 		x = 5
 		y = 1
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1659,7 +1659,7 @@ focus = {
 		icon = GFX_goal_generic_construct_military
 		x = 5
 		y = 2
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1684,7 +1684,7 @@ focus = {
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 5
 		y = 3
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -2364,7 +2364,7 @@ focus = {
 		icon = GFX_goal_generic_improve_relations
 		x = 21
 		y = 3
-		cost = 4.3
+		cost = 5
 
 		available_if_capitulated = yes
 
