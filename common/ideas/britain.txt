@@ -236,8 +236,10 @@ ideas = {
 				}
 			}
 						modifier = {
-				army_defence_factor = 0.2
+				army_defence_factor = 0.1
 				industry_air_damage_factor = 0.2
+				army_org_Factor = 0.10
+				army_morale_factor = 0.10
 
 				}
 
@@ -779,8 +781,20 @@ ideas = {
 				naval_equipment = 0.10
 			}
 
-			traits = { convoy_escort_naval_manufacturer }
+			traits = { yarrow_design }
 
+		}
+		UKMed = {
+						
+			allowed = {
+				original_tag = ENG
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { med_fleet_naval_manufacturer }
 		}
 
 		harland_wolff = {
@@ -1244,37 +1258,6 @@ ideas = {
 			}
 		}
 	}
-	naval_manufacturer = {
-	
-		designer = yes
-		
-		yarrow = {
-						
-			allowed = {
-				original_tag = ENG
-			}
-						
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			traits = { yarrow_design }
-		}
-		
-		johnbrown = {
-						
-			allowed = {
-				original_tag = ENG
-			}
-						
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			traits = { johnbrown_design }
-		}
-	}
-
 	theorist = {
 
 		bernard_montgomery = {
