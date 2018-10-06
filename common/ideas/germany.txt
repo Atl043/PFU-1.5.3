@@ -1136,7 +1136,7 @@ ideas = {
 				naval_equipment = 0.10
 			}
 
-			traits = { raiding_fleet_naval_manufacturer }
+			traits = { blom_design }
 
 			equipment_bonus = {
 
@@ -1333,23 +1333,7 @@ ideas = {
 			traits = { electronics_concern }
 		}
 	}
-	naval_manufacturer = {
-	
-		designer = yes
-		
-		blom = {
-						
-			allowed = {
-				original_tag = GER
-			}
-						
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			traits = { blom_design }
-		}
-	}
+
 
 	materiel_manufacturer = {
 

@@ -15,6 +15,10 @@ spriteType = {
 		name = "GFX_idea_ansaldo"
 		texturefile = "gfx/interface/ideas/idea_ansaldo.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_UKMed"
+		texturefile = "gfx/interface/ideas/idea_ansaldo.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_idea_odero_terni_orlando"
