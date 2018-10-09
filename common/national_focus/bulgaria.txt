@@ -1217,7 +1217,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.50
+				bonus = 0.75
 				uses = 1
 				category = armor
 			}

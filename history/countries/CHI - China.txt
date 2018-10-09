@@ -1,11 +1,12 @@
 ﻿capital = 613 # Nanjing
 
 oob = "CHI_1936"
-set_stability = 0.3
+set_stability = 0.5
 set_war_support = 0.70
 
 # Starting tech
 set_technology = {
+	bicycle_infantry = 1
 	infantry_weapons = 1
 	gwtank = 1
 	early_fighter = 1
@@ -210,8 +211,7 @@ add_opinion_modifier = { target = PRC modifier = hostile_status }
 create_corps_commander = {
 	name = "Tu Yu-ming"
 	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
-	traits = { defensive_doctrine }
-	traits = { logistics_wizard }
+	traits = { }
 	skill = 5
 	attack_skill = 4
 	defense_skill = 5
@@ -222,10 +222,10 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Hsueh Yueh"
 	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
-	traits = { offensive_doctrine }
+	traits = { offensive_doctrine logistics_wizard defensive_doctrine }
 	skill = 3
 	attack_skill = 3
-	defense_skill = 2
+	defense_skill = 5
 	planning_skill = 3
 	logistics_skill = 3
 }

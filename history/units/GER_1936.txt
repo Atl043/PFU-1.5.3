@@ -29,7 +29,6 @@
 		recon = { x = 0 y = 1 }
 		signal_company { x = 0 y = 2 }
 		artillery = { x = 0 y = 3 }
-		anti_tank = { x = 0 y = 4 }
 	}
 }
 division_template = {
@@ -64,6 +63,7 @@ division_template = {
         engineer = { x = 0 y = 0 }
         recon = { x = 0 y = 1 }
 		signal_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
 	}
 priority = 2
 	
@@ -101,6 +101,7 @@ division_template = {
         engineer = { x = 0 y = 0 }
         recon = { x = 0 y = 1 }
 		signal_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
 	}
 }
 division_template = {
@@ -170,6 +171,7 @@ division_template = {
 	    recon = { x = 0 y = 1 }
 		signal_company { x = 0 y = 2 }
 		artillery = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
 	}
 	priority = 2
 }
@@ -254,33 +256,33 @@ units = {
 		name = "2. Infanterie-Division"
 		location = 6334
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
 	}
 	division= {	
 		name = "12. Infanterie-Division"
 		location = 537
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
 	}
 	# III. Armeekorps
 	division= {	
 		name = "3. Infanterie-Division"
 		location = 478
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
 	}
 	division= {	
 		name = "23. Infanterie-Division"
 		location = 478
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
 	}
 	# Panzertruppenkommando
 	division= {	
 		name = "1. Panzer-Division"
 		location = 6521
 		division_template = "Leichte-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
 	}
 	division= {	
 		name = "2. Panzer-Division"
@@ -526,7 +528,7 @@ air_wings = {
 		# Jagdgeschwader 132 'Richtofen'		
 		fighter_equipment_1 =  {		# Ar 68
 			owner = "GER" 
-			amount = 100
+			amount = 200
 			version_name = "Bf 109 E"
 		}
 		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).

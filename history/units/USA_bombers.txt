@@ -4,7 +4,7 @@ air_wings = {
 		#reeeeeeee
 		strat_bomber_equipment_1 =  {
 			owner = "USA" 
-			amount = 1000
+			amount = 200
 		}
 
  }

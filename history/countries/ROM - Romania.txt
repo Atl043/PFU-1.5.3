@@ -282,20 +282,20 @@ create_field_marshal = {
 	traits = { offensive_doctrine logistics_wizard }
 	skill = 4
 	attack_skill = 4
-	defense_skill = 5
+	defense_skill = 4
 	planning_skill = 4
-	logistics_skill = 4
+	logistics_skill = 5
 }
 
 create_field_marshal = {
 	name = "Ion Antonescu"
 	picture = "Portrait_Romania_Ion_Antonescu.dds"
-	traits = { offensive_doctrine }
+	traits = {  }
 	skill = 4
 	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 5
-	logistics_skill = 5
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -304,7 +304,7 @@ create_corps_commander = {
 	traits = { hill_fighter }
 	skill = 3
 	attack_skill = 4
-	defense_skill = 2
+	defense_skill = 4
 	planning_skill = 4
 	logistics_skill = 2
 }

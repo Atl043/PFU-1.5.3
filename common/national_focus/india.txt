@@ -1782,7 +1782,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_industrial_expansion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -1826,7 +1826,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_industrial_expansion
 
-		cost = 8.6
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -1856,7 +1856,7 @@ focus_tree = {
 			640 = {
 				add_resource = {
 					type = oil
-					amount = 10
+					amount = 15
 				}
 			}
 		}

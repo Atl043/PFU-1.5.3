@@ -37,6 +37,6 @@ units = {
 		division_template = "Division Française Libre"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.3
-		# start_equipment_factor = 0.8
+		# start_equipment_factor = 1
 	}
 }

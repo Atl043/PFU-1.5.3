@@ -1,7 +1,7 @@
 ﻿capital = 439
 
 oob = "RAJ_1936"
-set_stability = 0.6
+set_stability = 0.65
 set_war_support = 0.1
 
 # Starting tech
@@ -32,7 +32,7 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
-set_convoys = 20
+set_convoys = 50
 
 set_cosmetic_tag = RAJ_UK # British Raj
 
@@ -69,7 +69,7 @@ set_cosmetic_tag = RAJ_UK # British Raj
 
 	add_ideas = {
 		#laws
-		volunteer_only
+		disarmed_nation
 		low_economic_mobilisation
 	}
 
@@ -194,7 +194,7 @@ create_corps_commander = {
 	gfx = "GFX_RAJ_noel_beresford_peirse"
 	traits = { panzer_leader }
 	skill = 3
-	attack_skill = 3
+	attack_skill = 4
 	defense_skill = 3
 	planning_skill = 4
 	logistics_skill = 3
@@ -205,8 +205,8 @@ create_corps_commander = {
 	gfx = "GFX_RAJ_frank_messervy"
 	traits = { hill_fighter }
 	skill = 3
-	attack_skill = 2
-	defense_skill = 2
+	attack_skill = 3
+	defense_skill = 3
 	planning_skill = 4
 	logistics_skill = 4
 }
@@ -216,8 +216,8 @@ create_corps_commander = {
 	gfx = "GFX_RAJ_douglas_gracey"
 	traits = { desert_fox }
 	skill = 3
-	attack_skill = 3
-	defense_skill = 2
+	attack_skill = 4
+	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 3
 }
