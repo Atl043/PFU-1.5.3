@@ -247,8 +247,8 @@ ideas = {
 				air_air_superiority_attack_factor = 0.20
 				air_close_air_support_attack_factor = 0.20
 				air_mission_efficiency = 0.2
-				#supply_consumption_factor = -0.15
-				#attrition = -0.10
+				supply_consumption_factor = -0.15
+				attrition = -0.10
 			}
 		}
 
@@ -279,8 +279,8 @@ ideas = {
 				air_air_superiority_attack_factor = 0.10
 				air_close_air_support_attack_factor = 0.10
 				air_mission_efficiency = 0.1
-				#supply_consumption_factor = -0.15
-				#attrition = -0.10
+				supply_consumption_factor = -0.15
+				attrition = -0.10
 			}
 		}
 
@@ -338,13 +338,11 @@ ideas = {
 			targeted_modifier = {
 				tag = SOV
 				# counter war support
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
+				attack_bonus_against = 0.3
+				defense_bonus_against = 0.3
 			}
 
 			modifier = {
-				army_attack_factor = 0.2
-				army_defence_factor = 0.2
 				army_org_Factor = 0.2
 				army_morale_factor = 0.1
 				army_speed_factor = 0.10
@@ -367,13 +365,11 @@ ideas = {
 			targeted_modifier = {
 				tag = SOV
 				# counter war support
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.30
+				defense_bonus_against = 0.30
 			}
 
 			modifier = {
-				army_attack_factor = 0.15
-				army_defence_factor = 0.15
 				army_org_Factor = 0.15
 				army_morale_factor = 0.1
 				army_speed_factor = 0.10

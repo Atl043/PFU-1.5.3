@@ -192,9 +192,9 @@ USA_aid_britain = {
 
 		complete_effect = {
 			ENG = {
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 20000 producer = USA }
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 300 producer = USA }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 producer = USA }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 20000 producer = USA }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = USA }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = USA }
 				country_event = { id = wtt_britain.30 }
 			}
 		}
@@ -226,7 +226,7 @@ USA_aid_britain = {
 
 		modifier = {
 			war_support_weekly = 0.001
-			industrial_capacity_factory = 0.02
+			industrial_capacity_factory = 0.1
 			industrial_capacity_dockyard = 0.02
 			consumer_goods_factor = -0.05
 		}

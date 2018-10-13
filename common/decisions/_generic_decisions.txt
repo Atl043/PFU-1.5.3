@@ -951,6 +951,7 @@ war_measures = {
 
 		modifier = {
 			consumer_goods_factor = -0.05
+			war_support_weekly = 0.001
 		}
 
 		ai_will_do = {

@@ -737,7 +737,7 @@ technologies = {
 		#	air_attack = 0.1
 		#}
 		
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1943
 		
@@ -1024,7 +1024,7 @@ technologies = {
 		#	ap_attack = 0.05
 		#}
 		
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1943
 		
