@@ -105,6 +105,30 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
+	division = {
+		name = "6 Juntuán"
+		location = 12408
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "3 Bubing Shi"
+		location = 1976
+		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "26 Bubing Shi"
+		location = 1976
+		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
 	## 1st Army ##
 	division = {
 		name = "27 Bubing Shi"

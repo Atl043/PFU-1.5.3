@@ -731,7 +731,7 @@ leader_traits = {
 		#generic
 		equipment_bonus = {
 			armor = {
-				reliability = 0.08
+				reliability = 0.01
 			}
 		}
 

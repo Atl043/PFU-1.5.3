@@ -566,7 +566,7 @@ technologies = {
 		}
 
 
-		conscription = 0.0075
+		conscription = 0.008
 
 		path = {
 			leads_to_tech = nd_conscription
@@ -599,7 +599,7 @@ technologies = {
 
 	nd_conscription = {
 
-		conscription = 0.0125
+		conscription = 0.012
 
 		path = {
 			leads_to_tech = werwolf_guerillas
@@ -1676,7 +1676,7 @@ technologies = {
 		}
 		category_light_infantry = {
 			max_organisation = 5
-			breakthrough = 0.3
+			breakthrough = 0.2
 		}
 
 		enable_tactic = tactic_infantry_charge
@@ -1713,7 +1713,7 @@ technologies = {
 	armored_operations = {
 		max_planning = 0.2
 		category_tanks = {
-			max_organisation = 2
+			max_organisation = 3
 		}
 		category_all_armor = {
 			default_morale = 0.1

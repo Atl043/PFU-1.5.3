@@ -115,7 +115,7 @@ political_actions = {
 			tag = GER
 			BUL = { is_ai = yes }
 			country_exists = BUL
-			#date > 1940.1.1
+			date > 1939.1.1
 		}
 
 		complete_effect = {
@@ -154,7 +154,7 @@ political_actions = {
 			tag = GER
 			HUN = { is_ai = yes }
 			country_exists = HUN
-			date > 1937.1.1
+			date > 1939.1.1
 		}
 
 		complete_effect = {
@@ -221,7 +221,7 @@ political_actions = {
 		visible = {
 			tag = GER
 			country_exists = EFR
-			date > 1941.4.1
+			date > 1941.8.1
 		}
 
 		complete_effect = {

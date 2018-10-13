@@ -14,7 +14,7 @@ political_actions = {
 			has_war_with = GER
 		}
 
-		cost = 50
+		cost = 25
 
 		fire_only_once = yes
 
@@ -55,7 +55,7 @@ political_actions = {
 			}
 		}
 
-		cost = 50
+		cost = 25
 
 		fire_only_once = yes
 
@@ -94,7 +94,7 @@ political_actions = {
 			FRA = { has_capitulated = yes }
 		}
 
-		cost = 50
+		cost = 25
 
 		fire_only_once = yes
 
@@ -238,6 +238,20 @@ political_actions = {
 			POR = { country_event = wtt_britain_lease_azores.1 }
 		}
 	}
+	puppet_france = {
+		ai_will_do = { factor = 0 }
+		cost = 25
+
+		visible = {
+			tag = ENG
+			country_exists = FRA
+			date > 1940.6.1
+		}
+
+		complete_effect = {
+			ENG = { puppet = FRA }
+		}
+	}
 
 	annex_canada = {
 		ai_will_do = { factor = 0 }
@@ -246,7 +260,7 @@ political_actions = {
 			tag = ENG
 			CAN = { is_ai = yes }
 			country_exists = CAN
-			#date > 1941.4.1
+			date > 1939.1.1
 		}
 
 		complete_effect = {
@@ -264,7 +278,7 @@ political_actions = {
 			tag = ENG
 			RAJ = { is_ai = yes }
 			country_exists = RAJ
-			#date > 1940.1.1
+			date > 1939.1.1
 		}
 
 		complete_effect = {
@@ -282,7 +296,7 @@ political_actions = {
 			tag = ENG
 			SAF = { is_ai = yes }
 			country_exists = SAF
-			#date > 1940.1.1
+			date > 1939.1.1
 		}
 
 		complete_effect = {
@@ -300,7 +314,7 @@ political_actions = {
 			tag = ENG
 			AST = { is_ai = yes }
 			country_exists = AST
-			#date > 1941.4.1
+			date > 1939.1.1
 		}
 
 		complete_effect = {
@@ -318,7 +332,7 @@ political_actions = {
 			tag = ENG
 			NZL = { is_ai = yes }
 			country_exists = NZL
-			#date > 1939.2.1
+			#date > 1939.1.1
 		}
 
 		complete_effect = {

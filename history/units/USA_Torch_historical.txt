@@ -114,7 +114,7 @@ units = {
 		name = "Infantry Division"
 		location = 788 # Norfolk
 		division_template = "Motorised Division II"
-		start_experience_factor = 0.7
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}

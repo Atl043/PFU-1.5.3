@@ -35,6 +35,7 @@ weather_snow = { # on Region
 	air_bombing_targetting = -0.5
 	local_org_regain = -0.20
 	air_mission_efficiency = -0.4
+	winter_attrition = 0.3
 }
 weather_blizzard = { # on Region 
 	air_detection = -0.9
@@ -46,18 +47,28 @@ weather_blizzard = { # on Region
 	air_bombing_targetting = -0.9
 	local_org_regain = -0.7
 	air_mission_efficiency = -0.9
+	winter_attrition = 0.3
 }
 weather_sandstorm = { # on Region 
 	air_detection = -0.9
 	air_accidents = 0.6
+	army_speed_factor = -0.7
+	army_attack_factor = -0.6
 	air_bombing_targetting = -1
 	local_org_regain = -0.5
 	air_mission_efficiency = -0.5
+	heat_attrition = 0.1
 }
 weather_mud = { # on Province
 	attrition = 0.7
 	army_speed_factor = -0.7
 	army_attack_factor = -0.6
+	equipment_bonus = {
+			armor = {
+				 reliability = -0.2
+				 instant = yes
+			}
+	}
 }
 weather_extreme_cold = { # on Province
 	winter_attrition = 0.5
@@ -74,24 +85,29 @@ weather_very_cold = { # on Province
 	army_speed_factor = -0.25
 }
 weather_very_hot = { # on Province
-	heat_attrition = 0.1
-	local_org_regain = -0.05
+	heat_attrition = 0.3
+	army_attack_factor = -0.2
+	army_speed_factor = -0.25
+	local_org_regain = -0.1
 }
 weather_extreme_hot = { # on Province
 	heat_attrition = 0.2
-	local_org_regain = -0.1
-	supply_consumption_factor = 0.5
-	army_attack_factor = -0.1
+	local_org_regain = -0.2
+	army_attack_factor = -0.4
+	army_speed_factor = -0.4
+	supply_consumption_factor = 0.25
 }
 weather_ground_snow_medium = { # on Province
 	army_speed_factor = -0.2
 	army_attack_factor = -0.35
 	local_org_regain = -0.2
+	winter_attrition = 0.3
 }
 weather_ground_snow_high = { # on Province
 	army_speed_factor = -0.4
 	local_org_regain = -0.4
 	army_attack_factor = -0.5
+	winter_attrition = 0.3
 }
 
 night = { # On province. Multiplied by amount of darkness.
