@@ -1104,7 +1104,7 @@ focus_tree = {
 		cost = 0.2
 
 		completion_reward = {
-			add_timed_idea = { idea = fall_blau days = 80 }
+			add_timed_idea = { idea = fall_blau days = 100 }
 			custom_effect_tooltip = GER_fall_blau_tt
 			hidden_effect = {
 				if = {
@@ -1115,21 +1115,6 @@ focus_tree = {
 					limit = { NOT = { GER = { has_tech = mechanised_infantry } } }
 					GER = { set_technology = { mechanised_infantry = 1 } }
 				}
-
-				SOV = {
-					add_resource = {
-						type = oil
-						amount = 60
-						state = 232
-					}
-				}
-				SOV = {
-					add_resource = {
-						type = oil
-						amount = 40
-						state = 229
-					}
-			    }
 				load_oob = GER_fallblau
 				add_manpower = -50000
 			}
@@ -1157,14 +1142,14 @@ focus_tree = {
    		cost = 0.2
 
    		completion_reward = {
-   			add_timed_idea = { idea = operation_citadel days = 80 }
+   			add_timed_idea = { idea = operation_citadel days = 100 }
 
    			custom_effect_tooltip = pfu.citadel.tt
    			hidden_effect = {
 				load_oob = GER_citadel_tank
    				load_oob = GER_citadel
    				add_manpower = -50000
-				add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 15000 producer = GER }
+				add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 20000 producer = GER }
    	        }
     	}
 	}
