@@ -738,14 +738,11 @@ country_event = {
 		ai_chance = {
 			factor = 30
 		}
-		name = soviet.25.a
-		custom_effect_tooltip = remove_political_advisor
-		show_ideas_tooltip = mikhail_kalinin
-		set_country_flag = purged_kalinin
-		hidden_effect = {
-			remove_ideas = mikhail_kalinin
-		}
+		name = soviet.25.c
+		add_political_power = -75
+		set_country_flag = purged_party_members
 	}
+	
 	option = {
 		ai_chance = {
 			factor = 30
@@ -758,13 +755,18 @@ country_event = {
 			remove_ideas = nikita_khrushchev
 		}
 	}
+
 	option = {
 		ai_chance = {
 			factor = 30
 		}
-		name = soviet.25.c
-		add_political_power = -75
-		set_country_flag = purged_party_members
+		name = soviet.25.a
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = mikhail_kalinin
+		set_country_flag = purged_kalinin
+		hidden_effect = {
+			remove_ideas = mikhail_kalinin
+		}
 	}
 }
 

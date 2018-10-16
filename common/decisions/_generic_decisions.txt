@@ -60,7 +60,7 @@ political_actions = {
 		icon = generic_industry
 
 		available = {
-
+			NOT = { has_country_flag = worker_conditions_running }
 		}
 
 		visible = {
@@ -81,7 +81,10 @@ political_actions = {
 		cost = 100
 
 		complete_effect = {
-
+			set_country_flag = worker_conditions_running
+		}
+		remove_effect = {
+			clr_country_flag = worker_conditions_running
 		}
 
 		ai_will_do = {
@@ -98,6 +101,7 @@ political_actions = {
 		icon = generic_political_discourse
 
 		available = {
+			NOT = { has_country_flag = pop_running }
 			has_war = no
 			has_war_support > 0.2
 		}
@@ -125,9 +129,11 @@ political_actions = {
 		cost = 50
 
 		complete_effect = {
-
+			set_country_flag = pop_running
 		}
-
+		remove_effect = {
+			clr_country_flag = pop_running
+		}
 		ai_will_do = {
 			base = 0
 			modifier = {
@@ -856,6 +862,7 @@ war_measures = {
         }
 
         available = {
+        	NOT = { has_country_flag = women_in_workforce }
             has_war = yes
             has_idea = tot_economic_mobilisation
             OR = {
@@ -882,6 +889,7 @@ war_measures = {
             }
         }
         visible = {
+
             has_war = yes
         }
         cost = 100
@@ -903,7 +911,11 @@ war_measures = {
 				}
 				country_event = { id = canada_vanilla.1 hours = 6 } # Ronnie the Bren Gun Girl
 			}
+			set_country_flag = women_in_workforce
         }
+		remove_effect = {
+			clr_country_flag = women_in_workforce
+		}
    }
 
     war_bonds = {
@@ -911,10 +923,12 @@ war_measures = {
     	icon = generic_industry
 
     	allowed = {
+    		NOT = { has_country_flag = has_war_bonds }
             always = yes
         }
 
         available = {
+        	NOT = { has_country_flag = has_war_bonds }
             has_war = yes
             OR = {
                 AND = {
@@ -961,12 +975,12 @@ war_measures = {
 				factor = 0 #use as pp dump
 			}
 		}
-
 		remove_effect = {
-
+			clr_country_flag = has_war_bonds
 		}
 
 		complete_effect = {
+			set_country_flag = has_war_bonds
 			if = {
 				limit = {
 					NOT = {
