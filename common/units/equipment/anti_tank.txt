@@ -55,6 +55,7 @@ equipments = {
 		visual_level = 1
 		
 		hard_attack = 25
+		ap_attack = 61
 		
 		build_cost_ic = 5
 		resources = {
