@@ -13,8 +13,18 @@ NDefines.NDiplomacy.BASE_CONDITIONAL_PEACE_MONTHS = 1
 NDefines.NDiplomacy.AUTONOMY_LEVEL_CHANGE_PP_FREE = 10
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 75
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0.2
+NDefines.NDiplomacy.TRUCE_PERIOD_AFTER_KICKING_FROM_FACTION = 0
+NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 0
+NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 0
+NDefines.NDiplomacy.FRONT_IS_DANGEROUS = 0
 
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 10
+
+NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100
+NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = 0
+NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_PENALTY = 0
+NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0
+NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROL_DIFF = 0
 
 NDefines.NCountry.VP_TO_SUPPLY_BASE = 2
 NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
@@ -35,6 +45,7 @@ NDefines.NProduction.MIN_FIELD_TO_TRAINING_MANPOWER_RATIO = 0.9
 NDefines.NProduction.CAPITULATE_STOCKPILES_RATIO = 0.75
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 5
+NDefines.NProduction.ANNEX_FIELD_EQUIPMENT_RATIO = 1.0
 
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50
 NDefines.NBuildings.INFRA_TO_SUPPLY = 3
@@ -47,8 +58,9 @@ NDefines.NTechnology.LICENSE_EQUIPMENT_TECH_SPEED_PER_YEAR = -0.025
 
 NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 3
 
+NDefines.NMilitary.RECON_SKILL_IMPACT = 8
 NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.15
-NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.65
+NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.60
 NDefines.NMilitary.LEADER_SKILL_FACTOR = 0.25
 NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.04
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.15
@@ -70,7 +82,7 @@ NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.035
 NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 4
 NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.2
 NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.3
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.35
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.40
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.35
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.00015
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0002
@@ -90,9 +102,10 @@ NDefines.NMilitary.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.018
 
 NDefines.NAir.COMBAT_AMOUNT_DIFF_AFFECT_GANG_CHANCE = 0.4
 NDefines.NAir.COMBAT_SITUATION_WIN_CHANCE_FROM_GANG = 0.1
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.09	-- 0.1 base Anti Air Gun hit chance
 NDefines.NAir.ACCIDENT_CHANCE_BASE = 0.02
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.2
-NDefines.NAir.AIR_WING_MAX_SIZE = 2000
+NDefines.NAir.AIR_WING_MAX_SIZE = 1600
 NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 10
 NDefines.NAir.STRATEGIC_BOMBER_NUKE_AIR_SUPERIORITY = 0.90
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.0
@@ -102,21 +115,26 @@ NDefines.NAir.DISRUPTION_DEFENCE_ATTACK_FACTOR = 2.0
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.0
+NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER =	0.1	-- base 0.192 How much efficiency to regain per day. Gain applied hourly.
+NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.5 -- 0.015	 % how many max disrupted only planes are allowed to die in a single combat
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = 0.13---0.12	5x levels = 60% defense from bombing
+NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.66 -- .75 Maximum damage reduction factor applied to incoming air attacks against units with AA.
 
 
+NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE = 0.85
 NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 18  --- before 16 testing 18
-NDefines.NNavy.COMBAT_MIN_DURATION = 24
+NDefines.NNavy.COMBAT_MIN_DURATION = 28
 NDefines.NNavy.COMBAT_SHIP_SPEED_TO_FIELD_FACTOR = 0.06
 NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 3	-- Vanilla: 1.5 How much efficiency drops when losing convoys. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
-NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 7	--Vanilla: 7 Convoy starts regaining it's efficiency after X days without any convoys being sink.
-NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.08 --Vanilla: 0.04 How much efficiency regains every day.
+NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 12	--Vanilla: 7 Convoy starts regaining it's efficiency after X days without any convoys being sink.
+NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.04 --Vanilla: 0.04 How much efficiency regains every day.
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.01
 NDefines.NNavy.CARRIER_STACK_PENALTY = 4
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 99.999
 NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_DAMAGE_MULT = 3.0
 NDefines.NNavy.ANTI_AIR_TARGETING = 1.8			-- Vanilla: 0.9 how good ships are at hitting aircraft
-NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 15
+NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 12
 
 
 NDefines.NAI.DIVISION_UPGRADE_MIN_XP = 400

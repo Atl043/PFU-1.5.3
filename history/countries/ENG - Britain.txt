@@ -334,7 +334,7 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Alan Brooke"
 	picture = "Portrait_Britain_Alan_Brooke.dds"
-	traits = { offensive_doctrine defensive_doctrine }
+	traits = { defensive_doctrine trait_cautious career_officer }
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
@@ -345,34 +345,34 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Bernard Montgomery"
 	picture = "Portrait_Britain_Bernard_Montgomery.dds"
-	traits = { logistics_wizard offensive_doctrine inspirational_leader thorough_planner }
-	skill = 5
+	traits = { brilliant_strategist logistics_wizard offensive_doctrine media_personality trait_cautious inflexible_strategist organizer trickster }
+	skill = 6 
 	attack_skill = 5
-	defense_skill = 5
-	planning_skill = 4
-	logistics_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 5
 }
 
 create_corps_commander = {
 	name = "Claude Auchinleck"
 	picture = "Portrait_Britain_Claude_Auchinleck.dds"
-	traits = {  }
-	skill = 4
+	traits = { career_officer brilliant_strategist organizer trickster infantry_leader jungle_rat}
+	skill = 5
 	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 3
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 5
 }
 
 create_corps_commander = {
 	name = "Neil Ritchie"
 	picture = "Portrait_Britain_Neil_Ritchie.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
+	traits = { inflexible_strategist armor_officer politically_connected  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
 	planning_skill = 3
-	logistics_skill = 2
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -389,7 +389,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "William Slim"
 	picture = "Portrait_Britain_William_Slim.dds"
-	traits = { trickster jungle_rat trait_engineer }
+	traits = { trickster jungle_rat trait_engineer war_hero }
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
@@ -479,10 +479,10 @@ create_corps_commander = {
 		picture = "Portrait_Britain_Merton_Beckwith_Smith.dds"
 	traits = { commando }
 	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 1
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
 }
 
 create_corps_commander = {
