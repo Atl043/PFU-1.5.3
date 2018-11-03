@@ -525,14 +525,14 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			if = {
-				limit = { 544 = { is_owned_and_controlled_by = ENG } }
-				transfer_state = 544
-			}
-			if = {
-				limit = { 540 = { is_owned_and_controlled_by = ENG } }
-				transfer_state = 540
-			}
+			#if = {
+			#	limit = { 544 = { is_owned_and_controlled_by = ENG } }
+			#	transfer_state = 544
+			#}
+			#if = {
+			#	limit = { 540 = { is_owned_and_controlled_by = ENG } }
+			#	transfer_state = 540
+			#}
 			if = {
 				limit = { 542 = { is_owned_and_controlled_by = ENG } }
 				transfer_state = 542

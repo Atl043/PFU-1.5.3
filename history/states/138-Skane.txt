@@ -5,7 +5,7 @@ state={
 	manpower = 1
 	resources={
 		tungsten = 64
-		steel = 213
+		steel = 139
 		chromium = 34
 		aluminium = 3
 	}
@@ -15,7 +15,7 @@ state={
 	history={
 		owner = SWE
 		buildings = {
-			infrastructure = 4
+			infrastructure = 7
 			industrial_complex = 1
 			dockyard = 1
 			9279 = {
