@@ -755,13 +755,10 @@ air_wings = {
 			owner = "ENG"
 			amount = 100
 		}
-		tac_bomber_equipment_0 = {
+		tac_bomber_equipment_1 = {
 			owner = "ENG"
-			amount = 100
-		}
-		tac_bomber_equipment_0 = {
-			owner = "ENG"
-			amount = 100
+			creator = "FRA"
+			amount = 150
 		}
 		nav_bomber_equipment_1 = {
 			owner = "ENG"

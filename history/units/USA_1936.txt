@@ -691,36 +691,33 @@ air_wings = {
 	378 = {
 		# 7th Bombardment Group
 		# 19th Bombardment Group
-				fighter_equipment_0 =  {
+		fighter_equipment_1 =  {
+			creator = "ENG"
 			owner = "USA"
 			amount = 100
 		}
-				fighter_equipment_0 =  {
+		fighter_equipment_1 =  {
+			creator = "ENG"
 			owner = "USA"
 			amount = 100
 		}
-				fighter_equipment_0 =  {
+		fighter_equipment_1 =  {
+			creator = "ENG"
 			owner = "USA"
 			amount = 100
 		}
-			fighter_equipment_0 =  {
+		tac_bomber_equipment_1 = {
 			owner = "USA"
-			amount = 100
+			creator = "FRA"
+			amount = 150
 		}
-		tac_bomber_equipment_0 = {
-			owner = "USA"
-			amount = 100
-		}
-		 tac_bomber_equipment_0 = {
-			owner = "USA"
-			amount = 100
-		}
+		
 		# 17th Attack Group
 		CAS_equipment_1 = {
 			owner = "USA"
 			amount = 100
 		}
-			nav_bomber_equipment_1 =  {
+		nav_bomber_equipment_1 =  {
 			owner = "USA"
 			amount = 100
 		}

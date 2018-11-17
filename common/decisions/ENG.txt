@@ -246,6 +246,8 @@ political_actions = {
 			tag = ENG
 			country_exists = FRA
 			date > 1940.6.1
+			FRA = { is_ai = yes }
+
 		}
 
 		complete_effect = {
@@ -337,6 +339,8 @@ political_actions = {
 
 		complete_effect = {
 			ENG = {
+				add_state_core = 723
+				add_state_core = 284
 				annex_country = { target = NZL transfer_troops = yes }
 				add_ideas = annex_new_zealand_idea
 			}

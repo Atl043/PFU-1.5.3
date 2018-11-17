@@ -305,7 +305,8 @@ focus_tree = {
 		#	factor = 1
 		#}
 		complete_tooltip = {
-			army_experience = 10
+			army_experience = 25
+			air_experience = 100
 			every_state = {
 				limit = { has_state_flag = USA_military_construction_5MF }
 				add_extra_state_shared_building_slots = 5
@@ -326,6 +327,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			army_experience = 25
+			air_experience = 100
 			random_owned_controlled_state = {
 				limit = {
 					arms_factory > 0
@@ -531,6 +533,7 @@ focus_tree = {
 		#	factor = 1
 		#}
 		complete_tooltip = {
+			air_experience = 100
 			every_state = {
 				limit = { has_state_flag = USA_USACE_projects_3AF }
 				add_extra_state_shared_building_slots = 3
@@ -551,6 +554,7 @@ focus_tree = {
 			add_ideas = extensive_conscription
 		}
 		completion_reward = {
+			air_experience = 100
 			random_owned_controlled_state = {
 				limit = {
 					arms_factory > 0
@@ -618,7 +622,6 @@ focus_tree = {
 				}
 				set_state_flag = USA_USACE_projects_3Inf
 			}
-			air_experience = 50
 			navy_experience = 50
 			army_experience = 10			
 		}
@@ -660,7 +663,7 @@ focus_tree = {
 			}
 		}
 		complete_tooltip = {
-			air_experience = 50
+			air_experience = 100
 			navy_experience = 50
 			army_experience = 10
 			every_state = {
@@ -676,7 +679,7 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 50
 			army_experience = 50
-			air_experience = 10
+			air_experience = 100
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1132,7 +1135,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 50
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 2
@@ -1156,7 +1159,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 50
 			add_ideas = air_support_focus
 		}
 	}
@@ -1175,7 +1178,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 50
 			add_ideas = strategic_bombing_focus
 		}
 	}
@@ -1194,7 +1197,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 50
 			add_tech_bonus = {
 				name = USA_TAC
 				uses = 1
@@ -1219,6 +1222,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			air_experience = 50
 			add_tech_bonus = {
 				name = USA_CAS
 				uses = 1
@@ -1253,7 +1257,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 50
 			add_tech_bonus = {
 				name = USA_combined_bomber_offensive
 				bonus = 0.5

@@ -662,6 +662,7 @@ focus = {
 			OR = {
 				threat > 0.1
 				has_war = yes
+				date > 1938.2.1
 			}
 			date > 1936.8.1
 		}
@@ -871,6 +872,13 @@ focus = {
 		}
 
 		completion_reward = {
+
+			add_tech_bonus = {
+				name = op_dest_bonus
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
 			air_experience = 100
 			random_owned_controlled_state = {
 				limit = {

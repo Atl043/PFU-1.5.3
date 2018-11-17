@@ -1493,13 +1493,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
+
+			add_state_core = 539
+			add_political_power = 150
+			set_capital = 539
 			country_event = { days = 1 id = free_france.1 }
-			hidden_effect = {
-				set_technology = { desertinfantry_at = 1 }
-				load_oob = FRA_free_france
-				set_technology = { antitank2 = 1 }
-				set_technology = { antitank1 = 1 }
-			}
+			set_technology = { desertinfantry_at = 1 }
+			load_oob = FRA_free_france
+			set_technology = { antitank2 = 1 }
+			set_technology = { antitank1 = 1 }
 			custom_effect_tooltip = FRA_free_france_effect_1
 		}
 	}
@@ -1533,7 +1535,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = convoy_1
-				amount = 60
+				amount = 100
 				producer = FRA
 			}
 			539 = {

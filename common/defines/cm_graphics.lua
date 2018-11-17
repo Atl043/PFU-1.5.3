@@ -10,7 +10,17 @@ NDefines_Graphics.NGraphics.MAPICON_GROUP_STRATEGIC_SIZE = 1000
 NDefines_Graphics.NGraphics.MAP_ICONS_GROUP_SPLIT_SELECTED_LIMIT = 10
 NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE = 200
 NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE_STRATEGIC = 0
+NDefines_Graphics.NGraphics.BLOOM_WIDTH = 0
+NDefines_Graphics.NGraphics.BLOOM_SCALE = 0
+NDefines_Graphics.NGraphics.BRIGHT_THRESHOLD = 0
+NDefines_Graphics.NGraphics.EMISSIVE_BLOOM_STRENGTH = 0
+NDefines_Graphics.NGraphics.DAY_NIGHT_FEATHER = 0.024
+NDefines_Graphics.NGraphics.DRAW_SHADOWS_CUTOFF = 0
+NDefines_Graphics.NGraphics.DRAW_SHADOWS_FADE_LENGTH = 0
+NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0
+NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
 
+NDefines_Graphics.NAirGfx.AIRPLANES_ANIMATION_GLOBAL_SPEED_PER_GAMESPEED = {0.3, 0.3, 0.3, 0.3, 0.3, 0.3}
 NDefines_Graphics.NGraphics.COMMANDGROUP_PRESET_COLORS_HSV = {
 	0.0/360.0, 1.0, 1.0,	--red
 	10.0/360.0, 1.0, 1.0,	--orange
@@ -54,6 +64,7 @@ NDefines_Graphics.NGraphics.STRATEGIC_NAVY_COLOR_MISSION = {0.65, 0.65, 0.0, 1}
 NDefines_Graphics.NGraphics.STRATEGIC_NAVY_COLOR_NEUTRAL = {130.0/255, 130.0/255, 130.0/255, 1}
 
 NDefines_Graphics.NGraphics.ROOT_FRONT_OFFSET = 2
+--NDefines_Graphics.NAirGfx.AIRPLANES_ANIMATION_GLOBAL_SPEED_PER_GAMESPEED = {0.3, 0.3, 0.3, 0.3, 0.3, 0.3}
 
 --NDefines_Graphics.NGraphics.VIRTUAL_BATTLEPLANS_COLOR = { 1.0, 0.0, 0.0, 1 }
 

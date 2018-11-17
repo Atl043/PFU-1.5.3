@@ -1515,12 +1515,19 @@ political_actions = {
 
         available = {
             GER = { NOT = { has_government = ROOT } }
+        	NOT = { has_country_flag = ger_research }
         }
 
         modifier = {
             research_time_factor = -0.01
             stability_factor = -0.015
         }
+        complete_effect = {
+			set_country_flag = ger_research
+		}
+		remove_effect = {
+			clr_country_flag = ger_research
+		}
 
         remove_trigger = {
             OR = {
@@ -1560,12 +1567,19 @@ political_actions = {
 
         available = {
             ITA = { NOT = { has_government = ROOT } }
+            NOT = { has_country_flag = ita_research }
         }
 
         modifier = {
             research_time_factor = -0.01
             stability_factor = -0.015
         }
+        complete_effect = {
+			set_country_flag = ita_research
+		}
+		remove_effect = {
+			clr_country_flag = ita_research
+		}
 
         remove_trigger = {
             ITA = { has_government = ROOT }
@@ -1581,6 +1595,7 @@ political_actions = {
 
     	visible = {
 			NOT = { has_government = fascism }
+
 		}
 
 		available = {
@@ -1722,7 +1737,7 @@ political_actions = {
 		}
 
 		days_remove = -1
-		cost = 100
+		cost = 25
 
 		complete_effect = {
 			hidden_effect = {
@@ -1772,7 +1787,7 @@ political_actions = {
 		}
 
 		days_remove = -1
-		cost = 100
+		cost = 25
 
 		complete_effect = {
 			hidden_effect = {
@@ -1822,7 +1837,7 @@ political_actions = {
 		}
 
 		days_remove = -1
-		cost = 100
+		cost = 25
 
 		complete_effect = {
 			hidden_effect = {
@@ -1868,7 +1883,7 @@ political_actions = {
 		}
 
 		days_remove = 360
-		cost = 150
+		cost = 50
 
 		ai_will_do = {
 			factor = 0
@@ -1891,7 +1906,7 @@ political_actions = {
 		}
 
 		days_remove = 360
-		cost = 150
+		cost = 50
 
 		ai_will_do = {
 			factor = 0
@@ -1914,7 +1929,7 @@ political_actions = {
 		}
 
 		days_remove = 360
-		cost = 150
+		cost = 50
 
 		ai_will_do = {
 			factor = 0
@@ -1937,7 +1952,7 @@ political_actions = {
 		}
 
 		days_remove = 360
-		cost = 150
+		cost = 50
 
 		ai_will_do = {
 			factor = 0

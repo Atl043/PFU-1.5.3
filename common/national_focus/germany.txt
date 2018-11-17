@@ -350,7 +350,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		x = 3
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -359,7 +359,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			air_experience = 25
+			air_experience = 50
 			add_tech_bonus = {
 				name = air_sup_bonus
 				bonus = 0.5
@@ -387,7 +387,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    air_experience = 25
+		    air_experience = 50
             add_tech_bonus = {
 			name = Fallschirmjäger
 			bonus = 0.5
@@ -397,7 +397,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = air_sup_bonus
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = air_doctrine
 			}
 
@@ -474,7 +474,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_strategic_air_effort }
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -492,7 +492,6 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 0.5
 				uses = 1
-				technology = tactical_bomber2
 				technology = CAS2
 			}
 		}
