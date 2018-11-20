@@ -1062,7 +1062,6 @@ ideas = {
 
 			equipment_bonus = {
 				heavy_tank_equipment = {
-					armor_value = 0.15
 					soft_attack = 0.1
 					maximum_speed = -0.15
 				}

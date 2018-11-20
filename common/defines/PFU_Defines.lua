@@ -39,7 +39,7 @@ NDefines.NCountry.STARTING_COMMAND_POWER = 50.0
 NDefines.NCountry.ATTACHE_XP_SHARE = 0.05
 NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.04
 NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999
-NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.13 -- original 0.05 air supply?
+NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.39 -- original 0.05 air supply?
 
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 500000
 NDefines.NProduction.MIN_FIELD_TO_TRAINING_MANPOWER_RATIO = 0.9
@@ -103,29 +103,29 @@ NDefines.NMilitary.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.018
 
 NDefines.NAir.COMBAT_AMOUNT_DIFF_AFFECT_GANG_CHANCE = 0.4
 NDefines.NAir.COMBAT_SITUATION_WIN_CHANCE_FROM_GANG = 0.1
-NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.07	-- 0.1 base Anti Air Gun hit chance
 NDefines.NAir.ACCIDENT_CHANCE_BASE = 0.02
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.2
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600
 NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 10
 NDefines.NAir.STRATEGIC_BOMBER_NUKE_AIR_SUPERIORITY = 0.90
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.0
-NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 1
-NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.5
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 1 -- original 0.8 Anti Air Gun Damage factor
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.15  -- orignal 0.1 Anti Air Gun hit chance
+NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 0.85 -- original 1.00 Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
 NDefines.NAir.DISRUPTION_DEFENCE_ATTACK_FACTOR = 2.0
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.0
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER =	0.1	-- base 0.192 How much efficiency to regain per day. Gain applied hourly.
 NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.5 -- 0.015	 % how many max disrupted only planes are allowed to die in a single combat
-NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = 0.13---0.12	5x levels = 60% defense from bombing
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.16 -- -0.12	5x levels = 60% defense from bombing
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.66 -- .75 Maximum damage reduction factor applied to incoming air attacks against units with AA.
 
 
 NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE = 0.85
-NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 18  --- before 16 testing 18
-NDefines.NNavy.COMBAT_MIN_DURATION = 28
-NDefines.NNavy.COMBAT_SHIP_SPEED_TO_FIELD_FACTOR = 0.06
+NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 24  --- before 16 testing 18
+NDefines.NNavy.COMBAT_MIN_DURATION = 32
+NDefines.NNavy.COMBAT_SHIP_SPEED_TO_FIELD_FACTOR = 0.09
 NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 3	-- Vanilla: 1.5 How much efficiency drops when losing convoys. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
 NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 12	--Vanilla: 7 Convoy starts regaining it's efficiency after X days without any convoys being sink.
 NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.04 --Vanilla: 0.04 How much efficiency regains every day.

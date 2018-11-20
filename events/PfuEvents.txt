@@ -655,9 +655,9 @@ country_event = {
 
 	option = {
 		name = pfu.20.a
-		add_timed_idea = { idea = finest_hour days = 360 }
+		add_timed_idea = { idea = finest_hour days = 400 }
 	}
-	mean_time_to_happen = { days = 30 }
+	mean_time_to_happen = { days = 0 }
 }
 
 
@@ -983,7 +983,7 @@ country_event = {
 
 	trigger = {
 		tag = ENG
-		date > 1939.5.1
+		date > 1939.6.1
 		ENG = { controls_state = 447 }
 		has_tech = basic_heavy_tank
 		NOT = { has_global_flag = ENG_royalarmor }
