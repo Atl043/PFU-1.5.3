@@ -652,37 +652,46 @@ air_wings = {
 	2 = {
 		# 5a Divisione Aerea 'Eolo'
 		# 8a Divisione Aerea 'Ibis'
-		fighter_equipment_0 = {
+		fighter_equipment_1 = {
 			owner = "ITA"
+			creator = "GER"
+			version_name = "Bf 109 E"
 			amount = 100
 		}
-		fighter_equipment_0 = {
+		fighter_equipment_1 = {
 			owner = "ITA"
+			creator = "GER"
+			version_name = "Bf 109 E"
 			amount = 100
 		}
-		fighter_equipment_0 = {
+		fighter_equipment_1 = {
 			owner = "ITA"
+			creator = "GER"
+			version_name = "Bf 109 E"
 			amount = 100
 		}
-		tac_bomber_equipment_0 =  {
+		tac_bomber_equipment_1 =  {
 			owner = "ITA"
+			creator = "GER"
 			amount = 100
 		}
-				tac_bomber_equipment_0 =  {
+				tac_bomber_equipment_1 =  {
 			owner = "ITA"
+			creator = "GER"
 			amount = 100
 		}
-				tac_bomber_equipment_0 =  {
+				tac_bomber_equipment_1 =  {
 			owner = "ITA"
+			creator = "GER"
 			amount = 100
 		}
 		nav_bomber_equipment_1 = {
 			owner = "ITA"
-			amount = 80
+			amount = 100
 		}
 		CAS_equipment_1 =  {
 			owner = "ITA"
-			amount = 40
+			amount = 100
 		}
 	transport_plane_equipment_1 = {
 			owner = "ITA"
