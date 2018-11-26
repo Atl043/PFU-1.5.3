@@ -76,6 +76,17 @@ country_event = {
 				planning_skill = 4
 				logistics_skill = 4
         }
+        create_corps_commander = {
+                name = "Luis Prado"
+                portrait_path = "gfx/leaders/SPA/Luis_Prado.dds"
+                #picture = "Luis_Prado.dds"
+                traits = { panzer_leader }
+                skill = 1
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+        }
 	}
 }
 

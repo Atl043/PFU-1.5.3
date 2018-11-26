@@ -27,7 +27,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		bypass = {
-			550 = { NOT = { is_owned_and_controlled_by = ITA } }
+			#550 = { NOT = { is_owned_and_controlled_by = ITA } }
 			# Need province based trigger for this to work
 			#550 = {
 			#	NOT = {

@@ -75,29 +75,6 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = finland.3.a
-
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 10
-				OR = {
-					has_war = yes
-					has_government = communism
-				}
-			}
-		}
-
-		FIN = {
-			country_event = { id = finland.4 days = 3 }
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = refused_help
-			}
-		}
-	}
-
-	option = {
 		name = finland.3.b
 
 		ai_chance = {

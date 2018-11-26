@@ -18,7 +18,7 @@ focus_tree = {
 		icon = GFX_FRA_VIC_Petain
 		x = 4
 		y = 0
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -38,7 +38,7 @@ focus_tree = {
 		relative_position_id = EFR_marechal_nous_voila
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -64,7 +64,7 @@ focus_tree = {
 		relative_position_id = EFR_travail
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -134,7 +134,7 @@ focus_tree = {
 		relative_position_id = EFR_recycling
 		x = -2
 		y = 2
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -208,7 +208,7 @@ focus_tree = {
 			controls_state = 26
 			26 = { is_owned_by = EFR }
         }
-        cost = 10
+        cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -232,7 +232,7 @@ focus_tree = {
 		relative_position_id = EFR_gazogenes_and_michelin_tires
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -260,7 +260,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -295,7 +295,7 @@ focus_tree = {
 		relative_position_id = EFR_marechal_nous_voila
 		x = -2
 		y = 2
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -351,7 +351,7 @@ focus_tree = {
 		}
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -387,7 +387,7 @@ focus_tree = {
 		relative_position_id = EFR_patrie_focus
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -408,7 +408,7 @@ focus_tree = {
 		relative_position_id = EFR_armistice_army
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -423,7 +423,7 @@ focus_tree = {
 		relative_position_id = EFR_chantiers_de_la_jeunesse
 		x = -1
 		y = 1
-		cost = 4.3
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -448,7 +448,7 @@ focus_tree = {
 		relative_position_id = EFR_negociate_the_release_of_officers
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 		available = {
@@ -475,7 +475,7 @@ focus_tree = {
 		relative_position_id = EFR_negociate_the_release_of_officers
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -490,7 +490,7 @@ focus_tree = {
 		relative_position_id = EFR_milice_francaise
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -505,7 +505,7 @@ focus_tree = {
 		relative_position_id = EFR_milice_francaise
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -534,7 +534,7 @@ focus_tree = {
 		relative_position_id = EFR_armistice_army
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -554,7 +554,7 @@ focus_tree = {
 		relative_position_id = EFR_negociate_the_release_of_officers
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -570,7 +570,7 @@ focus_tree = {
 		relative_position_id = EFR_secret_military_researches
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -591,7 +591,7 @@ focus_tree = {
 		relative_position_id = EFR_secret_military_researches
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -614,7 +614,7 @@ focus_tree = {
 		relative_position_id = EFR_industrial_advisory_comitee
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -642,7 +642,7 @@ focus_tree = {
 		relative_position_id = EFR_famille
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -661,7 +661,7 @@ focus_tree = {
 		relative_position_id = EFR_patrie_focus
 		x = 4
 		y = -1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -747,7 +747,7 @@ focus_tree = {
 		relative_position_id = EFR_aviation_effort
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -773,7 +773,7 @@ focus_tree = {
 		relative_position_id = EFR_aviation_effort
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -797,7 +797,7 @@ focus_tree = {
 		relative_position_id = EFR_aviation_effort
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -884,7 +884,7 @@ focus_tree = {
 		relative_position_id = EFR_aviation_effort
 		x = -1
 		y = 3
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -905,7 +905,7 @@ focus_tree = {
 		relative_position_id = EFR_aviation_effort
 		x = 0
 		y = 4
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -936,7 +936,7 @@ focus_tree = {
 		relative_position_id = EFR_aviation_effort
 		x = 1
 		y = 3
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -970,10 +970,10 @@ focus_tree = {
 
 		complete_tooltip = {
 			navy_experience = 25
-			add_extra_state_shared_building_slots = 3
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = dockyard
-				level = 3
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -1001,14 +1001,14 @@ focus_tree = {
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
-							size > 2
+							size > 0
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 3
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1021,7 +1021,7 @@ focus_tree = {
 						dockyard > 0
 						free_building_slots = {
 							building = dockyard
-							size > 2
+							size > 0
 							include_locked = yes
 						}
 					}
@@ -1031,14 +1031,14 @@ focus_tree = {
 						dockyard > 0
 						free_building_slots = {
 							building = dockyard
-							size > 2
+							size > 0
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 3
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1051,7 +1051,7 @@ focus_tree = {
 						any_owned_state = {
 							free_building_slots = {
 								building = dockyard
-								size > 2
+								size > 0
 								include_locked = yes
 							}
 						}
@@ -1062,14 +1062,14 @@ focus_tree = {
 						controller = { tag = ROOT }
 						free_building_slots = {
 							building = dockyard
-							size > 2
+							size > 0
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 3
+						level = 1
 						instant_build = yes
 					}
 				}

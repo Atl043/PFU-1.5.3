@@ -1,4 +1,6 @@
 ﻿l_english:
+ ENG_Operation_Husky:0 "Operation Husky"
+ ENG_Operation_Husky_desc:0 "We will take the soft under belly of the Axis"
  CHI_army_reform_completed:0 "Completed all steps of §YArmy Reform§!\n"
  WHILE_FOCUSING:0 "While focusing on this, there will be the following effects:\n$EFF$"
  generic_focus:0 "National Focus"

@@ -205,7 +205,7 @@ set_technology = {
 }
 
 
-set_convoys = 220
+set_convoys = 300
 set_stability = 0.5
 set_war_support = 0.8
 
@@ -217,11 +217,11 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 2
+			popularity = 0
 		}
 
 		communism = {
-			popularity = 88
+			popularity = 90
 		}
 	}
 
@@ -282,7 +282,7 @@ add_namespace = {
 }
 
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Konstantin Rokossovsky"
 	id = 402
 		picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"

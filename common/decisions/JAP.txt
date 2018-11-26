@@ -43,7 +43,7 @@ foreign_politics = {
 				530 = {
 					add_resource = {
 						type = rubber
-						amount = 70
+						amount = 77
 					}
 				}
 			
