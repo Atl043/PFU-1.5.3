@@ -156,50 +156,6 @@ political_actions = {
 		}
 	}
 
-	ENG_invoke_the_alliance_of_1373 = {
-
-		icon = generic_prepare_civil_war
-
-		allowed = {
-			tag = ENG
-		}
-
-		available = {
-			has_war = yes
-			POR = {
-				OR = {
-					has_government = ROOT
-					has_government = neutrality
-				}
-			}
-			POR = { is_in_faction = no }
-			NOT = { has_war_with = POR }
-		}
-
-		cost = 100
-
-		visible = {
-			has_war = yes
-			NOT = { has_war_with = POR }
-		}
-
-		complete_effect = {
-			POR = { country_event = generic.5 }
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				NOT = {
-					any_other_country = {
-						original_tag = SPR
-						has_war_with = ROOT
-					}
-				}
-			}
-		}
-	}
 
 	ENG_request_azores_lease = {
 
@@ -249,7 +205,7 @@ political_actions = {
 			FRA = { is_ai = yes }
 
 		}
-
+		fire_only_once = yes
 		complete_effect = {
 			ENG = { puppet = FRA }
 		}
@@ -264,7 +220,7 @@ political_actions = {
 			country_exists = CAN
 			date > 1939.1.1
 		}
-
+		fire_only_once = yes
 		complete_effect = {
 			ENG = {
 				annex_country = { target = CAN transfer_troops = yes }
@@ -282,7 +238,7 @@ political_actions = {
 			country_exists = RAJ
 			date > 1939.1.1
 		}
-
+		fire_only_once = yes
 		complete_effect = {
 			ENG = {
 				annex_country = { target = RAJ transfer_troops = yes }
@@ -300,7 +256,7 @@ political_actions = {
 			country_exists = SAF
 			date > 1939.1.1
 		}
-
+		fire_only_once = yes
 		complete_effect = {
 			ENG = {
 				annex_country = { target = SAF transfer_troops = yes }
@@ -318,7 +274,7 @@ political_actions = {
 			country_exists = AST
 			date > 1939.1.1
 		}
-
+		fire_only_once = yes
 		complete_effect = {
 			ENG = {
 				annex_country = { target = AST transfer_troops = yes }
@@ -336,7 +292,7 @@ political_actions = {
 			country_exists = NZL
 			#date > 1939.1.1
 		}
-
+		fire_only_once = yes
 		complete_effect = {
 			ENG = {
 				add_state_core = 723

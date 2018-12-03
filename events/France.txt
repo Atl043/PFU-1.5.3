@@ -583,11 +583,11 @@ country_event = {
 
 			transfer_state = 553
 			transfer_state = 543
-			transfer_state = 708
-			transfer_state = 706
-			transfer_state = 268
-			transfer_state = 713
-			transfer_state = 730
+			#transfer_state = 708
+			#transfer_state = 706
+			#transfer_state = 268
+			#transfer_state = 713
+			#transfer_state = 730
 			#transfer_state = 515
 			transfer_state = 298
 			set_capital = 26

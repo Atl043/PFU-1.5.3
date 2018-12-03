@@ -5,9 +5,10 @@ state={
 	manpower = 3225000
 	
 	state_category = rural
+	impassable = yes
 
 	history={
-		owner = BRA
+		owner = ENG
 		buildings = {
 			infrastructure = 2
 			8248 ={

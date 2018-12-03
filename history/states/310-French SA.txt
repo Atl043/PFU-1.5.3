@@ -7,14 +7,14 @@ state={
 		aluminium=95
 	}
 
-	state_category = pastoral
+	state_category = rural
 
 	history={
 		owner = FRA
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			12885 = {
-				naval_base = 1
+				naval_base = 2
 			}
 		}
 		victory_points = {

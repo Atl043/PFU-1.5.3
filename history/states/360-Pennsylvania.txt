@@ -7,8 +7,8 @@ state={
 	state_category = megalopolis
 	
 	resources={
-		steel=340
-		chromium=160
+		steel=180
+		chromium=120
 	}
 
 

@@ -179,7 +179,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				industrial_capacity_factory = -0.15
+				industrial_capacity_factory = -0.10
 			}
 
 			equipment_bonus = {

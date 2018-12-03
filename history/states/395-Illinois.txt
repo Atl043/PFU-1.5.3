@@ -5,7 +5,7 @@ state={
 	manpower = 7630651
 	state_category = megalopolis
 	resources={
-		steel=52.000
+		steel=40.000
 	}
 	history={
 		owner = USA
