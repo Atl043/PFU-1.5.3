@@ -147,7 +147,7 @@ equipments = {
 		air_ground_attack = 3
 
 		# build_cost_ic = 18
-		naval_strike_attack = 4
+		naval_strike_attack = 10
 		naval_strike_targetting = 6
 	}
 
@@ -174,7 +174,7 @@ equipments = {
 			aluminium = 3
 			rubber = 1
 		}
-		naval_strike_attack = 12
+		naval_strike_attack = 15
 		naval_strike_targetting = 6
 	}
 
@@ -200,7 +200,7 @@ equipments = {
 			aluminium = 4
 			rubber = 1
 		}
-		naval_strike_attack = 16
+		naval_strike_attack = 20
 		naval_strike_targetting = 6
 	}
 
@@ -226,7 +226,7 @@ equipments = {
 			aluminium = 5
 			rubber = 1
 		}
-		naval_strike_attack = 20
+		naval_strike_attack = 25
 		naval_strike_targetting = 6
 	}
 

@@ -66,4 +66,26 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
+
+	division= {
+		name = "1ère Division Française Libre 6"
+		location = 4076  # Alexandria
+		division_template = "Division Française Libre"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "1ère Division Française Libre 7"
+		location = 4076  # Alexandria
+		division_template = "Division Française Libre"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "1ère Division Française Libre 8"
+		location = 4076  # Alexandria
+		division_template = "Division Française Libre"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
 }

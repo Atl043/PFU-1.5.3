@@ -202,7 +202,7 @@ ideas = {
 				}
 
 				modifier = {
-					communism_drift = 0.2
+					communism_drift = 0.0001
 				}
 		}
 
@@ -287,7 +287,7 @@ ideas = {
 					}
 				}
 				modifier = {
-					fascism_drift = 0.2
+					fascism_drift = 0.0001
 				}
 		}
 

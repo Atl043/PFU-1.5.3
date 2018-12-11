@@ -1369,6 +1369,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 150
 			create_wargoal = {
 				type = take_state_focus
 				target = ENG

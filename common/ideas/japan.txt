@@ -451,7 +451,7 @@ ideas = {
 				original_tag = JAP
 			}
 
-			traits = { compassionate_gentleman }
+			traits = { quartermaster_general }
 		}
 
 		takuo_godo = {
@@ -872,7 +872,7 @@ ideas = {
 				original_tag = JAP
 			}
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 			research_bonus = {
 				air_equipment = 0.10
@@ -890,7 +890,7 @@ ideas = {
 				original_tag = JAP
 			}
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 			research_bonus = {
 				air_equipment = 0.10
@@ -905,7 +905,7 @@ ideas = {
 				original_tag = JAP
 			}
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 			research_bonus = {
 				air_equipment = 0.10
@@ -924,7 +924,7 @@ ideas = {
 				date > 1940.1.1
 			}
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 			research_bonus = {
 				air_equipment = 0.10
@@ -939,7 +939,7 @@ ideas = {
 				original_tag = JAP
 			}
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 			research_bonus = {
 				air_equipment = 0.10
@@ -1130,7 +1130,7 @@ ideas = {
 				original_tag = JAP
 			}
 
-			cost = 250
+			cost = 150
 
 			research_bonus = {
 				cat_grand_battle_plan = 0.10
@@ -1158,7 +1158,7 @@ ideas = {
 				original_tag = JAP
 			}
 
-			cost = 250
+			cost = 150
 
 			research_bonus = {
 				cat_base_strike = 0.10
@@ -1186,7 +1186,7 @@ ideas = {
 				original_tag = JAP
 			}
 
-			cost = 250
+			cost = 150
 
 			research_bonus = {
 				cat_operational_integrity = 0.10

@@ -27,8 +27,8 @@ ideas = {
 			modifier = {
 				conscription = -0.005
 				conscription_factor = -0.05
-				communism_drift = 0.05
-				fascism_drift = 0.05
+				communism_drift = 0.02
+				fascism_drift = 0.02
 			}
 		}
 		

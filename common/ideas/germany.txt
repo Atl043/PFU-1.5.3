@@ -1151,7 +1151,7 @@ ideas = {
 			}
 
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 			research_bonus = {
 				air_equipment = 0.10
@@ -1174,7 +1174,7 @@ ideas = {
 			}
 
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 			research_bonus = {
 				air_equipment = 0.10
@@ -1200,7 +1200,7 @@ ideas = {
 			}
 
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 
 			research_bonus = {
@@ -1222,7 +1222,7 @@ ideas = {
 			}
 
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 
 			research_bonus = {
@@ -1243,7 +1243,7 @@ ideas = {
 			}
 
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 
 			research_bonus = {
@@ -1264,7 +1264,7 @@ ideas = {
 			}
 
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 
 			research_bonus = {
@@ -1439,7 +1439,7 @@ ideas = {
 				original_tag = GER
 			}
 
-			cost = 250
+			cost = 150
 
 			research_bonus = {
 				cat_mobile_warfare = 0.10
@@ -1456,7 +1456,7 @@ ideas = {
 				original_tag = GER
 			}
 
-			cost = 250
+			cost = 150
 
 			research_bonus = {
 				cat_battlefield_support = 0.10
@@ -1500,7 +1500,7 @@ ideas = {
 				original_tag = GER
 			}
 
-			cost = 250
+			cost = 150
 
 			research_bonus = {
 				cat_trade_interdiction = 0.20

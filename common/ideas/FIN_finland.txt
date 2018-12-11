@@ -14,7 +14,7 @@ ideas = {
 			
 			modifier = {
 				winter_attrition_factor = -0.8
-				army_speed_factor = 0.2
+				army_speed_factor = 0.1
 				out_of_supply_factor = -0.1
 		
 		}
@@ -31,7 +31,8 @@ ideas = {
 			picture = generic_volunteer_expedition_bonus
 			
 			modifier = {
-				conscription = 0.09
+				conscription = 0.05
+				conscription_factor = 0.1
 		
 		}
 		}

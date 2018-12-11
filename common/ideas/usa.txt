@@ -693,6 +693,31 @@ ideas = {
 			traits = { smooth_talking_charmer }
 		}
 
+		charles_coughlin = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			available = {
+				has_completed_focus = USA_rubber_reserve_company
+			}
+			
+			traits = { captain_of_industry }
+	
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+
 		USA_henry_stimson = {
 
 			picture = generic_political_advisor_europe_2
@@ -1027,7 +1052,7 @@ ideas = {
 		marmon_herrington = {
 
 			cost = 50
-			removal_cost = 10
+			#removal_cost = 10
 			allowed = {
 				original_tag = USA
 			}
@@ -1046,7 +1071,7 @@ ideas = {
 		chrysler = {
 
 			cost = 50
-			removal_cost = 10
+			#removal_cost = 10
 			allowed = {
 				original_tag = USA
 			}
@@ -1065,7 +1090,7 @@ ideas = {
 
 		army_ordnance_department = {
 			cost = 50
-			removal_cost = 10
+			#removal_cost = 10
 
 			allowed = {
 				original_tag = USA
@@ -1097,7 +1122,7 @@ ideas = {
 
 		general_motors = {
 			cost = 50
-			removal_cost = 10
+			#removal_cost = 10
 
 			allowed = {
 				original_tag = USA
@@ -1130,7 +1155,7 @@ ideas = {
 		rock_island_arsenal_tank = {
 
 			cost = 50
-			removal_cost = 10
+			#removal_cost = 10
 			allowed = {
 				original_tag = USA
 			}
@@ -1268,7 +1293,7 @@ ideas = {
 				date > 1940.10.11
 			}
 			cost = 50
-			removal_cost = 10
+			#removal_cost = 10
 
 
 			research_bonus = {
@@ -1308,7 +1333,7 @@ ideas = {
 				original_tag = USA
 			}
 			cost = 50
-			removal_cost = 10
+			#removal_cost = 10
 
 
 			research_bonus = {
@@ -1328,7 +1353,7 @@ ideas = {
 				original_tag = USA
 			}
 			cost = 50
-			removal_cost = 10
+			#removal_cost = 10
 
 
 			research_bonus = {
@@ -1349,7 +1374,7 @@ ideas = {
 				original_tag = USA
 			}
 			cost = 50
-			removal_cost = 10
+			#removal_cost = 10
 
 
 			research_bonus = {
@@ -1387,7 +1412,7 @@ ideas = {
 				original_tag = USA
 			}
 			cost = 50
-			removal_cost = 10
+			#removal_cost = 10
 
 
 			research_bonus = {
@@ -1407,7 +1432,7 @@ ideas = {
 				original_tag = USA
 			}
 			cost = 50
-			removal_cost = 10
+			#removal_cost = 10
 
 
 			research_bonus = {
@@ -1427,7 +1452,7 @@ ideas = {
 				original_tag = USA
 			}
 			cost = 50
-			removal_cost = 10
+			#removal_cost = 10
 
 
 			research_bonus = {
@@ -1447,7 +1472,7 @@ ideas = {
 				original_tag = USA
 			}
 			cost = 50
-			removal_cost = 10
+			#removal_cost = 10
 
 
 			research_bonus = {
@@ -1467,7 +1492,7 @@ ideas = {
 				original_tag = USA
 			}
 			cost = 50
-			removal_cost = 10
+			#removal_cost = 10
 
 			equipment_bonus = {
 				fighter_equipment = {
@@ -1603,7 +1628,7 @@ ideas = {
 				original_tag = USA
 			}
 
-			cost = 250
+			cost = 150
 
 			research_bonus = {
 				cat_superior_firepower = 0.10
@@ -1619,7 +1644,7 @@ ideas = {
 				original_tag = USA
 			}
 
-			cost = 250
+			cost = 150
 
 			research_bonus = {
 				cat_mobile_warfare = 0.10
@@ -1651,7 +1676,7 @@ ideas = {
 				original_tag = USA
 			}
 
-			cost = 250
+			cost = 150
 
 			research_bonus = {
 				cat_base_strike = 0.10
@@ -1667,7 +1692,7 @@ ideas = {
 				original_tag = USA
 			}
 
-			cost = 250
+			cost = 150
 
 			research_bonus = {
 				cat_strategic_destruction = 0.10

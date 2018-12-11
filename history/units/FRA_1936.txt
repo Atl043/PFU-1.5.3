@@ -1027,15 +1027,6 @@ instant_effect = {
 		amount = 4
 	}
 	# BC: Dunkerque (Comm. 16-Apr, 1937)	# REVISIT -- class vs. ship type vs. starting techs inconsistent
-	add_equipment_production = {
-		equipment = {
-			type = battle_cruiser_2
-			creator = "FRA"
-		}
-		requested_factories = 1
-		progress = 0.20
-		amount = 2
-	}
 	 # CL: La Galissonnière class (x5) ("Jean de Vienne" "Marseillaise" "Gloire" "Montcalm" "Georges Leygues")
 	add_equipment_production = {
 		equipment = {

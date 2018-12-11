@@ -439,17 +439,6 @@ ideas = {
 			traits = { silent_workhorse }
 		}
 
-		ENG_nevile_henderson = {
-
-			picture = generic_political_advisor_europe_5
-
-			allowed = {
-				original_tag = ENG
-			}
-
-			traits = { backroom_backstabber }
-		}
-
 		ENG_maxwell_aitken = {
 
 			picture = generic_political_advisor_europe_1
@@ -470,6 +459,19 @@ ideas = {
 			}
 
 			traits = { armaments_organizer }
+		}
+		ENG_nevile_henderson = {
+			
+			picture = generic_political_advisor_europe_5
+			
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				has_completed_focus = tizard_mission_focus
+			}
+			
+			traits = { captain_of_industry }
 		}
 
 		ENG_ernest_bevin = {
@@ -855,7 +857,7 @@ ideas = {
 			}
 
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 			research_bonus = {
 				air_equipment = 0.10
@@ -875,7 +877,7 @@ ideas = {
 
 
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 
 			research_bonus = {
@@ -897,7 +899,7 @@ ideas = {
 			}
 
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 			research_bonus = {
 				air_equipment = 0.10
@@ -917,7 +919,7 @@ ideas = {
 
 
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 
 			research_bonus = {
@@ -937,7 +939,7 @@ ideas = {
 			}
 
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 
 
@@ -958,7 +960,7 @@ ideas = {
 			}
 
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 
 
@@ -979,7 +981,7 @@ ideas = {
 			}
 
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 
 
@@ -1273,7 +1275,7 @@ ideas = {
 				original_tag = ENG
 			}
 
-			cost = 250
+			cost = 150
 
 			research_bonus = {
 				cat_grand_battle_plan = 0.10
@@ -1303,7 +1305,7 @@ ideas = {
 				original_tag = ENG
 			}
 
-			cost = 250
+			cost = 150
 
 			research_bonus = {
 				cat_fleet_in_being = 0.10
@@ -1348,7 +1350,7 @@ ideas = {
 				original_tag = ENG
 			}
 
-			cost = 250
+			cost = 150
 
 			research_bonus = {
 				cat_strategic_destruction = 0.10

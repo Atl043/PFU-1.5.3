@@ -7,7 +7,7 @@ state={
 	state_category = large_city
 	
 	resources={
-		steel=66
+		steel=35
 	}
 
 

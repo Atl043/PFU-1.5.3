@@ -1020,23 +1020,6 @@ country_event = {
 	
 	is_triggered_only = yes
 
-	option = { #challenge
-		name = DOD_hungary.40.a
-		ai_chance = {
-			factor = 50
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
-			modifier = {
-				has_war = yes
-				factor = 0.1
-			}
-		}
-		add_stability = -0.05
-		HUN = { country_event = { id = DOD_hungary.41 } } #option for HUN to back down
-		
-	}
 	option = { #Fold
 		name = DOD_hungary.40.b
 		ai_chance = {
@@ -1053,23 +1036,6 @@ country_event = {
 	picture = GFX_report_event_soldiers_in_france
 	
 	is_triggered_only = yes
-
-	option = { #NO RETREAT NO SURRENDER
-		name = DOD_hungary.41.a
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 2
-				ic_ratio = { tag = FROM ratio > 1.0 }#we are stronger than them!
-			}
-			modifier = {
-				factor = 2
-				strength_ratio = { tag = FROM ratio > 1.0 }#we are stronger than them!
-			}
-		}
-		FROM = { country_event = { id = DOD_hungary.43 } }
-		
-	}
 	option = { #Fold
 		name = DOD_hungary.41.b
 		ai_chance = {
@@ -1189,13 +1155,7 @@ country_event = {
 	
 	is_triggered_only = yes
 
-	option = {#yes 
-		name = DOD_hungary.45.a
-		ai_chance = {
-			factor = 70
-		}
-		FROM = { add_to_faction = PREV }
-	}
+	
 
 	option = {#no 
 		name = DOD_hungary.45.a

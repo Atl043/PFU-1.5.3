@@ -679,6 +679,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_political_power = 150
 			navy_experience = 50
 			army_experience = 50
 			air_experience = 100
@@ -918,6 +919,7 @@ focus_tree = {
 		y = 5
 		cost = 10
 		completion_reward = {
+			add_political_power = 150
 			army_experience = 50
 			air_experience = 100
 			122 = {

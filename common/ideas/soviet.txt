@@ -1631,11 +1631,13 @@ ideas = {
 
 
 			allowed = {
-				original_tag = SOV
+				OR = {
+					original_tag = SOV
+				}
 			}
 
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 			research_bonus = {
 				air_equipment = 0.10
@@ -1654,7 +1656,7 @@ ideas = {
 				original_tag = SOV
 			}
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 
 
@@ -1675,7 +1677,7 @@ ideas = {
 				original_tag = SOV
 			}
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 
 
@@ -1699,7 +1701,7 @@ ideas = {
 				date > 1940.1.1
 			}
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 
 
@@ -1720,7 +1722,7 @@ ideas = {
 				original_tag = SOV
 			}
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 
 
@@ -1741,7 +1743,7 @@ ideas = {
 				original_tag = SOV
 			}
 			cost = 75
-			removal_cost = 10
+			#removal_cost = 10
 
 
 
@@ -1903,7 +1905,7 @@ ideas = {
 				NOT = { has_country_flag = purge_1_group_a }
 			}
 
-			cost = 250
+			cost = 150
 
 			research_bonus = {
 				cat_mass_assault = 0.10
@@ -1944,7 +1946,7 @@ ideas = {
 				has_completed_focus = SOV_positive_heroism
 			}
 
-			cost = 250
+			cost = 150
 
 			research_bonus = {
 				cat_mass_assault = 0.10
@@ -1981,7 +1983,7 @@ ideas = {
 				original_tag = SOV
 			}
 
-			cost = 250
+			cost = 150
 
 			research_bonus = {
 				cat_fleet_in_being = 0.10
@@ -2002,7 +2004,7 @@ ideas = {
 				NOT = { has_country_flag = counter_purge }
 			}
 
-			cost = 250
+			cost = 150
 
 			research_bonus = {
 				cat_battlefield_support = 0.10
