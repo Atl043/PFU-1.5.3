@@ -2569,3 +2569,5 @@ ATTACHE_LIST:0 "We received military attachés from $LIST$. And they give us the
  GER_blitzkrieg_desc:0 "We have won quick victorys in France and Poland using innovative 'Blitzkrieg' tactics combing both speed and armor breakthrough. We now have the oppurtunity to exploit this in the early stages of Operation Barbarossa."
  GER_barbarossa:0 "Unternehmen Barbarossa"
  GER_dismantle_maginot:0 "Dismantle the Maginot Line"
+ SOV_winter_offensive:0 "Soviet Winter Offensive"
+ speer_reforms:0 "Albert Speer's Industry Reforms" 

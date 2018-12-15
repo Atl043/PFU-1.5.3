@@ -803,6 +803,13 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+
+			add_tech_bonus = {
+				name = uk_stein_guns
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
 			add_ideas = british_arms_discount
 		}
 	}

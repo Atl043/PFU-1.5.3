@@ -37,6 +37,26 @@ ideas = {
 				winter_attrition_factor = -0.5
 			}
 		}
+		SOV_winter_offensive = {
+			allowed = {
+				always = no # Unlocked via event
+			}
+			picture = FRA_army_of_aggression_focus
+
+			removal_cost = -1
+			targeted_modifier = {
+				tag = SOV
+				# counter war support
+				attack_bonus_against = 0.1
+			}
+			modifier = {
+				winter_attrition_factor = -0.4
+				army_org_Factor = 0.05
+				terrain_penalty_reduction = 0.20
+
+			}
+			
+		}
 		SOV_Sinteticheskii_Kauchuk_idea = {
 
 			allowed = {

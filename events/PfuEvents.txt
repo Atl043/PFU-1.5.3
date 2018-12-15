@@ -1070,3 +1070,107 @@ country_event = {
 	}
 	mean_time_to_happen = { days = 30 }
 }
+
+country_event = {
+	id = pfu.36   
+	title = pfu.36.t
+	desc = pfu.36.d
+	picture = GFX_report_event_tihkvin
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV		
+		has_army_manpower = { size < 6500000 }
+		date > 1941.12.05
+		date < 1942.1.20
+		
+		OR = {
+			NOT = { SOV = { controls_state = 246 } }
+			NOT = { SOV = { controls_state = 205 } }	
+			NOT = { SOV = { controls_state = 264 } }
+			NOT = { SOV = { controls_state = 223 } }
+			NOT = { SOV = { controls_state = 220 } }   
+            NOT = { SOV = { controls_state = 228 } } 			
+		}
+
+		NOT = { has_global_flag = SOV_winteroffensive }	
+        NOT = { has_global_flag = pfu.47 }		
+	}
+	mean_time_to_happen = {
+		days = 0	# Historical outbreak time in July
+	}
+	
+	immediate = {
+		set_global_flag = SOV_winteroffensive
+	}
+	
+	option = {
+		name = pfu.36.a 
+		 
+		add_timed_idea = { idea = SOV_winter_offensive days = 30 }
+		
+		news_event = { hours = 5 id = pfunews.8 }
+	
+	}
+		
+}
+
+country_event = {
+	id = pfu.37
+	title = pfu.37.t
+	desc = pfu.37.d
+	picture = GFX_report_event_royalarmor
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		date > 1942.1.20
+	}
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	immediate = {
+		set_global_flag = GER_TANK3
+	}
+	
+	option = {
+		name = pfu.37.a 
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			name = FrontLineTankResearch
+			technology = basic_medium_tank
+			technology = improved_medium_tank
+			technology = advanced_medium_tank
+		}
+	}
+}
+
+country_event = {
+	id = pfu.38
+	title = pfu.38.t
+	desc = pfu.38.d
+	picture = GFX_report_event_tihkvin
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		date > 1942.6.30
+	}
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	immediate = {
+		set_global_flag = GER_Industry
+	}
+	
+	option = {
+		name = pfu.38.a 
+		add_timed_idea = { idea = speer_reforms days = 30 }
+	}
+}

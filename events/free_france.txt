@@ -253,27 +253,34 @@ country_event = {
 	trigger = {
 		OR = {
 			FRA = {
+				date > 1941.1.1
 				controls_state = 461
 				controls_state = 459
-				controls_state = 462
+				controls_state = 460
+				controls_state = 1
 			}
 			ENG = {
 				controls_state= 461
 				controls_state= 459
 				controls_state= 462
+				controls_state = 1
 			}
 			USA = {
 				controls_state= 461
 				controls_state= 459
 				controls_state= 462
+				controls_state = 1
 			}
 		}
 	}
 
 	option = {
 		name = free_france.10.a
+		FRA = { transfer_state = 1 }
+		FRA = { transfer_state = 665 }
 		FRA = { transfer_state = 461 }
 		FRA = { transfer_state = 459 }
+		FRA = { transfer_state = 458 }
 		FRA = { transfer_state = 462 }
 		FRA = { transfer_state = 460 }
 		FRA = { transfer_state = 513 }
@@ -307,4 +314,19 @@ country_event = {
 		name = pfu.10.a
 	}
 	mean_time_to_happen = { days = 30 }
+}
+
+# Military Operations in Madagascar
+country_event = {
+	id = free_france.12
+	title = free_france.12.t
+	desc = free_france.12.desc
+	picture = GFX_report_event_syria_sway
+
+	is_triggered_only = yes
+
+	option = {
+		name = free_france.12.a
+		FRA = { transfer_state = 543 }
+	}
 }

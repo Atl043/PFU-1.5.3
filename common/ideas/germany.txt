@@ -742,6 +742,23 @@ ideas = {
 				civilian_factory_use = 5
 			}
 		}
+		speer_reforms = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = { # dispersed 3 times
+				line_change_production_efficiency_factor = 0.3
+				production_factory_start_efficiency_factor = 0.15
+			}
+		}
 	}
 
 	political_advisor = {

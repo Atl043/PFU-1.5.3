@@ -17,7 +17,7 @@ ideas = {
 			picture = FRA_factory_strikes
 
 			modifier = {
-				conversion_cost_civ_to_mil_factor= 0.3
+				conversion_cost_civ_to_mil_factor= 0.1
 			}
 		}
 
@@ -51,7 +51,7 @@ ideas = {
 				land_doctrine = -0.75
 			}
 			modifier = {
-				conscription = -0.003
+				conscription = -0.05
 			}
 		}
 

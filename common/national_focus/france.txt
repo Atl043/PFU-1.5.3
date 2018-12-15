@@ -1129,6 +1129,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = FRA_disjointed_government
 			set_rule = { can_send_volunteers = yes }
+			add_to_tech_sharing_group = commonwealth_research
 		}
 	}
 	##### END ###########
@@ -1589,6 +1590,21 @@ focus_tree = {
 		completion_reward = {
 			country_event = { days = 1 id = free_france.5 }
 			custom_effect_tooltip = syria_sway_tt
+		}
+	}
+	focus = {
+		id = FRA_take_Manda
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = FRA_sway_syria }
+		x = 27
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = { days = 1 id = free_france.12 }
+			custom_effect_tooltip = man_sway_tt
 		}
 	}
 
