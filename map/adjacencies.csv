@@ -130,8 +130,10 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10409;12386;sea;5320;-1;-1;-1;-1;;netherlands 3
 12219;1298;sea;2291;-1;-1;-1;-1;;netherlands 3
 5681;1452;;-1;-1;-1;-1;-1;MESSINA_STRAIT;Messina Strait
+5681;5707;;-1;-1;-1;-1;-1;MESSINA_STRAIT;Messina Strait
 5407;5382;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar North
 5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
+1452;8965;;-1;-1;-1;-1;-1;SICILY_STRAIT;Sicily West
 9013;8965;;-1;-1;-1;-1;-1;SICILY_STRAIT;Sicily West
 9013;5605;;-1;-1;-1;-1;-1;SICILY_STRAIT;Sicily North
 9013;5707;;-1;-1;-1;-1;-1;SICILY_STRAIT;Sicily East

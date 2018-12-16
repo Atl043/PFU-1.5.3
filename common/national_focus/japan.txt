@@ -445,9 +445,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 6
 		}
-		available = {
-			has_country_flag = Five_Ministers_North
-		}
+		mutually_exclusive = { focus = JAP_Southern }
 		completion_reward = {
 		army_experience = 20
 			535 = {
@@ -480,9 +478,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 6
 		}
-		available = {
-			has_country_flag = Five_Ministers_South
-		}
+
+		mutually_exclusive = { focus = JAP_Northern }
+
 		completion_reward = {
 				add_tech_bonus = {
 				name = naval_doc_bonus
