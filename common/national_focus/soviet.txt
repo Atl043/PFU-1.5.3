@@ -859,6 +859,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 120
+			remove_unit_leader = 402
 			# add_stability = 0.20 # replaced with idea
 			add_ideas = SOV_collectivist_propaganda
 		}
@@ -914,7 +915,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 375
 			set_rule = {
 				can_generate_female_aces = yes
 			}
