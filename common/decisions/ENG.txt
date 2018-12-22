@@ -283,14 +283,14 @@ political_actions = {
 		}
 	}
 
-	annex_new_zealand = {
+	annex_new_zealand_uk = {
 		ai_will_do = { factor = 0 }
 		cost = 20
 		visible = {
 			tag = ENG
 			NZL = { is_ai = yes }
 			country_exists = NZL
-			#date > 1939.1.1
+			date > 1939.1.1
 		}
 		fire_only_once = yes
 		complete_effect = {
