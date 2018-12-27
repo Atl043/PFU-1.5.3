@@ -480,8 +480,8 @@ equipments = {
 			rubber = 1
 		}
 
-		naval_strike_attack = 9
-		naval_strike_targetting = 14
+		naval_strike_attack = 14
+		naval_strike_targetting = 15
 	}
 	# Improved Carrier Fighter
 	cv_fighter_equipment_2 = {
@@ -504,8 +504,8 @@ equipments = {
 			aluminium = 2
 			rubber = 1
 		}
-		naval_strike_attack = 18
-		naval_strike_targetting = 15
+		naval_strike_attack = 25
+		naval_strike_targetting = 17
 	}
 	# Advanced Carrier Fighter
 	cv_fighter_equipment_3 = {
@@ -529,8 +529,8 @@ equipments = {
 			rubber = 1
 		}
 
-		naval_strike_attack = 24
-		naval_strike_targetting = 17
+		naval_strike_attack = 33
+		naval_strike_targetting = 20
 	}
 
 	# Basic CAS

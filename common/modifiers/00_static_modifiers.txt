@@ -19,7 +19,7 @@ weather_rain_heavy = { # on Region
 	naval_detection = -0.4
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
-	carrier_traffic = -1.0
+	carrier_traffic = -0.5
 	air_accidents = 0.3
 	air_bombing_targetting = -0.5
 	local_org_regain = -0.2
@@ -42,7 +42,7 @@ weather_blizzard = { # on Region
 	naval_detection = -0.9
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
-	carrier_traffic = -1.0
+	carrier_traffic = -0.9
 	air_accidents = 0.3
 	air_bombing_targetting = -0.9
 	local_org_regain = -0.7
@@ -101,7 +101,7 @@ weather_ground_snow_high = { # on Province
 
 night = { # On province. Multiplied by amount of darkness.
 	naval_hit_chance = -0.25
-	carrier_traffic = -1.0
+	carrier_traffic = -0.75
 	air_bombing_targetting = -0.5
 }
 

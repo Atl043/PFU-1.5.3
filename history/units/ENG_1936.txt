@@ -735,7 +735,7 @@ air_wings = {
 		}
 		fighter_equipment_1 =  {		# Ar 68
 			owner = "ENG" 
-			amount = 200
+			amount = 500
 			version_name = "fighter1 var1"
 		}
 
@@ -755,10 +755,9 @@ air_wings = {
 			owner = "ENG"
 			amount = 100
 		}
-		tac_bomber_equipment_1 = {
+		tac_bomber_equipment_0 = {
 			owner = "ENG"
-			creator = "FRA"
-			amount = 150
+			amount = 200
 		}
 		nav_bomber_equipment_1 = {
 			owner = "ENG"

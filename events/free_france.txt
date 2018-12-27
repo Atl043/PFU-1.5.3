@@ -249,7 +249,7 @@ country_event = {
 	title = free_france.10.t
 	desc = free_france.10.desc
 	picture = GFX_report_event_french_resistance
-	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		OR = {
 			FRA = {
@@ -273,7 +273,9 @@ country_event = {
 			}
 		}
 	}
-
+	mean_time_to_happen = {
+			days = 1
+		}
 	option = {
 		name = free_france.10.a
 		FRA = { transfer_state = 1 }

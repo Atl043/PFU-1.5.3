@@ -229,7 +229,6 @@ units = {
 		location = 10337
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 	division= {
@@ -237,7 +236,6 @@ units = {
 		location = 10337
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 	# VIII Army Corps #
@@ -246,7 +244,6 @@ units = {
 		location = 10337
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 	division= {
@@ -254,7 +251,6 @@ units = {
 		location = 10337
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 	division= {
@@ -262,7 +258,6 @@ units = {
 		location = 10337
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 
@@ -273,7 +268,6 @@ units = {
 		location = 788
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 	division= {
@@ -281,7 +275,6 @@ units = {
 		location = 788
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 	# IX Army Corps (CO: DeWitt) #
@@ -296,7 +289,6 @@ units = {
 		location = 9671
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 	division= {
@@ -304,7 +296,6 @@ units = {
 		location = 9671
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 
@@ -316,7 +307,6 @@ units = {
 		location = 13091
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
 
 	}
 
@@ -325,7 +315,6 @@ units = {
 		location = 13067
 		division_template = "National Guard Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
 
 	}
 
@@ -336,7 +325,6 @@ units = {
 		location = 4180
 		division_template = "National Guard Division"		# older equipment, less training than NG division
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 
@@ -346,7 +334,6 @@ units = {
 		location = 13052
 		division_template = "National Guard Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.25
 
 	}
 	division= {
@@ -354,7 +341,6 @@ units = {
 		location = 13047
 		division_template = "National Guard Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.25
 
 	}
 	division= {
@@ -362,7 +348,6 @@ units = {
 		location = 12140
 		division_template = "National Guard Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.25
 
 	}
 
@@ -372,7 +357,6 @@ units = {
 		location = 10265
 		division_template = "National Guard Division"			# older equipment, less training than NG division
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 
@@ -689,33 +673,15 @@ units = {
 air_wings = {
 	### 1 USAAF Wing -- Los Angeles
 	378 = {
-		# 7th Bombardment Group
-		# 19th Bombardment Group
-		fighter_equipment_1 =  {
-			creator = "ENG"
+		tac_bomber_equipment_0 = {
 			owner = "USA"
-			amount = 100
-		}
-		fighter_equipment_1 =  {
-			creator = "ENG"
-			owner = "USA"
-			amount = 100
-		}
-		fighter_equipment_1 =  {
-			creator = "ENG"
-			owner = "USA"
-			amount = 100
-		}
-		tac_bomber_equipment_1 = {
-			owner = "USA"
-			creator = "FRA"
-			amount = 150
+			amount = 250
 		}
 		
 		# 17th Attack Group
 		CAS_equipment_1 = {
 			owner = "USA"
-			amount = 100
+			amount = 200
 		}
 		nav_bomber_equipment_1 =  {
 			owner = "USA"

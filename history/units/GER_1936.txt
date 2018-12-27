@@ -596,7 +596,7 @@ air_wings = {
 		}
 				fighter_equipment_1 =  {		# bf109s
 			owner = "GER" 
-			amount = 800
+			amount = 1000
 			version_name = "Bf 109 E"
 		}
 
@@ -628,7 +628,7 @@ air_wings = {
 			owner = "GER" 
 			amount = 100
 		}
-		tac_bomber_equipment_0 = {		# Do 23
+		tac_bomber_equipment_1 = {		# Do 23
 			owner = "GER" 
 			amount = 100
 		}

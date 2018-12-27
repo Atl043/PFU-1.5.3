@@ -876,7 +876,7 @@ create_equipment_variant = {
 		name = "fighter1 var1"
 		type = fighter_equipment_1
 		upgrades = {
-			plane_range_upgrade = 2
-			plane_engine_upgrade = 2
+			plane_range_upgrade = 5
+			plane_engine_upgrade = 3
 		}
 	}
