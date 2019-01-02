@@ -858,7 +858,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = 120
+			add_political_power = 150
 			remove_unit_leader = 402
 			# add_stability = 0.20 # replaced with idea
 			add_ideas = SOV_collectivist_propaganda
@@ -1058,7 +1058,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = 120
+			add_political_power = 150
 		}
 	}
 
@@ -1226,9 +1226,7 @@ focus_tree = {
 	focus = {
 		id = SOV_diplomatic_effort
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = SOV_improve_railway }
-		prerequisite = { focus = SOV_transpolar_flights }
-		prerequisite = { focus = SOV_ocean_going_navy }
+		prerequisite = { focus = SOV_improve_railway focus = SOV_transpolar_flights focus = SOV_ocean_going_navy  }
 		x = 13
 		y = 1
 		cost = 10
@@ -1239,7 +1237,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = 120
+			add_political_power = 150
 		}
 	}
 	focus = {

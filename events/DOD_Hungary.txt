@@ -2632,50 +2632,6 @@ country_event = {
 	
 	is_triggered_only = yes
 
-	option = {# fold
-		name = DOD_hungary.80.a
-		ai_chance = {
-			factor = 75
-		}
-		HUN = { country_event = DOD_hungary.81 } 
-		hidden_effect = {
-			news_event = { id = news.304 days = 1 }
-		}
-		
-	}
-
-	option = {# Appeal to your allies
-		name = DOD_hungary.80.b
-		ai_chance = {
-			factor = 25
-		}
-		trigger = {
-			tag = CZE
-			owns_state = 69
-			owns_state = 74
-			is_puppet = no
-			is_in_faction = yes
-		}
-		random_other_country = {
-			limit = { 
-				is_in_faction_with = CZE
-				is_faction_leader = yes
-			 }
-			country_event = DOD_hungary.82
-		}
-	}
-
-	option = {# Appeal to Germany
-		name = DOD_hungary.80.c
-		ai_chance = {
-			factor = 25
-		}
-		trigger = {
-			tag = SLO
-			is_puppet_of = GER
-		}
-		GER = { country_event = DOD_hungary.83 }
-	}
 	option = {# Refuse outright
 		name = DOD_hungary.80.d
 		HUN = { country_event = DOD_hungary.84 }
@@ -2782,60 +2738,7 @@ country_event = {
 
 	option = {# fold
 		name = DOD_hungary.84.a
-		ai_chance = {
-			factor = 10
-			modifier = {
-				strength_ratio = { tag = CZE ratio < 1 }
-				factor = 2
-			}
-			modifier = {
-				strength_ratio = { tag = CZE ratio < 0.5 }
-				factor = 10
-			}
-		}
-		add_stability = -0.05
-		
-	}
-	option = {# war!
-		name = DOD_hungary.84.b
-		ai_chance = {
-			factor = 90
-			modifier = {
-				country_exists = SLO
-				SLO = { is_puppet = no }
-				SLO = { is_in_faction = no }
-				factor = 10
-			}
-		}
-		if = {
-			limit = { 
-				CZE = {
-					owns_state = 664
-				}
-			}
-
-			create_wargoal = {
-				type = take_state_focus
-				target = CZE
-				generator = { 664 }
-			}
-		}
-		if = {
-			limit = { 
-				SLO = {
-					owns_state = 664
-				}
-			}
-
-			create_wargoal = {
-				type = take_state_focus
-				target = SLO
-				generator = { 664 }
-			}
-		}
-		hidden_effect = {
-			news_event = { id = news.305 days = 1 }
-		}
+		add_stability = -0.15
 	}
 }
 

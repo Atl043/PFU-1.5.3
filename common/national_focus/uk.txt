@@ -2389,6 +2389,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_political_power = 150
 			custom_effect_tooltip = ENG_commonwealth_focus_tt
 			hidden_effect = {
 				CAN = {
@@ -2546,7 +2547,6 @@ focus = {
 				date > 1942.1.01
 				RAJ = {
 					is_subject_of = ENG
-					has_war = no
 				}
 				else = {
 					has_global_flag = indian_national_army_setup

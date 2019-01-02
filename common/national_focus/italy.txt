@@ -26,41 +26,6 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		bypass = {
-			#550 = { NOT = { is_owned_and_controlled_by = ITA } }
-			# Need province based trigger for this to work
-			#550 = {
-			#	NOT = {
-			#		free_building_slots = {
-			#			building = infrastructure
-			#			size > 1
-			#		}
-			#	}
-			#	NOT = {
-			#		free_building_slots = {
-			#			building = naval_base
-			#			size > 2
-			#		}
-			#	}
-			#}
-			559 = { NOT = { is_owned_and_controlled_by = ITA } }
-			# Need province based trigger for this to work
-			#559 = {
-			#	NOT = {
-			#		free_building_slots = {
-			#			building = infrastructure
-			#			size > 1
-			#		}
-			#	}
-			#	NOT = {
-			#		free_building_slots = {
-			#			building = naval_base
-			#			size > 3
-			#		}
-			#	}
-			#}
-		}
-
 		completion_reward = {
 			if = { limit = { 550 = { is_owned_and_controlled_by = ITA } }
 				550 = {
@@ -435,6 +400,16 @@ focus_tree = {
 				amount = 60
 				state = 662
 			}
+			add_tech_bonus = {
+				name = ITA_autarky
+				bonus = 0.5
+				uses = 2
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
 		}
 	}
 
@@ -662,7 +637,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 50
 			add_tech_bonus = {
 				name = special_bonus
 				bonus = 0.5
@@ -700,6 +675,7 @@ focus_tree = {
 				uses = 2
 				category = cat_light_armor
 				category = cat_medium_armor
+				category = cat_mechanized_equipment
 			}
 		}
 	}
@@ -800,6 +776,12 @@ focus_tree = {
 				technology = early_carrier
 				technology = basic_carrier
 				technology = improved_carrier
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.50
+				uses = 1
+				technology = cv_fighter2
 			}
 		}
 	}
