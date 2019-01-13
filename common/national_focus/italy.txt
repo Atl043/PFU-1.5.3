@@ -604,11 +604,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 35
 			add_tech_bonus = {
 				name = special_bonus
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				technology = tech_recon
 				technology = tech_recon2
 				technology = tech_recon3
@@ -668,7 +668,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 50
 			add_tech_bonus = {
 				name = armor_effort
 				bonus = 0.5
@@ -735,7 +735,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 50
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 0.5
@@ -748,7 +748,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 0.5
+				bonus = 0.75
 				uses = 2
 				category = air_doctrine
 			}
@@ -874,7 +874,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 50
 
 			add_tech_bonus = {
 				name = ITA_naval_air_effort
@@ -965,9 +965,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			air_experience = 50
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 0.5
+				bonus = 0.75
 				uses = 2
 				category = air_doctrine
 			}
@@ -1241,6 +1242,7 @@ focus_tree = {
 			NOT = { country_exists = BUL }
 		}
 		completion_reward = {
+			add_political_power = 150
 			BUL = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				if = {
@@ -1343,7 +1345,7 @@ focus_tree = {
 		will_lead_to_war_with = GRE
 		x = 14
 		y = 4
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 10
 		}

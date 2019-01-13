@@ -921,7 +921,7 @@ country_event = {
 					has_opinion = { target = FROM value > -25 }
 					NOT = { has_opinion = { target = FROM value > 0 } }
 				}
-				add_political_power = -5
+				add_political_power = +5
 			}
 			if = {
 				limit = {
@@ -929,11 +929,11 @@ country_event = {
 					NOT = { has_opinion = { target = FROM value > 50 } }
 
 				}
-				add_political_power = -10
+				add_political_power = +10
 			}
 			if = {
 				limit = { has_opinion = { target = FROM value > 50 } }
-				add_political_power = -15
+				add_political_power = +15
 			}
 		}
 		if = {
@@ -946,7 +946,7 @@ country_event = {
 					has_opinion = { target = FROM value > -25 }
 					NOT = { has_opinion = { target = FROM value > 0 } }
 				}
-				add_political_power = -10
+				add_political_power = +10
 			}
 			if = {
 				limit = {
@@ -954,11 +954,11 @@ country_event = {
 					NOT = { has_opinion = { target = FROM value > 50 } }
 
 				}
-				add_political_power = -20
+				add_political_power = +20
 			}
 			if = {
 				limit = { has_opinion = { target = FROM value > 50 } }
-				add_political_power = -30
+				add_political_power = +30
 			}
 		}
 		if = {
@@ -971,7 +971,7 @@ country_event = {
 					has_opinion = { target = FROM value > -25 }
 					NOT = { has_opinion = { target = FROM value > 0 } }
 				}
-				add_political_power = -15
+				add_political_power = +15
 			}
 			if = {
 				limit = {
@@ -979,11 +979,11 @@ country_event = {
 					NOT = { has_opinion = { target = FROM value > 50 } }
 
 				}
-				add_political_power = -30
+				add_political_power = +30
 			}
 			if = {
 				limit = { has_opinion = { target = FROM value > 50 } }
-				add_political_power = -45
+				add_political_power = +45
 			}
 		}
 		if = {
@@ -996,7 +996,7 @@ country_event = {
 					has_opinion = { target = FROM value > -25 }
 					NOT = { has_opinion = { target = FROM value > 0 } }
 				}
-				add_political_power = -20
+				add_political_power = +20
 			}
 			if = {
 				limit = {
@@ -1004,11 +1004,11 @@ country_event = {
 					NOT = { has_opinion = { target = FROM value > 50 } }
 
 				}
-				add_political_power = -40
+				add_political_power = +40
 			}
 			if = {
 				limit = { has_opinion = { target = FROM value > 50 } }
-				add_political_power = -60
+				add_political_power = +60
 			}
 		}
 		if = {
@@ -1020,7 +1020,7 @@ country_event = {
 					has_opinion = { target = FROM value > -25 }
 					NOT = { has_opinion = { target = FROM value > 0 } }
 				}
-				add_political_power = -25
+				add_political_power = +5
 			}
 			if = {
 				limit = {
@@ -1028,11 +1028,9 @@ country_event = {
 					NOT = { has_opinion = { target = FROM value > 50 } }
 
 				}
-				add_political_power = -50
 			}
 			if = {
 				limit = { has_opinion = { target = FROM value > 50 } }
-				add_political_power = -75
 			}
 		}
 		FROM = {

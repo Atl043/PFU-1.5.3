@@ -210,7 +210,7 @@ USA_aid_britain = {
 
 		available = {
 			has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
-			has_country_flag = mers_el_kebir_raid
+			#has_country_flag = mers_el_kebir_raid
 			ENG = { has_defensive_war = yes }
 		}
 

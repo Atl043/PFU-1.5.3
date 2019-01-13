@@ -726,9 +726,7 @@ prospect_for_resources = {
 		icon = oil
 
 		allowed = {
-			NOT = {
-				tag = ITA
-			}
+			#NOT = {tag = ITA}
 		}
 
 		available = {
@@ -3882,7 +3880,7 @@ prospect_for_resources = {
 			291 = {
 				add_resource = {
 					type = oil
-					amount = 13
+					amount = 30
 				}
 			}
 		}
@@ -3931,7 +3929,7 @@ prospect_for_resources = {
 			291 = {
 				add_resource = {
 					type = oil
-					amount = 17
+					amount = 35
 				}
 			}
 		}

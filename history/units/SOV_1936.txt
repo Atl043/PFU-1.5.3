@@ -1650,7 +1650,7 @@ air_wings = {
 		}
 		fighter_equipment_1 = {
 			owner = "SOV"
-			amount = 100
+			amount = 600
 		}
 		fighter_equipment_1 = {
 			owner = "SOV"

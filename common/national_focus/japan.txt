@@ -95,6 +95,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Annex_Siam
+		mutually_exclusive = { focus = Develop_Siam_1 }
 		icon = GFX_goal_generic_military_deal
 		x = 15
 		y = 6
@@ -1003,7 +1004,7 @@ focus_tree = {
 			navy_experience = 50
 			add_tech_bonus = {
 				name = JAP_Navy_Subtech_Bonus
-				uses = 1
+				uses = 2
 				bonus = 0.5
 				technology = basic_destroyer
 				technology = improved_destroyer
@@ -1082,7 +1083,7 @@ focus_tree = {
 		air_experience = 50
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.5
+				bonus = 0.60
 				uses = 1
 				technology = fighter2
 			}
@@ -1094,7 +1095,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 0.5
+				bonus = 0.60
 				uses = 1
 				technology = CAS2
 			}
@@ -1367,7 +1368,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = 300
 			create_wargoal = {
 				type = take_state_focus
 				target = ENG
@@ -1842,7 +1843,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_Arty_Bonus
-				uses = 1
+				uses = 2
 				bonus = 0.5
 				category = artillery
 			}
@@ -1890,10 +1891,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			air_experience = 20
+			air_experience = 50
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.5
+				bonus = 0.75
 				uses = 2
 				category = air_doctrine
 			}
@@ -1922,7 +1923,7 @@ focus_tree = {
 		available = {
 			is_puppet = no
 			country_exists = SIA
-			date > 1940.1.1
+			date > 1939.6.1
 		}
 		bypass = {
 			OR = {

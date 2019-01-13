@@ -932,12 +932,12 @@ air_wings = {
 	# 1 Hikodan -- Tokyo
 	609 = { 
 		# 1 Hiko Rentai -- Kawasaki Ki-10
-		fighter_equipment_0 = {
+		fighter_equipment_1 = {
 			owner = "JAP" 
 			amount = 300
 		}
 		# 16 Hiko Rentai -- Kawasaki Ki-10
-		fighter_equipment_0 = {
+		fighter_equipment_1 = {
 			owner = "JAP" 
 			amount = 300
 		}
@@ -946,16 +946,16 @@ air_wings = {
 			owner = "JAP" 
 			amount = 100
 		}
-				CAS_equipment_1 =  {
+		CAS_equipment_1 =  {
 			owner = "JAP" 
 			amount = 100
 		}
-						CAS_equipment_1 =  {
+		CAS_equipment_1 =  {
 			owner = "JAP" 
 			amount = 100
 		}
 		# 9 Hiko Rentai -- Mitsubishi Ki-1
-		tac_bomber_equipment_0 =  {
+		tac_bomber_equipment_1 =  {
 			owner = "JAP" 
 			amount = 200
 		}

@@ -652,7 +652,7 @@ air_wings = {
 	2 = {
 		# 5a Divisione Aerea 'Eolo'
 		# 8a Divisione Aerea 'Ibis'
-		fighter_equipment_0 = {
+		fighter_equipment_1 = {
 			owner = "ITA"
 			amount = 100
 		}
@@ -660,11 +660,11 @@ air_wings = {
 			owner = "ITA"
 			amount = 100
 		}
-				tac_bomber_equipment_0 =  {
+		tac_bomber_equipment_0 =  {
 			owner = "ITA"
 			amount = 100
 		}
-				tac_bomber_equipment_0 =  {
+		tac_bomber_equipment_0 =  {
 			owner = "ITA"
 			amount = 100
 		}
@@ -678,7 +678,7 @@ air_wings = {
 		}
 	transport_plane_equipment_1 = {
 			owner = "ITA"
-			amount = 2
+			amount = 25
 		}
 
 	}
