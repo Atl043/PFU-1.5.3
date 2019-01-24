@@ -40,16 +40,4 @@ units = {
 		division_template = "Armoured Division"
 		start_experience_factor = 0.5
 	}
-
-	air_wings = {
-		### RAF Fighter Command ###
-		126 = {
-			### No. 11 Fighter Command, Middlesex area -- Hawker Demons, Furys, Gloster Gauntlets
-			fighter_equipment_1 = {
-				owner = "ENG"
-				amount = 300
-				version_name = "fighter1 var1"
-			}
-		}
-  	}
 }
