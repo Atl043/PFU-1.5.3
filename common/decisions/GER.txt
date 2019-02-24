@@ -115,13 +115,15 @@ political_actions = {
 			tag = GER
 			BUL = { is_ai = yes }
 			country_exists = BUL
-			date > 1939.1.1
+			date > 1937.1.1
 		}
 		fire_only_once = yes
 		complete_effect = {
 			GER = {
 				annex_country = { target = BUL transfer_troops = yes }
-				add_ideas = annex_bulgaria_idea
+				add_state_core = 48
+				add_state_core = 212
+				add_state_core = 211
 			}
 		}
 	}

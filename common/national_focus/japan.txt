@@ -21,7 +21,7 @@ focus_tree = {
 		y = 6
 		cost = 3
 		available = {
-			date > 1940.1.1
+			date > 1939.6.1
 		}
 		mutually_exclusive = { focus = Annex_Siam }
 		completion_reward = {
@@ -1668,7 +1668,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = synth_bonus
-				bonus = 0.5
+				bonus = 0.6
 				uses = 2
 				category = synth_resources
 			}

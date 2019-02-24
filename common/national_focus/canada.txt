@@ -193,7 +193,11 @@ focus_tree = {
 		}
 
 		available = {
-			threat > 0.1
+			OR = {
+				threat > 0.1
+				has_war = yes
+				date > 1938.2.1
+			}
 			date > 1936.8.1
 		}
 
@@ -1784,7 +1788,7 @@ focus_tree = {
 		y = 6
 		relative_position_id = CAN_army_modernization
 
-		cost = 12
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -2146,7 +2150,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_supply_the_empire
-				bonus = 0.5
+				bonus = 0.66
 				uses = 3
 				technology = excavation1
 				technology = excavation2
@@ -2165,7 +2169,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2219,7 +2223,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2245,7 +2249,7 @@ focus_tree = {
 			470 = {
 				add_resource = {
 					type = oil
-					amount = 36
+					amount = 48
 				}
 			}
 		}

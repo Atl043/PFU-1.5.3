@@ -128,7 +128,7 @@ technologies = {
 			electronics
 			radar_tech
 		}
-		
+		convoy_escort_efficiency = 0.10
 		enable_building = {
 			building = radar_station
 			level = 2
@@ -155,7 +155,7 @@ technologies = {
 			name = electronics_folder
 			position = { x = -2 y = 8 }
 		}
-		
+		convoy_escort_efficiency = 0.10
 		ai_will_do = {
 			factor = 1
 		}
@@ -192,7 +192,13 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+		destroyer = {
+			sub_detection = 0.1
+		}
+		light_cruiser = {
+			sub_detection = 0.1
+		}
+		convoy_escort_efficiency = 0.10
 		categories = {
 			electronics
 			radar_tech
@@ -221,7 +227,13 @@ technologies = {
 			name = electronics_folder
 			position = { x = -2 y = 12 }
 		}
-		
+		destroyer = {
+			sub_detection = 0.1
+		}
+		light_cruiser = {
+			sub_detection = 0.1
+		}
+		convoy_escort_efficiency = 0.10
 		ai_will_do = {
 			factor = 1
 		}
@@ -253,7 +265,13 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+		destroyer = {
+			sub_detection = 0.1
+		}
+		light_cruiser = {
+			sub_detection = 0.1
+		}
+		convoy_escort_efficiency = 0.10
 		categories = {
 			electronics
 			radar_tech

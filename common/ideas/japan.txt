@@ -208,10 +208,10 @@ ideas = {
 			modifier = {
 				amphibious_invasion = 0.8
 				invasion_preparation = -0.8
-				supply_consumption_factor = -0.25
-				army_attack_factor = 0.2
-				army_org_Factor = 0.20
-				army_morale_factor = 0.2
+				supply_consumption_factor = -0.2
+				army_attack_factor = 0.15
+				army_org_Factor = 0.15
+				army_morale_factor = 0.15
 				attrition = -0.20
 				naval_strike = 1.00 
 				navy_carrier_air_targetting_factor = 0.25
@@ -252,8 +252,8 @@ ideas = {
 
 			modifier = {
 				army_org = 5
-				army_attack_factor = 0.2
-				army_morale_factor = 0.2
+				army_attack_factor = 0.1
+				army_morale_factor = 0.1
 				no_supply_grace = 48
 			}
 		}

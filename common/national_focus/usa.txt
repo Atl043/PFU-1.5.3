@@ -917,7 +917,7 @@ focus_tree = {
 		prerequisite = { focus = USA_destroyers_for_bases }
 		x = 8
 		y = 5
-		cost = 10
+		cost = 5
 		completion_reward = {
 			add_political_power = 150
 			army_experience = 50
@@ -1181,7 +1181,7 @@ focus_tree = {
 		prerequisite = { focus = USA_air_war_plans_division }
 		x = 16
 		y = 1
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1200,7 +1200,7 @@ focus_tree = {
 		prerequisite = { focus = USA_air_support }
 		x = 15
 		y = 3
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1225,7 +1225,7 @@ focus_tree = {
 		prerequisite = { focus = USA_air_support }
 		x = 14
 		y = 2
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1260,7 +1260,7 @@ focus_tree = {
 		}
 		x = 16
 		y = 2
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1437,6 +1437,22 @@ focus_tree = {
 				uses = 1
 				technology = cv_naval_bomber2
 			}
+		}
+	}
+	focus = {
+		id = USA_bureau_of_aeronautics_2
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = USA_bureau_of_aeronautics }
+		x = 26
+		y = 3
+		cost = 5
+		available = {
+			date > 1942.11.1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_technology = { cv_fighter3 = 1 }
 		}
 	}
 

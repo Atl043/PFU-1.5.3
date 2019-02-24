@@ -67,7 +67,6 @@ country_event = {
 				can_lose_unity = yes
 			}
 		}
-		add_stability = -0.05
 	}
 }
 
@@ -143,7 +142,6 @@ country_event = {
 		ai_chance = {
 			base = 0
 		}
-		add_stability = -0.05
 	}
 }
 
@@ -184,7 +182,7 @@ country_event = {
 		}
 		add_popularity = {
 			ideology = fascism
-			popularity = 0.1
+			popularity = 0.01
 		}
 		set_country_flag = coalition_with_fascists
 	}
@@ -198,7 +196,7 @@ country_event = {
 				can_lose_unity = yes
 			}
 		}
-		add_stability = -0.05
+		
 		add_popularity = {
 			ideology = democratic
 			popularity = 0.03
@@ -255,7 +253,7 @@ country_event = {
 		}
 		add_popularity = {
 			ideology = communism
-			popularity = 0.1
+			popularity = 0.01
 		}
 		set_country_flag = coalition_with_communists
 	}
@@ -280,7 +278,6 @@ country_event = {
 				}
 			}
 		}
-		add_stability = -0.05
 		add_popularity = {
 			ideology = democratic
 			popularity = 0.03
@@ -323,7 +320,7 @@ country_event = {
 		}
 		add_popularity = {
 			ideology = fascism
-			popularity = 0.1
+			popularity = 0.01
 		}
 		set_country_flag = coalition_with_fascists
 	}
@@ -339,7 +336,7 @@ country_event = {
 		}
 		add_popularity = {
 			ideology = communism
-			popularity = 0.1
+			popularity = 0.01
 		}
 		set_country_flag = coalition_with_communists
 	}
@@ -357,7 +354,6 @@ country_event = {
 			ideology = democratic
 			popularity = 0.05
 		}
-		add_political_power = -80
 	}
 }
 
@@ -426,7 +422,6 @@ country_event = {
 				can_lose_unity = no
 			}
 		}
-		add_stability = -0.05
 		add_popularity = {
 			ideology = democratic
 			popularity = 0.03
@@ -500,7 +495,7 @@ country_event = {
 				can_lose_unity = no
 			}
 		}
-		add_stability = -0.05
+		
 		add_popularity = {
 			ideology = democratic
 			popularity = 0.03
@@ -684,7 +679,7 @@ country_event = {
 		}
 		name = election.14.b
 		add_political_power = 20
-		add_stability = -0.05
+		
 		add_popularity = {
 			ideology = communism
 			popularity = 0.05
@@ -798,6 +793,6 @@ country_event = {
 	
 	option = {
 		name = election.17.a
-		add_stability = -0.05
+		
 	}
 }

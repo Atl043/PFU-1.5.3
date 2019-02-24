@@ -152,7 +152,7 @@ technologies = {
 	improved_infantry_weapons_2 = {
 
 		category_light_infantry = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 
 		cavalry = {
@@ -269,7 +269,7 @@ technologies = {
 	advanced_infantry_weapons2 = {
 
 		category_light_infantry = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		cavalry = {
 			soft_attack = 0.1

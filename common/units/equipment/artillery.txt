@@ -55,9 +55,9 @@ equipments = {
 		priority = 50
 		visual_level = 1
 
-		defense = 15
+		defense = 17
 		breakthrough = 7
-		soft_attack = 32
+		soft_attack = 36
 		
 		build_cost_ic = 4
 		resources = {
@@ -74,9 +74,9 @@ equipments = {
 		priority = 50
 		visual_level = 2
 		
-		defense = 18
+		defense = 22
 		breakthrough = 8
-		soft_attack = 40
+		soft_attack = 44
 		
 		build_cost_ic = 4.5
 		resources = {

@@ -25,6 +25,15 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = GER_autobahn_tt
+			add_tech_bonus = {
+				name = excavation
+				bonus = 0.5
+				uses = 2
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+			}
 			hidden_effect = {
 				64 = {
 					if = {
@@ -485,7 +494,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = op_dest_bonus
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = air_doctrine
 			}
 			add_tech_bonus = {
@@ -649,6 +658,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = air_sup_bonus
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
 			air_experience = 50
 
 			add_ideas = GER_ace_idea
@@ -656,7 +671,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = radar_tech_bonus
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = radar_tech
 			}
 		}
@@ -1134,6 +1149,7 @@ focus_tree = {
    			SOV = { controls_state = 219 }
    			SOV = { controls_state = 260 }
    			SOV = { controls_state = 229 }
+   			ITA = { controls_state = 115 }
    		}
 
    		x = 9

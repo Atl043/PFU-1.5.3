@@ -31,13 +31,13 @@ equipments = {
 		
 		surface_detection = 10
 		sub_detection = 5
-		surface_visibility = 30
+		surface_visibility = 27
 		naval_speed = 26
 		reliability = 0.70
 		
 		naval_range = 3000
 		
-		max_strength = 250
+		max_strength = 300
 		
 		port_capacity_usage = 2
 
@@ -87,7 +87,7 @@ equipments = {
 
 		naval_range = 4000
 		
-		max_strength = 325
+		max_strength = 375
 		
 		port_capacity_usage = 2
 
@@ -126,15 +126,15 @@ equipments = {
 
 		naval_range = 5000
 		
-		max_strength = 350
+		max_strength = 400
 		
 		port_capacity_usage = 2
 
 		build_cost_ic = 10250
 		resources = {
-			oil = 2
+			oil = 1
 			steel = 4
-			chromium = 2
+			chromium = 1
 		}
 		manpower = 5500
 	}
@@ -165,7 +165,7 @@ equipments = {
 
 		naval_range = 6000
 		
-		max_strength = 400
+		max_strength = 450
 		
 		port_capacity_usage = 2
 

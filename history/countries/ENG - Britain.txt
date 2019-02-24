@@ -20,6 +20,7 @@ set_technology = {
 	interwar_antiair = 1
 	gwtank = 1
 	basic_light_tank = 1
+	improved_light_tank = .8
 	motorised_infantry = 1
 	#improved_light_tank = 1  # PLACEHOLDER
 	basic_heavy_tank = 1  # PLACEHOLDER
@@ -63,7 +64,7 @@ add_ideas = {
 	give_guarantee = BEL
 	give_guarantee = POL
 
-set_convoys = 1000
+set_convoys = 1200
 
 # DIPLOMACY
 if = {

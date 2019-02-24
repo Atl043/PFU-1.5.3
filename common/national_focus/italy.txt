@@ -171,7 +171,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_industrial_effort_2 }
 		x = 0
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -402,7 +402,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = ITA_autarky
-				bonus = 0.5
+				bonus = 0.75
 				uses = 2
 				technology = excavation1
 				technology = excavation2
@@ -484,7 +484,7 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = naval_base
-						level = 3
+						level = 6
 						province = 11954
 						instant_build = yes
 					}
@@ -685,7 +685,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = 8
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -835,7 +835,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_air_innovation }
 		x = 4
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -867,7 +867,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_carrier_effort }
 		x = 6
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}

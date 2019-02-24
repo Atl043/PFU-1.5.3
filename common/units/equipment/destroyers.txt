@@ -184,7 +184,6 @@ equipments = {
 		resources = {
 			oil = 2
 			steel = 4
-			chromium = 1
 		}		
 		manpower = 500
 	}

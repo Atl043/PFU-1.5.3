@@ -75,7 +75,7 @@ equipments = {
 
 		# Air vs Navy - low damage / high hit chance / easy to hurt
 		naval_strike_attack = 6
-		naval_strike_targetting = 12.5
+		naval_strike_targetting = 12
 
 		#Space taken in convoy
 		lend_lease_cost = 8
@@ -207,7 +207,7 @@ equipments = {
 		reliability = 0.9
 
 		# Air vs Navy - high damage / medium hit chance / easy to hurt
-		naval_strike_attack = 15
+		naval_strike_attack = 20
 		naval_strike_targetting = 7.5
 
 		build_cost_ic = 52
@@ -456,7 +456,7 @@ equipments = {
 		build_cost_ic =	44 # cv_version costs 20% more of base archetype
 
 		naval_strike_attack = 6
-		naval_strike_targetting = 12.5
+		naval_strike_targetting = 12
 	}
 	# Basic Carrier Fighter
 	cv_fighter_equipment_1 = {
@@ -480,8 +480,8 @@ equipments = {
 			rubber = 1
 		}
 
-		naval_strike_attack = 14
-		naval_strike_targetting = 15
+		naval_strike_attack = 12
+		naval_strike_targetting = 13
 	}
 	# Improved Carrier Fighter
 	cv_fighter_equipment_2 = {
@@ -504,8 +504,8 @@ equipments = {
 			aluminium = 2
 			rubber = 1
 		}
-		naval_strike_attack = 25
-		naval_strike_targetting = 17
+		naval_strike_attack = 18
+		naval_strike_targetting = 13.5
 	}
 	# Advanced Carrier Fighter
 	cv_fighter_equipment_3 = {
@@ -529,8 +529,8 @@ equipments = {
 			rubber = 1
 		}
 
-		naval_strike_attack = 33
-		naval_strike_targetting = 20
+		naval_strike_attack = 24
+		naval_strike_targetting = 14
 	}
 
 	# Basic CAS
@@ -703,7 +703,7 @@ equipments = {
 		air_agility = 30
 		air_attack = 10
 		air_defence = 14
-		naval_strike_attack = 20
+		naval_strike_attack = 25
 		naval_strike_targetting = 10
 
 		build_cost_ic = 56
@@ -727,7 +727,7 @@ equipments = {
 		air_agility = 35
 		air_attack = 14
 		air_defence = 16
-		naval_strike_attack = 25
+		naval_strike_attack = 30
 		naval_strike_targetting = 12.5
 
 		build_cost_ic = 60

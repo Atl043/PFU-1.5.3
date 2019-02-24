@@ -2210,7 +2210,11 @@ focus_tree = {
 		}
 
 		available = {
-			threat > 0.10
+			OR = {
+				threat > 0.1
+				has_war = yes
+				date > 1938.2.1
+			}
 			date > 1936.8.1
 		}
 

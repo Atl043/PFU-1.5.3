@@ -11,18 +11,5 @@ ai_historical_focus_list_NZL = {
 		NZL_chariton_automatic_rifle
 		NZL_domestic_arms_industry									#1941
 		NZL_think_big												#1942
-		NZL_long_range_patrol										#1940
-		NZL_bob_semple_tank											#1941
-		NZL_fighter_focus											#1940
-		
-		NZL_expand_the_university_of_auckland						#1940
-		NZL_expand_devonport_naval_base								#1943
-		NZL_destroyer_effort										#1942
-		NZL_coastal_defense											#1943
-		NZL_light_cruiser_effort									#1942
-		NZL_schofield_tank											#1942
-		NZL_artillery_focus											#1940
-		NZL_the_manpower_act										#1944
-		NZL_big_bob_tank											#
 	}
 }

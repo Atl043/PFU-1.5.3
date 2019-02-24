@@ -60,6 +60,8 @@ NDefines.NTechnology.LICENSE_EQUIPMENT_TECH_SPEED_PER_YEAR = -0.025
 NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 3
 NDefines.NPolitics.BASE_LEADER_TRAITS = 6
 
+NDefines.NMilitary.ATTRITION_EQUIPMENT_LOSS_CHANCE = 0.11; -- org is 0.1
+NDefines.NMilitary.ATTRITION_EQUIPMENT_PER_TYPE_LOSS_CHANCE = 0.11; -- org is 0.1
 NDefines.NMilitary.MAX_NUM_TRAITS = 10
 NDefines.NMilitary.CORPS_COMMANDER_ASSIGNABLE_TRAIT_NUM = 6
 NDefines.NMilitary.FIELD_MARSHAL_ASSIGNABLE_TRAIT_NUM = 6
@@ -100,11 +102,11 @@ NDefines.NMilitary.SPEED_REINFORCEMENT_BONUS = 0.1
 NDefines.NMilitary.OVERSEAS_LOSE_EQUIPMENT_FACTOR = 1
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0
 NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.25
-NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.01
+NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.025
 NDefines.NMilitary.STRATEGIC_SPEED_BASE = 6.0
 NDefines.NMilitary.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.018
 
-
+NDefines.NAir.ENEMY_AIR_SUPERIORITY_IMPACT= -0.9
 NDefines.NAir.COMBAT_AMOUNT_DIFF_AFFECT_GANG_CHANCE = 0.4
 NDefines.NAir.COMBAT_SITUATION_WIN_CHANCE_FROM_GANG = 0.1
 NDefines.NAir.ACCIDENT_CHANCE_BASE = 0.02
@@ -122,23 +124,23 @@ NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.0
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER =	0.1	-- base 0.192 How much efficiency to regain per day. Gain applied hourly.
 NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.5 -- 0.015	 % how many max disrupted only planes are allowed to die in a single combat
-NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.16 -- -0.12	5x levels = 60% defense from bombing
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.13 -- -0.12	5x levels = 60% defense from bombing
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.66 -- .75 Maximum damage reduction factor applied to incoming air attacks against units with AA.
-
+NDefines.NAir.CARRIER_HOURS_DELAY_AFTER_EACH_COMBAT = 2 --- 4 orginally
 
 NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE = 0.80
 NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 24  --- before 16 testing 18
 NDefines.NNavy.COMBAT_MIN_DURATION = 32
 NDefines.NNavy.COMBAT_SHIP_SPEED_TO_FIELD_FACTOR = 0.09
 NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 2.5	-- Vanilla: 1.5 How much efficiency drops when losing convoys. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
-NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 9	--Vanilla: 7 Convoy starts regaining it's efficiency after X days without any convoys being sink.
-NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.04 --Vanilla: 0.04 How much efficiency regains every day.
-NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1
-NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.01
+NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 8	--Vanilla: 7 Convoy starts regaining it's efficiency after X days without any convoys being sink.
+NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.06 --Vanilla: 0.04 How much efficiency regains every day.
+--NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1
+--NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.01
 NDefines.NNavy.CARRIER_STACK_PENALTY = 4
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 99.999
 NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_DAMAGE_MULT = 3.0
-NDefines.NNavy.ANTI_AIR_TARGETING = 1.8			-- Vanilla: 0.9 how good ships are at hitting aircraft
+--NDefines.NNavy.ANTI_AIR_TARGETING = 1.8			-- Vanilla: 0.9 how good ships are at hitting aircraft
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 12
 
 

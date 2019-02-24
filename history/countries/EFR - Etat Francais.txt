@@ -47,6 +47,7 @@ add_political_power = 300
 	support_weapons = 1
 	tech_logistics_company = 1
 		fighter1 = 1
+		fighter2 = 1
 		heavy_fighter1 = 1
 		naval_bomber2 = 1
 		tactical_bomber1 = 1
@@ -99,6 +100,7 @@ add_political_power = 300
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
+		dispersed_industry4 = 1
 	}
 
 1939.1.1 = {

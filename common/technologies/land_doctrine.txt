@@ -1329,7 +1329,7 @@ technologies = {
 		}
 
 		#planning max bonus increase
-		max_planning = 0.3
+		max_planning = 0.2
 
 		doctrine = yes
 		research_cost = 3
@@ -2131,6 +2131,8 @@ technologies = {
 
 		infantry = {
 			combat_width = -0.4
+			max_organisation = 5
+			breakthrough = 0.05
 		}
 
 
@@ -2172,7 +2174,7 @@ technologies = {
 			breakthrough = 0.10
 		}
 		category_all_infantry = {
-			max_organisation = 7
+			max_organisation = 5
 			breakthrough = 0.10
 		}
 

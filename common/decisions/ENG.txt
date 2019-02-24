@@ -194,9 +194,9 @@ political_actions = {
 			POR = { country_event = wtt_britain_lease_azores.1 }
 		}
 	}
-	puppet_france = {
+	annex_france = {
 		ai_will_do = { factor = 0 }
-		cost = 25
+		cost = 0
 
 		visible = {
 			tag = ENG
@@ -206,14 +206,24 @@ political_actions = {
 
 		}
 		fire_only_once = yes
+
 		complete_effect = {
-			ENG = { puppet = FRA }
+			#INS = {
+			#		set_autonomy = {
+			#			target = INS
+			#			autonomy_state = autonomy_free
+			#		}
+			#	}
+			#ENG = { puppet = INS }
+			annex_country = { target = FRA transfer_troops = yes }
 		}
+
+
 	}
 
 	annex_canada = {
 		ai_will_do = { factor = 0 }
-		cost = 50	
+		cost = 0
 		visible = {
 			tag = ENG
 			CAN = { is_ai = yes }
@@ -231,24 +241,27 @@ political_actions = {
 
 	annex_ireland = {
 		ai_will_do = { factor = 0 }
-		cost = 50	
+		cost = 0	
 		visible = {
 			tag = ENG
 			IRE = { is_ai = yes }
 			country_exists = IRE
-			date > 1939.1.1
+			date > 1937.1.1
 		}
 		fire_only_once = yes
 		complete_effect = {
 			ENG = {
 				annex_country = { target = IRE transfer_troops = yes }
+				add_state_core = 113
+				add_state_core = 135
+				add_state_core = 134
 			}
 		}
 	}
 
 	annex_british_raj = {
 		ai_will_do = { factor = 0 }
-		cost = 50
+		cost = 25
 		visible = {
 			tag = ENG
 			RAJ = { is_ai = yes }
@@ -266,7 +279,7 @@ political_actions = {
 
 	annex_south_africa = {
 		ai_will_do = { factor = 0 }
-		cost = 30
+		cost = 0
 		visible = {
 			tag = ENG
 			SAF = { is_ai = yes }
@@ -284,7 +297,7 @@ political_actions = {
 
 	annex_australia = {
 		ai_will_do = { factor = 0 }
-		cost = 30
+		cost = 0
 		visible = {
 			tag = ENG
 			AST = { is_ai = yes }
@@ -302,7 +315,7 @@ political_actions = {
 
 	annex_new_zealand_uk = {
 		ai_will_do = { factor = 0 }
-		cost = 20
+		cost = 0
 		visible = {
 			tag = ENG
 			NZL = { is_ai = yes }
@@ -316,6 +329,22 @@ political_actions = {
 				add_state_core = 284
 				annex_country = { target = NZL transfer_troops = yes }
 				add_ideas = annex_new_zealand_idea
+			}
+		}
+	}
+	give_fighter2_NZL = {
+		ai_will_do = { factor = 0 }
+		cost = 0
+		visible = {
+			tag = ENG
+			NZL = { is_ai = yes }
+			country_exists = NZL
+			date > 1937.6.1
+		}
+		fire_only_once = yes
+		complete_effect = {
+			NZL = {
+				set_technology = { fighter2 = 1 }
 			}
 		}
 	}

@@ -49,6 +49,17 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				name = excavation
+				bonus = 0.5
+				uses = 2
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+			}
+
+
 			random_owned_controlled_state = {
 				limit = {
 					industrial_complex > 0
@@ -102,31 +113,69 @@ focus_tree = {
 		}
 		available = {
 			OR = {
-			has_defensive_war_with = GER
-			NOT = {
-			126 = {
-		    is_owned_and_controlled_by = ENG
-			}
-			}
-			NOT = {
-			127 = {
-		    is_owned_and_controlled_by = ENG
-			}
-			}
-			}
-			219 = {
-				is_owned_and_controlled_by = SOV
-				industrial_complex > 1
-			}
-			195 = {
-				is_owned_and_controlled_by = SOV
-				industrial_complex > 0
-			}
-			573 = {
-				is_owned_and_controlled_by = SOV
-			}
-			582 = {
-				is_owned_and_controlled_by = SOV
+				has_defensive_war_with = GER
+				USA = {
+					surrender_progress > 0.05
+				}
+				CAN = {
+					surrender_progress > 0.05
+				}
+
+				NOT = {
+					126 = {
+						is_owned_and_controlled_by = ENG
+					}
+				}
+				NOT = {
+					127 = {
+						is_owned_and_controlled_by = ENG
+					}
+				}
+				NOT = {
+					120 = {
+						is_owned_and_controlled_by = ENG
+					}
+				}
+				NOT = {
+					136 = {
+						is_owned_and_controlled_by = ENG
+					}
+				}
+				NOT = {
+					133 = {
+						is_owned_and_controlled_by = ENG
+					}
+				}
+				NOT = {
+					131 = {
+						is_owned_and_controlled_by = ENG
+					}
+				}
+				NOT = {
+					130 = {
+						is_owned_and_controlled_by = ENG
+					}
+				}
+				NOT = {
+					132 = {
+						is_owned_and_controlled_by = ENG
+					}
+				}
+				NOT = {
+					122 = {
+						is_owned_and_controlled_by = ENG
+					}
+				}
+				NOT = {
+					338 = {
+						is_owned_and_controlled_by = ENG
+					}
+				}
+				NOT = {
+					123 = {
+						is_owned_and_controlled_by = ENG
+					}
+				}
 			}
 		}
 		 cancel_if_invalid = no
@@ -437,8 +486,8 @@ focus_tree = {
 				skill = 7
 				attack_skill = 7
 				defense_skill = 6
-				planning_skill = 7
-				logistics_skill = 7
+				planning_skill = 8
+				logistics_skill = 8
 			}
 			add_ideas = general_winter_idea
 			add_ideas = great_patriotic_war
@@ -2069,11 +2118,35 @@ focus_tree = {
 				bonus = 0.5
 				category = land_doctrine
 			}
+			add_tech_bonus = {
+				name = artillery
+				bonus = 0.5
+				uses = 1
+				technology = artillery1
+			}
+			add_tech_bonus = {
+				name = artillery
+				bonus = 0.5
+				uses = 1
+				technology = interwar_artillery
+			}
+			add_tech_bonus = {
+				name = artillery
+				bonus = 0.5
+				uses = 1
+				technology = artillery2
+			}
+			add_tech_bonus = {
+				name = artillery
+				bonus = 0.5
+				uses = 1
+				technology = artillery3
+			}
 		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus2
-				bonus = 0.4
+				bonus = 0.5
 				technology = improved_heavy_tank
 			}
 		}
@@ -2104,7 +2177,7 @@ focus_tree = {
 				uses = 2
 				category = rocketry
 			}
-						add_tech_bonus = {
+			add_tech_bonus = {
 				name = radar_tech_bonus
 				bonus = 0.5
 				uses = 1

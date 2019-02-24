@@ -668,9 +668,25 @@ country_event = {
 	picture = GFX_report_event_totalwar
 
 	trigger = {
-		date > 1943.1.1
+		date > 1943.2.1
 		tag = GER
 		NOT = { has_global_flag = total_war }
+		GER = { has_war_with = SOV }
+		OR = {
+					217 = {
+						is_owned_and_controlled_by = SOV
+					}
+					219 = {
+						is_owned_and_controlled_by = SOV
+					}
+					ITA = {
+						surrender_progress > 0.50
+						
+					}
+					ITA = {
+						has_capitulated = yes
+					}
+			}
 	}
 
 	immediate = {
@@ -682,7 +698,7 @@ country_event = {
 		remove_ideas = GER_short_war
 		add_ideas = GER_total_war
 	}
-	mean_time_to_happen = { days = 30 }
+	mean_time_to_happen = { days = 1 }
 }
 
 country_event = {
@@ -1081,7 +1097,7 @@ country_event = {
 	
 	trigger = {
 		tag = SOV		
-		has_army_manpower = { size < 6500000 }
+		#has_army_manpower = { size < 6500000 }
 		date > 1941.12.05
 		date < 1942.1.20
 		
@@ -1091,7 +1107,14 @@ country_event = {
 			NOT = { SOV = { controls_state = 264 } }
 			NOT = { SOV = { controls_state = 223 } }
 			NOT = { SOV = { controls_state = 220 } }   
-            NOT = { SOV = { controls_state = 228 } } 			
+            NOT = { SOV = { controls_state = 228 } } 		
+            NOT = { SOV = { controls_state = 221 } } 		
+            NOT = { SOV = { controls_state = 240 } } 	
+            NOT = { SOV = { controls_state = 222 } } 
+            NOT = { SOV = { controls_state = 223 } } 
+            NOT = { SOV = { controls_state = 195 } } 
+            NOT = { SOV = { controls_state = 219 } } 
+            NOT = { SOV = { controls_state = 218 } } 
 		}
 
 		NOT = { has_global_flag = SOV_winteroffensive }	
